@@ -22,4 +22,4 @@
 ## Sources
 | ID | Source | Tier | Date |
 |---|---|---|---|
-| S01 | [Title — Publisher](url) | T1 | YYYY-MM-DD |
+| S01 | [Title](url), Publisher | T1 | YYYY-MM-DD |

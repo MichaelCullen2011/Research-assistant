@@ -30,12 +30,14 @@ result.
 9. **Visuals**: each has a caption and source IDs, and uses no made-up data.
 10. **Brief vs report**: they do not contradict each other.
 11. **Links**: URLs in the source tables are complete.
+12. **Prose**: `edit-prose` has run, and a scan against the tells in
+    `guides/prose-style.md` finds nothing.
 
 ## Record the result
 Append to the *Verification log* in `findings.md`:
 
 ```
-### Verification — YYYY-MM-DD
+### Verification: YYYY-MM-DD
 - Claims checked: N (spot-checked against originals: M)
 - Issues found / fixed: …
 - Remaining caveats: …

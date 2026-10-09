@@ -34,7 +34,8 @@ Output: `outputs/report.md` built from `templates/output-report.md`.
   than about 5 terms.
 - Length follows the topic. Typically 1,500–4,000 words, and readable section
   by section.
-- Write in UK English, in plain and direct language.
+- Write to `guides/prose-style.md`.
 
 ## Hand off
-Go to `skills/verify/SKILL.md`.
+Go to `skills/edit-prose/SKILL.md` (run it on both the brief and the report),
+then `skills/verify/SKILL.md`.

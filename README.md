@@ -29,7 +29,9 @@ The agent will:
 3. **Capture**: write atomic, cited findings with confidence ratings.
 4. **Write**: produce a short brief, plus a deep-dive report if requested,
    with tables and diagrams where they help.
-5. **Verify**: check that every claim is traceable to a logged source before
+5. **Edit**: rework the prose so it reads like an analyst wrote it, not an
+   agent (`guides/prose-style.md`).
+6. **Verify**: check that every claim is traceable to a logged source before
    handing over.
 
 ## Layout
@@ -38,11 +40,14 @@ The agent will:
 AGENTS.md          Root guidance for any agent (CLAUDE.md imports it)
 skills/            One SKILL.md per workflow step
   start-research/  gather-sources/  capture-findings/
-  write-brief/     write-report/    verify/
+  write-brief/     write-report/    edit-prose/    verify/
 guides/
   source-credibility.md   T1–T4 tiers and how each can be used
   research-playbooks.md   Market/news · industry context · technical literature
   visuals.md              Tables, Mermaid diagrams, richer figures
+  prose-style.md          How outputs read; agent-prose tells to edit out
+vendor/
+  mattpocock-skills/      Matt Pocock's writing skills (MIT), kept as reference
 templates/         Copied into each new project
 projects/          One folder per research task
 ```
@@ -59,5 +64,5 @@ projects/          One folder per research task
 ## Agent compatibility
 
 Skills use the common `SKILL.md` format with a `name`/`description` header.
-`.claude/skills` is a symlink to `skills/`, so Claude Code picks them up
-natively. Other agents read `AGENTS.md`, which links to each skill.
+`.claude/skills/` holds symlinks to every skill, so Claude Code picks them up
+natively (vendored writing skills included). Other agents read `AGENTS.md`, which links to each skill.

@@ -25,8 +25,8 @@ built from `templates/output-brief.md`.
   audience.
 - **Sources table**: list only the sources cited in the brief, with clickable
   links.
-- Write in UK English, in plain and direct language. No filler and no hype.
+- Write to `guides/prose-style.md`.
 
 ## Hand off
 - If the brief asks for a report, go to `skills/write-report/SKILL.md`.
-- Otherwise go to `skills/verify/SKILL.md`.
+- Otherwise go to `skills/edit-prose/SKILL.md`, then `skills/verify/SKILL.md`.

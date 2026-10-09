@@ -33,7 +33,8 @@ Run the skills in order. Each one is a self-contained instruction file:
 | 3 | `skills/capture-findings/SKILL.md` | `findings.md` |
 | 4 | `skills/write-brief/SKILL.md` | `outputs/brief.md` |
 | 5 | `skills/write-report/SKILL.md` | `outputs/report.md` (only when asked or warranted) |
-| 6 | `skills/verify/SKILL.md` | verification log at the end of `findings.md` |
+| 6 | `skills/edit-prose/SKILL.md` | outputs edited to read as human analyst writing |
+| 7 | `skills/verify/SKILL.md` | verification log at the end of `findings.md` |
 
 Steps 2 and 3 can loop. Go back to gathering whenever the findings show gaps.
 
@@ -42,6 +43,10 @@ Steps 2 and 3 can loop. Go back to gathering whenever the findings show gaps.
 - `guides/source-credibility.md`: credibility tiers and how to treat each
 - `guides/research-playbooks.md`: search approach per research type
 - `guides/visuals.md`: when to use a table, Mermaid diagram or richer graphic
+- `guides/prose-style.md`: how outputs should read, and agent-prose tells to edit out
+- `vendor/mattpocock-skills/`: Matt Pocock's writing skills (reference, and
+  interactive drafting on request); read `writing-for-agents` before editing
+  this repo's skills
 - `templates/`: copy into each new project; do not edit in place
 
 ## Finishing a task

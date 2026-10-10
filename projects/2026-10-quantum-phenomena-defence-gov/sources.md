@@ -280,6 +280,7 @@ the WebFetch tool could not resolve hosts in this environment.
   - Lasers, transistors and solar cells come from quantum physics. (Foreword p.3)
   - Transistors and lasers exploit quantised energies of electrons in crystals. New technology manipulates individual particles and uses superposition and entanglement. (Ch.1 "What is quantum technology?" p.16)
   - First caesium atomic clock: NPL, 1955, by Essen and Parry. The 1967 SI second was redefined on the caesium transition, at 9,192,631,770 cycles. (Atomic clocks timeline p.24)
+  - Verbatim (added at verification, 2026-10-10): "One second is found to be 9,192,631,770 cycles of the caesium microwave transition frequency." (Atomic clocks timeline)
   - Phones, the internet and satnav depend on atomic clocks. A 2016 GPS timing error of 13 µs on 15 satellites disrupted timing equipment for about 12 hours. (Ch.2 clocks, p.~22–23)
   - Defence: the MOD plans to be a first adopter of small atomic clocks, gyros, accelerometers and a gravity imaging system. Gravity sensors might detect buried explosives. (Ch.1 Markets and impacts p.16)
   - The enabling technologies are lasers, superconductors, light emitters/detectors and UHV. (p.16)

@@ -98,7 +98,7 @@ The table below is the broad list for shortlisting. "Band" is this report's grou
 
 *Table 1: Phenomenon map. Band assignment is analyst judgement based on the maturity evidence cited in each row and in sections 3 to 6. Calling the laser's mechanism "stimulated emission" or GMR a "quantum" effect is explanatory gloss; the cited Nobel sources use "quantum electronics" and do not label GMR quantum [S26][S21].*
 
-Two anchors the user suggested need care. Flash memory as a tunnelling product is plausible but `[unsupported]` in this evidence set. The usual phrase "hyperfine transition" for caesium clocks is not used by the source; S16 says "caesium microwave transition".
+Two anchors the user suggested need care. Flash memory as a tunnelling product is plausible but `[unsupported]` in this evidence set. The usual phrase "hyperfine transition" for caesium clocks is not used by the source, which says "caesium microwave transition" [S16].
 
 ## 3. Sensing, timing and navigation
 

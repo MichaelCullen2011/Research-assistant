@@ -252,4 +252,20 @@ it.
 ---
 
 ## Verification log
-<Filled in by the `verify` skill.>
+### Verification: 2026-10-10
+- Claims checked: every cited sentence in `outputs/brief.md` (34 sources) and `outputs/report.md` (87 sources) traced to a finding (F01–F106) and a logged source. All cited IDs exist in `sources.md`. Spot-checked against originals by re-opening the source: 10 (S37 clock trial figures; S75 NCSC QKD quote; S93 CRS quotes and $593.7m; S106 £180m; S57 "are limited"; S71 13 Aug 2024; S42 "notoriously fragile"; S31 SNR 8; S45 15–20 orders of magnitude; S16 caesium wording). All matched.
+- Issues found / fixed:
+  - Report claims not yet in findings (MagNav platform noise, harvest-now-decrypt-later, ONR atomic accelerometer, EU Q-MRI pilot) added as F103–F106 before citing.
+  - MagNav noise figure reworded as a Q-CTRL CEO claim (T3 relayed by T2).
+  - Several findings re-pointed to the duplicate entry that holds the cited detail (S90 Mission 3 and 5; S94 §2.4).
+  - Brief wording on quantum radar corrected to "shows an advantage only at" to match S45.
+  - S16 "caesium microwave transition" quote verified and added to source notes; report now cites it.
+  - Vague attributions ("popular accounts", "vendor narratives") removed; bold-label bullets removed outside key findings.
+- Remaining caveats:
+  - Several sensing and frontier sources are preprints or vendor-authored (S34, S35, S44, S54, S58, S60, S70, S110); findings that rely on them are rated medium or low.
+  - Stale sources used only for definitions or as cautionary examples: S10, S12, S16, S28, S61, S62, S64, S69, S87, S101, S102.
+  - The Defense Science Board judgments are quoted via CRS (S93); the DSB study itself and its date were not checked.
+  - Royal Navy, GAO and NSA pages were blocked; related claims rest on other sources.
+  - Flash memory left `[unsupported]`.
+- Result: PASS WITH CAVEATS
+

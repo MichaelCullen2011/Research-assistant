@@ -164,6 +164,15 @@ it.
 | F101 | Quantum-inspired solvers are classical algorithms or hardware: simulated bifurcation (inspired by adiabatic quantum optimisation), the Digital Annealer (enhanced simulated annealing in CMOS), tensor networks (exploiting limited entanglement) and dequantised algorithms (sampling in place of superposition). | [S83], [S84], [S79], [S77] | high | |
 | F102 | The user's prior scan frames quantum-inspired methods as "classical methods drawn from quantum ideas, usable now", and sensing as closest to the field "only for clocks and magnetic navigation". | [S01] | internal | Team framing, used for context only |
 
+## Additional findings (added while writing the report)
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F103 | Q-CTRL's CEO is quoted saying aircraft magnetic noise is 100–1,000 times the anomaly signal used for MagNav. | [S47 "Delicate systems"] | low | Vendor claim relayed by T2 press |
+| F104 | NCSC says harvest-now-decrypt-later collection makes a future cryptographically relevant quantum computer a relevant threat now for long-lived, high-value data. | [S74] | high | SQ4 |
+| F105 | The US Navy is a primary interested party for gravity-aided navigation, and ONR is maturing an atomic accelerometer for naval navigation under TQS. | [S41 Quantum Gravimeters] | high | SQ2; no trial results found |
+| F106 | The EU supports a European quantum MRI (Q-MRI) pilot infrastructure from 2025 for clinical validation. | [S94 §2.2.3] | high | SQ1/SQ4; prototype |
+
 ## Contradictions & open questions
 
 - **QKD.** Positions differ by organisation (F95). UK NCSC, the EU security

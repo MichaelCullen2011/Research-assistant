@@ -51,7 +51,7 @@ it.
 | F20 | Squeezed light reduces quantum noise in gravitational-wave detectors (GEO600, LIGO). | [S12], [S46] | high | |
 | F21 | Entanglement underpins QKD, teleportation, quantum repeaters and quantum computing. | [S29], [S17] | high | |
 | F22 | The no-cloning theorem is the security basis of quantum communication and also forces the use of repeaters or satellites, because quantum signals cannot be amplified classically. | [S29] | high | |
-| F23 | Quantum measurement randomness is the basis of quantum random number generators (QRNGs). | [S12], [S75] | high | |
+| F23 | Quantum measurement randomness is the basis of quantum random number generators (QRNGs). | [S12], [S75] | high | Band B: product (see F109) |
 | F24 | Topological phases explain the quantised Hall steps; hoped-for applications include topological electronics and quantum computers. | [S25] | high | Established use is only the resistance standard |
 | F25 | Further phenomena under active research for applications: magnetic skyrmions, polariton condensates, superabsorption ("quantum batteries"), time crystals, moiré superconductivity in twisted graphene, radical-pair magnetoreception, strong light–matter coupling in chemistry and optomechanical entanglement. | [S53], [S59], [S54], [S55], [S58], [S62], [S64], [S66] | high | Maturity of each in SQ3 |
 
@@ -69,7 +69,7 @@ it.
 | F31 | Aquark announced that its cold-atom AQlock clock ran for three days aboard HMS Pursuer with Dstl test-and-evaluation support; no performance figures were given. | [S38] | low | Vendor release only |
 | F32 | Dstl ran long-term unattended trials of next-generation atomic clocks outside the lab (reported Feb 2026), cites GPS denial as the driver, plans a broader military trial in 2027 and restates the goal of quantum navigation on UK aircraft by 2030. | [S39] | high | field trial |
 | F33 | Optically pumped magnetometers spin-polarise alkali atoms with light and read out their precession; sensitivity reaches about 100 aT/√Hz, on a par with SQUIDs. | [S30 §III.A.1] | high | |
-| F34 | Q-CTRL reports airborne magnetic-anomaly navigation with quantum magnetometers up to 19,000 ft, claiming up to 46× lower position error than a strategic-grade inertial system (best 22 m). | [S34 abstract] | medium | Vendor-authored preprint; CEO quoted at 94× in [S47], unreconciled |
+| F34 | Q-CTRL reports airborne magnetic-anomaly navigation with quantum magnetometers up to 19,000 ft, claiming up to 46× lower position error than a strategic-grade inertial system (best 22 m). | [S34 abstract] | medium | Vendor-authored preprint; CEO quoted at 94× in [S47]. Researcher-over-relay: use 46× |
 | F35 | A Warwick and Element Six diamond NV magnetometer worked in a moving van, but low-frequency sensitivity on the move was about 140–210 nT/√Hz per axis. | [S35 abstract, p.1] | medium | Preprint; prototype |
 | F36 | SQUIDs are the most commercially advanced quantum sensor (used in clinical MEG) but need cryogenic cooling. | [S30 §III.G.1] | high | product/deployed |
 | F37 | Wearable OPM-MEG brain scanners are in research use but not clinically approved; developers hope for approval in 2027. | [S107], [S36 abstract] | medium | S107 is T3; S36 abstract-only |
@@ -88,8 +88,8 @@ it.
 | F45 | Symmetric cryptography with keys of at least 128 bits and hashes such as SHA-256 are "not significantly impacted" by quantum computing (NCSC); Grover's algorithm gives at most a quadratic speedup. | [S74], [S81 intro] | high | |
 | F46 | QKD detects eavesdropping using measurement disturbance, but provides no authentication, so it must be paired with PQC or pre-shared keys. | [S75] | high | |
 | F47 | NCSC says classical random number generators still meet security needs; QRNGs may offer higher entropy rates and need assurance research. | [S75] | high | |
-| F48 | Deterministic quantum-dot single-photon sources now match or beat heralded sources and InGaAs dots are commercially available; telecom-wavelength dots still fall short. | [S60] | medium | Preprint of review |
-| F49 | Microsoft's Nature paper reports a fermion-parity readout in InAs–Al nanowires but states the measurements "do not, by themselves, determine whether the low-energy states ... are topological"; qubit claims were made by press release, not in the paper. | [S50 Discussion], [S51] | high | |
+| F48 | Deterministic quantum-dot single-photon sources now match or beat heralded sources and InGaAs dots are commercially available; telecom-wavelength dots still fall short. | [S60] | medium | Preprint of review; Band B component (networking) |
+| F49 | Microsoft's Nature paper reports a fermion-parity readout in InAs–Al nanowires but states the measurements "do not, by themselves, determine whether the low-energy states ... are topological"; qubit claims were made by press release, not in the paper. | [S50 Discussion], [S51] | high | Excluded from bands A–C; hype-check example only (see Analysis) |
 
 ### Quantum-inspired (classical) methods
 
@@ -114,7 +114,7 @@ it.
 | F61 | A 46-author review concludes "more tools are needed to realize a quantum advantage in optimization" and notes classical heuristics often solve practical instances near-optimally. | [S81 intro] | high | |
 | F62 | QOBLIB (2025) provides ten classically hard optimisation problem classes with state-of-the-art classical baselines; it reports quantum baselines, not advantage. | [S82 abstract] | medium | Preprint |
 | F63 | In a 2026 Siemens industrial scheduling study, IBM gate-based hardware solved only toy instances, D-Wave did better only with a compact formulation, and the Fujitsu Digital Annealer handled industry-scale instances and beat classical heuristics on solution quality. | [S110 §VI.D, §VIII.B–C] | medium | Preprint; baseline at scale is heuristics, not best-in-class solvers |
-| F64 | A UK critique argues the Microsoft topological-qubit data are "not reliable"; a Matters Arising and Microsoft reply appeared in Nature in June 2026, and an earlier Microsoft-funded Majorana paper was retracted in 2021. | [S52 abstract], [S50 article page], [S51] | high | Contested, unresolved |
+| F64 | A UK critique argues the Microsoft topological-qubit data are "not reliable"; a Matters Arising and Microsoft reply appeared in Nature in June 2026, and an earlier Microsoft-funded Majorana paper was retracted in 2021. | [S52 abstract], [S50 article page], [S51] | high | Contested, unresolved. Excluded from bands A–C; hype-check example only (see Analysis) |
 | F65 | MRAM is a product, while skyrmion racetrack memory and logic remain research-stage. | [S53] | medium | |
 | F66 | Magnetic tunnel junctions for STT-MRAM kept key properties under high gamma and neutron doses in one 2019 study; the authors suggest space and nuclear use. | [S69 abstract] | medium | Preprint, 2019 (stale) |
 | F67 | The quantum-battery field's own review states "a fully operational quantum battery is yet to be demonstrated". | [S54 Sec. VII] | medium | Preprint of review |
@@ -168,10 +168,39 @@ it.
 
 | ID | Finding | Sources | Confidence | Notes |
 |---|---|---|---|---|
-| F103 | Q-CTRL's CEO is quoted saying aircraft magnetic noise is 100–1,000 times the anomaly signal used for MagNav. | [S47 "Delicate systems"] | low | Vendor claim relayed by T2 press |
+| F103 | Q-CTRL's CEO is quoted saying aircraft magnetic noise is 100–1,000 times the anomaly signal used for MagNav. | [S47 "Delicate systems"] | low | CEO claim relayed by T2 press; the preprint [S34 abstract] attributes performance to magnetometers plus denoising and map-matching algorithms but gives no noise ratio. Researcher-over-relay: lead with S34 |
 | F104 | NCSC says harvest-now-decrypt-later collection makes a future cryptographically relevant quantum computer a relevant threat now for long-lived, high-value data. | [S74] | high | SQ4 |
 | F105 | The US Navy is a primary interested party for gravity-aided navigation, and ONR is maturing an atomic accelerometer for naval navigation under TQS. | [S41 Quantum Gravimeters] | high | SQ2; no trial results found |
 | F106 | The EU supports a European quantum MRI (Q-MRI) pilot infrastructure from 2025 for clinical validation. | [S94 §2.2.3] | high | SQ1/SQ4; prototype |
+
+### Quantum networking components (added in the second round)
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F107 | Single-photon detectors for visible and near-infrared light are commercially available; mid-infrared and terahertz detection "remains a significant challenge". | [S58 MCQST news quote] | medium | Band B component (networking and imaging) |
+| F108 | The Micius satellite distributed entanglement over 1,203 km and served as a trusted relay for a Beijing–Vienna key; fibre loses on average every second photon in 10 km. | [S29 "Quantum repeaters"] | high | Field demonstration (China); QKD, so Band C |
+| F109 | A 2017 EU community roadmap describes QKD and QRNG as commercially available. | [S12 Quantum Communication intro] | medium | Stale (2017). QKD products exist but security maturity and government rejection keep QKD in Band C [S75][S76] |
+| F110 | Device-independent QKD was demonstrated by three groups in 2022 using loophole-free Bell tests, at lab scale. | [S29 Quantum cryptography] | high | Band C; key rates and distances not given |
+
+## Quantum radar and radar-like detection (second gathering round; SQ2–SQ4)
+
+Supporters are researchers who report or expect a quantum advantage; doubters are those who judge it impractical. Researcher statements are preferred over press framing of the same work.
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F111 | An IST Austria team illuminated a room-temperature object 1 m away with entangled microwaves; its receiver beat a symmetric classical noise radar but, by the authors' account, cannot outperform the best classical (coherent-state homodyne) radar. A 1 dB advantage over homodyne is simulated, assuming perfect photon counting. | [S111 abstract, Introduction] | high | Supporter. Lab, dilution refrigerator; press called it a "prototype" |
+| F112 | An ENS Lyon team measured a quantum advantage of 1.2 ± 0.1 over the best possible classical radar using a joint measurement in a superconducting circuit; the authors say practical use is "a tremendous challenge". | [S112 p.3, conclusion] | high | Supporter. Lab only, inside a dilution refrigerator; theoretical maximum is 4 |
+| F113 | Shapiro (MIT) concludes that the quantum-illumination advantage is real but "severely limited" in practice: idler storage loss limits range, and the advantage shrinks as transmitter power rises. | [S113 abstract, microwave section] | high | Corroborated by [S45 §VI]; one of the field's originators |
+| F114 | A supporters' 2023 review sees grounds for "cautious optimism" but names two microwave hurdles: very low signal intensities and ultra-low temperatures; it suggests intense-jamming scenarios at optical frequencies as a niche. | [S114 Conclusions] | medium | Preprint; co-author led F111 |
+| F115 | Radar engineers argue (2025) that because of very low transmitted power, quantum radar "cannot produce neither significant results nor real world applications", and that most of the scientific community ignored this. | [S115 abstract], [S103 abstract] | medium | Doubter. Abstract only; same lead authors in both |
+| F116 | SIPRI (2025) calls RF quantum radar "largely impractical with current technology" and treats quantum detection of submarines from orbit as an overstated narrative; theory puts quantum-magnetometer SSBN detection at up to about 10 km. | [S123 Box 4.2] | medium | Think tank; SSBN figure is a cited theoretical estimate |
+| F117 | UK MOD (Feb 2026): quantum radar and quantum illumination are "immature" and their defence benefit "uncertain"; MOD research focuses on clocks and on sensing for navigation and situational awareness, and works with the Birmingham-led QuSIT Hub on "Quantum enhanced RADAR". | [S116] | high | Government position (UK). Priorities classified |
+| F118 | MOD contracted Aquark Technologies for "Quantum Optimised Radar Phase 1" (£295,000, Aug 2025 – Mar 2026). | [S117] | high | |
+| F119 | Aquark reports a June 2026 trial in which two cold-atom clocks timed two networked Saab Giraffe 1X radars under simulated GNSS denial and spoofing, with the Royal Navy, QinetiQ and Dstl; no performance figures were published. Aquark itself distinguishes this from quantum-illumination radar. | [S118], [S117] | low | Vendor release; trial existence corroborated by the contract. The quantum element is timing, not detection |
+| F120 | Birmingham's quantum-oscillator staring radar aims at small drones in clutter; its peer-reviewed results (2021) are a classical baseline before integrating the oscillator, and no integrated result was found. | [S120 abstract], [S119] | medium | Field installation; planned integration date (2022–23) passed without a public result |
+| F121 | Canada's DND funded a $2.7m (currency not stated; Canadian programme) University of Waterloo project (2018) to build an on-demand entangled-photon source for quantum radar; the university release says quantum illumination "has only been explored in the laboratory". | [S121] | low | T3, stale; headline goes beyond the project goal; no later results found |
+| F122 | China's CETC announced in 2016 that it tested a quantum radar to 100 km; no independent verification was found. | [S122] | low | Claim relayed by press; stale |
+| F123 | A NIST-led FMCW radar using a Rydberg-atom receiver imaged targets at up to 5 m with 4.7 cm range resolution; the authors say a matched narrowband antenna is more sensitive. | [S124 abstract, body] | medium | Preprint; lab demo. Not entanglement-based |
 
 ## Contradictions & open questions
 
@@ -190,8 +219,15 @@ it.
   2030" [S48]; gov.uk says "deployed on aircraft" [S40]. Use gov.uk.
 - **GNSS outage cost.** SDR's £1bn a day (2018 source) [S95] versus £1,424m
   per 24 hours [S105], repeated by government in 2026 [S106]. Use S105.
-- **Microsoft topological qubit.** Unresolved: Microsoft [S50], critique
-  [S52], Nature exchange June 2026 (not opened).
+- **Quantum radar: researchers versus press.** Both supporter experiments
+  [S111][S112] state their own limits; press coverage called S111 a
+  "prototype" and Waterloo's release says quantum radar "will expose stealth
+  aircraft" [S121]. Weight the papers. CETC's 100 km claim [S122] has no
+  research behind it in this evidence set.
+- **Government positions on quantum radar.** The US DSB rejects it (F59), UK
+  MOD calls it immature with uncertain benefit (F117), Canada funded
+  research in 2018 (F121) and China claimed a field test in 2016 (F122). No
+  French, German or NATO position was found.
 - **Gaps.**
   - Flash memory as a tunnelling anchor is `[unsupported]`: no source logged.
   - SQUID defence uses (e.g. airborne magnetic anomaly detection),
@@ -203,23 +239,46 @@ it.
   - Topological insulators, topological photonics, hBN emitters and quantum
     simulation for defence materials were not covered.
   - The DSB study quoted by CRS was not opened and its date is unverified.
+  - Quantum radar: no performance data from the UK radar-timing trial
+    (F119) or Birmingham's quantum-oscillator radar (F120). Royal Navy,
+    NATO STO (Birmingham paper MP-SET-311) and media.defense.gov pages
+    returned 403. No peer-reviewed Chinese quantum radar result was found.
 
 ## Analysis (agent interpretation, not sourced fact)
 
 - **The phenomenon list splits cleanly into three bands.** Band A, deployed
   for decades: quantised energy levels, tunnelling, NMR, Josephson and
   quantum Hall effects, photoelectric effect, atomic transitions (F07–F15).
-  Band B, field-trialled for defence now: atomic transitions in compact and
-  optical clocks, matter-wave interference, spin precession in vapour cells
-  (F26–F34). Band C, lab or theory with asserted applications: topological
-  states, time crystals, superabsorption, polaritonic chemistry, moiré
-  materials (F49, F64–F75). This gives the whitepaper a ready shortlist rule:
-  Band B is where the defence story sits today.
+  Band B, field-trialled for defence or government now, or commercially
+  available as components: atomic transitions in compact and optical clocks,
+  matter-wave interference, spin precession in vapour cells (F26–F34), and
+  the networking components QRNG, quantum-dot photon sources and
+  single-photon detectors (F23, F48, F107). Band C, lab or theory with
+  asserted applications: QKD and wider quantum networking (F21, F22, F95,
+  F108, F110), entanglement-based quantum radar (F58, F111–F115), time
+  crystals, superabsorption, polaritonic chemistry, moiré materials
+  (F65–F75). Microsoft's Majorana and topological-qubit claims (F49, F64)
+  are left out of the bands; see the hype-check bullet. PQC stays outside
+  the bands because it rests on no quantum phenomenon (F97). This gives the
+  whitepaper a ready shortlist rule: Band B is where the defence story sits
+  today.
 - **Today's defence sensors use the "old" quantum, not entanglement.** The
   sensors in trials rely on quantised levels and coherence (F16, F60).
   Entanglement-enhanced sensing exists only in lab demos (F41) and quantum
   radar (F58, F59). A whitepaper that leads with entanglement for sensing
   would overstate the evidence.
+- **"Quantum radar" covers two different things, and the evidence splits
+  with them.** Entanglement-based quantum illumination has a measured
+  advantage of 1.2 over the best classical radar, in a dilution
+  refrigerator, with supporters and doubters agreeing that practical use
+  is hard (F111–F115). That is Band C. Radar that uses quantum *timing*
+  (cold-atom clocks or quantum oscillators) or quantum *receivers* (Rydberg
+  atoms) rests on Band B phenomena, and it is where government trials are
+  happening: the UK's June 2026 radar-timing trial and the Birmingham
+  drone-radar testbed (F119, F120, F123). Government positions follow the
+  same line: the US and UK reject or doubt entanglement radar (F59, F117)
+  while the UK funds quantum-timed radar (F118). Where the whitepaper puts
+  quantum radar is the user's call; this split is offered as the basis.
 - **The binding constraint in sensing is engineering, not physics.** Fragility
   (F56), platform noise (F57, F34 notes), lab-to-field performance gaps (F55,
   F35) and the drift limits of inertial systems (F27) all point to
@@ -239,9 +298,16 @@ it.
   (F63) shows the practical near-term value is in the inspired hardware.
   Implication: defence optimisation pilots should benchmark against
   quantum-inspired and best classical solvers before any quantum hardware.
-- **A hype-check pattern recurs.** Press releases go beyond peer-reviewed
-  content (F49, F68), and headline results fail to replicate or are retracted
-  (F64, F74, F75). Defence use cases attached to Band C phenomena are mostly
+- **A hype-check pattern recurs.** The clearest case is Microsoft's Majorana
+  work. Its Nature paper says the data "do not, by themselves, determine"
+  whether the states are topological, while the qubit claim came by press
+  release (F49). An independent UK critique calls the data "not reliable",
+  the dispute ran to a Matters Arising in Nature in June 2026, and an earlier
+  Microsoft-funded Majorana paper was retracted in 2021 (F64). For that
+  reason this project keeps Majorana and topological-qubit claims out of the
+  bands altogether. The same pattern shows elsewhere: press releases go
+  beyond peer-reviewed content (F68, F111, F121), and headline results fail
+  to replicate or are retracted (F74, F75). Defence use cases attached to Band C phenomena are mostly
   author-asserted. A simple test for the whitepaper: has anyone outside the
   originating group reproduced it, and has it left the lab?
 - **Official timelines have slipped before.** Dstl's 2020 forecast (F76) and
@@ -269,3 +335,17 @@ it.
   - Flash memory left `[unsupported]`.
 - Result: PASS WITH CAVEATS
 
+### Verification: 2026-10-10 (second round: bands, Majorana, radar)
+- Claims checked: every new or changed sentence in `outputs/brief.md`, `outputs/report.md` and `outputs/reading-pack-sensing.md` traced to F107–F123 or existing findings, and to logged sources. All cited IDs exist in `sources.md`; both source tables list every ID cited in the body (brief 40, report 99). Spot-checked against originals re-opened this session: 8 (S111 "never be outperformed"; S112 Q = 1.2(1) and "a tremendous challenge"; S113 "severely limited"; S114 "cautious optimism"; S116 MOD answer wording; S117 £295,000 and dates; S121 "has only been explored in the laboratory"; S124 5 m and 4.7 cm). All matched.
+- Issues found / fixed:
+  - Waterloo funding figure had no stated currency; finding now says so.
+  - Q-CTRL figures re-checked under the new researcher-over-relay rule: outputs use the preprint's 46×, and the CEO's noise ratio stays framed as a quote.
+  - Curly quotation marks restored in four verbatim quotes.
+  - Tells scan and em-dash scan on all three outputs found nothing.
+- Remaining caveats:
+  - Aquark's radar-timing trial (S118) is vendor-reported with no figures; only the contract (S117) is independent.
+  - S115 and S120 are abstract-only; S113 and S114 are arXiv versions.
+  - CETC (S122) and Waterloo (S121) are stale (2016, 2018) and used only to show claims ahead of evidence.
+  - royalnavy.mod.uk, media.defense.gov, sto.nato.int and cnbc.com returned 403.
+  - Band placement of quantum radar is left open for the user.
+- Result: PASS WITH CAVEATS

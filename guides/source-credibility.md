@@ -22,6 +22,12 @@ source is allowed to support.
 - **Vendor hype**: watch for "quantum advantage", "first", "breakthrough",
   "up to N× faster". Record the claim, the comparison baseline (if any), and
   whether anyone independent has verified it.
+- **Researcher over relay**: when a paper or preprint and a report of it
+  disagree, cite the paper. Journalists, university press offices and CEOs
+  are relays, even when they speak for the same organisation. Log the gap
+  in the source's caveats, and treat the relay's version as a claim
+  ("X's CEO is quoted saying…"). This holds whatever the relay's tier: a
+  T2 article does not outrank the T2 preprint it reports.
 - **Dates**: always record the publication date. For fast-moving topics,
   note when newer information may exist.
 - **Paywalls**: if you can only see an abstract or snippet, record

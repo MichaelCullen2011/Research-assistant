@@ -1,0 +1,600 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Quantum in Defence &amp; Government</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: briefing dossier. Sticky contents rail on desktop, single reading column, wide tables and log break out to full width. */
+:root{
+  --paper:#F2F5F4; --surface:#FFFFFF; --ink:#15201F; --muted:#56676A; --rule:#D2DBD9; --accent:#0B5F63; --accent-soft:#DCEBEA;
+  --c-comp:#3A57A0; --c-sens:#0D7A62; --c-crypto:#A8531D; --c-net:#74499A; --c-policy:#66702A; --c-ind:#5D6674;
+  --warn-bg:#FBEBD2; --warn-fg:#7A4608;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0D1414; --surface:#142020; --ink:#E2EAE8; --muted:#9AAAA9; --rule:#2A3938; --accent:#64C4BE; --accent-soft:#16312F;
+  --c-comp:#8EA6E6; --c-sens:#5CCBAE; --c-crypto:#E79A63; --c-net:#C29BE4; --c-policy:#BFC874; --c-ind:#A9B2C0;
+  --warn-bg:#3A2A12; --warn-fg:#F2C27C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0D1414; --surface:#142020; --ink:#E2EAE8; --muted:#9AAAA9; --rule:#2A3938; --accent:#64C4BE; --accent-soft:#16312F;
+  --c-comp:#8EA6E6; --c-sens:#5CCBAE; --c-crypto:#E79A63; --c-net:#C29BE4; --c-policy:#BFC874; --c-ind:#A9B2C0;
+  --warn-bg:#3A2A12; --warn-fg:#F2C27C; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.banner{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--paper);background:var(--ink);padding:8px 20px;display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:center}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+header.hero{padding-block:48px 28px;border-bottom:1px solid var(--rule);display:grid;gap:18px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-stretch:78%;font-weight:800;font-size:clamp(2.4rem,1.4rem + 4.2vw,4.4rem);line-height:.98;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.lede{font-size:1.2rem;max-width:62ch;margin:0;color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-family:var(--f-display);font-size:14px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:600}
+
+.layout{display:grid;gap:40px;padding-top:32px}
+@media (min-width:1040px){.layout{grid-template-columns:210px minmax(0,1fr)}}
+nav.toc{font-family:var(--f-display);font-size:14px}
+nav.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}
+nav.toc a{color:var(--muted);text-decoration:none}
+nav.toc a:hover{color:var(--accent)}
+@media (min-width:1040px){nav.toc .inner{position:sticky;top:calc(env(safe-area-inset-top,0px) + 24px)} nav.toc ol{flex-direction:column;gap:9px;border-left:1px solid var(--rule);padding-left:14px}}
+main{min-width:0}
+section{padding-block:8px 44px}
+section + section{border-top:1px solid var(--rule);padding-top:36px}
+h2{font-family:var(--f-display);font-stretch:85%;font-weight:750;font-size:clamp(1.6rem,1.2rem + 1.3vw,2.25rem);line-height:1.08;margin:.2em 0 .5em;text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:650;font-size:1.18rem;line-height:1.25;margin:1.6em 0 .4em;text-wrap:balance}
+.prose{max-width:70ch}
+.prose p{margin:.7em 0}
+.small{font-size:14.5px;color:var(--muted)}
+ul.tight{margin:.5em 0;padding-left:1.2em}
+ul.tight li{margin:.35em 0}
+
+.dom{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.dom::before{content:"";width:9px;height:9px;border-radius:2px;background:var(--dc,var(--muted))}
+.d-comp{--dc:var(--c-comp)} .d-sens{--dc:var(--c-sens)} .d-crypto{--dc:var(--c-crypto)} .d-net{--dc:var(--c-net)} .d-policy{--dc:var(--c-policy)} .d-ind{--dc:var(--c-ind)}
+.tc{display:inline-block;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;background:var(--warn-bg);color:var(--warn-fg);padding:1px 6px;border-radius:3px;white-space:nowrap;vertical-align:1px}
+
+/* BLUF */
+ol.bluf{list-style:none;counter-reset:b;margin:0;padding:0;display:grid;gap:0}
+ol.bluf>li{counter-increment:b;display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 12px;padding:18px 0;border-top:1px solid var(--rule)}
+ol.bluf>li:first-child{border-top:0}
+ol.bluf>li::before{content:counter(b);font-family:var(--f-display);font-stretch:75%;font-weight:800;font-size:2rem;line-height:1;color:var(--accent)}
+ol.bluf strong{font-family:var(--f-display);font-weight:650;font-size:1.12rem;line-height:1.3;display:block;margin-bottom:4px}
+ol.bluf p{margin:0;max-width:68ch}
+
+/* Clock */
+.clock{display:grid;gap:10px;margin-top:18px}
+.yr{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;align-items:start;padding-block:10px;border-top:1px solid var(--rule)}
+.yr>.y{font-family:var(--f-display);font-stretch:75%;font-weight:800;font-size:1.5rem;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.yr ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.ms{font-family:var(--f-display);font-size:13.5px;line-height:1.3;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--dc);padding:6px 9px;border-radius:3px;max-width:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px}
+
+/* tables */
+.tbl{overflow-x:auto;margin:14px 0;border:1px solid var(--rule);border-radius:4px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-family:var(--f-display);font-size:14.5px;line-height:1.42}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+thead th{font-family:var(--f-mono);font-weight:500;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--paper)}
+tbody tr:last-child td{border-bottom:0}
+td.rowh{font-weight:650;white-space:nowrap}
+.num{font-variant-numeric:tabular-nums}
+table.wide{min-width:760px}
+
+/* domain block */
+.domhead{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.tier{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.tier span{font-family:var(--f-display);font-size:13px;padding:5px 10px;border-radius:999px;border:1px solid var(--rule);color:var(--muted)}
+.tier span.on{background:var(--accent-soft);border-color:var(--accent);color:var(--ink);font-weight:600}
+.view{background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--dc);padding:14px 16px;border-radius:4px;max-width:70ch;margin:12px 0}
+.view b{font-family:var(--f-display)}
+
+/* story log */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}
+.chip{font-family:var(--f-display);font-size:13.5px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.chip::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--dc,var(--ink))}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.search{flex:1 1 220px;min-width:0;font-family:var(--f-display);font-size:15px;padding:8px 12px;border:1px solid var(--rule);border-radius:4px;background:var(--surface);color:var(--ink)}
+.count{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+ol.log{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+ol.log li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:4px 16px;padding:13px 0;border-bottom:1px solid var(--rule)}
+ol.log .dt{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px}
+ol.log .top{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-bottom:2px}
+ol.log .kind{font-family:var(--f-mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+ol.log .what{font-family:var(--f-display);font-size:15.5px;line-height:1.4;font-weight:500}
+ol.log .why{font-size:14.5px;color:var(--muted);margin-top:3px}
+ol.log .src{font-family:var(--f-display);font-size:13px;margin-top:3px}
+@media (max-width:560px){ol.log li{grid-template-columns:1fr} ol.log .dt{padding-top:0}}
+
+.srcgrp{columns:2 320px;column-gap:32px;font-family:var(--f-display);font-size:14px;line-height:1.45}
+.srcgrp h3{break-after:avoid;margin-top:.4em}
+.srcgrp ul{list-style:none;margin:0 0 18px;padding:0;break-inside:auto}
+.srcgrp li{margin:0 0 7px;break-inside:avoid}
+footer{margin-top:32px;padding-top:18px;border-top:1px solid var(--rule);font-family:var(--f-display);font-size:13.5px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+
+<div class="banner"><span>Draft for team discussion</span><span>Evidence to 30 Sep 2026</span><span>UK-led · allied context</span></div>
+
+<div class="wrap">
+<header class="hero">
+  <div class="eyebrow">Point of view · Defence &amp; Government · Refresh</div>
+  <h1>Quantum in Defence &amp;&nbsp;Government</h1>
+  <p class="lede">Where quantum computing, sensing, cryptography and networking now matter for UK defence and public-sector clients, what has changed since 2021, and where the evidence says to focus.</p>
+  <div class="meta"><span><b>Window</b> Oct 2021 – Sep 2026, weighted to 2025–26</span><span><b>Lens</b> UK first; US, NATO, AUKUS, EU alongside; China as threat context</span><span><b>Stories logged</b> <span id="logTotal">90+</span></span></div>
+  <p class="small" style="margin:0;max-width:75ch">How to read this: figures are as reported by the linked source. Items marked <span class="tc">To confirm</span> rest on a single secondary source, a vendor claim, or a summary of a primary document. Maturity ratings and "our view" boxes are analyst judgement, not sourced forecasts.</p>
+</header>
+
+<div class="layout">
+<nav class="toc" aria-label="Contents"><div class="inner"><ol>
+  <li><a href="#bluf">The view in seven points</a></li>
+  <li><a href="#clock">The clock to 2035</a></li>
+  <li><a href="#maturity">Maturity map</a></li>
+  <li><a href="#computing">Computing</a></li>
+  <li><a href="#sensing">Sensing, timing &amp; PNT</a></li>
+  <li><a href="#crypto">Cryptography &amp; PQC</a></li>
+  <li><a href="#networks">Networks &amp; QKD</a></li>
+  <li><a href="#supply">Hardware, supply chain &amp; ownership</a></li>
+  <li><a href="#money">Money, policy &amp; alliances</a></li>
+  <li><a href="#landscape">Who is doing what</a></li>
+  <li><a href="#clients">Where clients need help</a></li>
+  <li><a href="#log">Story log</a></li>
+  <li><a href="#open">Open questions</a></li>
+  <li><a href="#sources">Key sources</a></li>
+</ol></div></nav>
+
+<main>
+
+<section id="bluf">
+  <div class="eyebrow">Bottom line</div>
+  <h2>The view in seven points</h2>
+  <ol class="bluf">
+    <li><div><strong>Governments have moved from funding quantum research to buying quantum capability.</strong>
+      <p>The UK announced up to £2bn on 17 March 2026, including up to £1bn to procure large-scale quantum computers through the ProQure programme (<a href="https://www.gov.uk/government/news/uks-quantum-leap-tohelp-beat-diseasedeliver-high-paid-jobs-and-strengthen-national-security-as-first-country-in-the-world-to-roll-out-quantum">gov.uk</a>). The US took minority equity stakes in nine quantum firms through $2.013bn of CHIPS letters of intent in May 2026 (<a href="https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion">NIST</a>). NATO's roadmap, released 29 September 2026, turns its 2024 strategy into trials (<a href="https://nato.int/en/news-and-events/articles/news/2026/09/29/nato-releases-quantum-technology-roadmap">NATO</a>). Clients will need requirements, evaluation criteria and benchmarking, not just awareness.</p></div></li>
+    <li><div><strong>Cryptography is the only quantum workstream with a hard external clock, and the clock has sped up.</strong>
+      <p>Estimated resources to break RSA-2048 fell from about 20 million qubits (2019) to under one million (<a href="https://arxiv.org/abs/2505.15917">Gidney, May 2025</a>), with an unproven 2026 preprint claiming under 100,000. US Executive Order 14412 makes PQC key establishment on high-value federal systems due by end-2030 and signatures by end-2031 (<a href="https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks">Federal Register</a>). The UK's NCSC milestones of 2028, 2031 and 2035 are unchanged and advisory (<a href="https://www.ncsc.gov.uk/guidance/pqc-migration-timelines">NCSC</a>). Programmes with US, Australian or EU exposure should plan to the earliest applicable date.</p></div></li>
+    <li><div><strong>Sensing is closest to the field, but only for clocks and magnetic navigation, and the UK route from trial to programme of record is not visible.</strong>
+      <p>The Royal Navy ran five quantum PNT trials between June 2025 and June 2026 (<a href="https://www.royalnavy.mod.uk/news/2026/august/14/20260814-dcto-quantum-clock-trials">Royal Navy</a>). In the US, a DIU and Honeywell flight ran 4h23 without GPS (<a href="https://defensescoop.com/2026/09/08/diu-honeywell-aerospace-flight-test-magnav-system/">DefenseScoop</a>). No discrete quantum line was found in the June 2026 Defence Investment Plan <span class="tc">To confirm</span>.</p></div></li>
+    <li><div><strong>Defence computing is a mid-term materials and chemistry story. Near-term optimisation value is quantum-inspired.</strong>
+      <p>A July 2026 Siemens study found quantum hardware handled only toy scheduling problems while a quantum-inspired annealer competed at industrial scale (<a href="https://arxiv.org/html/2607.13325v1">arXiv</a>). The DoD Inspector General found the Pentagon's list of quantum-addressable military problems had not been refreshed since 2022 (<a href="https://thequantuminsider.com/2026/01/13/review-pentagon-falls-behind-on-mapping-quantum-technology-to-military-needs/">TQI</a>). DARPA now considers a utility-scale machine by 2033 likely.</p></div></li>
+    <li><div><strong>Sovereignty and ownership are now design constraints on every vendor choice.</strong>
+      <p>IonQ bought Oxford Ionics ($1.075bn) and US foundry SkyWater ($1.8bn); the US holds equity in its suppliers; UK, US and EU export controls on quantum items tightened between 2024 and 2025; a 13-nation group convened in London in 2026 prioritised research and investment security (<a href="https://wired-gov.net/wg/news.nsf/articles/Leading+quantum+nations+to+boost+cooperation+following+UK+summit+09042026101010?open=">DSIT</a>).</p></div></li>
+    <li><div><strong>UK defence quantum money competes inside a generic novel-technology envelope.</strong>
+      <p>The Defence Industrial Strategy and Defence Investment Plan commit at least 10% of the equipment budget to novel technology including AI, autonomy and quantum (<a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10935/">Commons Library</a>). Quantum proposals must win benefit cases against AI and autonomy on mission outcomes; PNT resilience and cryptographic risk are the strongest cases.</p></div></li>
+    <li><div><strong>QKD is not the UK government's answer. Treat networking as a watch brief.</strong>
+      <p>NCSC states it will not support QKD for government or military applications and names PQC as the primary defence (<a href="https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies">NCSC, Aug 2025</a>); the Pentagon CIO banned QKD in November 2025. The defence-relevant network threads are entanglement-based time transfer and, longer term, distributed quantum computing.</p></div></li>
+  </ol>
+</section>
+
+<section id="clock">
+  <div class="eyebrow">Dated milestones</div>
+  <h2>The clock to 2035</h2>
+  <p class="prose">Published milestones that client programmes will be measured against. Vendor targets are included as calibration points and labelled as such.</p>
+  <div class="legend">
+    <span class="dom d-comp">Computing</span><span class="dom d-sens">Sensing &amp; PNT</span><span class="dom d-crypto">Cryptography</span><span class="dom d-policy">Alliance &amp; policy</span>
+  </div>
+  <div class="clock" id="clockEl"></div>
+</section>
+
+<section id="maturity">
+  <div class="eyebrow">Analyst judgement</div>
+  <h2>Maturity map</h2>
+  <p class="prose">For computing we use the team's three-tier framing: <b>Quantum Inspired</b> (classical methods drawn from quantum ideas, usable now), <b>Quantum Utility</b> (quantum hardware doing useful work without a clear economic edge) and <b>Quantum Advantage</b> (beating the best classical method on a valuable problem). The tiers were built for computing; sensing, cryptography and networks are rated by deployment readiness instead.</p>
+  <div class="tbl"><table class="wide">
+    <thead><tr><th style="width:15%">Domain</th><th>Now to 2028</th><th>2028 to 2032</th><th>Beyond 2032</th></tr></thead>
+    <tbody>
+      <tr><td class="rowh"><span class="dom d-comp">Computing</span></td><td><b>Quantum Inspired</b> solvers for planning, scheduling and logistics. Testbed and cloud access for skills and a refreshed problem register.</td><td><b>Quantum Utility</b> on early fault-tolerant machines: chemistry and materials (energetics, batteries, coatings). Cryptanalytically relevant machines become a planning risk.</td><td><b>Quantum Advantage</b> on selected problems on DARPA and vendor timelines around 2029–2033. Broad wargaming or ML advantage remains unproven.</td></tr>
+      <tr><td class="rowh"><span class="dom d-sens">Sensing &amp; PNT</span></td><td>Cold-atom and optical clocks for holdover and spoofing detection. Quantum-magnetometer map-matching navigation (strongest US evidence).</td><td>Gravity-aided navigation (one published sea trial, map-dependent), cold-atom inertial navigation, Rydberg RF sensing at prototype stage. UK aircraft target of 2030.</td><td>Fused multi-sensor quantum PNT on major platforms. Microwave quantum radar remains unsupported on the physics.</td></tr>
+      <tr><td class="rowh"><span class="dom d-crypto">Cryptography</span></td><td>Discovery, cryptographic bill of materials, supplier asks, 1 Jan 2027 CNSA 2.0 gate for US national security systems. Act now.</td><td>Highest-priority systems and long-secrecy data migrated; signature roots on long-life platforms first. US 2030–31, UK 2031.</td><td>Whole estate by 2035 including OT, embedded and space assets; exceptions risk-accepted and segmented.</td></tr>
+      <tr><td class="rowh"><span class="dom d-net">Networks &amp; QKD</span></td><td>Research testbeds and commercial metro QKD. Not supported by NCSC for government or military use.</td><td>Entanglement-based time transfer, satellite demonstrators, NATO quantum-resilient link pilot (Q4 2027).</td><td>Distributed quantum computing across networked processors; UK networks mission to 2035.</td></tr>
+      <tr><td class="rowh"><span class="dom d-ind">Supply chain</span></td><td>Export controls, ownership screening, UK supply-chain competitions for sensing components.</td><td>Sovereign or allied manufacturing lines for clocks and photonics (DARPA pilot line from mid-2027).</td><td>Trusted quantum supply as part of defence industrial base.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="computing" class="d-comp">
+  <div class="domhead"><span class="dom d-comp">Domain</span></div>
+  <h2>Computing</h2>
+  <div class="tier"><span class="on">Quantum Inspired · now</span><span class="on">Quantum Utility · 2026–29</span><span>Quantum Advantage · ~2029–33</span></div>
+  <div class="view"><b>Our view.</b> The credible near-term defence offer is honest problem-mapping, solver benchmarking and quantum-inspired methods, with access and skills built on NQCC and cloud testbeds. First defence-relevant advantage is most plausible in materials and chemistry simulation once machines reach tens to hundreds of logical qubits. Treat any logistics or wargaming advantage claim as unproven until it shows a scaling benefit on real instances.</div>
+  <div class="prose">
+    <h3>Hardware has moved from proof of principle to roadmap execution</h3>
+    <ul class="tight">
+      <li>Quantinuum's Helios (Nov 2025) reports 48 error-corrected logical qubits on 98 physical qubits (<a href="https://www.quantinuum.com/press-releases/quantinuum-announces-commercial-launch-of-new-helios-quantum-computer-that-offers-unprecedented-accuracy-to-enable-generative-quantum-ai-genqai">Quantinuum</a>). Distinguish error-corrected from error-detected counts when assessing vendor claims.</li>
+      <li>IBM targets Starling in 2029 at 200 logical qubits and 100 million gates, and has set itself an end-2026 advantage target with an external tracker (<a href="https://www.ibm.com/quantum/blog/large-scale-ftqc">IBM</a>).</li>
+      <li>DARPA's Quantum Benchmarking Initiative advanced 11 firms to Stage B in November 2025, including UK-based Quantum Motion (<a href="https://www.darpa.mil/research/programs/quantum-benchmarking-initiative/stage-b-selection">DARPA</a>). PsiQuantum and Microsoft are in the final stage; PsiQuantum's award grew by $125m in July 2026 (<a href="https://postquantum.com/industry-news/psiquantum-darpa-qbi-stage-c/">PostQuantum</a>). QBI is now the de facto public arbiter of credible roadmaps.</li>
+    </ul>
+    <h3>The UK has a national centre and a procurement route, but a thin defence record</h3>
+    <ul class="tight">
+      <li>NQCC has a ten-year, £670m settlement (June 2025) and hosts the UK's only operational 100-qubit system, Infleqtion's Sqale, delivered for March 2026 (<a href="https://www.nqcc.ac.uk/updates/uks-industrial-strategy-2025-published/">NQCC</a>; <a href="https://thequantuminsider.com/2026/03/16/infleqtion-delivers-the-uks-only-operational-100-qubit-quantum-computing-system-at-the-national-quantum-computing-centre/">TQI</a>).</li>
+      <li>ProQure Phase 1 offers contracts of up to £14m (18–24 months, from 1 October 2026), Phase 2 up to £75m, informing a procurement of large machines beyond 2030 (<a href="https://iuk-business-connect.org.uk/opportunities/contracts-for-innovation-proqure-scaling-uk-quantum-computing/">Innovate UK</a>). No MOD access route is described.</li>
+      <li>The public MOD record is the 2022 purchase of ORCA's photonic PT-1 (<a href="https://www.information-age.com/mod-acquires-first-quantum-computer-for-uk-government-19959/">Information Age</a>), 2023 Dstl hybrid optimisation prototypes built with PA Consulting (<a href="https://www.hpcwire.com/off-the-wire/uk-ministry-of-defence-making-better-faster-decisions-with-quantum-computing/">HPCwire</a>), a new AWE Quantum Centre for Nuclear Defence and Security (Nov 2025, <a href="https://www.gov.uk/government/news/government-support-to-get-quantum-to-work-faster-boosting-uks-health-defence-energy-and-more">gov.uk</a>) and a February 2026 QinetiQ and OQC demonstration finding critical nodes in mobile ad-hoc networks (<a href="https://oqc.tech/company/newsroom/oqc-and-qinetiq-demonstrate-critical-quantum-computing-application">OQC</a>).</li>
+    </ul>
+    <h3>Allies are more explicit about defence use</h3>
+    <ul class="tight">
+      <li>France's PROQCIMA defence programme (about €500m) targets 128 logical qubits by 2032 through a staged down-select (<a href="https://thenextweb.com/news/french-mod-fault-tolerant-quantum-computer-startup-competition">TNW</a>); Thales, Bull and CEA launched work on programming quantum computers in classified environments <span class="tc">To confirm</span> (<a href="https://thequantuminsider.com/2026/09/30/french-national-quantum-update-september-2026/">TQI</a>).</li>
+      <li>US EO 14413 creates a large quantum computer at a DOE facility and tasks the Department of War with national-security computing (<a href="https://www.federalregister.gov/documents/2026/06/25/2026-12910/ushering-in-the-next-frontier-of-quantum-innovation">Federal Register</a>). Singapore's defence agencies are piloting IBM-based logistics and mission-planning optimisation (<a href="https://www.mindef.gov.sg/news-and-events/latest-releases/21jul26-nr/">MINDEF</a>).</li>
+    </ul>
+  </div>
+</section>
+
+<section id="sensing">
+  <div class="domhead"><span class="dom d-sens">Domain</span></div>
+  <h2>Sensing, timing &amp; PNT</h2>
+  <div class="view d-sens"><b>Our view.</b> The case for quantum sensing is strongest where GNSS denial is already an operational problem. "Closest to deployment" holds for clocks and magnetic navigation, is weaker for gravimetry and inertial sensors, and does not hold for quantum radar. The UK's gap is not physics or trials; it is the route to a funded requirement, independent test and evaluation, certification, and platform integration. Quantum is one layer in a PNT resilience architecture that is mostly non-quantum (eLoran, national timing).</div>
+  <div class="prose">
+    <h3>UK trial cadence is high</h3>
+    <ul class="tight">
+      <li>Aquark's AQlock cold-atom clock ran aboard HMS Puncher (June 2025) and then timed a network of Saab Giraffe 1X radars, letting operators detect simulated spoofing and jamming (trial June 2026, <a href="https://www.royalnavy.mod.uk/news/2026/august/14/20260814-dcto-quantum-clock-trials">Royal Navy</a>).</li>
+      <li>Infleqtion's Tiqker optical clock ran on the XV Excalibur uncrewed submarine (<a href="https://www.royalnavy.mod.uk/news/2025/october/28/20251018-quantum-navigation-trials-xv-excalibur">Oct 2025</a>); Imperial College inertial sensors were trialled in the Arctic (<a href="https://www.royalnavy.mod.uk/news/2025/december/19/20251219-royal-navy-trials-quantum-tech-with-imperial-college-london">Dec 2025</a>); University of Sussex magnetometers at sea (<a href="https://www.royalnavy.mod.uk/news/2025/october/15/20251015-rn-university-of-sussex-quantum-trials">Oct 2025</a>).</li>
+      <li>Dstl's long-term unattended clock trial leads to a 2027 follow-on, with quantum navigation including atomic clocks targeted for UK aircraft by 2030 (<a href="https://www.gov.uk/government/news/trial-speeds-up-next-generation-of-atomic-clocks">gov.uk, Feb 2026</a>).</li>
+    </ul>
+    <h3>UK money is shifting from R&amp;D to adoption and supply chain</h3>
+    <ul class="tight">
+      <li>Innovate UK competitions of up to £14.3m for adoption (<a href="https://apply-for-innovation-funding.service.gov.uk/competition/2539/overview/d3ba2c8c-c752-4d49-90d6-e0a56f232c3c">IFS</a>) and £32.8m for scaling supply chains (<a href="https://apply-for-innovation-funding.service.gov.uk/competition/2495/overview/b2a4cd81-a226-4a11-83c8-966284542f59">IFS</a>). The adoption call funds removal of commercial, regulatory and integration barriers, which is consulting-shaped scope.</li>
+      <li>The £155m PNT resilience package (Nov 2025) is eLoran, timing and interference monitoring, not quantum (<a href="https://insidegnss.com/uk-commits-155-million-to-eloran-timing-and-gnss-monitoring-in-major-pnt-resilience-push/">Inside GNSS</a>); a further £180m goes to the National Timing Centre (<a href="https://www.npl.co.uk/news/180-million-investment-to-strengthen-uk%E2%80%99s-national-timing-resilience">NPL, Mar 2026</a>). How the two NTC figures relate is <span class="tc">To confirm</span>.</li>
+    </ul>
+    <h3>The US shows what a fielding pipeline looks like</h3>
+    <ul class="tight">
+      <li>DIU's Transition of Quantum Sensing programme runs field tests across five lines with named vendors (<a href="https://www.diu.mil/latest/dius-transition-of-quantum-sensing-tqs-field-testing-to-begin-across-five">DIU, Mar 2025</a>), followed by an initiative of up to $200m (<a href="https://defence-industry.eu/u-s-department-of-war-launches-up-to-200-million-quantum-sensing-initiative-to-strengthen-isr-capabilities-for-the-joint-force/">June 2026</a>). EO 14413 requires three sensor projects fielded by 30 September 2028.</li>
+      <li>DARPA's Robust Quantum Sensors programme (Q-CTRL awarded A$38m) and a pilot manufacturing line for tactical optical clocks (facility mid-2027) signal that manufacturing, not physics, is the bottleneck (<a href="https://thequantuminsider.com/2026/08/06/why-darpa-is-turning-its-attention-to-quantum-manufacturing/">TQI</a>).</li>
+      <li>Q-CTRL reports GPS-free gravimetric navigation at sea to about one nautical mile, dependent on pre-loaded gravity maps (<a href="https://q-ctrl.com/blog/q-ctrl-achieves-worlds-first-gps-free-quantum-gravimetric-navigation-demonstration-in-maritime-field-trial">vendor</a>) <span class="tc">To confirm</span>.</li>
+    </ul>
+    <p class="small">Threat context: a September 2026 Chinese compact magnetometer study did not establish submarine detection (<a href="https://thequantuminsider.com/2026/09/25/chinese-scientists-say-compact-quantum-magnetometer-tracks-hidden-targets-in-field-tests/">TQI</a>). Monitor, do not plan on it.</p>
+  </div>
+</section>
+
+<section id="crypto">
+  <div class="domhead"><span class="dom d-crypto">Domain</span></div>
+  <h2>Cryptography &amp; post-quantum migration</h2>
+  <div class="view d-crypto"><b>Our view.</b> This is the largest and most urgent D&amp;G opportunity, and it is a programme-delivery problem more than a cryptography problem: inventory across IT, OT and platforms, prioritisation by data lifetime and service life, supplier assurance, crypto-agile architecture, and business cases for a migration whose deadlines feel distant. The binding constraints are validated-module supply, supplier readiness and executive attention, not algorithms.</div>
+  <div class="prose">
+    <h3>Standards are nearly settled</h3>
+    <p>FIPS 203, 204 and 205 have been final since August 2024 (<a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards">NIST</a>). FN-DSA (FIPS 206) was still in clearance in April 2026, and draft FIPS 207 for HQC had not appeared by August 2026. NCSC recommends ML-KEM-768 and ML-DSA-65 for general use and hash-based signatures for firmware, with hybrid only as an interim measure (<a href="https://www.ncsc.gov.uk/paper/next-steps-in-preparing-for-post-quantum-cryptography">NCSC</a>).</p>
+    <h3>The US defence line is stricter and earlier than the UK's</h3>
+    <p>The Pentagon CIO memo of November 2025 requires a full cryptographic inventory including weapons platforms and OT, named migration leads and approval gates, and bans QKD (<a href="https://postquantum.com/security-pqc/pentagon-cio-dow-dod-memo-pqc/">PostQuantum</a>). OMB M-26-15 requires migration plans within 120 days and continuously updated, automated inventories with a cryptographic bill of materials (<a href="https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf">OMB</a>). EO 14412 pushes a FAR rule so contractors follow NIST PQC standards by end-2030, which will flow down to UK suppliers on US programmes.</p>
+    <h3>The UK vehicle is advisory guidance and an assured-consultancy pilot</h3>
+    <p>The NCSC Assured Cyber Security Consultancy PQC pilot runs to 31 March 2027, bought through the Crown Commercial Service (<a href="https://www.ncsc.gov.uk/schemes/assured-cyber-security-consultancy/pqc-pilot">NCSC</a>). The first cohort was reported as eight firms: Arqit, Avella, Cambridge Consultants, Capgemini, CGI, Frazer-Nash, IBM and PQShield (<a href="https://www.thestack.technology/eight-firms-blessed-by-the-ncsc-for-post-quantum-cryptography-overhauls/">The Stack</a>); a second application window was planned from late spring 2026 (<a href="https://www.techuk.org/resource/ncsc-shares-update-on-post-quantum-cryptography-pilot-scheme.html">techUK</a>). No public MOD-specific migration programme was found; the Government Cyber Action Plan promises a PQC roadmap (<a href="https://www.gov.uk/government/publications/government-cyber-action-plan/government-cyber-action-plan">gov.uk</a>). NCSC's July 2026 workshop report names board engagement, supplier alignment and skills as the barriers (<a href="https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report">NCSC</a>).</p>
+  </div>
+  <h3>Allied deadlines are diverging</h3>
+  <div class="tbl"><table class="wide">
+    <thead><tr><th>Jurisdiction</th><th>2026–27</th><th>2028</th><th>2030</th><th>2031</th><th>2035</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td class="rowh">UK · NCSC</td><td>Discovery; assured pilot to Mar 2027</td><td>Goals, discovery, initial plan</td><td>—</td><td>Highest-priority migrations</td><td>Complete</td><td>Advisory</td></tr>
+      <tr><td class="rowh">US · federal</td><td>Plans due (M-26-15); NIST pilot to end-2027</td><td>Prioritised migration</td><td>High-value systems: key establishment; contractor rule</td><td>High-value systems: signatures</td><td>NSM-10 goal</td><td>Binding (EO 14412)</td></tr>
+      <tr><td class="rowh">US · NSS / DoW</td><td>CNSA 2.0 acquisition gate 1 Jan 2027</td><td>—</td><td>Systems support PQC</td><td>Systems use PQC</td><td>Full quantum resistance</td><td>Binding; QKD banned</td></tr>
+      <tr><td class="rowh">EU</td><td>National strategies, inventories by end-2026</td><td>—</td><td>High-risk use cases</td><td>—</td><td>As many as feasible</td><td>Coordinated; NIS2 amendment proposed</td></tr>
+      <tr><td class="rowh">Australia · ASD</td><td>Refined plan end-2026</td><td>—</td><td>Cease traditional asymmetric crypto</td><td>—</td><td>—</td><td>ISM control <span class="tc">To confirm</span></td></tr>
+      <tr><td class="rowh">Canada</td><td>Plans and reporting from Apr 2026</td><td>—</td><td>—</td><td>High-priority systems</td><td>All systems</td><td>Federal direction</td></tr>
+      <tr><td class="rowh">NATO</td><td>Industry readiness Q2 2027; crypto action plan Q3 2027</td><td>—</td><td>—</td><td>—</td><td>—</td><td>Roadmap, no costs</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">Sources: <a href="https://www.ncsc.gov.uk/guidance/pqc-migration-timelines">NCSC</a>, <a href="https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks">EO 14412</a>, <a href="https://postquantum.com/cnsa-2-0/complete-guide/">CNSA 2.0 guide</a>, <a href="https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography">EU roadmap</a>, <a href="https://qpf.org/australia-asd-pqc-2030-deadline/">ASD summary</a>, <a href="https://www.cyber.gc.ca/en/guidance/roadmap-migration-post-quantum-cryptography-government-canada-itsm40001">Canada</a>, <a href="https://thequantuminsider.com/2026/09/30/nato-sets-quantum-roadmap-for-military-trials-and-secure-communications/">NATO roadmap coverage</a>. Industry is ahead of government: Google and Cloudflare have both set 2029 for their own migration (<a href="https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/">Google</a>).</p>
+</section>
+
+<section id="networks">
+  <div class="domhead"><span class="dom d-net">Domain</span></div>
+  <h2>Networks &amp; QKD</h2>
+  <div class="view d-net"><b>Our view.</b> A watch brief, not a proposition. In UK D&amp;G the security conversation is PQC, and advising otherwise would put us against NCSC. Keep track of entanglement-based timing, which overlaps with the PNT agenda, and of distributed quantum computing as the long-run architecture for scaling machines.</div>
+  <div class="prose"><ul class="tight">
+    <li>NCSC will not support QKD for government or military applications; elsewhere it should not be relied on alone and needs quantum-resistant authentication (<a href="https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies">NCSC, Aug 2025</a>). NSA and the Pentagon take the same line.</li>
+    <li>Commercial and allied activity continues regardless: BT and Toshiba's London quantum-secured metro network (<a href="https://newsroom.bt.com/bt-and-toshiba-to-build-worlds-first-commercial-quantum-secured-metro-network-across-london/">BT</a>), the EU's EuroQCI (<a href="https://digital-strategy.ec.europa.eu/en/policies/european-quantum-communication-infrastructure-euroqci">EC</a>), and China's 15th Five-Year Plan, which prioritises an integrated space-earth quantum communication network (<a href="https://postquantum.com/quantum-computing/china-15th-five-year-plan-quantum/">PostQuantum</a>).</li>
+    <li>UK research assets include the Integrated Quantum Networks hub led by Heriot-Watt (<a href="https://www.hw.ac.uk/news/2025/new-uk-quantum-hub-launches-to-pioneer-secure-networks-and-advance-the-quantum-internet">Heriot-Watt</a>) and the UK–Singapore SpeQtre entanglement satellite, reported on orbit in December 2025 <span class="tc">To confirm</span> (<a href="https://thequantuminsider.com/2025/12/01/speqtre-the-entanglement-based-quantum-comms-demonstrator-satellite-is-now-on-orbit/">TQI</a>).</li>
+    <li>Oxford demonstrated a distributed quantum algorithm across two processors linked by a photonic network (<a href="https://www.ox.ac.uk/news/2025-02-06-first-distributed-quantum-algorithm-brings-quantum-supercomputers-closer">Oxford, Feb 2025</a>).</li>
+    <li>NATO's roadmap includes a quantum-resilient communications pilot between Brussels and Mons in Q4 2027; the underlying technology mix is not stated in the coverage seen.</li>
+  </ul></div>
+</section>
+
+<section id="supply">
+  <div class="domhead"><span class="dom d-ind">Cross-cutting</span></div>
+  <h2>Hardware, supply chain &amp; ownership</h2>
+  <div class="view d-ind"><b>Our view.</b> Every vendor decision in D&amp;G now carries ownership, export-control and single-source questions. The chokepoints (dilution refrigerators, helium-3, specialist lasers and photonics) bite hardest on computing; sensing depends more on packaging, ruggedisation and photonics, which is exactly what the UK supply-chain competition targets.</div>
+  <div class="prose"><ul class="tight">
+    <li>Export controls: the UK introduced emerging-technology controls including quantum items from April 2024 (<a href="https://www.cooley.com/news/insight/2024/2024-03-19-uk-introduces-export-controls-for-emerging-technologies">Cooley</a>) and added a quantum-computer entry, 4A506, from December 2025 (<a href="https://www.legislation.gov.uk/uksi/2025/1197/pdfs/uksi_20251197_en.pdf">legislation.gov.uk</a>). IISS argues Western controls are becoming industrial strategy (<a href="https://thequantuminsider.com/2026/08/03/western-quantum-export-controls-are-evolving-into-an-industrial-strategy-iiss-analysis-says/">TQI</a>).</li>
+    <li>Ownership: Oxford Ionics now sits inside IonQ (<a href="https://www.ionq.com/news/ionq-announces-agreement-to-acquire-oxford-ionics-accelerating-path-to-pioneering">IonQ</a>), which also owns a US foundry serving defence (<a href="https://finance.yahoo.com/technology/articles/ionq-closes-1-8bn-skywater-091528091.html">Aug 2026</a>). Infleqtion, US-listed, is expanding UK manufacturing in Oxford and cites MOD contracts (<a href="https://infleqtion.com/infleqtion-expands-uk-quantum-operations-with-new-oxford-innovation-centre-and-manufacturing-hub/">Infleqtion</a>).</li>
+    <li>Capital: Lockheed Martin expanded its venture fund to $1bn with $100m for UK and European quantum (<a href="https://defence-industry.eu/lockheed-martin-says-new-quantum-hub-will-accelerate-defense-ready-technologies-for-navigation-sensing-and-communications/">Sep 2026</a>). Quantinuum raised $1.68bn in its June 2026 IPO (<a href="https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/">TQI</a>). McKinsey counts $12.6bn of start-up investment in 2025, only 3% from public sources (<a href="https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-quantum-technology-monitor-2026-a-commercial-tipping-point">McKinsey</a>).</li>
+    <li>Materials: helium-3 supply is being commercialised (<a href="https://thequantuminsider.com/2026/07/20/interlune-produces-pure-helium-3-from-domestic-helium-using-novel-cryogenic-technology/">TQI</a>); chokepoint analysis in <a href="https://warontherocks.com/cogs-of-war/the-supply-chain-chokepoints-in-quantum/">War on the Rocks</a>.</li>
+  </ul></div>
+</section>
+
+<section id="money">
+  <div class="eyebrow">Funding and collaboration</div>
+  <h2>Money, policy &amp; alliances</h2>
+  <p class="prose">Scopes differ between rows (cumulative, annual, multi-year), so do not add them together. UK figures overlap in timing and should be treated as nested until reconciled <span class="tc">To confirm</span>.</p>
+  <div class="tbl"><table class="wide">
+    <thead><tr><th>Who</th><th>Headline commitment</th><th>Defence-specific element</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td class="rowh">UK</td><td class="num">National Quantum Strategy, £2.5bn over ten years (2023); £670m for computing and NQCC to 2037 (Jun 2025); UKRI £1.013bn FY26/27–29/30 (Dec 2025); up to £2bn incl. up to £1bn procurement (Mar 2026)</td><td>No quantum line seen in the Defence Investment Plan; competes in the 10% novel-tech envelope; UK Defence Innovation £400m ringfenced; AWE nuclear defence quantum centre</td><td><a href="https://www.gov.uk/government/publications/national-quantum-strategy">Strategy</a>, <a href="https://www.gov.uk/government/news/uks-quantum-leap-tohelp-beat-diseasedeliver-high-paid-jobs-and-strengthen-national-security-as-first-country-in-the-world-to-roll-out-quantum">£2bn</a>, <a href="https://thequantuminsider.com/2025/12/17/ukri-maps-38-6-billion-rd-budget-commits-1-billion-to-quantum/">UKRI</a>, <a href="https://gowlingwlg.com/en/insights-resources/articles/2025/navigating-the-uks-defence-industrial-strategy-2025">DIS</a></td></tr>
+      <tr><td class="rowh">US</td><td class="num">$2.013bn CHIPS letters of intent with equity (May 2026), first $300m finalised Sep 2026; DOE QIS centres $625m (Nov 2025); NQI reauthorisation through committee, not yet law</td><td>DARPA QBI; DIU up to $200m for sensing; EO 14413 sensors fielded by Sep 2028; EO 14412 PQC 2030–31</td><td><a href="https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion">NIST</a>, <a href="https://qz.com/d-wave-rigetti-quantinuum-chips-act-equity-stakes-300-million-090826">Quartz</a>, <a href="https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information">DOE</a></td></tr>
+      <tr><td class="rowh">EU</td><td>Quantum Europe Strategy (Jul 2025) with a dual-use action area; Quantum Act status unresolved</td><td>Security and defence named as an action area; EDF calls not verified</td><td><a href="https://commission.europa.eu/news-and-media/news/eus-plan-become-global-leader-quantum-2030-2025-07-02_en">EC</a></td></tr>
+      <tr><td class="rowh">France</td><td>National plan €1.8bn</td><td>PROQCIMA defence computing programme about €500m</td><td><a href="https://thenextweb.com/news/french-mod-fault-tolerant-quantum-computer-startup-competition">TNW</a></td></tr>
+      <tr><td class="rowh">Canada</td><td class="num">C$334.3m over five years in Budget 2025</td><td>Delivered through the Defence Industrial Strategy; BOREALIS secure hubs incl. a quantum PNT hub in Calgary</td><td><a href="https://thequantuminsider.com/2025/11/06/canada-targets-quantum-as-strategic-industry-in-c334-million-defense-push/">TQI</a></td></tr>
+      <tr><td class="rowh">NATO</td><td>Strategy (Jan 2024); roadmap (Sep 2026) with no funding amounts</td><td>QUESTOR sea trials; DIANA; Brussels–Mons comms pilot; allied computing access concept Q4 2027</td><td><a href="https://nato.int/en/news-and-events/articles/news/2026/09/29/nato-releases-quantum-technology-roadmap">NATO</a></td></tr>
+      <tr><td class="rowh">China</td><td>15th Five-Year Plan lists quantum first among future industries; no official total seen</td><td>PQC in state infrastructure; space-earth quantum comms network</td><td><a href="https://postquantum.com/quantum-computing/china-15th-five-year-plan-quantum/">PostQuantum</a></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Collaboration map</h3>
+  <div class="prose"><ul class="tight">
+    <li><b>AUKUS Pillar II.</b> Quantum is a named area; the clearest output is an Australian quantum clocks trial in Washington with results shared across partners (<a href="https://www.minister.defence.gov.au/media-releases/2025-11-04/world-leading-australian-quantum-clocks-successfully-trialled-under-aukus-pillar-ii">Nov 2025</a>). The first signature project (May 2026) is undersea autonomy, not quantum (<a href="https://www.squirepattonboggs.com/insights/publications/aukus-announces-its-first-pillar-ii-signature-project/">Squire Patton Boggs</a>).</li>
+    <li><b>UK–US.</b> The Technology Prosperity Deal (Sep 2025) created a quantum taskforce covering defence (<a href="https://www.quantum.gov/securing-quantum-advantage/">quantum.gov</a>); implementation was reported paused in December 2025 <span class="tc">To confirm</span>.</li>
+    <li><b>Quantum Development Group.</b> 13 nations met in London (Mar–Apr 2026) on research and investment security, supply chains and standards (<a href="https://wired-gov.net/wg/news.nsf/articles/Leading+quantum+nations+to+boost+cooperation+following+UK+summit+09042026101010?open=">DSIT</a>).</li>
+    <li><b>NATO Transatlantic Quantum Community.</b> 22 Allies and 6 partners; Netherlands chair from May 2026; the UK engages through its working groups.</li>
+    <li><b>UK–Japan.</b> Research-level joint funding (<a href="https://www.ukri.org/news/uk-japan-partnerships-advance-quantum-and-future-connectivity-tech/">UKRI, Feb 2026</a>) and a computing MoU (Nov 2025).</li>
+  </ul></div>
+</section>
+
+<section id="landscape">
+  <div class="eyebrow">Market</div>
+  <h2>Who is doing what</h2>
+  <div class="tbl"><table class="wide">
+    <thead><tr><th>Organisation</th><th>Role</th><th>Focus</th><th>Visible D&amp;G activity</th></tr></thead>
+    <tbody>
+      <tr><td class="rowh">QinetiQ</td><td>Prime / test</td><td>Computing, sensing</td><td>RJ100 flight trials (2024); QAOA-based network resilience demo on OQC hardware (Feb 2026); radar timing trial partner</td></tr>
+      <tr><td class="rowh">BAE Systems</td><td>Prime</td><td>Sensing</td><td>2024 UK quantum navigation flight trials consortium; AFRL collaboration reported <span class="tc">To confirm</span></td></tr>
+      <tr><td class="rowh">Babcock</td><td>Integrator</td><td>PQC</td><td>Demonstrated PQC-protected link to a deployed mortar system with Arqit (<a href="https://ir.arqit.uk/news-events/press-releases/detail/131/babcock-and-arqit-demonstrate-secure-communications-network-designed-to-counter-future-quantum-enabled-threats">Sep 2026</a>)</td></tr>
+      <tr><td class="rowh">Saab UK</td><td>Prime</td><td>Timing</td><td>Giraffe 1X radar network timed by quantum clocks (2026)</td></tr>
+      <tr><td class="rowh">Lockheed Martin</td><td>US prime</td><td>Sensing, PNT, comms</td><td>Quantum Innovation Center; $100m for UK/European quantum investment</td></tr>
+      <tr><td class="rowh">Honeywell</td><td>US prime</td><td>Magnetic navigation</td><td>DIU MagNav flight tests</td></tr>
+      <tr><td class="rowh">Thales</td><td>Prime</td><td>PQC, classified computing</td><td>PQC product positioning; Aliquante classified quantum programming initiative in France</td></tr>
+      <tr><td class="rowh">Aquark · Infleqtion UK · Q-CTRL · Cerca · Delta g</td><td>Sensing specialists</td><td>Clocks, navigation, magnetometry</td><td>Royal Navy and Dstl trials; Innovate UK contracts; NATO Innovation Fund backed Aquark (2024); Cerca on a £2.8m MOD blast-exposure project</td></tr>
+      <tr><td class="rowh">OQC · Quantum Motion · ORCA · Riverlane · Phasecraft · Quantinuum</td><td>Computing specialists</td><td>Hardware, error correction, algorithms</td><td>NQCC testbeds; DARPA QBI (Quantum Motion Stage B, Phasecraft as technical expert); first MOD machine (ORCA)</td></tr>
+      <tr><td class="rowh">PQShield · Arqit · Toshiba Europe</td><td>Crypto specialists</td><td>PQC, QKD</td><td>NCSC assured PQC pilot (PQShield, Arqit); London metro QKD (Toshiba with BT)</td></tr>
+      <tr><td class="rowh">Assured PQC pilot firms</td><td>Advisory / SI</td><td>PQC discovery and planning</td><td>Arqit, Avella, Cambridge Consultants, Capgemini, CGI, Frazer-Nash, IBM, PQShield (as reported)</td></tr>
+      <tr><td class="rowh">PA Consulting</td><td>Advisory</td><td>Computing</td><td>Delivered Dstl hybrid optimisation prototypes (2023)</td></tr>
+    </tbody>
+  </table></div>
+  <div class="view d-ind"><b>Where an advisory firm fits.</b> Primes own platforms, specialists own the physics, and a small set of consultancies are visible in PQC. The underserved space is between them: turning trials into funded requirements, independent test and evaluation, PQC migration at estate scale, supply-chain and ownership assurance, and access and procurement strategy for scarce machines. Our public D&amp;G quantum footprint was not assessed in this pass and needs an internal check.</div>
+</section>
+
+<section id="clients">
+  <div class="eyebrow">Demand</div>
+  <h2>Where clients need help</h2>
+  <div class="tbl"><table class="wide">
+    <thead><tr><th>Client problem</th><th>What they need</th><th>Domain</th><th>Evidence hook</th></tr></thead>
+    <tbody>
+      <tr><td class="rowh">PQC discovery and migration</td><td>Inventory and CBOM across IT, OT and platforms; prioritisation by secrecy lifetime and service life; costed programme and business case</td><td><span class="dom d-crypto">Crypto</span></td><td>NCSC 2028 gate; Pentagon memo; OMB M-26-15</td></tr>
+      <tr><td class="rowh">Supplier and flow-down assurance</td><td>PQC roadmap questionnaires, contract clauses, FIPS 140-3 evidence, allied deadline mapping</td><td><span class="dom d-crypto">Crypto</span></td><td>EO 14412 FAR rule; CNSA 2.0 gate; Canadian contract clauses</td></tr>
+      <tr><td class="rowh">Trials to procurement</td><td>User need, capability gap, benefit case against the 10% envelope, route through DCTO, DE&amp;S or UKDI</td><td><span class="dom d-sens">Sensing</span></td><td>Five RN trials, no programme of record found</td></tr>
+      <tr><td class="rowh">PNT resilience architecture</td><td>Layering eLoran, national timing, GNSS monitoring, inertial and quantum; where quantum earns its cost</td><td><span class="dom d-sens">Sensing</span></td><td>£155m and £180m UK packages</td></tr>
+      <tr><td class="rowh">Test, evaluation and certification</td><td>Independent metrics and repeatable trials to compare vendor claims; route to airworthiness and maritime approval</td><td><span class="dom d-sens">Sensing</span></td><td>Vendor-reported figures; missing standards raised by US labs and NATO</td></tr>
+      <tr><td class="rowh">Problem-to-technology register</td><td>Evidence-scored list of operational problems with feasibility, refreshed annually</td><td><span class="dom d-comp">Computing</span></td><td>DoD IG finding (Jan 2026)</td></tr>
+      <tr><td class="rowh">Solver benchmarking</td><td>Quantum-inspired and hybrid methods tested against existing OR tooling on real instances</td><td><span class="dom d-comp">Computing</span></td><td>Siemens study; QOBLib</td></tr>
+      <tr><td class="rowh">Access and buying strategy</td><td>Requirements and evaluation for ProQure-era buying; NQCC, allied and cloud access; classified-environment constraints</td><td><span class="dom d-comp">Computing</span></td><td>ProQure; DARPA QBI; French Aliquante</td></tr>
+      <tr><td class="rowh">Sovereignty and supplier risk</td><td>Ownership, export-control and single-source assessment; make, buy or partner decisions</td><td><span class="dom d-ind">Supply</span></td><td>IonQ acquisitions; US equity; UK 4A506 control</td></tr>
+      <tr><td class="rowh">Programme governance</td><td>Benefits tracking across DSIT, UKRI, MOD and NSSIF funding; staged funding with exit criteria tied to external milestones</td><td><span class="dom d-policy">Policy</span></td><td>Overlapping UK announcements</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="log">
+  <div class="eyebrow">Evidence</div>
+  <h2>Story log</h2>
+  <p class="prose">Investment, funding, research results, trials, collaboration and policy moves from October 2021 to September 2026, newest first. Filter by domain or search by actor.</p>
+  <div class="controls" id="chips" role="group" aria-label="Filter by domain"></div>
+  <div class="controls"><label for="q" class="small" style="position:absolute;left:-9999px">Search stories</label><input id="q" class="search" type="search" placeholder="Search actor, topic or amount"><span class="count" id="count"></span></div>
+  <ol class="log" id="logList"></ol>
+</section>
+
+<section id="open">
+  <div class="eyebrow">Gaps</div>
+  <h2>Open questions for follow-on research</h2>
+  <div class="prose"><ul class="tight">
+    <li>What does the full Defence Investment Plan text say about quantum, PNT and PQC, and who owns the quantum PNT requirement (DCTO, Dstl, DE&amp;S, Strategic Command)?</li>
+    <li>How do the UK sums reconcile: £2.5bn strategy, £670m NQCC, £1.013bn UKRI and the £2bn package? Additive or nested?</li>
+    <li>Who wins ProQure Phase 1 (awards due around 1 October 2026), and will there be any defence priority or security-cleared access?</li>
+    <li>What happens to the NCSC assured PQC scheme after March 2027, and did a second cohort open? What is our position?</li>
+    <li>Does the UK harden its PQC dates in response to EO 14412 and the 2029 industry clustering? When do PQC-inclusive TLS and IPsec profiles appear?</li>
+    <li>Is the 2030 UK aircraft quantum navigation target credible, and what does the 2027 Dstl follow-on trial decide?</li>
+    <li>Which DARPA QBI Stage B firms advance, and when? What does that mean for Quantum Motion and UK sovereign options?</li>
+    <li>DASA and Dstl quantum competitions 2025–26, AUKUS Pillar II quantum work beyond clocks, and Germany's defence quantum activity were not covered in this pass.</li>
+    <li>China and Russia: no primary source in this pass attributes harvest-now-decrypt-later collection; needs a dedicated threat pass.</li>
+    <li>How should the Inspired / Utility / Advantage framing be adapted for sensing, where readiness depends on integration and certification rather than qubit counts?</li>
+  </ul></div>
+</section>
+
+<section id="sources">
+  <div class="eyebrow">Primary and key secondary</div>
+  <h2>Key sources</h2>
+  <p class="prose small">Every story in the log links its own source. The list below is the core reading set.</p>
+  <div class="srcgrp">
+    <h3>UK government</h3>
+    <ul>
+      <li><a href="https://www.gov.uk/government/publications/national-quantum-strategy">National Quantum Strategy (2023)</a></li>
+      <li><a href="https://www.gov.uk/government/news/uks-quantum-leap-tohelp-beat-diseasedeliver-high-paid-jobs-and-strengthen-national-security-as-first-country-in-the-world-to-roll-out-quantum">UK up to £2bn quantum package (17 Mar 2026)</a></li>
+      <li><a href="https://iuk-business-connect.org.uk/opportunities/contracts-for-innovation-proqure-scaling-uk-quantum-computing/">ProQure competition</a></li>
+      <li><a href="https://www.nqcc.ac.uk/quantum-computing-testbeds-in-the-uk/">NQCC testbeds</a></li>
+      <li><a href="https://commonslibrary.parliament.uk/research-briefings/cbp-10935/">Commons Library: Defence Investment Plan</a></li>
+      <li><a href="https://assets.publishing.service.gov.uk/media/6a44e989167a99cf0018da38/The_Defence_Investment_Plan.pdf">Defence Investment Plan (PDF)</a></li>
+      <li><a href="https://www.gov.uk/government/news/trial-speeds-up-next-generation-of-atomic-clocks">Dstl atomic clock trial (Feb 2026)</a></li>
+      <li><a href="https://www.ncsc.gov.uk/guidance/pqc-migration-timelines">NCSC PQC migration timelines</a></li>
+      <li><a href="https://www.ncsc.gov.uk/schemes/assured-cyber-security-consultancy/pqc-pilot">NCSC assured PQC consultancy pilot</a></li>
+      <li><a href="https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies">NCSC Quantum security technologies</a></li>
+      <li><a href="https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report">NCSC PQC workshop report (Jul 2026)</a></li>
+      <li><a href="https://www.gov.uk/government/publications/government-cyber-action-plan/government-cyber-action-plan">Government Cyber Action Plan</a></li>
+      <li><a href="https://www.legislation.gov.uk/uksi/2025/1197/pdfs/uksi_20251197_en.pdf">Export Control (Amendment) (No. 2) Regulations 2025</a></li>
+    </ul>
+    <h3>US</h3>
+    <ul>
+      <li><a href="https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks">EO 14412, advanced cryptographic attacks</a></li>
+      <li><a href="https://www.federalregister.gov/documents/2026/06/25/2026-12910/ushering-in-the-next-frontier-of-quantum-innovation">EO 14413, quantum innovation</a></li>
+      <li><a href="https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf">OMB M-26-15</a></li>
+      <li><a href="https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion">Commerce CHIPS letters of intent</a></li>
+      <li><a href="https://www.darpa.mil/research/programs/quantum-benchmarking-initiative/stage-b-selection">DARPA QBI Stage B</a></li>
+      <li><a href="https://www.diu.mil/latest/dius-transition-of-quantum-sensing-tqs-field-testing-to-begin-across-five">DIU Transition of Quantum Sensing</a></li>
+      <li><a href="https://www.darpa.mil/news/2025/roqs-launches-first-phase">DARPA Robust Quantum Sensors</a></li>
+      <li><a href="https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards">NIST FIPS 203/204/205</a></li>
+    </ul>
+    <h3>NATO, allies, EU</h3>
+    <ul>
+      <li><a href="https://nato.int/en/news-and-events/articles/news/2026/09/29/nato-releases-quantum-technology-roadmap">NATO Quantum Technology Roadmap (Sep 2026)</a></li>
+      <li><a href="https://www.nato.int/cps/en/natohq/official_texts_221777.htm">NATO Quantum Technologies Strategy (2024)</a></li>
+      <li><a href="https://www.minister.defence.gov.au/media-releases/2025-11-04/world-leading-australian-quantum-clocks-successfully-trialled-under-aukus-pillar-ii">AUKUS Pillar II quantum clocks trial</a></li>
+      <li><a href="https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography">EU coordinated PQC roadmap</a></li>
+      <li><a href="https://commission.europa.eu/news-and-media/news/eus-plan-become-global-leader-quantum-2030-2025-07-02_en">EU Quantum Europe Strategy</a></li>
+      <li><a href="https://www.cyber.gc.ca/en/guidance/roadmap-migration-post-quantum-cryptography-government-canada-itsm40001">Canada PQC roadmap</a></li>
+    </ul>
+    <h3>Research, threat and market</h3>
+    <ul>
+      <li><a href="https://arxiv.org/abs/2505.15917">Gidney, RSA-2048 with under a million noisy qubits</a></li>
+      <li><a href="https://thequantuminsider.com/2026/03/31/q-day-just-got-closer-three-papers-in-three-months-are-rewriting-the-quantum-threat-timeline/">Three 2025–26 papers on the threat timeline</a></li>
+      <li><a href="https://globalriskinstitute.org/publication/quantum-threat-timeline-report-2025b/">Global Risk Institute threat timeline report</a></li>
+      <li><a href="https://arxiv.org/html/2607.13325v1">A reality check on quantum optimisation (2026)</a></li>
+      <li><a href="https://www.nature.com/articles/s43588-026-00991-1">Quantum Optimization Benchmarking Library</a></li>
+      <li><a href="https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-quantum-technology-monitor-2026-a-commercial-tipping-point">McKinsey Quantum Technology Monitor 2026</a></li>
+      <li><a href="https://postquantum.com/quantum-sensing/quantum-radar-dead-physics/">Critique of quantum radar claims</a></li>
+      <li><a href="https://warontherocks.com/cogs-of-war/the-supply-chain-chokepoints-in-quantum/">Supply chain chokepoints in quantum</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>Compiled 30 September 2026 from six parallel research streams (computing; sensing and hardware; cryptography; networks; funding and policy; industry landscape) and a verification pass. Unverifiable claims found during research were excluded. Vendor performance figures are reported, not independently tested.</footer>
+</main>
+</div>
+</div>
+
+<script>
+const CLOCK=[
+ {y:2026,items:[["comp","ProQure Phase 1 contracts start, 1 Oct"],["comp","IBM end-2026 advantage target (vendor)"],["crypto","EU national PQC strategies and inventories due"],["crypto","US agency PQC migration plans due (M-26-15)"]]},
+ {y:2027,items:[["crypto","CNSA 2.0 acquisition gate for new US national security systems, 1 Jan"],["crypto","NCSC assured PQC pilot ends, 31 Mar"],["sens","Dstl follow-on atomic clock trial"],["sens","DARPA optical-clock pilot line facility, mid-year"],["policy","NATO industry readiness study (Q2), crypto action plan (Q3)"],["policy","NATO Brussels–Mons quantum-resilient link and allied computing access concept (Q4)"],["crypto","NIST PQC pilot on its own systems complete"]]},
+ {y:2028,items:[["crypto","NCSC: discovery complete, migration plan in place"],["sens","US: three quantum sensor projects fielded, 30 Sep"]]},
+ {y:2029,items:[["comp","IBM Starling target, 200 logical qubits (vendor)"],["crypto","Google and Cloudflare self-set PQC completion"],["policy","NATO quantum standards roadmap, Q3"]]},
+ {y:2030,items:[["sens","UK target: quantum navigation incl. atomic clocks on aircraft"],["crypto","US high-value systems: PQC key establishment, 31 Dec"],["crypto","Australia cease traditional asymmetric crypto; EU high-risk systems"],["comp","Quantinuum fault-tolerant target (vendor)"]]},
+ {y:2031,items:[["crypto","NCSC: highest-priority migrations complete"],["crypto","US high-value systems: PQC signatures, 31 Dec"],["crypto","Canada high-priority systems"]]},
+ {y:2032,items:[["comp","France PROQCIMA: 128 logical qubits"]]},
+ {y:2033,items:[["comp","DARPA QBI: is utility-scale computing achievable by 2033?"],["crypto","CNSA 2.0: OS, browsers, cloud exclusive PQC use"]]},
+ {y:2035,items:[["crypto","NCSC full migration; NIST disallows quantum-vulnerable algorithms (draft IR 8547)"],["comp","UK Mission 1: quantum computers at a trillion operations"],["comp","France PROQCIMA: 2,048 logical qubits"]]}
+];
+const ce=document.getElementById('clockEl');
+ce.innerHTML=CLOCK.map(r=>`<div class="yr"><div class="y">${r.y}</div><ul>${r.items.map(([d,t])=>`<li class="ms d-${d}">${t}</li>`).join('')}</ul></div>`).join('');
+
+const DOMS={comp:"Computing",sens:"Sensing & PNT",crypto:"Cryptography",net:"Networks & QKD",policy:"Policy & funding",ind:"Industry & supply"};
+// d=date, m=domain, k=kind, a=actor, w=what, y=why, s=source label, u=url, c=to confirm
+const LOG=[
+{d:"2026-09-29",m:"policy",k:"Policy",a:"NATO",w:"NATO releases its Quantum Technology Roadmap (approved 30 Jul): pilots, standards, a PQC action plan, QUESTOR sea trials, and a Brussels–Mons communications pilot in Q4 2027. No costs or deployment dates.",y:"Sets the allied test-then-decide baseline UK programmes will be measured against.",s:"NATO",u:"https://nato.int/en/news-and-events/articles/news/2026/09/29/nato-releases-quantum-technology-roadmap"},
+{d:"2026-09-29",m:"comp",k:"Collaboration",a:"Infleqtion, Riverlane",w:"MOU to test Riverlane's real-time error-correction stack on Infleqtion's neutral-atom platform in support of the UK computing programme.",y:"Links the NQCC's 100-qubit machine to a UK error-correction specialist.",s:"TQI",u:"https://thequantuminsider.com/2026/09/29/infleqtion-riverlane-quantum-error-correction/"},
+{d:"2026-09-25",m:"ind",k:"Investment",a:"Lockheed Martin",w:"Quantum Innovation Center announced to shorten the lab-to-defence path for navigation, sensing and comms; venture fund raised to $1bn with $100m for UK and European quantum.",y:"A prime-led route into UK sensing start-ups and a potential integration partner.",s:"Defence Industry Europe",u:"https://defence-industry.eu/lockheed-martin-says-new-quantum-hub-will-accelerate-defense-ready-technologies-for-navigation-sensing-and-communications/"},
+{d:"2026-09-25",m:"sens",k:"Research",a:"USTC, Hefei National Lab (China)",w:"Compact rubidium magnetometer field tests reported; the authors did not establish submarine detection.",y:"Threat context: component progress, no evidence of an operational anti-submarine capability.",s:"TQI",u:"https://thequantuminsider.com/2026/09/25/chinese-scientists-say-compact-quantum-magnetometer-tracks-hidden-targets-in-field-tests/"},
+{d:"2026-09-22",m:"crypto",k:"Trial",a:"Babcock, Arqit",w:"PQC-protected data sent between a headquarters and Babcock's deployed mortar system in a simulated contested environment.",y:"An early defence-platform demonstration of PQC at the tactical edge.",s:"Arqit",u:"https://ir.arqit.uk/news-events/press-releases/detail/131/babcock-and-arqit-demonstrate-secure-communications-network-designed-to-counter-future-quantum-enabled-threats"},
+{d:"2026-09-22",m:"comp",k:"Collaboration",a:"Microsoft, DARPA",w:"Microsoft gives DARPA on-site access to a Majorana 2 system and opens a Maryland centre with a DARPA test area.",y:"Independent government testing is the credibility test for a contested topological approach.",s:"TQI",u:"https://thequantuminsider.com/2026/09/22/microsoft-gives-darpa-access-to-majorana-system-opens-maryland-quantum-research-center/"},
+{d:"2026-09-22",m:"crypto",k:"Procurement",a:"Quantum XChange, Carahsoft",w:"Crypto-management platform placed on US public-sector contract vehicles, marketed against EO 14412 and M-26-15.",y:"Shows PQC tooling being packaged for government buying.",s:"TQI",u:"https://thequantuminsider.com/2026/09/22/quantum-xchange-carahsoft-post-quantum-cryptography-government/"},
+{d:"2026-09-08",m:"policy",k:"Investment",a:"US Commerce; D-Wave, Rigetti, Quantinuum",w:"First definitive CHIPS agreements with minority government equity stakes, $100m each.",y:"Confirms the US equity-for-funding model; allies may be asked to match.",s:"Quartz",u:"https://qz.com/d-wave-rigetti-quantinuum-chips-act-equity-stakes-300-million-090826"},
+{d:"2026-09-08",m:"sens",k:"Trial",a:"DIU, Honeywell",w:"Quantum-sensor magnetic navigation flown on an Embraer 170 for 4h23 without GPS; reported 89% better accuracy than a conventional backup. C-17 test planned.",y:"The strongest public operational-style evidence for quantum navigation on a crewed aircraft.",s:"DefenseScoop",u:"https://defensescoop.com/2026/09/08/diu-honeywell-aerospace-flight-test-magnav-system/"},
+{d:"2026-09",m:"sens",k:"Trial",a:"NATO CMRE",w:"QUESTOR 26 experimentation campaign at La Spezia tests quantum positioning, navigation and sensing at sea.",y:"An allied route for UK sensing suppliers to gather operational evidence.",s:"NATO",u:"https://nato.int/en/news-and-events/articles/news/2026/09/29/nato-releases-quantum-technology-roadmap"},
+{d:"2026-09",m:"comp",k:"Procurement",a:"French MoD, Thales, Bull, CEA, Pasqal",w:"Thales, Bull and CEA launch work on programming quantum computers in classified environments; Pasqal reported leaving the PROQCIMA defence competition.",y:"Closest allied analogue to defence-led computing procurement.",s:"TQI",u:"https://thequantuminsider.com/2026/09/30/french-national-quantum-update-september-2026/",c:1},
+{d:"2026-08-27",m:"sens",k:"Trial",a:"Q-CTRL",w:"Gravity-aided navigation at sea in the Coral Sea to about one nautical mile; relies on pre-loaded gravity maps; single trial.",y:"First published gravimetric passive navigation at sea; map supply becomes a data problem.",s:"Q-CTRL",u:"https://q-ctrl.com/blog/q-ctrl-achieves-worlds-first-gps-free-quantum-gravimetric-navigation-demonstration-in-maritime-field-trial",c:1},
+{d:"2026-08-17",m:"sens",k:"Funding",a:"Canada DND, University of Calgary",w:"Quantum defence innovation hub launched for GNSS-independent navigation, spoofing detection and hardware assurance; reported at $20.3m over two years.",y:"A Five Eyes peer building a sovereign PNT hub.",s:"GPS World",u:"https://www.gpsworld.com/canada-launches-20-3m-quantum-defence-hub-to-develop-gnss-independent-navigation-anti-spoofing-tech/",c:1},
+{d:"2026-08-14",m:"sens",k:"Trial",a:"Royal Navy, Aquark, Saab UK, QinetiQ, Dstl",w:"Two cold-atom clocks timed networked Saab Giraffe 1X radars; operators detected simulated spoofing and jamming (trial June 2026).",y:"UK-built clocks applied to a real air-defence problem.",s:"Royal Navy",u:"https://www.royalnavy.mod.uk/news/2026/august/14/20260814-dcto-quantum-clock-trials"},
+{d:"2026-08-06",m:"sens",k:"Procurement",a:"DARPA, IonQ (Vector Atomic)",w:"Pilot manufacturing line for tactical-grade optical clocks; facility expected mid-2027.",y:"Manufacturing is now the bottleneck; no UK equivalent found.",s:"TQI",u:"https://thequantuminsider.com/2026/08/06/why-darpa-is-turning-its-attention-to-quantum-manufacturing/"},
+{d:"2026-08-06",m:"comp",k:"Procurement",a:"AFRL, Eaton, Infleqtion",w:"$7m, 24-month project applying hybrid quantum-classical algorithms to power-grid contingency and threat analysis.",y:"A concrete defence-adjacent hybrid application on critical infrastructure.",s:"Eaton",u:"https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-wins-contract-to-apply-quantum-computing.html"},
+{d:"2026-08-04",m:"sens",k:"Funding",a:"Innovate UK",w:"Up to £14.3m competition to accelerate adoption of quantum sensing and PNT, funding commercial, regulatory and integration barrier removal.",y:"Adoption-shaped scope suited to integrators and advisers.",s:"Innovation Funding Service",u:"https://apply-for-innovation-funding.service.gov.uk/competition/2539/overview/d3ba2c8c-c752-4d49-90d6-e0a56f232c3c"},
+{d:"2026-08-03",m:"ind",k:"M&A",a:"IonQ, SkyWater",w:"IonQ closes its $1.8bn acquisition of US foundry SkyWater, which serves aerospace and defence.",y:"Foundry control as a trusted-supply lever.",s:"Yahoo Finance",u:"https://finance.yahoo.com/technology/articles/ionq-closes-1-8bn-skywater-091528091.html"},
+{d:"2026-08-03",m:"ind",k:"Research",a:"IISS",w:"Analysis argues Western quantum export controls are becoming industrial strategy.",y:"Frames sovereign-capability choices for UK buyers.",s:"TQI",u:"https://thequantuminsider.com/2026/08/03/western-quantum-export-controls-are-evolving-into-an-industrial-strategy-iiss-analysis-says/"},
+{d:"2026-07-22",m:"crypto",k:"Policy",a:"NCSC",w:"Report of the first UK government–industry PQC migration workshop: board engagement, supplier alignment, skills and distant deadlines are the barriers.",y:"Best public evidence of what holds UK organisations back.",s:"NCSC",u:"https://www.ncsc.gov.uk/blogs/post-quantum-cryptography-pqc-migration-workshop-report"},
+{d:"2026-07-22",m:"comp",k:"Funding",a:"DARPA, PsiQuantum",w:"PsiQuantum's QBI final-stage award expanded by $125m; only PsiQuantum and Microsoft are in that stage.",y:"The photonic route in final verification, with its build site in Australia.",s:"PostQuantum",u:"https://postquantum.com/industry-news/psiquantum-darpa-qbi-stage-c/"},
+{d:"2026-07-21",m:"comp",k:"Collaboration",a:"Singapore DIS and DSTA, IBM",w:"Defence collaboration to test quantum optimisation for logistics and mission planning via cloud access.",y:"An allied precedent for defence optimisation pilots.",s:"MINDEF",u:"https://www.mindef.gov.sg/news-and-events/latest-releases/21jul26-nr/"},
+{d:"2026-07",m:"comp",k:"Research",a:"Siemens, TH Regensburg",w:"Preprint finds quantum hardware solves only small scheduling instances while a quantum-inspired annealer is competitive at industrial scale.",y:"Sets the evidence bar for logistics and planning claims.",s:"arXiv",u:"https://arxiv.org/html/2607.13325v1"},
+{d:"2026-07-14",m:"sens",k:"Trial",a:"Q-CTRL",w:"Claims RTCA DO-160 qualification for its quantum navigation system; environmental qualification is not full airworthiness approval.",y:"Certification is the real gate to aircraft use.",s:"Q-CTRL",u:"https://q-ctrl.com/blog/q-ctrl-to-showcase-worlds-first-airworthiness-qualified-quantum-navigation-gps-backup-at-the-farnborough-international-airshow",c:1},
+{d:"2026-06-30",m:"policy",k:"Policy",a:"UK MOD",w:"Defence Investment Plan: 10% of the equipment budget for novel technology including AI, autonomy and quantum; £1.6bn innovation fund to 2030. No quantum-specific programme seen.",y:"Quantum competes inside a generic envelope and needs a benefit case.",s:"Commons Library",u:"https://commonslibrary.parliament.uk/research-briefings/cbp-10935/",c:1},
+{d:"2026-06-25",m:"crypto",k:"Policy",a:"US Department of War",w:"PQC strategy: systems support PQC by end-2030 and use it fully by end-2031.",y:"Sets the defence migration clock allied programmes will track.",s:"DefenseScoop",u:"https://defensescoop.com/2026/06/25/pentagon-pqc-strategy-post-quantum-cryptography/"},
+{d:"2026-06-24",m:"crypto",k:"Policy",a:"OMB",w:"M-26-15: agency PQC plans within 120 days, continuous automated inventory with a cryptographic bill of materials, TLS 1.3 by 2030.",y:"Inventory as a continuous process is now a formal expectation.",s:"OMB",u:"https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf"},
+{d:"2026-06-24",m:"sens",k:"Funding",a:"DIU",w:"Initiative of up to $200m to transition quantum sensing and timing for ISR in contested electromagnetic environments.",y:"The reference scale for UK ambition in sensing.",s:"Defence Industry Europe",u:"https://defence-industry.eu/u-s-department-of-war-launches-up-to-200-million-quantum-sensing-initiative-to-strengthen-isr-capabilities-for-the-joint-force/"},
+{d:"2026-06-22",m:"crypto",k:"Policy",a:"White House",w:"EO 14412: high-value federal systems move to PQC key establishment by 31 Dec 2030 and signatures by 31 Dec 2031; FAR rule for contractors.",y:"Binding US dates that flow down to UK suppliers on US programmes.",s:"Federal Register",u:"https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks"},
+{d:"2026-06-22",m:"policy",k:"Policy",a:"White House",w:"EO 14413: DOE-hosted large quantum computer, Department of War national-security computing, three sensor projects fielded by 30 Sep 2028, advance market commitments.",y:"Positions the US state as anchor buyer.",s:"Federal Register",u:"https://www.federalregister.gov/documents/2026/06/25/2026-12910/ushering-in-the-next-frontier-of-quantum-innovation"},
+{d:"2026-06-04",m:"ind",k:"Investment",a:"Quantinuum",w:"Nasdaq IPO raises $1.68bn.",y:"A government-facing trapped-ion supplier with UK operations now has public-market funding.",s:"TQI",u:"https://thequantuminsider.com/2026/06/04/quantinuum-to-debut-on-nasdaq-after-raising-1-68-billion-in-ipo/"},
+{d:"2026-06-03",m:"sens",k:"Funding",a:"Innovate UK, DSIT",w:"Up to £32.8m competition to scale supply chains for quantum sensing and PNT hardware demonstrators.",y:"Targets packaging, ruggedisation and integrators: the sovereign manufacturing gap.",s:"Innovation Funding Service",u:"https://apply-for-innovation-funding.service.gov.uk/competition/2495/overview/b2a4cd81-a226-4a11-83c8-966284542f59"},
+{d:"2026-05-30",m:"policy",k:"Collaboration",a:"AUKUS",w:"First Pillar II signature project announced: uncrewed undersea vehicle payloads from 2027. Quantum is a named area but not part of it.",y:"Quantum still lacks a flagship AUKUS project.",s:"Squire Patton Boggs",u:"https://www.squirepattonboggs.com/insights/publications/aukus-announces-its-first-pillar-ii-signature-project/"},
+{d:"2026-05-28",m:"ind",k:"Investment",a:"Infleqtion",w:"Oxford innovation centre and manufacturing hub; company cites Royal Navy trials, MOD contracts and a £2.2m NQCC programme.",y:"UK manufacturing footprint for a US-listed vendor.",s:"Infleqtion",u:"https://infleqtion.com/infleqtion-expands-uk-quantum-operations-with-new-oxford-innovation-centre-and-manufacturing-hub/"},
+{d:"2026-05-21",m:"policy",k:"Investment",a:"US Commerce",w:"$2.013bn CHIPS letters of intent to nine firms with minority equity stakes (IBM $1bn, GlobalFoundries $375m, others about $100m).",y:"Largest US state intervention in quantum; raises supplier-concentration questions for allies.",s:"NIST",u:"https://www.nist.gov/news-events/news/2026/05/department-commerce-announces-letters-intent-9-companies-2-billion"},
+{d:"2026-05-07",m:"comp",k:"Investment",a:"Quantum Motion",w:"$160m Series C for silicon CMOS quantum computing; the company is in DARPA QBI Stage B and has a system at NQCC.",y:"A UK route with US validation and a sovereign-supply case.",s:"TQI",u:"https://thequantuminsider.com/2026/05/07/new-investment-in-quantum-motion-strengthens-europes-push-for-scalable-quantum-computing/"},
+{d:"2026-04",m:"ind",k:"Research",a:"McKinsey",w:"Quantum Technology Monitor 2026: $12.6bn start-up investment in 2025, 3% from public sources; about $55bn of public funding announced globally.",y:"Private capital dominates; state leverage is procurement, standards and equity.",s:"McKinsey",u:"https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/mckinsey-quantum-technology-monitor-2026-a-commercial-tipping-point"},
+{d:"2026-04-21",m:"sens",k:"Investment",a:"Cerca Magnetics",w:"£3.8m Series A; progressing a £2.8m MOD project on blast-exposure assessment using wearable quantum magnetometers.",y:"Dual-use medical market can lower unit costs for defence.",s:"TQI",u:"https://thequantuminsider.com/2026/04/21/cerca-magnetics-secures-38m-series-a-funding-scale-quantum-brain-scanner/"},
+{d:"2026-04-14",m:"policy",k:"Policy",a:"US Senate Commerce Committee",w:"National Quantum Initiative Reauthorization approved in committee with PQC strategy amendments; not yet law.",y:"Legislative underpinning for US programmes remains pending.",s:"Nextgov",u:"https://www.nextgov.com/emerging-tech/2026/04/senate-committee-approves-quantum-reauthorization-bill-7-amendments/412840/"},
+{d:"2026-03-31",m:"crypto",k:"Research",a:"Google Quantum AI",w:"Estimate that 256-bit elliptic-curve cryptography could be broken with under 500,000 physical qubits; circuits withheld.",y:"ECC underpins most government PKI, VPN and TLS.",s:"TQI",u:"https://thequantuminsider.com/2026/03/31/q-day-just-got-closer-three-papers-in-three-months-are-rewriting-the-quantum-threat-timeline/"},
+{d:"2026-03-30",m:"policy",k:"Collaboration",a:"13-nation Quantum Development Group",w:"London summit agrees priorities on research and investment security, supply chains, investment environment and standards.",y:"UK-convened forum on screening and supply-chain trust.",s:"DSIT via Wired-Gov",u:"https://wired-gov.net/wg/news.nsf/articles/Leading+quantum+nations+to+boost+cooperation+following+UK+summit+09042026101010?open="},
+{d:"2026-03-27",m:"comp",k:"Procurement",a:"DSIT, Innovate UK",w:"ProQure Phase 1 opens: up to ten contracts of up to £14m (from 1 Oct 2026); Phase 2 up to £75m; informs procurement of large machines beyond 2030.",y:"The UK's route to buying machines; defence priority not stated.",s:"Innovate UK Business Connect",u:"https://iuk-business-connect.org.uk/opportunities/contracts-for-innovation-proqure-scaling-uk-quantum-computing/"},
+{d:"2026-03-25",m:"crypto",k:"Policy",a:"Google",w:"Sets 2029 as its own PQC migration date, prioritising authentication and signatures.",y:"Cloud and mobile dependencies of government will move first.",s:"Google",u:"https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/"},
+{d:"2026-03-17",m:"policy",k:"Funding",a:"UK Government",w:"Up to £2bn for quantum: up to £1bn to procure large-scale computers and over £1bn over four years for R&D, skills and infrastructure (reported split incl. £205m sensing and navigation).",y:"Largest UK commitment; framed partly around national security and GPS resilience.",s:"gov.uk",u:"https://www.gov.uk/government/news/uks-quantum-leap-tohelp-beat-diseasedeliver-high-paid-jobs-and-strengthen-national-security-as-first-country-in-the-world-to-roll-out-quantum"},
+{d:"2026-03-16",m:"comp",k:"Procurement",a:"Infleqtion, NQCC",w:"100-qubit neutral-atom Sqale system operational at NQCC, the UK's only system at that scale.",y:"First government-testbed machine to reach the 2025 scale target.",s:"TQI",u:"https://thequantuminsider.com/2026/03/16/infleqtion-delivers-the-uks-only-operational-100-qubit-quantum-computing-system-at-the-national-quantum-computing-centre/"},
+{d:"2026-03-12",m:"policy",k:"Policy",a:"China NPC",w:"15th Five-Year Plan lists quantum first among future industries; PQC in state infrastructure and a space-earth quantum comms network.",y:"Competition context at plan level.",s:"PostQuantum",u:"https://postquantum.com/quantum-computing/china-15th-five-year-plan-quantum/"},
+{d:"2026-03-11",m:"ind",k:"Investment",a:"IonQ, University of Cambridge",w:"Quantum Innovation Centre with a planned 256-qubit chip-based system.",y:"Oxford Ionics technology under a US parent: a sovereignty question.",s:"IonQ",u:"https://www.ionq.com/news/ionq-and-the-university-of-cambridge-announce-landmark-agreement-to-establish-innovation-centre-for-quantum-technology-commercialization"},
+{d:"2026-03-09",m:"sens",k:"Funding",a:"DSIT, NPL",w:"£180m for the next phase of the National Timing Centre.",y:"Timing is the most mature resilience layer; quantum must integrate with it.",s:"NPL",u:"https://www.npl.co.uk/news/180-million-investment-to-strengthen-uk%E2%80%99s-national-timing-resilience"},
+{d:"2026-03-03",m:"comp",k:"Collaboration",a:"Phasecraft, DARPA",w:"UK algorithms firm joins QBI as a technical expert producing resource estimates for materials and optimisation.",y:"A UK firm feeding the US verification of the 2033 goal.",s:"TQI",u:"https://thequantuminsider.com/2026/03/03/phasecraft-joins-darpa-quantum-benchmarking-initiative/"},
+{d:"2026-02-18",m:"sens",k:"Trial",a:"Dstl, Royal Navy",w:"Long-term unattended trial of next-generation atomic clocks; follow-on in 2027; quantum navigation on UK aircraft targeted by 2030.",y:"The only official UK fielding timeline statement.",s:"gov.uk",u:"https://www.gov.uk/government/news/trial-speeds-up-next-generation-of-atomic-clocks"},
+{d:"2026-02-18",m:"policy",k:"Policy",a:"Canada",w:"Defence Industrial Strategy names quantum a high-value sector with a build-partner-buy approach.",y:"Five Eyes peer treating quantum as defence-industrial.",s:"TQI",u:"https://thequantuminsider.com/2026/02/18/canadas-defence-strategy-lists-quantum-among-high-value-sectors/"},
+{d:"2026-02-10",m:"comp",k:"Research",a:"QinetiQ, OQC",w:"QinetiQ's QAOA variant, run on OQC hardware via the cloud, identified critical nodes in mobile ad-hoc networks.",y:"A public UK defence computing proof point; still a small-scale demonstration.",s:"OQC",u:"https://oqc.tech/company/newsroom/oqc-and-qinetiq-demonstrate-critical-quantum-computing-application"},
+{d:"2026-02",m:"crypto",k:"Research",a:"Iceberg Quantum",w:"Preprint claims RSA-2048 could be factored with under 100,000 physical qubits using qLDPC codes; not demonstrated in hardware.",y:"Estimates keep falling on paper; hardware is another matter.",s:"Scott Aaronson",u:"https://scottaaronson.blog/?p=9564",c:1},
+{d:"2026-01-20",m:"crypto",k:"Policy",a:"European Commission",w:"Proposal to amend NIS2 so national strategies must cover the PQC transition.",y:"Moves EU PQC toward legal duty.",s:"PostQuantum",u:"https://postquantum.com/security-pqc/eu-pqc-nis2/"},
+{d:"2026-01-13",m:"comp",k:"Policy",a:"DoD Inspector General",w:"Pentagon had not refreshed its required list of military problems quantum might address, relying on a 2022 assessment.",y:"A template for a refreshed, defensible problem register.",s:"TQI",u:"https://thequantuminsider.com/2026/01/13/review-pentagon-falls-behind-on-mapping-quantum-technology-to-military-needs/"},
+{d:"2026-01-06",m:"crypto",k:"Policy",a:"Cabinet Office",w:"Government Cyber Action Plan commits to a PQC transition roadmap as a Phase 1 support item.",y:"The only whole-of-government UK commitment found; roadmap not yet seen.",s:"gov.uk",u:"https://www.gov.uk/government/publications/government-cyber-action-plan/government-cyber-action-plan"},
+{d:"2025-12-19",m:"sens",k:"Trial",a:"Royal Navy, Imperial College",w:"Arctic trial of quantum inertial navigation sensors aboard MV Anvil Point.",y:"Harsh-environment test of the most demanding sensor class.",s:"Royal Navy",u:"https://www.royalnavy.mod.uk/news/2025/december/19/20251219-royal-navy-trials-quantum-tech-with-imperial-college-london"},
+{d:"2025-12-17",m:"policy",k:"Funding",a:"UKRI",w:"£1.013bn allocated to quantum for FY2026–27 to FY2029–30.",y:"Delivery vehicle for four-year UK quantum R&D money.",s:"TQI",u:"https://thequantuminsider.com/2025/12/17/ukri-maps-38-6-billion-rd-budget-commits-1-billion-to-quantum/"},
+{d:"2025-12-16",m:"ind",k:"Policy",a:"UK Export Control Joint Unit",w:"Regulations in force adding quantum-computer control entry 4A506 with qubit and error thresholds.",y:"Compliance for UK exporters and academic partners.",s:"legislation.gov.uk",u:"https://www.legislation.gov.uk/uksi/2025/1197/pdfs/uksi_20251197_en.pdf"},
+{d:"2025-12-16",m:"policy",k:"Collaboration",a:"US, UK",w:"US reported to have paused implementation of the Technology Prosperity Deal, which includes quantum.",y:"Risk to the UK–US quantum taskforce.",s:"Yahoo",u:"https://www.yahoo.com/news/articles/us-suspends-technology-deal-uk-002242705.html",c:1},
+{d:"2025-12-01",m:"net",k:"Research",a:"SpeQtral, UK partners",w:"UK–Singapore SpeQtre entanglement-based quantum comms demonstrator reported on orbit.",y:"Satellite entanglement distribution informs timing and comms research.",s:"TQI",u:"https://thequantuminsider.com/2025/12/01/speqtre-the-entanglement-based-quantum-comms-demonstrator-satellite-is-now-on-orbit/",c:1},
+{d:"2025-11-19",m:"sens",k:"Funding",a:"DSIT",w:"£155m PNT resilience package: eLoran £71m, National Timing Centre £68m, interference monitoring £13m, space time transfer £3m.",y:"The non-quantum backbone quantum sensing must integrate with.",s:"Inside GNSS",u:"https://insidegnss.com/uk-commits-155-million-to-eloran-timing-and-gnss-monitoring-in-major-pnt-resilience-push/"},
+{d:"2025-11-18",m:"crypto",k:"Policy",a:"US DoD CIO",w:"Memo orders full cryptographic inventory incl. weapons platforms and OT, named migration leads, approval gates, and a ban on QKD.",y:"The most prescriptive defence PQC directive among allies.",s:"PostQuantum",u:"https://postquantum.com/security-pqc/pentagon-cio-dow-dod-memo-pqc/"},
+{d:"2025-11-18",m:"sens",k:"Procurement",a:"SandboxAQ, DIU",w:"Joins the Transition of Quantum Sensing programme with software-led magnetic navigation for autonomous systems.",y:"Software is entering the US defence sensing pipeline.",s:"SandboxAQ",u:"https://www.sandboxaq.com/press/sandboxaq-partners-with-dows-defense-innovation-unit-to-advance-development-of-magnetic-navigation-systems"},
+{d:"2025-11-11",m:"sens",k:"Funding",a:"UKRI, Innovate UK",w:"£14.8m for 14 quantum sensing and PNT Contracts for Innovation, including clocks, time transfer, RF sensing and brain imaging.",y:"Departments and primes acting as partners and buyers.",s:"UKRI",u:"https://www.ukri.org/news/winners-of-contracts-for-innovation-quantum-funding-announced/"},
+{d:"2025-11-07",m:"policy",k:"Funding",a:"UK Government, AWE",w:"£30m for NQCC testbeds, over £14m for sensing projects, and a new Quantum Centre for Nuclear Defence and Security at AWE.",y:"The one clearly defence-labelled UK quantum institution created in the window.",s:"gov.uk",u:"https://www.gov.uk/government/news/government-support-to-get-quantum-to-work-faster-boosting-uks-health-defence-energy-and-more"},
+{d:"2025-11-06",m:"comp",k:"Funding",a:"DARPA",w:"QBI Stage B: 11 firms including UK-based Quantum Motion; goal is to test whether utility-scale computing is achievable by 2033.",y:"The shortlist allied sovereign decisions will lean on.",s:"DARPA",u:"https://www.darpa.mil/research/programs/quantum-benchmarking-initiative/stage-b-selection"},
+{d:"2025-11-06",m:"policy",k:"Funding",a:"Canada",w:"Budget 2025 commits C$334.3m over five years to quantum within the Defence Industrial Strategy.",y:"Direct defence-industrial quantum funding by a Five Eyes ally.",s:"TQI",u:"https://thequantuminsider.com/2025/11/06/canada-targets-quantum-as-strategic-industry-in-c334-million-defense-push/"},
+{d:"2025-11-05",m:"comp",k:"Research",a:"Quantinuum",w:"Helios launched: 98 physical qubits, 48 error-corrected logical qubits.",y:"Leading trapped-ion result with a UK operating base.",s:"Quantinuum",u:"https://www.quantinuum.com/press-releases/quantinuum-announces-commercial-launch-of-new-helios-quantum-computer-that-offers-unprecedented-accuracy-to-enable-generative-quantum-ai-genqai"},
+{d:"2025-11-04",m:"sens",k:"Trial",a:"Australia, AUKUS partners",w:"Four Australian quantum clocks trialled in Washington DC under AUKUS Pillar II, with results shared across partners.",y:"The clearest AUKUS quantum output so far.",s:"Australian Defence Ministers",u:"https://www.minister.defence.gov.au/media-releases/2025-11-04/world-leading-australian-quantum-clocks-successfully-trialled-under-aukus-pillar-ii"},
+{d:"2025-11-04",m:"policy",k:"Funding",a:"US DOE",w:"$625m to renew five National QIS Research Centres.",y:"Sustains the national-lab base allies draw on.",s:"DOE",u:"https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information"},
+{d:"2025-10-28",m:"sens",k:"Trial",a:"Royal Navy, Infleqtion",w:"Tiqker optical atomic clock run on the XV Excalibur uncrewed submarine across multiple dives.",y:"Sub-surface timing without GNSS.",s:"Royal Navy",u:"https://www.royalnavy.mod.uk/news/2025/october/28/20251018-quantum-navigation-trials-xv-excalibur"},
+{d:"2025-10-22",m:"comp",k:"Research",a:"Google Quantum AI",w:"Quantum Echoes on Willow reported as a verifiable advantage on a specialised physics task.",y:"A physics-simulation result, not a logistics one.",s:"Google",u:"https://blog.google/innovation-and-ai/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/"},
+{d:"2025-10-15",m:"sens",k:"Trial",a:"Royal Navy, University of Sussex",w:"Optically pumped magnetometers trialled at sea for navigation and magnetic-signature mapping.",y:"Dual use for navigation and anti-submarine work.",s:"Royal Navy",u:"https://www.royalnavy.mod.uk/news/2025/october/15/20251015-rn-university-of-sussex-quantum-trials"},
+{d:"2025-09-17",m:"crypto",k:"Procurement",a:"NCSC",w:"First assured PQC consultancy cohort of eight firms; pilot runs to 31 Mar 2027 via the Crown Commercial Service.",y:"Defines the assured pool for UK public-sector PQC discovery and planning.",s:"The Stack",u:"https://www.thestack.technology/eight-firms-blessed-by-the-ncsc-for-post-quantum-cryptography-overhauls/"},
+{d:"2025-09-17",m:"policy",k:"Collaboration",a:"UK, US",w:"Technology Prosperity Deal creates a joint quantum taskforce covering defence, finance, healthcare and energy.",y:"Formal UK–US quantum route.",s:"quantum.gov",u:"https://www.quantum.gov/securing-quantum-advantage/"},
+{d:"2025-09-08",m:"policy",k:"Policy",a:"UK MOD",w:"Defence Industrial Strategy: at least 10% of the equipment budget on novel technology; UK Defence Innovation £400m ringfenced.",y:"The innovation-funding architecture defence quantum must use.",s:"Gowling WLG",u:"https://gowlingwlg.com/en/insights-resources/articles/2025/navigating-the-uks-defence-industrial-strategy-2025"},
+{d:"2025-08-27",m:"sens",k:"Funding",a:"DARPA, Q-CTRL, Lockheed Martin",w:"Robust Quantum Sensors Phase 1 begins with helicopter testing; Q-CTRL contracts worth A$38m.",y:"Main US test of ruggedised quantum sensors on platforms.",s:"DARPA",u:"https://www.darpa.mil/news/2025/roqs-launches-first-phase"},
+{d:"2025-08-05",m:"net",k:"Policy",a:"NCSC",w:"Quantum security technologies paper: NCSC will not support QKD for government or military use; PQC is the primary defence.",y:"Settles the UK government position on QKD.",s:"NCSC",u:"https://www.ncsc.gov.uk/whitepaper/quantum-security-technologies"},
+{d:"2025-07-02",m:"policy",k:"Policy",a:"European Commission",w:"Quantum Europe Strategy adopted with a space and dual-use (security and defence) action area; Quantum Act announced.",y:"EU treats quantum as dual-use.",s:"European Commission",u:"https://commission.europa.eu/news-and-media/news/eus-plan-become-global-leader-quantum-2030-2025-07-02_en"},
+{d:"2025-06-23",m:"policy",k:"Funding",a:"UK Government",w:"£670m over ten years for quantum computing, including an NQCC settlement to 2037.",y:"Long-term certainty for UK sovereign compute access.",s:"NQCC",u:"https://www.nqcc.ac.uk/updates/uks-industrial-strategy-2025-published/"},
+{d:"2025-06-23",m:"crypto",k:"Policy",a:"EU NIS Cooperation Group",w:"Coordinated PQC roadmap: strategies and inventories from end-2026; high-risk use cases by end-2030; as much as feasible by 2035.",y:"EU baseline for UK firms working with EU partners.",s:"European Commission",u:"https://digital-strategy.ec.europa.eu/en/library/coordinated-implementation-roadmap-transition-post-quantum-cryptography"},
+{d:"2025-06-17",m:"sens",k:"Trial",a:"Royal Navy, Aquark, Dstl",w:"AQlock cold-atom clock operated continuously aboard HMS Puncher in the Solent.",y:"Early proof of shipboard operation.",s:"Royal Navy",u:"https://www.royalnavy.mod.uk/news/2025/june/17/20250617-quantum-navigation-p2000-trials"},
+{d:"2025-06-09",m:"ind",k:"M&A",a:"IonQ, Oxford Ionics",w:"IonQ agrees to acquire Oxford Ionics for $1.075bn; Oxford remains a UK hub.",y:"Leading UK trapped-ion IP moves inside a US-listed group.",s:"IonQ",u:"https://www.ionq.com/news/ionq-announces-agreement-to-acquire-oxford-ionics-accelerating-path-to-pioneering"},
+{d:"2025-05-21",m:"crypto",k:"Research",a:"Craig Gidney (Google)",w:"RSA-2048 factoring estimated at under one million noisy qubits in under a week, down from 20 million in 2019.",y:"The reference point for most timeline revisions since.",s:"arXiv",u:"https://arxiv.org/abs/2505.15917"},
+{d:"2025-05-19",m:"ind",k:"Governance",a:"Oxford Quantum Circuits",w:"Former GCHQ director Sir Jeremy Fleming joins the OQC board.",y:"Signals closer alignment with the UK security community.",s:"OQC",u:"https://oqc.tech/company/newsroom/oqc-appoints-sir-jeremy-fleming-to-board"},
+{d:"2025-04-03",m:"comp",k:"Funding",a:"DARPA",w:"QBI Stage A opens with about 18 companies, including UK-based Oxford Ionics and Quantum Motion.",y:"Origin of the US government's structured vendor evaluation.",s:"DARPA",u:"https://www.darpa.mil/news/2025/companies-targeting-quantum-computers"},
+{d:"2025-03-20",m:"crypto",k:"Policy",a:"NCSC",w:"PQC migration timelines: discovery and plan by 2028, highest-priority migrations by 2031, complete by 2035.",y:"The UK anchor for government and CNI migration.",s:"NCSC",u:"https://www.ncsc.gov.uk/guidance/pqc-migration-timelines"},
+{d:"2025-03-12",m:"sens",k:"Procurement",a:"DIU, 18 vendors",w:"Transition of Quantum Sensing field testing begins across inertial, gravimetry, magnetic anomaly detection, magnetic navigation and components.",y:"The trials-to-procurement template the UK lacks in explicit form.",s:"DIU",u:"https://www.diu.mil/latest/dius-transition-of-quantum-sensing-tqs-field-testing-to-begin-across-five"},
+{d:"2025-03-11",m:"crypto",k:"Standard",a:"NIST",w:"HQC selected as the fifth PQC algorithm, a code-based backup to ML-KEM.",y:"Algorithm diversity for high-assurance use.",s:"NIST",u:"https://www.nist.gov/news-events/news/2025/03/nist-selects-hqc-fifth-algorithm-post-quantum-encryption"},
+{d:"2025-03-10",m:"comp",k:"Funding",a:"Innovate UK, UKRI",w:"Quantum Missions pilot: ten projects (over £12m), later five more (£10m), covering error correction and testbeds.",y:"Funds the error-correction layer Mission 1 depends on.",s:"UKRI",u:"https://www.ukri.org/news/quantum-missions-pilot-competition-winners-announced/"},
+{d:"2025-03-04",m:"comp",k:"Procurement",a:"AFRL, IonQ",w:"Trapped-ion networking system commissioned at AFRL Rome; four contracts since 2022 reported at over $94m.",y:"Longest-running US service-lab relationship with a computing vendor.",s:"IonQ",u:"https://investors.ionq.com/news/news-details/2025/IonQ-Commissions-Ground-breaking-Quantum-System-at-the-U.S.-Air-Force-Research-Lab/default.aspx"},
+{d:"2025-02-06",m:"net",k:"Research",a:"University of Oxford",w:"First distributed quantum algorithm run across two processors linked by a photonic network.",y:"A route to scaling machines by networking them.",s:"Oxford",u:"https://www.ox.ac.uk/news/2025-02-06-first-distributed-quantum-algorithm-brings-quantum-supercomputers-closer"},
+{d:"2025-01-02",m:"sens",k:"Research",a:"Dstl",w:"Quantum-based atomic clock unveiled with an aim to field within five years; first uses expected in radar and positioning.",y:"Origin of the UK's roughly-2030 timing target.",s:"DSEI Gateway",u:"https://dsei-gateway.com/en/news/technology/uk-dstl-quantum-atomic-clock/"},
+{d:"2024-12-09",m:"crypto",k:"Policy",a:"Australian Signals Directorate",w:"ISM sets end-2030 to cease traditional asymmetric cryptography.",y:"The most aggressive allied date, AUKUS-adjacent.",s:"QPF",u:"https://qpf.org/australia-asd-pqc-2030-deadline/",c:1},
+{d:"2024-11-27",m:"crypto",k:"Policy",a:"BSI and 17 EU authorities",w:"Joint statement urging protection of sensitive use cases against harvest-now-decrypt-later by end-2030.",y:"Sets the European 2030 expectation.",s:"BSI",u:"https://www.bsi.bund.de/EN/Service-Navi/Presse/Pressemitteilungen/Presse2024/241127_Post-Quantum_Cryptography.html"},
+{d:"2024-09-19",m:"sens",k:"Investment",a:"NATO Innovation Fund, Aquark",w:"€5m seed, the fund's first quantum investment and first in a DIANA cohort company.",y:"Allied capital backing UK quantum PNT.",s:"NIF",u:"https://www.nif.fund/news/nato-innovation-fund-announces-first-investment-in-a-diana-cohort-company-to-boost-quantum-sensing/"},
+{d:"2024-08-13",m:"crypto",k:"Standard",a:"NIST",w:"FIPS 203 (ML-KEM), 204 (ML-DSA) and 205 (SLH-DSA) finalised.",y:"The first usable PQC standards.",s:"NIST",u:"https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards"},
+{d:"2024-05",m:"sens",k:"Trial",a:"Infleqtion, BAE Systems, QinetiQ",w:"First public UK flight trials of quantum navigation components on QinetiQ's RJ100 demonstrator, with about £8m government funding.",y:"Origin of the 2030 UK aircraft target.",s:"QinetiQ",u:"https://www.qinetiq.com/en/news/quantum-tech-takes-flight-to-boost-uks-resilience"},
+{d:"2024-04-01",m:"ind",k:"Policy",a:"UK Export Control Joint Unit",w:"Emerging-technology export controls in force, including quantum computers and components.",y:"Baseline regime for UK suppliers.",s:"Cooley",u:"https://www.cooley.com/news/insight/2024/2024-03-19-uk-introduces-export-controls-for-emerging-technologies"},
+{d:"2024-03-14",m:"comp",k:"Procurement",a:"French MoD",w:"PROQCIMA launched: a staged defence competition for fault-tolerant machines (about €500m).",y:"Closest allied model of a defence-led computing buy.",s:"TNW",u:"https://thenextweb.com/news/french-mod-fault-tolerant-quantum-computer-startup-competition"},
+{d:"2024-01-16",m:"policy",k:"Policy",a:"NATO",w:"First Quantum Technologies Strategy: a quantum-ready Alliance, PQC transition and the Transatlantic Quantum Community.",y:"Foundation for the 2026 roadmap.",s:"NATO",u:"https://www.nato.int/cps/en/natohq/official_texts_221777.htm"},
+{d:"2023-03-15",m:"policy",k:"Policy",a:"UK Government",w:"National Quantum Strategy with five missions and a ten-year commitment of £2.5bn.",y:"The baseline all later UK announcements reconcile against.",s:"gov.uk",u:"https://www.gov.uk/government/publications/national-quantum-strategy"},
+{d:"2023-01-12",m:"comp",k:"Research",a:"Dstl, PA Consulting",w:"Hybrid quantum-classical prototypes for communications-asset placement and constrained resource allocation, run on cloud access.",y:"The most concrete public UK defence optimisation pilot.",s:"HPCwire",u:"https://www.hpcwire.com/off-the-wire/uk-ministry-of-defence-making-better-faster-decisions-with-quantum-computing/"},
+{d:"2022-06-09",m:"comp",k:"Procurement",a:"MOD (Dstl), ORCA Computing",w:"MOD acquires ORCA's room-temperature photonic PT-1, the government's first quantum computer.",y:"Only known UK MOD ownership of quantum hardware.",s:"Information Age",u:"https://www.information-age.com/mod-acquires-first-quantum-computer-for-uk-government-19959/"},
+{d:"2022-04",m:"net",k:"Collaboration",a:"BT, Toshiba",w:"Plans announced for a commercial quantum-secured metro network across London.",y:"Commercial QKD proceeds despite NCSC scepticism for government use.",s:"BT",u:"https://newsroom.bt.com/bt-and-toshiba-to-build-worlds-first-commercial-quantum-secured-metro-network-across-london/"}
+];
+document.getElementById('logTotal').textContent=LOG.length;
+const chipsEl=document.getElementById('chips'),listEl=document.getElementById('logList'),qEl=document.getElementById('q'),countEl=document.getElementById('count');
+let active='all';
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=d=>{const p=d.split('-');const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];return p.length===3?`${+p[2]} ${M[+p[1]-1]} ${p[0]}`:p.length===2?`${M[+p[1]-1]} ${p[0]}`:p[0]};
+function chips(){const opts=[['all','All domains']].concat(Object.entries(DOMS));
+ chipsEl.innerHTML=opts.map(([k,l])=>{const n=k==='all'?LOG.length:LOG.filter(x=>x.m===k).length;return `<button type="button" class="chip ${k==='all'?'':'d-'+k}" data-k="${k}" aria-pressed="${k===active}">${l} <span class="count">${n}</span></button>`}).join('');}
+function render(){const q=qEl.value.trim().toLowerCase();
+ const rows=LOG.filter(x=>(active==='all'||x.m===active)&&(!q||(x.a+' '+x.w+' '+x.y+' '+x.k).toLowerCase().includes(q)));
+ countEl.textContent=`${rows.length} of ${LOG.length} stories`;
+ listEl.innerHTML=rows.map(x=>`<li><div class="dt">${fmt(x.d)}</div><div><div class="top"><span class="dom d-${x.m}">${DOMS[x.m]}</span><span class="kind">${esc(x.k)} · ${esc(x.a)}</span>${x.c?'<span class="tc">To confirm</span>':''}</div><div class="what">${esc(x.w)}</div><div class="why">${esc(x.y)}</div><div class="src"><a href="${x.u}" target="_blank" rel="noopener">${esc(x.s)} ↗</a></div></div></li>`).join('')||'<li><div></div><div class="why">No stories match. Clear the search or pick another domain.</div></li>';}
+chipsEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;active=b.dataset.k;chips();render();});
+qEl.addEventListener('input',render);
+chips();render();
+</script>
+
+</body></html>

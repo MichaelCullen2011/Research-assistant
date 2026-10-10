@@ -1,4 +1,4 @@
-# Findings: <title>
+# Findings: Quantum phenomena to technologies to defence and government use cases
 
 Each finding makes one specific, checkable claim. Group findings under the
 brief's sub-questions.
@@ -8,23 +8,237 @@ Confidence levels:
 - **medium**: one T2 source, or several T3 sources from different parties
 - **low**: one T3 source only, or sources conflict
 
-## Sub-question 1: <text>
+Maturity tags used in Notes: *theory*, *lab demo*, *prototype*, *field
+trial*, *product/deployed*. "Evidenced" means a source shows the
+application working at that level; "asserted" means the source only claims
+it.
+
+## Sub-question 1: Phenomena map: which phenomena underpin first-wave technologies, and which are being researched now?
+
+### Framing
 
 | ID | Finding | Sources | Confidence | Notes |
 |---|---|---|---|---|
-| F01 | | [S01 p.3], [S04] | high / medium / low | |
+| F01 | Dowling and Milburn set out the "second quantum revolution": the first revolution used quantum rules to explain the world (semiconductors, photoelectric effect, laser); the second engineers quantum states on purpose to build new technology. | [S10 abstract, intro] | medium | arXiv version, 2002; framing only |
+| F02 | Dowling and Milburn list six principles that quantum technology exploits: quantisation, uncertainty, superposition, tunnelling, entanglement and decoherence. | [S10 "Quantum principles"] | medium | Useful spine for the phenomenon list |
+| F03 | UK government separates first-generation quantum technologies (lasers, superconducting devices in medical imaging, MRI) from second-generation ones based on "the ability to generate, detect and control quantum states". | [S13 intro, foreword] | high | |
+| F04 | Government and alliance strategies group quantum by application, not phenomenon: EU uses computing and simulation, sensing, communication; NATO uses sensing, imaging, PNT, communications, computing, modelling and simulation. | [S15 fn.1], [S14 intro], [S12 intro] | high | Only academic sources enumerate phenomena |
+| F05 | The Nobel Committee (2022) credits early Bell-test experiments on entanglement with driving the "Second Quantum Revolution". | [S29 conclusions] | high | |
+| F06 | The 2025 Nobel Prize in Physics recognised macroscopic quantum tunnelling and energy quantisation in superconducting circuits; the release calls the transistor an established quantum technology and links the work to quantum cryptography, computers and sensors. | [S18] | high | Applications are stated as "opportunities" |
 
-## Sub-question 2: <text>
+### First-wave anchors (phenomenon → established technology)
 
 | ID | Finding | Sources | Confidence | Notes |
 |---|---|---|---|---|
+| F07 | Nuclear magnetic resonance became MRI once field gradients were added (Lauterbur; Mansfield at Nottingham); by 2002 there were about 22,000 scanners and over 60 million exams a year. | [S20] | high | product/deployed |
+| F08 | Transistors and lasers exploit the fixed (quantised) energies of electrons in crystals; the Blackett review calls quantum technology "the foundation of the digital age". | [S16 Ch.1, foreword], [S18] | high | product/deployed |
+| F09 | The maser and laser came from "quantum electronics" (Nobel 1964). | [S26], [S13] | high | Naming the phenomenon "stimulated emission" is a gloss, not in S26 |
+| F10 | Quantum tunnelling underpins the tunnel diode (Esaki, 1958) and the scanning tunnelling microscope (Nobel 1986). | [S19], [S23] | high | product/deployed |
+| F11 | The Josephson effect and the quantum Hall effect give the voltage and resistance standards; since the 2019 SI redefinition their constants are exact. | [S27], [S25] | high | product/deployed |
+| F12 | The first caesium atomic clock was built at NPL in 1955; the SI second has been defined by the caesium transition since 1967; satnav, phones and the internet depend on atomic clocks. | [S16 timeline, Ch.2] | high | product/deployed |
+| F13 | The CCD image sensor (1969) uses the photoelectric effect. | [S22] | high | product/deployed |
+| F14 | Giant magnetoresistance (1988, Fert at CNRS/Thales and Grünberg) reached hard-disk read heads in 1997. | [S21] | high | Classing GMR as a quantum spin effect is *Analysis*; S21 does not say "quantum" |
+| F15 | Magnetic tunnel junctions (spin-dependent tunnelling) are commercial as hard-disk read heads and MRAM memory elements. | [S53 intro] | medium | One review sentence; product/deployed |
+
+### Second-wave phenomena under active applied research
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F16 | Quantum sensing works at three levels: quantised energy levels, coherence (superposition), and entanglement used to beat classical limits; only the third is described as "truly quantum". | [S30 §II] | high | |
+| F17 | Atom interferometry (superposition of atomic matter waves) is applied to gravity, rotation and acceleration sensing. | [S30], [S31], [S12] | high | |
+| F18 | Spin coherence in diamond NV centres gives millisecond coherence at room temperature and is used for magnetic, temperature, electric-field and pressure sensing. | [S12 spin sensing], [S30 Table I] | high | |
+| F19 | Rydberg atoms have large electric dipole moments and are read out optically (EIT), making them electric-field and RF sensors; Rydberg blockade also enables neutral-atom quantum gates. | [S30 §III.C], [S44 §II], [S28] | high | |
+| F20 | Squeezed light reduces quantum noise in gravitational-wave detectors (GEO600, LIGO). | [S12], [S46] | high | |
+| F21 | Entanglement underpins QKD, teleportation, quantum repeaters and quantum computing. | [S29], [S17] | high | |
+| F22 | The no-cloning theorem is the security basis of quantum communication and also forces the use of repeaters or satellites, because quantum signals cannot be amplified classically. | [S29] | high | |
+| F23 | Quantum measurement randomness is the basis of quantum random number generators (QRNGs). | [S12], [S75] | high | |
+| F24 | Topological phases explain the quantised Hall steps; hoped-for applications include topological electronics and quantum computers. | [S25] | high | Established use is only the resistance standard |
+| F25 | Further phenomena under active research for applications: magnetic skyrmions, polariton condensates, superabsorption ("quantum batteries"), time crystals, moiré superconductivity in twisted graphene, radical-pair magnetoreception, strong light–matter coupling in chemistry and optomechanical entanglement. | [S53], [S59], [S54], [S55], [S58], [S62], [S64], [S66] | high | Maturity of each in SQ3 |
+
+## Sub-question 2: Phenomenon → technology: what does recent research connect each phenomenon to?
+
+### Sensing, timing and navigation
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F26 | A Birmingham cold-atom gravity gradiometer (Dstl co-author, MoD-contracted) detected a 2 m buried utility tunnel with signal-to-noise ratio 8 and 0.5 m resolution in a static outdoor survey. | [S31 abstract, acknowledgements] | high | field trial (static); on-the-move mapping not shown |
+| F27 | A UK simulation study found cold-atom sensors would roughly halve the drift of an aviation-grade inertial navigation system by calibrating its biases, but not remove drift, and are unlikely to suit small, cheap systems near term. | [S32 §5–6] | high | Peer-reviewed simulation, 2022 |
+| F28 | A French hybrid quantum–classical accelerometer triad showed 50× better bias stability than its navigation-grade classical accelerometers, in the lab. | [S33 abstract] | medium | Preprint version read; lab demo |
+| F29 | The UK flew a quantum inertial navigation system (atomic clock and cold-atom motion sensor) on an RJ100 at Boscombe Down in May 2024; no performance data was published. | [S48] | medium | Single T2 news source |
+| F30 | Three 35-litre iodine optical clocks ran for 20 days on a naval ship in the Pacific with timing error below 300 ps per day, matching hydrogen masers at one-tenth the volume. | [S37 abstract] | high | field trial, peer-reviewed |
+| F31 | Aquark announced that its cold-atom AQlock clock ran for three days aboard HMS Pursuer with Dstl test-and-evaluation support; no performance figures were given. | [S38] | low | Vendor release only |
+| F32 | Dstl ran long-term unattended trials of next-generation atomic clocks outside the lab (reported Feb 2026), cites GPS denial as the driver, plans a broader military trial in 2027 and restates the goal of quantum navigation on UK aircraft by 2030. | [S39] | high | field trial |
+| F33 | Optically pumped magnetometers spin-polarise alkali atoms with light and read out their precession; sensitivity reaches about 100 aT/√Hz, on a par with SQUIDs. | [S30 §III.A.1] | high | |
+| F34 | Q-CTRL reports airborne magnetic-anomaly navigation with quantum magnetometers up to 19,000 ft, claiming up to 46× lower position error than a strategic-grade inertial system (best 22 m). | [S34 abstract] | medium | Vendor-authored preprint; CEO quoted at 94× in [S47], unreconciled |
+| F35 | A Warwick and Element Six diamond NV magnetometer worked in a moving van, but low-frequency sensitivity on the move was about 140–210 nT/√Hz per axis. | [S35 abstract, p.1] | medium | Preprint; prototype |
+| F36 | SQUIDs are the most commercially advanced quantum sensor (used in clinical MEG) but need cryogenic cooling. | [S30 §III.G.1] | high | product/deployed |
+| F37 | Wearable OPM-MEG brain scanners are in research use but not clinically approved; developers hope for approval in 2027. | [S107], [S36 abstract] | medium | S107 is T3; S36 abstract-only |
+| F38 | Rydberg receivers detect from MHz to THz but usually have instantaneous bandwidth below 10 MHz. | [S44 §III.C] | medium | Preprint |
+| F39 | DARPA states that Rydberg sensor capability has been validated only in lab-scale proof-of-concept and seeks an integrated prototype under 10 litres and 50 W for spectrum awareness and signal identification. | [S49] | high | lab demo → prototype |
+| F40 | LIGO's frequency-dependent squeezing cut detector noise by up to 5.8 dB and raised its astrophysical detection rate by up to 65%. | [S46 abstract] | high | Deployed in a science facility |
+| F41 | Entanglement improved a pair of optomechanical force sensors by 25% in sensitivity–bandwidth in a lab demo funded by ONR and DARPA; the authors suggest inertial navigation as an application. | [S66 abstract, Fig. 5, acknowledgements] | medium | Application author-asserted |
+
+### Computing and cryptography
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F42 | A fault-tolerant quantum computer running Shor-type algorithms could break RSA and elliptic-curve public-key cryptography (RSA, FFDH, ECDH, DSA, ECDSA, EdDSA). | [S73], [S74] | high | |
+| F43 | Gidney's 2025 estimate for breaking RSA-2048 is under one million noisy qubits in under a week, down from 20 million qubits in his 2019 estimate, under the same hardware assumptions. | [S70 abstract] | medium | Preprint |
+| F44 | NCSC says current quantum computers are limited, with relatively high error rates, and the arrival of a cryptographically relevant one is hard to predict. | [S74] | high | |
+| F45 | Symmetric cryptography with keys of at least 128 bits and hashes such as SHA-256 are "not significantly impacted" by quantum computing (NCSC); Grover's algorithm gives at most a quadratic speedup. | [S74], [S81 intro] | high | |
+| F46 | QKD detects eavesdropping using measurement disturbance, but provides no authentication, so it must be paired with PQC or pre-shared keys. | [S75] | high | |
+| F47 | NCSC says classical random number generators still meet security needs; QRNGs may offer higher entropy rates and need assurance research. | [S75] | high | |
+| F48 | Deterministic quantum-dot single-photon sources now match or beat heralded sources and InGaAs dots are commercially available; telecom-wavelength dots still fall short. | [S60] | medium | Preprint of review |
+| F49 | Microsoft's Nature paper reports a fermion-parity readout in InAs–Al nanowires but states the measurements "do not, by themselves, determine whether the low-energy states ... are topological"; qubit claims were made by press release, not in the paper. | [S50 Discussion], [S51] | high | |
+
+### Quantum-inspired (classical) methods
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F50 | Toshiba's simulated bifurcation is a classical algorithm inspired by quantum adiabatic optimisation in nonlinear oscillators; its authors report a 2,000-node MAX-CUT solved on FPGA in 0.5 ms, about 10× faster than a coherent Ising machine. | [S83] | medium | Peer-reviewed but vendor-authored, chosen baselines |
+| F51 | Fujitsu's Digital Annealer is classical CMOS hardware running enhanced simulated annealing; it gave about 100× speedups on dense spin glasses against single-core baselines and none on sparse 2D problems. | [S84] | high | |
+| F52 | Tensor-network methods, whose efficiency rests on limited entanglement in the simulated state, reproduced IBM's 2023 127-qubit "utility" experiment classically within weeks, one more accurately than the quantum processor and one finding errors in IBM's extrapolations. | [S78], [S79], [S80] | high | |
+| F53 | D-Wave published a "beyond-classical" quantum-simulation result in Science (2025); a tensor-network preprint reports matching accuracy with modest classical resources. | [S85], [S86] | medium | Rebuttal is a preprint; contested |
+| F54 | Tang (STOC 2019) showed the leading quantum recommendation algorithm has a classical analogue only polynomially slower, removing its exponential speedup ("dequantisation"). | [S77] | high | |
+
+## Sub-question 3: Reality check: how mature is each link, and where are application claims speculative?
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F55 | Lab optical clocks reach better than 10⁻¹⁸ fractional inaccuracy, but transportable versions have been held back by size, environmental sensitivity and cost. | [S37 abstract] | high | |
+| F56 | DARPA describes quantum sensors as "notoriously fragile in real-world environments"; its RoQS programme tests walk-on sensors on a helicopter and defers platform integration to a later phase. | [S42] | high | |
+| F57 | CSIS notes platform noise, vibration and thermal drift degrade quantum sensors on moving platforms. | [S99] | medium | Think tank |
+| F58 | Quantum-illumination radar only shows an advantage at source powers 15–20 orders of magnitude below radar practice; the French review calls its practical relevance limited. | [S45 §VI] | high | Supported by [S93], [S103], [S99] |
+| F59 | The US Defense Science Board concluded quantum radar "will not provide upgraded capability to DOD". | [S93] | high | DSB study date not verified, possibly pre-2022 |
+| F60 | Almost all field-trialled defence quantum sensors (clocks, atom interferometers, OPMs, NV, Rydberg) rely on quantised levels and superposition, not entanglement. | [S30 Table I], [S41] | medium | Partly *Analysis* by the sensing stream |
+| F61 | A 46-author review concludes "more tools are needed to realize a quantum advantage in optimization" and notes classical heuristics often solve practical instances near-optimally. | [S81 intro] | high | |
+| F62 | QOBLIB (2025) provides ten classically hard optimisation problem classes with state-of-the-art classical baselines; it reports quantum baselines, not advantage. | [S82 abstract] | medium | Preprint |
+| F63 | In a 2026 Siemens industrial scheduling study, IBM gate-based hardware solved only toy instances, D-Wave did better only with a compact formulation, and the Fujitsu Digital Annealer handled industry-scale instances and beat classical heuristics on solution quality. | [S110 §VI.D, §VIII.B–C] | medium | Preprint; baseline at scale is heuristics, not best-in-class solvers |
+| F64 | A UK critique argues the Microsoft topological-qubit data are "not reliable"; a Matters Arising and Microsoft reply appeared in Nature in June 2026, and an earlier Microsoft-funded Majorana paper was retracted in 2021. | [S52 abstract], [S50 article page], [S51] | high | Contested, unresolved |
+| F65 | MRAM is a product, while skyrmion racetrack memory and logic remain research-stage. | [S53] | medium | |
+| F66 | Magnetic tunnel junctions for STT-MRAM kept key properties under high gamma and neutron doses in one 2019 study; the authors suggest space and nuclear use. | [S69 abstract] | medium | Preprint, 2019 (stale) |
+| F67 | The quantum-battery field's own review states "a fully operational quantum battery is yet to be demonstrated". | [S54 Sec. VII] | medium | Preprint of review |
+| F68 | Google observed a time-crystal phase on a quantum processor (2021); a 2026 review says current applications "are limited", while a 2025 Aalto press release says time crystals "could power" quantum-computer memory. | [S55], [S57 Sec. V], [S56] | medium | Example of press framing ahead of evidence |
+| F69 | A twisted bilayer graphene device detected single 1550 nm photons at tens of millikelvin; one author is at Raytheon BBN; no defence application is stated. | [S58] | medium | lab demo |
+| F70 | Polariton condensates support room-temperature polariton lasing; uses in computing and qubits are described as "promising". | [S59] | high | lab demo / prototype |
+| F71 | An 18-author review finds quantum coherences in photosynthesis "too short lived to have any functional significance". | [S61 abstract] | high | 2020 |
+| F72 | Robin cryptochrome 4 is magnetically sensitive in vitro, supporting the radical-pair model of bird navigation; the in-vivo mechanism is still unproven. | [S62 abstract] | high | 2021; no navigation device exists |
+| F73 | Oxford engineered magneto-sensitive fluorescent proteins that work at room temperature in living cells, proposed for biomedical imaging. | [S63] | medium | Specialist press; lab demo |
+| F74 | Reported cavity-enhanced reaction rates under vibrational strong coupling have not reproduced (Penn State 2021), and in May 2026 the US Naval Research Laboratory reported its own 2023 effect vanishes once artefacts are corrected. | [S64 abstract], [S65 abstract] | medium | S65 is a conference abstract |
+| F75 | LK-99 single crystals are insulating, and the Dias group's 2023 room-temperature superconductor paper was retracted by Nature on 7 November 2023. | [S67 abstract], [S68] | high | Refuted claims |
+| F76 | Dstl forecast in 2020 that a quantum-annealer AI capability could reach initial operating capability "as soon as 2025"; no evidence that this happened was found. | [S102] | medium | Stale; absence of evidence, not proof |
+
+## Sub-question 4: Technology → defence and government use cases
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F77 | UK National Quantum Strategy Mission 4 targets quantum navigation systems, including clocks, deployed on aircraft by 2030, independent of satellite signals. | [S40 Mission 4] | high | Target, not achievement |
+| F78 | Mission 5 targets mobile, networked quantum sensors across critical infrastructure by 2030, naming defence ("find objects in challenging environments"), underground sensing for transport, RF sensors for telecoms and gas sensing for energy. | [S90 Mission 5] | high | |
+| F79 | Mission 3 targets every NHS Trust benefiting from quantum sensing by 2030, with quantum brain scanners guiding paediatric surgery by 2028. | [S90 Mission 3] | high | Stretched given F37 (*Analysis*) |
+| F80 | The 2025 Strategic Defence Review says quantum could reduce dependence on vulnerable satellite GPS and quantum computing could break encryption. | [S95 Box 2] | high | Thin on detail |
+| F81 | A 24-hour UK-wide GNSS outage is estimated to cost £1,424m (2021 evidence base). | [S105] | high | SDR's "£1bn a day" rests on a 2018 source [S95 fn 88] |
+| F82 | DSIT and NPL committed £180m (March 2026) to a National Timing Centre distributing atomic-clock time by fibre, satellite and radio as an alternative to GNSS for telecoms, banking, transport and emergency services. | [S106] | high | product/deployed technology, scaling |
+| F83 | NATO's strategy names GNSS-independent PNT and space-based data collection as military uses of quantum sensors, and sets the goal of transition to quantum-safe cryptography. | [S14] | high | |
+| F84 | NATO's Quantum Technology Roadmap (approved 30 July 2026) commits to a use-case repository, Quantum Assessment Criteria by Q2 2027 and QUESTOR sea trials of quantum PNT in 2026–27. | [S92] | high | |
+| F85 | The European Commission says quantum sensing gives defence gravimetry, magnetometry and inertial navigation for detecting underground structures, tracking submarines and threat detection. | [S94 §2.4] | medium | Policy assertion, not evidenced in the text |
+| F86 | The EU plans quantum inertial navigation prototypes on Galileo satellites and a ground network of quantum gravimeters (including defence and civil protection uses), with a space gravimetry pathfinder after 2030. | [S15 §2.2.3], [S94 §2.4] | high | Plans |
+| F87 | The EDA-funded QuantaQuest project (Thales-led, about €1.5m, closed Dec 2023) produced a building block towards a quantum inertial measurement unit and an urban free-space QKD demonstration. | [S104] | high | lab / field demo |
+| F88 | CRS (May 2026) says quantum technology "has not yet reached maturity for most applications"; the Defense Science Board rated sensing the most mature military application, "poised for mission use", for alternative PNT, detecting underground structures and nuclear materials, and electronic warfare. | [S93] | high | DSB date unverified |
+| F89 | DIU's Transition of Quantum Sensing programme runs field tests in five lines (inertial, gravimetry, magnetic anomaly detection, magnetic navigation, components), with over ten tests planned in about 12 months from March 2025. | [S41] | high | No results published |
+| F90 | DOD assessed quantum computers as at least ten years away in July 2025; DOD requested $593.7m for quantum in FY2026. | [S93] | high | |
+| F91 | Singapore's MINDEF agencies partnered with IBM in July 2026 to evaluate quantum optimisation for mission planning and logistics, saying it "could eventually help". | [S89] | high | Evaluation only |
+| F92 | Dstl (2020) listed logistics, scheduling, AI/ML and materials as candidate defence uses of quantum information processing, and classed the Fujitsu Digital Annealer as conventional-silicon competition. | [S87] | medium | Stale (2020) |
+| F93 | CSIS argues the near-term payoff of quantum sensing is "better cueing, more resilient navigation, and more persistent wide-area search", not stealth-defeating radar. | [S99] | medium | |
+| F94 | NASA JPL is building a space quantum gravity gradiometer pathfinder, described as the first attempt to fly one, for water, resources and national-security mapping. | [S109] | high | prototype |
+| F95 | QKD is rejected for UK government and military use by NCSC, judged niche-only by French, German, Dutch and Swedish agencies, judged not deployable for DOD mission use by the DSB, left open "in the future" by NATO, and described as "ultra-secure" by the European Commission. | [S75], [S76], [S93], [S14], [S94 §2.4] | high | Contradiction is between policy positions, not facts |
+| F96 | RUSI suggests 1,000–10,000-qubit machines could enable "meaningful cryptanalysis of specific classical encryption schemes" within about ten years. | [S100] | low | Author co-founded a company named in the report; conflicts with [S70], [S93] |
+
+## Sub-question 5: Where PQC, sensing and quantum-inspired methods sit in the chain
+
+| ID | Finding | Sources | Confidence | Notes |
+|---|---|---|---|---|
+| F97 | PQC runs on classical computers and rests on classical mathematics: module lattices (ML-KEM, ML-DSA), hashes (SLH-DSA) and error-correcting codes (HQC). | [S71], [S72] | high | |
+| F98 | NIST finalised FIPS 203, 204 and 205 on 13 August 2024 and selected HQC as a backup on 11 March 2025, with its final standard expected in 2027. | [S71], [S72] | high | |
+| F99 | NCSC's migration milestones are discovery and planning by 2028, priority migrations by 2031 and complete migration by 2035; it recommends ML-KEM-768 and ML-DSA-65. | [S73], [S74] | high | |
+| F100 | NCSC states "PQC is the best mitigation to the threat to cryptography from quantum computing". | [S75] | high | |
+| F101 | Quantum-inspired solvers are classical algorithms or hardware: simulated bifurcation (inspired by adiabatic quantum optimisation), the Digital Annealer (enhanced simulated annealing in CMOS), tensor networks (exploiting limited entanglement) and dequantised algorithms (sampling in place of superposition). | [S83], [S84], [S79], [S77] | high | |
+| F102 | The user's prior scan frames quantum-inspired methods as "classical methods drawn from quantum ideas, usable now", and sensing as closest to the field "only for clocks and magnetic navigation". | [S01] | internal | Team framing, used for context only |
 
 ## Contradictions & open questions
-- <Where sources disagree, which sources, and how you weighed them>
-- <Questions the evidence could not answer>
+
+- **QKD.** Positions differ by organisation (F95). UK NCSC, the EU security
+  agencies and the US DSB reject or limit it; the European Commission promotes
+  it; NATO leaves room for it later. For a UK D&G whitepaper, weight NCSC
+  [S75] as the national technical authority.
+- **Code-breaking timelines.** RUSI's ~10 years at 1–10k qubits [S100]
+  conflicts with Gidney's under one million noisy qubits [S70] and CRS's ~20
+  million qubits figure [S93]. CRS's figure tracks Gidney's 2019 estimate and
+  looks dated next to S70. Weight S70 (method published) over S100 (author
+  conflict of interest).
+- **Q-CTRL MagNav figure.** 46× in the preprint [S34] versus 94× quoted by the
+  CEO [S47]. Use the preprint figure as a vendor claim.
+- **UK aircraft target wording.** Euronews says "all commercial aircraft by
+  2030" [S48]; gov.uk says "deployed on aircraft" [S40]. Use gov.uk.
+- **GNSS outage cost.** SDR's £1bn a day (2018 source) [S95] versus £1,424m
+  per 24 hours [S105], repeated by government in 2026 [S106]. Use S105.
+- **Microsoft topological qubit.** Unresolved: Microsoft [S50], critique
+  [S52], Nature exchange June 2026 (not opened).
+- **Gaps.**
+  - Flash memory as a tunnelling anchor is `[unsupported]`: no source logged.
+  - SQUID defence uses (e.g. airborne magnetic anomaly detection),
+    squeezed-light lidar for defence, Rydberg field results and gravity-map
+    navigation results were not found in T1/T2 sources.
+  - No published performance data exists for any UK quantum navigation trial.
+  - No post-2020 Dstl source on quantum computing or quantum-inspired
+    optimisation was found; S87 and S102 are stale.
+  - Topological insulators, topological photonics, hBN emitters and quantum
+    simulation for defence materials were not covered.
+  - The DSB study quoted by CRS was not opened and its date is unverified.
 
 ## Analysis (agent interpretation, not sourced fact)
-- <Patterns, implications and "so what", each linked to the finding IDs it builds on>
+
+- **The phenomenon list splits cleanly into three bands.** Band A, deployed
+  for decades: quantised energy levels, tunnelling, NMR, Josephson and
+  quantum Hall effects, photoelectric effect, atomic transitions (F07–F15).
+  Band B, field-trialled for defence now: atomic transitions in compact and
+  optical clocks, matter-wave interference, spin precession in vapour cells
+  (F26–F34). Band C, lab or theory with asserted applications: topological
+  states, time crystals, superabsorption, polaritonic chemistry, moiré
+  materials (F49, F64–F75). This gives the whitepaper a ready shortlist rule:
+  Band B is where the defence story sits today.
+- **Today's defence sensors use the "old" quantum, not entanglement.** The
+  sensors in trials rely on quantised levels and coherence (F16, F60).
+  Entanglement-enhanced sensing exists only in lab demos (F41) and quantum
+  radar (F58, F59). A whitepaper that leads with entanglement for sensing
+  would overstate the evidence.
+- **The binding constraint in sensing is engineering, not physics.** Fragility
+  (F56), platform noise (F57, F34 notes), lab-to-field performance gaps (F55,
+  F35) and the drift limits of inertial systems (F27) all point to
+  integration, ruggedisation and sensor fusion as the work. This matches the
+  prior scan's view [S01].
+- **PQC and quantum-inspired methods are both classical responses to the
+  quantum chain, at opposite ends.** PQC defends against what superposition,
+  entanglement and interference will eventually enable in a quantum computer
+  (F42, F97). Quantum-inspired methods borrow the mathematics of tunnelling,
+  adiabatic evolution and entanglement structure without the hardware (F50–F54,
+  F101). The chain for the whitepaper is therefore "phenomenon → quantum
+  technology → (threat or idea) → classical product", not "phenomenon →
+  product".
+- **Classical methods keep catching quantum claims.** Tensor networks
+  reproduced IBM's utility result (F52), D-Wave's claim is challenged (F53)
+  and dequantisation removed a headline speedup (F54). The Siemens study
+  (F63) shows the practical near-term value is in the inspired hardware.
+  Implication: defence optimisation pilots should benchmark against
+  quantum-inspired and best classical solvers before any quantum hardware.
+- **A hype-check pattern recurs.** Press releases go beyond peer-reviewed
+  content (F49, F68), and headline results fail to replicate or are retracted
+  (F64, F74, F75). Defence use cases attached to Band C phenomena are mostly
+  author-asserted. A simple test for the whitepaper: has anyone outside the
+  originating group reproduced it, and has it left the lab?
+- **Official timelines have slipped before.** Dstl's 2020 forecast (F76) and
+  the UK 2030 targets (F77, F79), set against unapproved OPM-MEG (F37) and
+  unpublished trial data (F29), suggest presenting the 2030 missions as
+  targets, not forecasts.
 
 ---
 

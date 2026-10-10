@@ -4,7 +4,7 @@ slug: 2026-10-quantum-phenomena-defence-gov
 created: 2026-10-10
 type: technical-literature, industry-context
 mode: autonomous
-status: gathering
+status: writing
 ---
 
 # Research brief: Quantum phenomena → technologies → defence and government use cases

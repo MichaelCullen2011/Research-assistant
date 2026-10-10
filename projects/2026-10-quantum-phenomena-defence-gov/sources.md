@@ -9,7 +9,10 @@ computing / PQC / quantum-inspired, S90–S109 defence and government use
 cases). Gaps in the numbering are unused IDs, not deleted sources.
 
 Access note: pages were opened with `curl` and converted to text, because
-the WebFetch tool could not resolve hosts in this environment.
+the WebFetch tool could not resolve hosts in this environment. In the second
+gathering round (quantum radar and detection, S111–S124), these hosts returned
+HTTP 403 to both curl and WebFetch and were not logged: royalnavy.mod.uk,
+media.defense.gov, sto.nato.int and cnbc.com.
 
 ## Index
 
@@ -117,6 +120,20 @@ the WebFetch tool could not resolve hosts in this environment.
 | S108 | Quantum sensing for gravity cartography (Stray et al., Nature 602, 590–594) (duplicate of S31) | Ben Stray, Andrew Lamb, ... Kai Bongs, Michael Holynski (University… | 2022-02-23 | journal | T1 | UK |
 | S109 | NASA Aims to Fly First Quantum Sensor for Gravity Measurements | NASA Jet Propulsion Laboratory | 2025-04-15 | gov (agency news) | T1 | US |
 | S110 | A Reality Check on Quantum Optimisation: Evidence from an Industrial Case Study | H. Safi, K. Wintersperger, O. von Sicard, C. Niedermeier, W. Mauerer (Siemens; OTH Regensburg) / arXiv | 2026-07-14 | preprint | T2 | EU (Germany) |
+| S111 | Microwave quantum illumination using a digital receiver (Barzanjeh, Pirandola, Vitali & Fink) | S. Barzanjeh, S. Pirandola, D. Vitali, J. M. Fink (IST Austria et al.) / Science Advances 6(19), eabb0451 | 2020-05-08 | journal (open access) | T1 | EU (Austria, Italy, UK authors) |
+| S112 | Demonstration of Quantum Advantage in Microwave Quantum Radar (Assouly et al.) | R. Assouly, R. Dassonneville, T. Peronnin, A. Bienfait, B. Huard (ENS Lyon, CNRS) / arXiv v2; Nature Physics (doi:10.1038/s41567-023-02113-4) | 2022-11-10 (v1); v2 2023-03-02 | preprint of journal article | T1 | EU (France) |
+| S113 | The Quantum Illumination Story (Shapiro) | Jeffrey H. Shapiro (MIT) / arXiv v4; IEEE Aerospace and Electronic Systems Magazine, April 2020 (per search listing) | 2019-12-23 (v4) | preprint of magazine article | T2 | US |
+| S114 | Advances in Quantum Radar and Quantum LiDAR (Torromé & Barzanjeh) | R. Gallego Torromé (Primorska), S. Barzanjeh (Calgary) / arXiv | 2023-10-11 | preprint (review) | T2 | EU / Canada |
+| S115 | Quantum Radar and Research Assessment (Galati, Pavan & Daum) | G. Galati, G. Pavan (Tor Vergata), F. Daum (Raytheon, per search listing) / arXiv | 2025-06-12 | preprint | T2 | Italy / US |
+| S116 | Written question 113398: Quantum Technology: Radar (answered by Luke Pollard MP) | UK Parliament, Ministry of Defence answer | 2026-02-26 (tabled 2026-02-12) | gov (parliamentary answer) | T1 | UK |
+| S117 | Quantum Optimised Radar (contract details notice 2025/S 000-051440) | Ministry of Defence / Find a Tender | 2025-08-27 (contract signed 2025-08-14) | gov (procurement notice) | T1 | UK |
+| S118 | Aquark Augments Networked Radars With Quantum-Based Timing in Trial (Aquark press release) | Aquark Technologies press release, reproduced by The Quantum Insider | 2026-08-12 | press-release | T3 | UK |
+| S119 | Second radar installation at University of Birmingham to form future quantum-enabled radar network | University of Birmingham (news archive) | 2022-04-05 | university news | T3 | UK |
+| S120 | Development of Quantum Enabled Staring Radar with Low Phase Noise (Jahangir et al.) | M. Jahangir, J. M. Jones, ... K. Bongs, M. Antoniou, Y. Singh (Birmingham) / 18th European Radar Conference (EuRAD), IEEE, pp. 225–228 | 2021 (conference; DOI dated 2022) | conference paper | T1 | UK |
+| S121 | Quantum radar will expose stealth aircraft (University of Waterloo news) | University of Waterloo, Institute for Quantum Computing | 2018-04-12 (**pre-2022: stale**) | university news | T3 | Canada |
+| S122 | China Says It Has Quantum Radar: What Does That Mean? | Popular Science | 2016-09-27 (**pre-2022: stale**) | news | T2 | China (reported from US) |
+| S123 | Military and Security Dimensions of Quantum Technologies: A Primer | Michal Krelina; SIPRI | 2025-07 | think tank | T2 | EU (Sweden) |
+| S124 | An Imaging Radar Using a Rydberg Atom Receiver (Watterson et al.) | W. J. Watterson, ... C. L. Holloway, M. T. Simons (NIST et al.) / arXiv | 2025-06-25 (v1); PDF dated 2025-09-10 | preprint | T2 | US |
 
 ---
 
@@ -1970,3 +1987,258 @@ the WebFetch tool could not resolve hosts in this environment.
   > "Our results show that current quantum hardware is not yet competitive for large-scale constrained optimisation, although simplified formulations allow non-trivial valid solutions. Quantum-inspired hardware, by contrast, already supports industry-relevant problem sizes for the assignment-based formulations studied here and therefore provides a practically valuable reference point for near-term industrial optimisation workflows." (§VIII.C Conclusion)
   > "the main lesson is not that one solver paradigm universally dominates, but that successful industrial proof-of-concept work currently depends on restricted problem scope, hardware-aware formulation, and explicit matching of optimisation goals to platform capabilities." (§VIII.B)
 - **Caveats:** Preprint. Single problem class and company. The industry-scale baseline is classical heuristics, not a state-of-the-art commercial MILP or constraint-programming solver run at scale, so it does not show the Digital Annealer beats the best classical method.
+
+### S111: Microwave quantum illumination using a digital receiver (Barzanjeh, Pirandola, Vitali & Fink)
+- **URL / file:** https://pmc.ncbi.nlm.nih.gov/articles/PMC7272231/ (doi:10.1126/sciadv.abb0451; science.org returned 403, PMC copy read)
+- **Author / publisher:** S. Barzanjeh, S. Pirandola, D. Vitali, J. M. Fink / Science Advances 6(19), eabb0451
+- **Published:** 2020-05-08 · **Accessed:** 2026-10-10
+- **Type / tier:** journal (open access) / T1
+- **Region:** EU (IST Austria; Italian and UK co-authors)
+- **Access:** full-text
+- **Why it matters:** The best-known experimental case *for* microwave quantum radar, written by the people who ran it. Supporter evidence.
+- **Key points:**
+  - Entangled microwave fields from a Josephson parametric converter at about 7 mK probed a room-temperature object 1 m away in free space (abstract; Results).
+  - The digital receiver beat a symmetric classical noise radar, but the best classical benchmark (coherent-state homodyne) "can be approached ... but never be outperformed" with this receiver (Introduction).
+  - The quantum advantage over homodyne (up to 1 dB) and over heterodyne and noise radar (up to 4 dB) is *simulated* from calibration data, assuming perfect idler photon counting (Introduction; abstract).
+  - Authors name "short-range low-power radar, e.g., for security applications" and biomedical scanning as uses (Discussion).
+  - Amplified noise in the target region "overwhelms the environmental noise by orders of magnitude" in this proof of principle (Discussion).
+  - Funding: IST Austria, ERC and EU Horizon 2020 (Acknowledgements). The authors thank J. Shapiro for critical comments.
+- **Verbatim quotes:**
+  > "We implement a digital phase-conjugate receiver based on linear quadrature measurements that outperforms a symmetric classical noise radar in the same conditions, despite the entanglement-breaking signal path." (abstract)
+  > "the theoretically strongest classical benchmark in the same conditions—the coherent-state homodyne detector using the same signal power and signal path—can be approached in specific conditions such as quantum-limited amplification, but never be outperformed." (Introduction)
+  > "Our results highlight the opportunities and challenges in the way toward a first room-temperature application of microwave quantum circuits." (abstract)
+- **Caveats:** Lab proof of principle, 1 m range, dilution refrigerator. Measured result does not beat the best classical radar; the quantum advantage is simulated. Press coverage called it a "prototype" quantum radar; the paper calls it "proof-of-concept".
+
+### S112: Demonstration of Quantum Advantage in Microwave Quantum Radar (Assouly et al.)
+- **URL / file:** https://arxiv.org/abs/2211.05684 (PDF v2 read); published as Nature Physics, doi:10.1038/s41567-023-02113-4 (journal version not opened)
+- **Author / publisher:** R. Assouly, R. Dassonneville, T. Peronnin, A. Bienfait, B. Huard (ENS Lyon, CNRS)
+- **Published:** arXiv v1 2022-11-10; v2 2023-03-02 · **Accessed:** 2026-10-10
+- **Type / tier:** preprint of peer-reviewed journal article / T1 (journal DOI listed on arXiv page)
+- **Region:** EU (France)
+- **Access:** full-text (arXiv v2)
+- **Why it matters:** The first microwave quantum radar to beat the *best possible* classical radar, in the lab. The strongest supporter evidence, and the authors state the practical limits themselves.
+- **Key points:**
+  - Joint measurement of probe and stored idler in a superconducting circuit gives a quantum advantage Q = 1.2(1) over the best classical strategy (error exponent), "on par with what was achieved in optics" (p.2–3).
+  - The theoretical maximum advantage for radar is Q = 4; pairwise joint measurement can reach Q = 2 (p.1).
+  - The advantage appears only for small signal photon numbers (NS ≈ 0.035) and large noise; the experiment runs inside a dilution refrigerator (abstract; p.3).
+  - Previous microwave experiments, which measured probe and idler separately, "have not demonstrated any quantum advantage" (abstract).
+- **Verbatim quotes:**
+  > "This quantum radar thus beats the best possible classical one by a factor Q = 1.2(1), on par with what was achieved in optics" (p.3)
+  > "The experiment makes clear that using this quantum advantage in practical settings is a tremendous challenge." (conclusion)
+  > "While the experiment is a proof-of-principle performed inside a dilution refrigerator, it exhibits some of the inherent difficulties in implementing quantum radars such as the limited range of parameters where a quantum advantage can be observed or the requirement for very low probe and idler temperatures." (abstract)
+- **Caveats:** Lab only; the target is a simulated reflectivity inside the cryostat, not free space. Trade press headlined it as "20% better than a classical radar" (The Quantum Insider, 2023-07-21, seen in search results only); that matches Q = 1.2 but omits the authors' practicality caveats.
+
+### S113: The Quantum Illumination Story (Shapiro)
+- **URL / file:** https://arxiv.org/abs/1910.12277 (PDF v4 read)
+- **Author / publisher:** Jeffrey H. Shapiro (MIT Research Laboratory of Electronics); published in IEEE Aerospace and Electronic Systems Magazine, April 2020 (per search listing; magazine text not opened)
+- **Published:** arXiv v4 2019-12-23 · **Accessed:** 2026-10-10
+- **Type / tier:** preprint of magazine article / T2
+- **Region:** US
+- **Access:** full-text (arXiv)
+- **Why it matters:** A history and assessment of quantum illumination by one of its originators. Neither booster nor dismissive: confirms the advantage is real in theory and severely limited in practice.
+- **Key points:**
+  - Quantum illumination does beat a classical radar of the same transmitted energy, despite loss and noise destroying the entanglement (abstract).
+  - "A realistic assessment of that improvement’s utility, however, shows that its value is severely limited" (abstract).
+  - Idler storage loss: with fibre delay lines, an earlier microwave QI proposal could offer no advantage for targets beyond 11.25 km (microwave QI section).
+  - Unlike conventional radar, QI's advantage degrades as transmitter power rises; microwave QI struggles to get enough time-bandwidth product (microwave QI section).
+  - At lidar wavelengths most targets give speckled returns, which remove the advantage of one receiver type (lidar section).
+  - Funded by AFOSR MURI and MITRE's Quantum Moonshot programme (acknowledgements).
+- **Verbatim quotes:**
+  > "A realistic assessment of that improvement’s utility, however, shows that its value is severely limited." (abstract)
+  > "In conclusion, despite QI target detection’s not being an immediate boon to the radar community, it is important to remember that it is the first example of a bosonic system that offers a performance improvement on an entanglement-breaking channel when its transmitter is subject to an energy constraint" (Concluding remarks)
+- **Caveats:** 2019, before S111 and S112 were published; does not assess them. US defence-research funded.
+
+### S114: Advances in Quantum Radar and Quantum LiDAR (Torromé & Barzanjeh)
+- **URL / file:** https://arxiv.org/abs/2310.07198 (PDF v1 read)
+- **Author / publisher:** Ricardo Gallego Torromé (University of Primorska, Slovenia), Shabir Barzanjeh (University of Calgary) / arXiv
+- **Published:** 2023-10-11 · **Accessed:** 2026-10-10
+- **Type / tier:** preprint (review) / T2 (not peer reviewed in this form)
+- **Region:** EU / Canada
+- **Access:** full-text
+- **Why it matters:** The supporters' own review. Even here the conclusion is "cautious optimism" and a list of hard obstacles.
+- **Key points:**
+  - Covers quantum illumination (microwave and optical), receiver designs, and quantum-enhanced ranging (abstract).
+  - Authors see grounds for "cautious optimism regarding the potential for practical applications" (Conclusions).
+  - Microwave hurdles: the very low signal intensity needed for an advantage, and the ultra-low temperatures needed to make entanglement (Conclusions).
+  - Optical hurdles: atmospheric conditions rarely give the high-noise regime QI needs; signal fading limits the advantage (Conclusions).
+  - Suggested niche: scenarios with intense jamming, "particularly applicable to optical frequencies" (Conclusions).
+- **Verbatim quotes:**
+  > "we have presented various research directions and findings that, in our perspective, warrant cautious optimism regarding the potential for practical applications. Nonetheless, the journey towards the realization of quantum radar and LiDAR is fraught with numerous challenges." (Conclusions and perspectives)
+  > "Firstly, the requirement for extremely low signal intensities to benefit from quantum illumination, as opposed to coherent light, presents a formidable challenge. Secondly, achieving the ultra-low temperatures needed to generate entanglement remains a significant obstacle." (Conclusions and perspectives)
+- **Caveats:** Co-author Barzanjeh led S111, so the review assesses its own group's work.
+
+### S115: Quantum Radar and Research Assessment (Galati, Pavan & Daum)
+- **URL / file:** https://arxiv.org/abs/2506.13797
+- **Author / publisher:** Gaspare Galati, Gabriele Pavan (Tor Vergata University, Rome), Frederick Daum (Raytheon, per search listing) / arXiv
+- **Published:** 2025-06-12 · **Accessed:** 2026-10-10
+- **Type / tier:** preprint / T2 (not peer reviewed)
+- **Region:** Italy / US
+- **Access:** abstract-only
+- **Why it matters:** The most recent sceptic position, from radar engineers. SIPRI [S123] cites a related 2025 journal paper by the same authors ("Lessons learnt from the rise and fall of quantum radar research", Academia Quantum), which was not opened.
+- **Key points:**
+  - Quantum radar was studied "in many Nations for about fifteen years" with some hundred publications (abstract).
+  - Post-2020 literature shows low transmitted power means quantum radar "cannot produce neither significant results nor real world applications" (abstract, verbatim grammar).
+  - The authors argue most of the scientific community ignored this negative outcome (abstract).
+- **Verbatim quotes:**
+  > "In the post 2020 literature, it is shown that, due to the exceedingly low transmitted power, Quantum Radar cannot produce neither significant results nor real world applications." (abstract)
+  > "Regrettably, most of the scientific community ignored this negative outcome: a fact worth of exam." (abstract)
+- **Caveats:** Abstract only. Same lead authors as S103. Daum's Raytheon affiliation comes from a search listing, not the abstract page.
+
+### S116: Written question 113398: Quantum Technology: Radar
+- **URL / file:** https://questions-statements.parliament.uk/written-questions/detail/2026-02-12/113398 (read via the Parliament written-questions API, record id 1881711; lead found via westminsterbrief.co.uk)
+- **Author / publisher:** UK Parliament; asked by Ben Obese-Jecty MP, answered by Luke Pollard MP (Minister of State, MOD)
+- **Published:** tabled 2026-02-12; answered 2026-02-26 · **Accessed:** 2026-10-10
+- **Type / tier:** gov (parliamentary answer) / T1
+- **Region:** UK
+- **Access:** full-text
+- **Why it matters:** The current UK government position on quantum radar, stated by a defence minister.
+- **Key points:**
+  - MOD says quantum radar and quantum illumination are both immature and their benefit to defence is uncertain.
+  - MOD research focuses on clocks for timing and on sensing for navigation and situational awareness; trials have been run.
+  - MOD collaborates with the Birmingham-led QuSIT Hub, which is "researching Quantum enhanced RADAR".
+  - Defence research priorities are classified.
+- **Verbatim quotes:**
+  > "‘Quantum Radar’ and ‘Quantum Illumination’ have specific meanings. In both cases the technology is immature and the potential benefits to Defence remain uncertain." (answer ¶2)
+  > "This includes a focus on clock technology to enhance timing capabilities and sensing for navigation and situational awareness." (answer ¶3)
+  > "MOD is collaborating with the UK’s Quantum Ecosystem, including the Quantum sensing, Imaging and Timing (QuSIT) Hub (led by the University of Birmingham) that is researching Quantum enhanced RADAR." (answer ¶3)
+- **Caveats:** Does not say the UK has stopped quantum radar research; says benefits are uncertain and priorities classified.
+
+### S117: Quantum Optimised Radar (MOD contract details notice)
+- **URL / file:** https://www.find-tender.service.gov.uk/Notice/051440-2025
+- **Author / publisher:** Ministry of Defence / Find a Tender service
+- **Published:** 2025-08-27 · **Accessed:** 2026-10-10
+- **Type / tier:** gov (procurement notice) / T1
+- **Region:** UK
+- **Access:** full-text
+- **Why it matters:** Primary evidence that MOD paid for the radar-timing work reported in S118.
+- **Key points:**
+  - "Quantum Optimised Radar Phase 1"; supplier Aquark Technologies Limited.
+  - £295,000 excluding VAT; signed 14 August 2025; runs 15 August 2025 to 31 March 2026.
+  - Below threshold; CPV 35722000 (Radar).
+- **Verbatim quotes:**
+  > "Quantum Optimised Radar Phase 1" (Scope, Description)
+- **Caveats:** The notice gives no technical scope.
+
+### S118: Aquark Augments Networked Radars With Quantum-Based Timing in Trial
+- **URL / file:** https://thequantuminsider.com/2026/08/12/aquark-augments-networked-radars-with-quantum-based-timing-in-trial/ (Royal Navy news page on the same trial returned 403)
+- **Author / publisher:** Aquark Technologies press release, reproduced in full by The Quantum Insider
+- **Published:** 2026-08-12 · **Accessed:** 2026-10-10
+- **Type / tier:** press-release / T3
+- **Region:** UK
+- **Access:** full-text
+- **Why it matters:** The only reported UK defence field trial linking quantum technology and radar. The quantum part is timing, not detection.
+- **Key points:**
+  - June 2026 trial with the Royal Navy DCTO, Saab UK, QinetiQ and Dstl; radars at Saab and QinetiQ sites; XV Patrick Blackett and Dstl as network rebroadcast nodes.
+  - Two AQlock 2.0 cold-atom clocks served time to two networked Saab Giraffe 1X radars under simulated GNSS-denied and spoofed conditions.
+  - Aquark says the radars built a single air picture on AQlock timing alone, degraded predictably under timing disruption and recovered quickly; clocks started from cold in under 30 minutes.
+  - Work ran under the Royal Navy "Quantum Optimised Radar" project from December 2025.
+  - The release itself says the work is distinct from quantum illumination radar, which it calls "somewhat more controversial within the technical community".
+- **Verbatim quotes:**
+  > "Two operational radar systems were able to create a single, accurate air picture depending solely on AQlock for their timing, mimicking representative GNSS-denied and GNSS-spoofed conditions." (body)
+  > "The project is further distinct from “quantum illumination” radar types, for example as described here. These experiments are somewhat more controversial within the technical community as to a) their true feasibility at scale and b) their ultimate benefits to end users." (body)
+- **Caveats:** Vendor release; "world-first" and performance descriptions are Aquark's claims. No timing or radar performance figures. Contract corroborated by S117.
+
+### S119: Second radar installation at University of Birmingham to form future quantum-enabled radar network
+- **URL / file:** https://www.birmingham.ac.uk/news-archive/2022/second-radar-installation-at-university-of-birmingham-to-form-future-quantum-enabled-radar-network
+- **Author / publisher:** University of Birmingham
+- **Published:** 2022-04-05 · **Accessed:** 2026-10-10
+- **Type / tier:** university news / T3 (reports its own research)
+- **Region:** UK
+- **Access:** full-text
+- **Why it matters:** Describes the UK's other "quantum-enabled radar": classical radars with a quantum oscillator as the reference, aimed at small drones.
+- **Key points:**
+  - Two Aveillant staring radars on campus (Nov 2020, 2021), to be linked to one quantum oscillator in the clock labs.
+  - Lower phase noise from the quantum oscillator is meant to help detect small targets such as drones and birds in clutter.
+  - In April 2022, connecting the oscillator was "estimated to take place within the next year".
+  - Hub partners include MOD and GCHQ via the National Quantum Technologies Programme.
+- **Verbatim quotes:**
+  > "Quantum-enabled radar, utilising ultra-stable and highly precise quantum oscillators, has the potential to significantly improve the capabilities of conventional radar to detect smaller targets such as drones and birds." (¶3)
+  > "The final step, which is estimated to take place within the next year, is to connect the quantum oscillators to the radars which will demonstrate the immense capabilities of quantum-enabled radar systems." (¶4)
+- **Caveats:** University press; no results. No published integrated result was found (see S120).
+
+### S120: Development of Quantum Enabled Staring Radar with Low Phase Noise (Jahangir et al.)
+- **URL / file:** https://research.birmingham.ac.uk/en/publications/development-of-quantum-enabled-staring-radar-with-low-phase-noise (doi:10.23919/EuRAD50154.2022.9784517)
+- **Author / publisher:** M. Jahangir, J. M. Jones, J. Kannanthara, C. J. Baker, K. Bongs, M. Antoniou, Y. Singh / 2021 18th European Radar Conference (EuRAD), IEEE, pp. 225–228
+- **Published:** 2021 (conference); DOI series dated 2022 · **Accessed:** 2026-10-10
+- **Type / tier:** conference paper / T1
+- **Region:** UK
+- **Access:** abstract-only
+- **Why it matters:** The peer-reviewed record of the Birmingham quantum-oscillator radar; shows that published results were baseline only.
+- **Key points:**
+  - Phase noise from the reference oscillator limits staring radar in strong urban clutter; a quantum oscillator could lower it (abstract).
+  - Results are a baseline of the radar in urban clutter "as a precursor to the integration with the Quantum oscillator" (abstract).
+  - Funded by the UK Quantum Hub in Sensing and Timing, EU iqClock and a BAE Systems PhD (acknowledgement).
+- **Verbatim quotes:**
+  > "Preliminary results are presented to baseline empirical measurement of the staring radar in urban clutter as a precursor to the integration with the Quantum oscillator." (abstract)
+- **Caveats:** Abstract only. A NATO STO paper by the same group (MP-SET-311) returned 403 and was not read.
+
+### S121: Quantum radar will expose stealth aircraft (University of Waterloo news)
+- **URL / file:** https://uwaterloo.ca/news/quantum-radar-will-expose-stealth-aircraft
+- **Author / publisher:** University of Waterloo, Institute for Quantum Computing (Christine Bezruki)
+- **Published:** 2018-04-12 (**stale**) · **Accessed:** 2026-10-10
+- **Type / tier:** university news / T3
+- **Region:** Canada
+- **Access:** full-text
+- **Why it matters:** Evidence that Canada's DND funded quantum radar research, and an example of headline framing ahead of the research.
+- **Key points:**
+  - DND's All Domain Situational Awareness (ADSA) S&T programme invested $2.7m (the release gives "$2.7 million" with no currency; Canadian programme) in a Waterloo project led by Jonathan Baugh.
+  - Project goal: "a robust source of entangled photons that can be generated at the press of a button".
+  - Motivation: Arctic space weather degrades radar; North Warning System stations near end of life.
+  - The release states quantum illumination "has only been explored in the laboratory".
+- **Verbatim quotes:**
+  > "The goal for our project is to create a robust source of entangled photons that can be generated at the press of a button," (Baugh)
+  > "To date, quantum illumination has only been explored in the laboratory." (body)
+- **Caveats:** The headline ("will expose stealth aircraft") goes beyond the stated project goal (an entangled-photon source). 2018; no later results were found.
+
+### S122: China Says It Has Quantum Radar: What Does That Mean?
+- **URL / file:** https://www.popsci.com/china-says-it-has-quantum-radar-what-does-that-mean/ (CNBC coverage returned 403)
+- **Author / publisher:** Popular Science
+- **Published:** 2016-09-27 (**stale**) · **Accessed:** 2026-10-10
+- **Type / tier:** news / T2 (relays a state-owned company announcement)
+- **Region:** China (reported from US)
+- **Access:** full-text
+- **Why it matters:** Records the CETC claim that is the root of most "China has quantum radar" stories.
+- **Key points:**
+  - CETC announced it had tested a quantum radar to 100 km.
+  - The article notes the gap between a laboratory proof of concept and a deployed radar, and decoherence as a range limit.
+  - It says Lockheed Martin had pursued quantum radar since 2007 with no public reports of deployment.
+- **Verbatim quotes:**
+  > "China Electronics Technology Group Corporation (CETC), China’s foremost military electronics company, has announced that its scientists have tested a quantum radar to the range of 100km" (¶1)
+  > "There is, of course, a wide difference between a claim of a laboratory “proof of concept” and the deployment of an actual working quantum radar." (¶4)
+- **Caveats:** Journalist explainer; parts of its physics explanation (e.g. spoofing "immediately noticed", inferring target composition) are not sourced to research and should not be cited. The CETC claim itself was not independently verified in any source found.
+
+### S123: Military and Security Dimensions of Quantum Technologies: A Primer
+- **URL / file:** https://www.sipri.org/sites/default/files/2025-07/0725_military_and_security_dimensions_of_quantum_technologies_0.pdf
+- **Author / publisher:** Michal Krelina; Stockholm International Peace Research Institute (SIPRI)
+- **Published:** 2025-07 · **Accessed:** 2026-10-10
+- **Type / tier:** think tank / T2
+- **Region:** EU (Sweden)
+- **Access:** full-text
+- **Why it matters:** A European arms-control view that treats quantum radar and quantum submarine detection as recurring narratives, with sourced reasons.
+- **Key points:**
+  - Box 4.2: the idea that orbital quantum sensors could make oceans "transparent" fails on resolution and sensitivity; high-sensitivity quantum sensors are lab prototypes or UAV demonstrators (p.26).
+  - Theory suggests quantum magnetometers at their limits could detect SSBNs at up to about 10 km, versus a few km for SQUIDs and several hundred metres for conventional magnetometers (Box 4.2, citing Fetter and Sankaran 2025).
+  - China demonstrated a UAV-mounted quantum magnetometer in April 2025 (Box 4.2, citing SCMP).
+  - Quantum radar "remains largely impractical with current technology" in the RF domain (Box 4.2, citing Pavan, Galati and Daum 2025).
+  - Quantum RF receivers (Rydberg and NV) are named for EW, SIGINT and radar receivers (use case, p.27).
+- **Verbatim quotes:**
+  > "However, experimental findings and technical assessments indicate that quantum radar operating in the radio-frequency domain remains largely impractical with current technology." (Box 4.2)
+  > "In practice, however, such orbital quantum sensing will not have sufficient resolution or sensitivity (where these two factors are typically inversely related)." (Box 4.2)
+- **Caveats:** Secondary synthesis; the SSBN range figure is a theoretical estimate from a cited paper not opened here. Elsewhere the primer says quantum navigation "cannot be jammed, spoofed or detected", which overstates; do not cite that line.
+
+### S124: An Imaging Radar Using a Rydberg Atom Receiver (Watterson et al.)
+- **URL / file:** https://arxiv.org/abs/2506.20862 (PDF read)
+- **Author / publisher:** W. J. Watterson, N. Prajapati, R. Castillo-Garza, S. Berweger, N. Schlossberger, A. Artusio-Glimpse, C. L. Holloway, M. T. Simons (NIST et al.) / arXiv
+- **Published:** 2025-06-25 (v1); PDF dated 2025-09-10 · **Accessed:** 2026-10-10
+- **Type / tier:** preprint / T2 (not peer reviewed)
+- **Region:** US
+- **Access:** full-text
+- **Why it matters:** A radar-like detection use of a non-entanglement quantum sensor (Rydberg receiver) with measured results.
+- **Key points:**
+  - FMCW radar with a Rydberg-atom receiver imaged targets of radar cross section down to 0 dBsm at up to 5 m, range resolution 4.7 cm, in an anechoic room (abstract).
+  - The sensor replaces mixers, antennas, filters and low-noise amplifiers with optical parts (body).
+  - The authors state a well-matched narrowband antenna "will have better sensitivity than a Rydberg atom receiver"; the atoms' edge is tunability (body).
+- **Verbatim quotes:**
+  > "we present an RF image of a scene containing targets in an anechoic room with radar cross sections down to 0 dBsm at a distance up to 5 m and with a range resolution of 4.7 cm." (abstract)
+  > "while a well matched narrowband antenna will have better sensitivity than a Rydberg atom receiver, the atoms offer an advantage when tunability comes into question." (body)
+- **Caveats:** Lab demo, 5 m, anechoic room. Not quantum illumination.

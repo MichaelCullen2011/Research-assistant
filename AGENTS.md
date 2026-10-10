@@ -14,7 +14,8 @@ sources, findings and outputs of each one in plain markdown.
    have actually opened. Quotes must be verbatim.
 4. **Credibility matters.** Tag every source with a tier from
    `guides/source-credibility.md`. Vendor press releases prove that something
-   was *announced*, not that it *works*.
+   was *announced*, not that it *works*. Where a researcher's paper and a
+   press, PR or CEO account of it differ, the paper wins.
 5. **Region**: prefer UK / European sources and context first, then global,
    unless the brief says otherwise.
 6. **Recency**: there is no default window. Use the one set in the brief. If

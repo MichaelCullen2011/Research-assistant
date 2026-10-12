@@ -1,0 +1,13 @@
+{
+  "screening_records": 96,
+  "deduplicated_candidate_groups": 82,
+  "core_full_reviews": 24,
+  "opened_sources": 26,
+  "astra_challenges": 11,
+  "search_entries": 65,
+  "title_only_discovery_records": 24,
+  "academic_and_correction_sources": 26,
+  "source_entries_including_internal_audit": 27,
+  "atomic_findings": 104,
+  "journal_version_challenge_gap": "S31 arithmetic restricted to reviewed arXivv2"
+}

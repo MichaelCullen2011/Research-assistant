@@ -1,0 +1,1682 @@
+{
+  "papers": [
+    {
+      "id": "S10",
+      "title": "Optical clocks at sea",
+      "authors": [
+        "Roslund, Jonathan D.",
+        "Cingöz, Arman",
+        "Lunden, William D.",
+        "Partridge, Guthrie B.",
+        "Kowligy, Abijith S.",
+        "Roller, Frank",
+        "Sheredy, Daniel B.",
+        "Skulason, Gunnar E.",
+        "Song, Joe P.",
+        "Abo-Shaeer, Jamil R.",
+        "Boyd, Martin M."
+      ],
+      "date": "2024-04-24",
+      "preprint_date": "2023-08-23",
+      "journal_date": "2024-04-24",
+      "version": "Journal HTML, version of record",
+      "url": "https://www.nature.com/articles/s41586-024-07225-2",
+      "doi": "10.1038/s41586-024-07225-2",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "US; New Zealand ship; TTCP UK relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/sea.html",
+      "contribution": "Integrated iodine-vapour optical clock and microwave frequency-comb output; field timing experiment [S10 Main; Methods].",
+      "method": "Three clock comparison at NIST against ST05/AT1, then co-located shipboard pairwise comparisons; three-cornered-hat extraction at short times, long-time equal-contribution upper bound [S10 Figs.1–3; Methods Clock comparison].",
+      "result": "35 L physics/comb/control package, 26 kg, ~85 W excluding external supply. PICKLES–EPIC pair at sea: 8×10^-15 instability at 100,000 s (~400 ps equivalent daily holdover), without drift correction [S10 Fig.3d; Main].",
+      "limitations": "Air-conditioned shipping container; no independent high-performance reference at sea; potential correlated environmental noise acknowledged. Individual long-time bound assumes equal contributions. VIPER external supply restarted; raw versus dedrifted laboratory results differ [S10 Main; Methods; Extended Data Fig.4].",
+      "replication": "Different clock ensemble at same RIMPAC campaign supplies architecture-level corroboration, not independent replication of this instrument [S11 Maritime demonstration; S10 Fig.3].",
+      "data_code": "Raw/processed data on request; analysis routines on reasonable request, not a public archive [S10 Data availability; Code availability].",
+      "conflicts": "Authors declare no competing interests, but author affiliations include Vector Atomic; commercial participation must remain visible [S10 Author information; Competing interests].",
+      "relevance": "Analysis: credible local timing holdover evidence; no GNSS-free position solution or deployable network is measured [S10 Figs.1–3].",
+      "assessment": "Analysis: credible local timing holdover evidence; no GNSS-free position solution or deployable network is measured [S10 Figs.1–3].",
+      "claims": [
+        {
+          "text": "35 L clock package excludes external power supply; ~85 W and 26 kg.",
+          "locator": "Main prototype integration paragraph; Fig.1a",
+          "confidence": "high"
+        },
+        {
+          "text": "At sea PICKLES–EPIC pair instability is 8×10^-15 at 100,000 s, reported equivalent holdover ~400 ps/24 h without drift correction.",
+          "locator": "Main ship performance paragraph; Fig.3d",
+          "confidence": "high"
+        },
+        {
+          "text": "Long-time single-clock upper bound divides pair performance by sqrt(2), assuming equal contributions.",
+          "locator": "Main summary performance paragraph; Fig.1c,d",
+          "confidence": "high"
+        },
+        {
+          "text": "No independent standard reference was available at sea; correlated environmental sensitivities are acknowledged.",
+          "locator": "Main co-located clocks paragraph",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S11",
+      "title": "Demonstration of a mobile optical clock ensemble at sea",
+      "authors": [
+        "Hilton, A. P.",
+        "Offer, R. F.",
+        "Klantsataya, E.",
+        "Scholten, S. K.",
+        "Bourbeau Hébert, N.",
+        "Billington, C. J.",
+        "Locke, C.",
+        "Perrella, C.",
+        "Nelligan, M.",
+        "Allison, J. W.",
+        "White, B.",
+        "Ahern, E.",
+        "Martin, K. W.",
+        "Beard, R.",
+        "Elgin, J. D.",
+        "Sparkes, B. M.",
+        "Luiten, A. N."
+      ],
+      "date": "2025-07-02",
+      "preprint_date": "2024-06-06",
+      "journal_date": "2025-07-02",
+      "version": "Journal HTML, version of record",
+      "url": "https://www.nature.com/articles/s41467-025-61140-2",
+      "doi": "10.1038/s41467-025-61140-2",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "Australia/US/New Zealand; TTCP includes UK",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/ensemble.html",
+      "contribution": "Field comparison of three distinct vapour optical architectures (Yb, two-colour Rb, single-colour Rb) [S11 Results Portable optical clocks].",
+      "method": "Optical/RF/microwave beats; 5071A counter timebase; three-cornered-hat Modified Allan deviations. Comparison separates reference/counter artefacts from optical instability [S11 Figs.2,4–6; Methods Clock comparisons and analysis].",
+      "result": "Yb ModADEV remains in 10^-14 domain from 100 ms to 80 ks; short-time (<100 s) sea performance similar to shore, but longer-time stability deteriorates [S11 Individual clock stabilities; Fig.6].",
+      "limitations": "Total ORAFS deployed support apparatus: 46 rack units, 310 kg, 1300 W; internal 112 L/30 kg/300 W is not complete installed system. Power interruption required manual ORAFS restart; UofA clocks restarted autonomously. Rb relocks/configuration changes produce frequency steps [S11 Fig.3; Methods Optical rubidium atomic frequency standard].",
+      "replication": "Independent clock designs corroborate vapour-clock ruggedness; same 2022 exercise as S10, not independent environmental campaign [S11 Maritime demonstration].",
+      "data_code": "Data restricted by military exercise: requests require author and sponsor approval. Processing code on reasonable request [S11 Data availability; Code availability].",
+      "conflicts": "Andre Luiten co-founder, owner and managing director of QuantX; company has commercial IP rights to UofA clocks. Others declare none [S11 Competing interests].",
+      "relevance": "Analysis: valuable comparison with practical failure/restart behaviour; read superiority as stability and application-specific SWaP, not blanket accuracy [S11 Figs.3,6,7; Table1].",
+      "assessment": "Analysis: valuable comparison with practical failure/restart behaviour; read superiority as stability and application-specific SWaP, not blanket accuracy [S11 Figs.3,6,7; Table1].",
+      "claims": [
+        {
+          "text": "Yb stability is in the 10^-14 domain from 100 ms to 80 ks.",
+          "locator": "Results Individual clock stabilities; Fig.6",
+          "confidence": "high"
+        },
+        {
+          "text": "Underway short-time clock performance resembles shore performance, but times above 100 s show decreased stability.",
+          "locator": "Results Individual clock stabilities; Figs.5–6",
+          "confidence": "high"
+        },
+        {
+          "text": "ORAFS deployed ancillary system totals 310 kg and 1300 W.",
+          "locator": "Methods Optical rubidium atomic frequency standard—ORAFS; Table1",
+          "confidence": "high"
+        },
+        {
+          "text": "Power interruption required personnel to restart ORAFS; UofA systems recovered automatically.",
+          "locator": "Results Clock frequency measurements; Fig.3",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S12",
+      "title": "Atom interferometry at arbitrary orientations and rotation rates",
+      "authors": [
+        "d’Armagnac de Castanet, Quentin",
+        "Des Cognets, Cyrille",
+        "Arguel, Romain",
+        "Templier, Simon",
+        "Jarlaud, Vincent",
+        "Ménoret, Vincent",
+        "Desruelle, Bruno",
+        "Bouyer, Philippe",
+        "Battelier, Baptiste"
+      ],
+      "date": "2024-07-30",
+      "preprint_date": "2024-02-29",
+      "journal_date": "2024-07-30",
+      "version": "Journal HTML, version of record; preprint v1 also inspected",
+      "url": "https://www.nature.com/articles/s41467-024-50804-0",
+      "doi": "10.1038/s41467-024-50804-0",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "France/Netherlands; direct EU relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/rotation-journal.html",
+      "contribution": "Combines atomic/classical sensing and actively steered mirror to retain interferometer contrast during rotations [S12 Results; Fig.3].",
+      "method": "87Rb Raman Mach–Zehnder, classical mirror accelerometer and two FOGs, manually rotated platform. Acceleration phase is servo-cancelled; rotational phase reconstructed with inertial model [S12 Results; Methods Closed-loop mode].",
+      "result": "24 micro-g per-shot inferred sensitivity at 2T=20 ms; tilt 0–30 degrees, rotation up to 14 deg/s. Fringe SNR 5.3 versus 20–30 static [S12 Fig.3; Results Rotation compensation].",
+      "limitations": "One measurement axis and manual platform; 1.3% fitted mirror-rate correction; vibration compensation uses assumed flat accelerometer response and 610 microsecond delay. Uncharacterized classical sensor response and platform resonances degrade SNR. Full triad/long-term stability remains future work [S12 Methods; Discussion].",
+      "replication": "Single-instrument study with model/data agreement; no independently reproduced full navigation solution [S12 Figs.2–4; Discussion].",
+      "data_code": "Raw data deposited at Zenodo 11543715; analysis code release not stated in journal Data availability [S12 Data availability].",
+      "conflicts": "Four authors employed by Exail, which commercializes atom-interferometric gravimeters; other authors declare none [S12 Competing interests].",
+      "relevance": "Analysis: enabling motion-compensation result, not field navigation accuracy or classical-free autonomy [S12 Results; Discussion].",
+      "assessment": "Analysis: enabling motion-compensation result, not field navigation accuracy or classical-free autonomy [S12 Results; Discussion].",
+      "claims": [
+        {
+          "text": "Reconstructed fringe SNR 5.3 corresponds to 24 micro-g per shot at 20 ms interrogation.",
+          "locator": "Results Rotation compensation; Fig.3",
+          "confidence": "high"
+        },
+        {
+          "text": "Experiment reaches tilts 0–30 degrees and rotation rates up to 14 degrees/s on a manual rotation platform.",
+          "locator": "Results setup; Fig.3",
+          "confidence": "high"
+        },
+        {
+          "text": "Mirror-rate reconstruction uses fitted correction epsilon=-0.013.",
+          "locator": "Results Rotation compensation; Methods Correction of phase shift",
+          "confidence": "high"
+        },
+        {
+          "text": "Vibration compensation assumes constant accelerometer response and global 610-microsecond delay.",
+          "locator": "Methods Limits of fringe reconstruction due to strong vibrations",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S13",
+      "title": "Quantum-assured magnetic navigation achieves positioning accuracy better than a strategic-grade INS in airborne and ground-based field trials",
+      "authors": [
+        "Murat Muradoglu",
+        "Mattias T. Johnsson",
+        "Nathanial M. Wilson",
+        "Yuval Cohen",
+        "Dongki Shin",
+        "Tomas Navickas",
+        "Tadas Pyragius",
+        "Divya Thomas",
+        "Daniel Thompson",
+        "Steven I. Moore",
+        "Md Tanvir Rahman",
+        "Adrian Walker",
+        "Indranil Dutta",
+        "Suraj Bijjahalli",
+        "Jacob Berlocher",
+        "Michael R. Hush",
+        "Russell P. Anderson",
+        "Stuart S. Szigeti",
+        "Michael J. Biercuk"
+      ],
+      "date": "2025-04-10",
+      "preprint_date": "2025-04-10",
+      "journal_date": null,
+      "version": "arXiv 2504.08167v1 HTML; no journal reference on inspected landing page",
+      "url": "https://arxiv.org/html/2504.08167v1",
+      "doi": "10.48550/arXiv.2504.08167",
+      "type": "primary experimental paper",
+      "tier": "T2",
+      "region": "Australia; global aviation relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/mag.html",
+      "contribution": "Field magnetic-map navigation with internally mounted rubidium scalar magnetometer, vector fluxgate, INS and adaptive compensation [S13 System architecture; Field trials].",
+      "method": "Griffith Cessna flights February 2025 (>6700 km recorded) and van trials November 2024; causal iterative filter described, online warm/cold platform learning; public Australian TMI maps, INS aided by scalar airspeed or 3D velocity [S13 Q-CTRL magnetic denoising; Field trials; Table1].",
+      "result": "22 m endpoint is 365 km, onboard sensor plus 3D velocity aiding (15× INS). 46× example uses outboard sensor and 3D velocity (112 m endpoint). Strict-denial onboard/airspeed case 515 m on 365 km; high-altitude onboard case 2 km/300 km; ground 180 m/18 km [S13 Table1; Figs.4–7].",
+      "limitations": "No same-map algorithm comparison or classical scalar magnetometer ablation. 3D velocity provenance not specified sufficiently for strict GNSS-free best-case interpretation. Algorithms proprietary; altitude extension, military dynamics, ocean coverage remain unresolved [S13 Fig.1 caption; System architecture; Table1; Discussion].",
+      "replication": "No independent replication identified in bounded search; authors use outboard sensors for within-study checks [S13 Field trials; Fig.5].",
+      "data_code": "No explicit data/code availability statement found in inspected full v1; proprietary magnetometer and software descriptions prevent reconstruction from text alone [S13 Q-CTRL MagNav System; end matter inspected].",
+      "conflicts": "All authors affiliated Q-CTRL; proprietary/commercial full-stack system. No separate conflicts declaration found in inspected v1 [S13 author list; Q-CTRL MagNav System].",
+      "relevance": "Analysis: credible internally mounted field aid, but advantage is over specified INS, not GPS and not isolated quantum-sensor advantage [S13 Table1; Demonstration of MagNav].",
+      "assessment": "Analysis: credible internally mounted field aid, but advantage is over specified INS, not GPS and not isolated quantum-sensor advantage [S13 Table1; Demonstration of MagNav].",
+      "claims": [
+        {
+          "text": "22 m endpoint uses onboard sensor with 3D-velocity aid over 365 km.",
+          "locator": "Table1 row(a), 3D velocity",
+          "confidence": "medium"
+        },
+        {
+          "text": "46× endpoint improvement uses outboard sensor with 3D velocity; endpoint112 m.",
+          "locator": "Table1 row(a)dagger; Fig.4a",
+          "confidence": "medium"
+        },
+        {
+          "text": "Onboard scalar-airspeed example ends at515 m over365 km; high-altitude onboard example ends at2 km over300 km.",
+          "locator": "Table1 rows(a) airspeed and(b) onboard",
+          "confidence": "medium"
+        },
+        {
+          "text": "Algorithms and scalar sensor are proprietary; public text gives no same-input classical scalar-sensor ablation.",
+          "locator": "Q-CTRL MagNav System; Demonstration of MagNav; full v1 inspected",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S14",
+      "title": "GNSS-free quantum gravity-aided navigation and fine-scale marine surveying with a strapdown quantum gravimeter",
+      "authors": [
+        "Patrick J. Everitt",
+        "Donald H. White",
+        "Todd Lyon",
+        "Murat Muradoglu",
+        "Alessandro D'Ortenzio",
+        "Aaron J. Canciani",
+        "Malo Cadoret",
+        "Daniel D. Brown",
+        "David Adams",
+        "Yosri Ben-Aicha",
+        "Suraj Bijjahalli",
+        "Mojtaba K. Farsani",
+        "Alexander Rischka",
+        "Karandeep S. Gill",
+        "Magdalena Meyer",
+        "Henry W. Orton",
+        "Nicholas P. Robins",
+        "Reuben Symon",
+        "Michael J. Biercuk",
+        "Michael R. Hush",
+        "Stuart S. Szigeti",
+        "Russell P. Anderson"
+      ],
+      "date": "2026-08-26",
+      "preprint_date": "2026-08-26",
+      "journal_date": null,
+      "version": "arXiv 2608.25563v1 HTML; no journal reference on inspected landing page",
+      "url": "https://arxiv.org/html/2608.25563v1",
+      "doi": "10.48550/arXiv.2608.25563",
+      "type": "primary experimental paper",
+      "tier": "T2",
+      "region": "Australia; trial funded by UK Royal Navy/DASA",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/grav.html",
+      "contribution": "Maritime quantum-gravity map aiding with explicit exclusion of GNSS from processing; separate gravity-survey branch [S14 Results Quantum navigation; Methods Gravity-aided navigation].",
+      "method": "87Rb Mach–Zehnder plus mirror accelerometer bias stabilization; recorded raw Boreas D90 IMU independently mechanized; error-state filter combines gravity map and position/velocity/attitude/bias estimates over 83 km southbound route [S14 Fig.6; Methods Quantum–classical hybridization; Gravity-aided navigation].",
+      "result": "Endpoint 2.2 nmi (~4.1 km), versus unaided 14 nmi (~26 km); ~1 nmi for first 70 km. GNSS-referenced strapdown survey separately reports 0.67 mGal in-run stability and 0.16 mGal repeatability. Stationary 56 h hybrid stability ~70× classical at 80,000 s [S14 Fig.2; Figs.4,7; Methods].",
+      "limitations": "Initial state only described as same for both branches; provenance/uncertainty not specified. Fully closed long-duration campaign future work; onboard real-time execution not established. Coastal strapdown typically Sea State1 versus gimbaled2–3, so not matched-motion equality. 30 L sensor head excludes electronics rack [S14 Results; Methods Maritime traversals; Quantum sensor head; Discussion]. Internal wording inconsistency: abstract invokes nautical-mile DRMS, Fig.2 says shaded one-mile band is not DRMS, Discussion suggests ~one-mile bound, while Results/Methods report 2.2-nmi endpoint. Do not infer a universal one-mile bound or computed DRMS [S14 Abstract; Fig.2 caption; Results Quantum navigation; Discussion].",
+      "replication": "Within-instrument comparisons, no independent replication identified. Survey data expressly supply no observations to GNSS-free route; GNSS remains ground truth and survey PVA/Eötvös source [S14 Methods Gravity signal for surveying; Gravity-aided navigation].",
+      "data_code": "No explicit data/code release statement found in v1 full text/end matter. Filter is described structurally, without sufficient full tuning/implementation for reproduction [S14 Methods; Acknowledgments/end matter inspected].",
+      "conflicts": "Q-CTRL-funded/developed commercial participation; Royal Navy/DASA support acknowledged. No separate conflict statement found in inspected v1 [S14 author affiliations; Acknowledgments].",
+      "relevance": "Analysis: recent provisional evidence of complete processing-chain GNSS exclusion, not centimetric navigation, multiday endurance or survey performance in denial [S14 Fig.2; Methods; Discussion].",
+      "assessment": "Analysis: recent provisional evidence of complete processing-chain GNSS exclusion, not centimetric navigation, multiday endurance or survey performance in denial [S14 Fig.2; Methods; Discussion].",
+      "claims": [
+        {
+          "text": "83 km evaluated route ends at2.2 nmi (~4.1km), compared with14 nmi (~26km) unaided.",
+          "locator": "Results Quantum navigation with gravity map matching; Fig.2",
+          "confidence": "medium"
+        },
+        {
+          "text": "Methods explicitly exclude embedded Boreas GNSS-derived position/velocity/attitude from navigation mechanization.",
+          "locator": "Methods Gravity-aided navigation",
+          "confidence": "medium"
+        },
+        {
+          "text": "Separate surveying branch uses GNSS-disciplined PVA for rotation, Eotvos correction and georeferencing.",
+          "locator": "Methods Gravity signal for surveying and anomaly detection; Fig.8",
+          "confidence": "medium"
+        },
+        {
+          "text": "Coastal strapdown traversals typically experienced Sea State1 versus gimbaled Sea States2–3.",
+          "locator": "Methods Maritime and land traversal details",
+          "confidence": "medium"
+        },
+        {
+          "text": "The full-text abstract invokes nautical-mile DRMS, but Fig.2 explicitly says the one-mile band is not reported DRMS; Results endpoint is2.2nmi while Discussion describes an approximately one-mile bound.",
+          "locator": "Abstract; Fig.2 caption; Results Quantum navigation; Discussion",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S15",
+      "title": "Integration of a high-fidelity model of quantum sensors with a map-matching filter for quantum-enhanced navigation",
+      "authors": [
+        "Samuel Lellouch",
+        "Michael Holynski"
+      ],
+      "date": "2025-08-06",
+      "preprint_date": "2025-04-15",
+      "journal_date": "2025-08-06",
+      "version": "arXiv 2504.11119v2 (8 August 2025); published QST 10 045007; journal metadata via Crossref",
+      "url": "https://arxiv.org/html/2504.11119v2",
+      "doi": "10.1088/2058-9565/adf2d9",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "University of Birmingham, UK",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/model-v2.html",
+      "contribution": "Microscopic sensor simulation linked to navigation filter; important adverse result: non-Gaussian motion errors can make nominal sensitivity improvements unusable [S15 §§II–V].",
+      "method": "Monte-Carlo atomic cloud/internal–external trajectory/pulse model; maritime/aircraft trajectories, moderate/enhanced/mitigated sensor capabilities, particle map-matching filter and classical INS model [S15 §II.2; §III; §IV; App.C].",
+      "result": "Sea State2 moderate/enhanced cases could not be tuned to useful stable aiding; mitigation uses 5× reduced roll/pitch. Flight cases require assumed 100× motion reduction for bounded estimates. Static tilt <3.3 degrees derived for 10 E error budget [S15 §IV; Figs.7–8; App.B.1].",
+      "limitations": "Simulation, not field navigation. All runs have 30 s transfer alignment, 100 m north/east initial errors; particle weighting tuned to observed sensor noise and maritime sea-state segments. Mitigation assumed, not experimentally delivered [S15 §IV; App.C; §V].",
+      "replication": "Model checks and conditional simulations, not independent field replication. Tests against measured complete dynamic sensor/nav chain still needed (Analysis) [S15 §II.2; §IV; §V].",
+      "data_code": "All supporting data/code available on reasonable request to corresponding author; no archive link in statement [S15 Data availability statement].",
+      "conflicts": "Authors declare no competing interests [S15 Competing Interests].",
+      "relevance": "Analysis: strengthens assessment by specifying where optimistic navigation simulations fail; 3.3-degree bound is conditional, not a universal navigation tolerance [S15 App.B; §IV].",
+      "assessment": "Analysis: strengthens assessment by specifying where optimistic navigation simulations fail; 3.3-degree bound is conditional, not a universal navigation tolerance [S15 App.B; §IV]. Confidence medium in reported conditional simulation result, medium in physical-model fidelity outside validated conditions; not an experiment. Detailed source confidence retains the reviewed-manuscript version caveat.",
+      "claims": [
+        {
+          "text": "Moderate/enhanced Sea State2 simulated measurements could not be tuned to useful stable aiding.",
+          "locator": "§IV; Fig.7",
+          "confidence": "medium"
+        },
+        {
+          "text": "Successful high-dynamic flight aiding assumes100-fold reduced roll/pitch.",
+          "locator": "§IV; Fig.8",
+          "confidence": "medium"
+        },
+        {
+          "text": "3.3-degree static tilt requirement follows a specified10 E error budget, not universal accuracy tolerance.",
+          "locator": "AppendixB.1 Static tilts",
+          "confidence": "medium"
+        },
+        {
+          "text": "Runs start with30 s transfer alignment and assumed100 m north/east initialization errors.",
+          "locator": "§IV Integration with a map-matching navigation filter",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ],
+      "strand": "Navigation and timing"
+    },
+    {
+      "id": "S30",
+      "title": "Quantum sensing for gravity cartography",
+      "authors": [
+        "Ben Stray",
+        "Andrew Lamb",
+        "Aisha Kaushik",
+        "Jamie Vovrosh",
+        "Anthony Rodgers",
+        "Jonathan Winch",
+        "Farzad Hayati",
+        "Daniel Boddice",
+        "Artur Stabrawa",
+        "Alexander Niggebaum",
+        "Mehdi Langlois",
+        "Yu-Hung Lien",
+        "Samuel Lellouch",
+        "Sanaz Roshanmanesh",
+        "Kevin Ridley",
+        "Geoffrey de Villiers",
+        "Gareth Brown",
+        "Trevor Cross",
+        "George Tuckwell",
+        "Asaad Faramarzi",
+        "Nicole Metje",
+        "Kai Bongs",
+        "Michael Holynski"
+      ],
+      "date": "2022-02-23",
+      "preprint_date": "2021-09-14",
+      "journal_date": "2022-02-23",
+      "version": "Nature version of record incl. Methods/Extended Data; first preprint date verified from Research Square manuscript cover p.2, DOI 10.21203/rs.3.rs-882491/v1",
+      "url": "https://www.nature.com/articles/s41586-021-04315-3",
+      "doi": "10.1038/s41586-021-04315-3",
+      "type": "field experiment",
+      "tier": "T1 (peer-reviewed study; version examined specified)",
+      "region": "UK",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S30.pdf",
+      "contribution": "Stray and colleagues demonstrate an outdoor gravity-gradient survey rather than an entanglement-enhanced detector. Two vertically separated rubidium interferometers reject common vibration; a displaced test mass gives 205 ± 13.1 E against a 202 E prediction. Outdoor sensitivity is 466 ± 8 E/√Hz, reaching 20 E statistical uncertainty in ten minutes. [S30 p.591, Figs.1c–2] The survey crosses a known tunnel with a 2 m × 2 m internal section on an 8.5 m line sampled every 0.5 m. Plans, ground-penetrating radar and topography inform the site model. [S30 pp.591–592] Thus this is a substantial field result, but not a blind search for an unknown tunnel. *Analysis*: the distinction matters when translating an anomaly-detection experiment into an intelligence-surveillance claim.",
+      "method": "The reported SNR of approximately eight divides the estimated 150 E signal by the mean survey error of 17.9 E. Base-station measurements remove drift; ellipse fits failing a specified quality threshold are discarded, leaving 98.4% usable data. [S30 Methods, PDF p.7] Bayesian inversion estimates the horizontal centre at 0.19 ± 0.19 m and surface-to-centre depth at 1.89 m with asymmetric −0.59/+2.3 m uncertainty. [S30 Methods, PDF p.8] The density prior is explicitly informative, whereas the horizontal-centre prior spans the measurement line; the tunnel dimensions are not simply fixed in this inversion. [S30 Extended Data Table 2] *Analysis*: depth and shape remain much less identifiable than horizontal position.",
+      "result": "See located claims below.",
+      "limitations": "Survey repeatability is similar to commercial gravimeters and limited by systematics, including Coriolis effects; the proposed fifteen-minute scan is conditional on addressing these effects. [S30 p.593] The approximately 75 kg head plus 250 kg control cases draw approximately 800 W. [S30 Extended Data Fig.2] Data and code are deposited; patents and commercial/government interests are declared. [S30 Methods, PDF p.8] *Analysis*: prioritise independent blind, multi-site surveys with false alarms and complete logistical cost. Scientific confidence is high for this demonstrated anomaly; readiness for unconstrained underground discovery remains conditional.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "Open repository 10.25500/edata.bham.00000740 (paper declaration, Methods PDF p.8); not executed.",
+      "conflicts": "Patent/commercial/Dstl interests declared, Methods PDF p.8.",
+      "relevance": "Analysis: underground mapping",
+      "assessment": "Survey repeatability is similar to commercial gravimeters and limited by systematics, including Coriolis effects; the proposed fifteen-minute scan is conditional on addressing these effects. [S30 p.593] The approximately 75 kg head plus 250 kg control cases draw approximately 800 W. [S30 Extended Data Fig.2] Data and code are deposited; patents and commercial/government interests are declared. [S30 Methods, PDF p.8] *Analysis*: prioritise independent blind, multi-site surveys with false alarms and complete logistical cost. Scientific confidence is high for this demonstrated anomaly; readiness for unconstrained underground discovery remains conditional.",
+      "claims": [
+        {
+          "text": "Outdoor sensitivity 466 ± 8 E/√Hz; 20 E uncertainty in ten minutes.",
+          "locator": "p.591, Fig.2",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Survey known 2m×2m tunnel with plans/GPR/topography informing site model.",
+          "locator": "pp.591–592",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Horizontal-centre inference 0.19 ± 0.19 m; depth 1.89 −0.59/+2.3 m.",
+          "locator": "Methods PDF p.8",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Survey repeatability similar to commercial gravimeters; systematics remain.",
+          "locator": "p.593",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "75 kg head, 250 kg cases, approximately 800 W.",
+          "locator": "Extended Data Fig.2, PDF p.10",
+          "confidence": "high for stated result/assumption"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main pp.590–593",
+        "Methods PDF pp.6–8",
+        "Extended Data Figs.1–4",
+        "Extended Data Tables1–2 (visually read)"
+      ],
+      "metadata_sources": [
+        "https://pdfs.semanticscholar.org/9dd3/41984510ce31417ef92eab47cf9c994103f6.pdf (cover p.2)"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S31",
+      "title": "Quantum advantage in microwave quantum radar",
+      "authors": [
+        "Réouven Assouly",
+        "Rémy Dassonneville",
+        "Théau Peronnin",
+        "Audrey Bienfait",
+        "Benjamin Huard"
+      ],
+      "date": "2023-06-29",
+      "preprint_date": "2022-11-10",
+      "journal_date": "2023-06-29",
+      "version": "arXiv:2211.05684v2 (2023-03-02), supplement included; journal metadata checked",
+      "url": "https://arxiv.org/abs/2211.05684",
+      "doi": "10.1038/s41567-023-02113-4",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "France",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S31.pdf",
+      "contribution": "Assouly and colleagues implement the critical joint measurement missing from earlier microwave correlation demonstrations. An initially entangled probe and stored idler are recombined in a superconducting circuit, and qubit-assisted photon counting estimates whether the target is present. The measured advantage is Q = 1.2 ± 0.1 in an error-exponent metric relative to the calculated optimal coherent-state bound under the same calibrated photon resources. [S31 PDF pp.1–4, Fig.3] This is a stronger scientific benchmark than outperforming one deliberately noisy classical apparatus. *Analysis*: it does not establish superiority to a conventional radar allowed to choose its transmitted power or operating scenario.",
+      "method": "The hardware operates at 15 mK. Its target is a controllable notch filter and 12 m coaxial delay, rather than an outdoor object; position, speed and reflectivity are assumed known. [S31 PDF pp.1–2, Fig.1] Signal/noise photon populations and target reflectivity are measured with dedicated calibration protocols. The highlighted data use fifteen series of 500,000 attempts, with signal and noise recalibrated between series. [S31 PDF pp.3–4, Fig.3] Thermal noise is switched on after state preparation. [S31 PDF p.2] *Analysis*: these controls make the proof interpretable but deliberately avoid several environmental and target-search difficulties.",
+      "result": "See located claims below.",
+      "limitations": "The supplement explicitly says photon-population fitting uncertainties are mostly statistical and omit measurement-protocol imperfections; reflectivity uncertainty is checked across probe amplitudes. [S31 supplement F, PDF p.11] The model underestimates measured advantage, with the origin unresolved; initial thermal populations shrink the region supporting advantage. [S31 PDF pp.4–5, Fig.4] *Analysis*: these are calibration/model qualifications, not evidence that the result is false. A high-confidence application assessment would require independent calibration validation and real targets with unknown delays.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "Journal figure source-data links checked; no code execution.",
+      "conflicts": "EU QMICS funding and IARPA/Lincoln Labs supplied hardware, PDF p.5 acknowledgments; no competing-interest declaration located in examined preprint.",
+      "relevance": "Analysis: RF awareness and/or radar evidence discipline",
+      "assessment": "The journal page provides figure source data; this review did not execute an independent analysis or find an independent experimental replication. [S31 journal page, Source data] *Analysis*: prioritise as a credible entanglement-assisted detection experiment and an engineering-warning case, not as demonstrated long-range or stealth-target radar.",
+      "claims": [
+        {
+          "text": "Measured Q=1.2 ± 0.1 relative to coherent-state error-exponent bound.",
+          "locator": "Fig.3; PDF pp.3–4",
+          "confidence": "medium"
+        },
+        {
+          "text": "15 mK apparatus and target built from notch filter/12m coaxial line.",
+          "locator": "PDF p.2",
+          "confidence": "medium"
+        },
+        {
+          "text": "Target position, speed and reflectivity assumed known.",
+          "locator": "PDF p.1, protocol paragraph",
+          "confidence": "medium"
+        },
+        {
+          "text": "Population-calibration uncertainty mostly statistical; measurement imperfections not included.",
+          "locator": "Supplement F, PDF p.11",
+          "confidence": "medium"
+        },
+        {
+          "text": "Model underestimates measured advantage; origin unresolved.",
+          "locator": "PDF p.5, Fig.4 discussion",
+          "confidence": "medium"
+        },
+        {
+          "text": "The reviewed arXivv2 prints Ecl=2.1×10^-5 alongside kappa=0.0302, NS=0.0353, NN=10.8 and Ecl=kappa NS/(4NN).",
+          "locator": "arXivv2 pp.3–4; SupplementF",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main PDF pp.1–5",
+        "supplement A–F pp.6–12",
+        "uncertainty/calibration protocols"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S32",
+      "title": "Waveguide-coupled Rydberg spectrum analyzer from 0 to 20 GHz",
+      "authors": [
+        "David H. Meyer",
+        "Paul D. Kunz",
+        "Kevin C. Cox"
+      ],
+      "date": "2021-01-27",
+      "preprint_date": "2020-09-30",
+      "journal_date": "2021-01-27",
+      "version": "arXiv:2009.14383v4 (2021-05-20)",
+      "url": "https://arxiv.org/abs/2009.14383",
+      "doi": "10.1103/PhysRevApplied.15.014053",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "USA",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S32.pdf",
+      "contribution": "Meyer, Kunz and Cox demonstrate a Rydberg receiver backend coupled to a microwave waveguide, with an external antenna used to collect ambient signals. This is atomic transduction and heterodyne reception, not an entanglement-generated radar advantage. The system covers carrier tuning from DC to 20 GHz, while the instantaneous 3 dB bandwidth is 4 MHz. Its abstract reports intrinsic sensitivity up to −120 ± 2 dBm/Hz and over 80 dB linear dynamic range. [S32 PDF pp.1,4, Fig.3] *Analysis*: the broad carrier range must not be described as simultaneous twenty-gigahertz reception bandwidth.",
+      "method": "Figure 1 distinguishes directly measured sensitivity, a photon-shot-noise-limited value obtained after independent subtraction of laser phase noise, and preamplified sensitivity. The preamplifier sensitivity curves are calculated by referring intrinsic noise to the input and combining amplifier noise, although ambient reception itself is demonstrated with amplification. [S32 PDF pp.2–3, Fig.1; p.5, Fig.4] The strongest headline figures therefore need the measurement category attached. *Analysis*: a backend improvement cannot be credited with the entire antenna/amplifier chain's performance.",
+      "result": "See located claims below.",
+      "limitations": "A conventional rabbit-ears antenna feeds the system; AM/FM and Wi-Fi/Bluetooth examples appear in the laboratory, including audio verification of one AM station. [S32 PDF pp.4–5] The atom chamber is approximately 50 °C, the coupling beam is approximately 500 mW, and optical path and power fluctuations are actively stabilised. [S32 Appendix A, PDF p.7] These details qualify the phrase near-room-temperature: cryogenics are avoided, but lasers and control are still necessary.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "No explicit public data/code statement located in examined manuscript.",
+      "conflicts": "Army authors; partial DARPA support, PDF p.6 acknowledgments.",
+      "relevance": "Analysis: RF awareness and/or radar evidence discipline",
+      "assessment": "The waveguide's measured transmission deteriorated over seven months, attributed provisionally to rubidium contamination; reported sensitivities retain waveguide losses rather than subtracting them. [S32 Appendix D, PDF p.8] This is a disclosed durability issue, not a confirmed failure mechanism. *Analysis*: useful next tests are stability, calibration and power accounting against an equally broadband classical backend under matched antenna conditions. No data/code availability statement was located in the examined manuscript; no independent replication was established in this bounded scan. *Analysis*: confidence is medium in integrated reception, lower in claims of surpassing established receiver limits. Detailed source confidence retains the reviewed-manuscript version caveat.",
+      "claims": [
+        {
+          "text": "Carrier tuning DC–20GHz; 4MHz instantaneous bandwidth.",
+          "locator": "PDF pp.1,4, Fig.3c",
+          "confidence": "medium"
+        },
+        {
+          "text": "PSN-limited sensitivity removes independently calibrated phase noise; amplifier noise curves calculated.",
+          "locator": "PDF p.3, Fig.1d",
+          "confidence": "medium"
+        },
+        {
+          "text": "Ambient signal reception uses external antenna and amplification.",
+          "locator": "PDF pp.4–5, Fig.4",
+          "confidence": "medium"
+        },
+        {
+          "text": "Approximately 50°C chamber and 500mW coupling laser.",
+          "locator": "Appendix A, PDF p.7",
+          "confidence": "medium"
+        },
+        {
+          "text": "Waveguide transmission deteriorated over seven months; contamination attribution provisional.",
+          "locator": "Appendix D, PDF p.8",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Sections I–VI pp.1–6",
+        "Appendices A–E pp.7–9"
+      ],
+      "metadata_sources": [
+        "https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.15.014053 (publication 27 January 2021)"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S33",
+      "title": "Performance of antenna-based and Rydberg quantum RF sensors in the electrically small regime",
+      "authors": [
+        "K. M. Backes",
+        "P. K. Elgee",
+        "K.-J. LeBlanc",
+        "C. T. Fancher",
+        "D. H. Meyer",
+        "P. D. Kunz",
+        "N. Malvania",
+        "K. L. Nicolich",
+        "J. C. Hill",
+        "B. L. Schmittberger Marlow",
+        "K. C. Cox"
+      ],
+      "date": "2024-09-30",
+      "preprint_date": "2024-08-27",
+      "journal_date": "2024-09-30",
+      "version": "Applied Physics Letters version of record",
+      "url": "https://inspirehep.net/files/ac16594fd5658d98b52993e9f1437037",
+      "doi": "10.1063/5.0222827",
+      "type": "analytical baseline comparison",
+      "tier": "T1 (peer-reviewed study; version examined specified)",
+      "region": "USA",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S33.pdf",
+      "contribution": "Backes and colleagues provide a consequential baseline correction: comparison with a passive unmatched antenna can overstate the attraction of an atomic receiver. Their equivalent-circuit analysis compares similarly sized dipole/loop antennas with matched passive, unmatched passive and active readout against warm-vapour EIT and ideal standard-quantum-limit Rydberg sensing. The example uses approximately 1 cm sensors over 30 kHz–30 MHz. [S33 article pp.144002-1–3, Figs.1–3] *Analysis*: this is a theoretical comparison with literature experimental points, not a new matched field trial demonstrating defeat of every Rydberg architecture.",
+      "method": "The active classical example uses a high-impedance amplifier with 1 nV/√Hz input voltage noise and 100 MΩ input impedance. All sensors are assigned dipolar directivity, so incoming atmospheric noise affects their external signal-to-noise ratio equivalently. [S33 pp.144002-2–3, Eqs.1,7] Under these assumptions, active unmatched dipoles exceed contemporary warm-vapour EIT sensitivity. [S33 p.144002-4, Fig.3] *Analysis*: electrically small size alone is insufficient justification for comparison only against inefficient passive antennas; classical active electronics must receive equal engineering attention.",
+      "result": "See located claims below.",
+      "limitations": "The most spectacular atomic bound instead assumes tightly packed cold atoms, optimised transitions, a restricted interaction-induced shift, and large atom numbers. The authors warn that collective effects could limit this idealisation and that it is likely physically unrealizable, paralleling the ideal matched dipole bound. [S33 p.144002-4] Typical atmospheric noise also sits above the ideal limits. [S33 Fig.3 and p.144002-4] *Analysis*: a quieter internal detector cannot remove the same external field noise it measures; sheltered metrology and arrays require different operational cases.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "Notebook/Python/data described in supplementary material, article p.144002-5; supplement not retrieved.",
+      "conflicts": "No conflicts declared; DHS/MITRE/Army support disclosed, article p.144002-5.",
+      "relevance": "Analysis: RF awareness and/or radar evidence discipline",
+      "assessment": "The supplement is described as containing the figure-generating notebook, Python and data; declared conflicts are absent, while DHS/MITRE/Army affiliations and funding are disclosed. [S33 p.144002-5] The supplement itself was not retrieved here. *Analysis*: confidence is high in the paper's stated comparison within its model, moderate in transfer to complete deployed systems. Its value is methodological discipline: require frequency, size, bandwidth, amplification and ambient-noise assumptions before accepting receiver advantage.",
+      "claims": [
+        {
+          "text": "Example uses 1cm sensors and 30kHz–30MHz frequency range.",
+          "locator": "article pp.144002-2–3",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Active baseline assumes 1nV/√Hz voltage noise and 100MΩ input impedance.",
+          "locator": "p.144002-3",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Active unmatched antenna outperforms contemporary warm EIT within model.",
+          "locator": "p.144002-4, Fig.3",
+          "confidence": "low"
+        },
+        {
+          "text": "Ideal cold-atom SQL limit likely physically unrealizable; collective effects omitted.",
+          "locator": "p.144002-4",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "All sensor external-noise directivities assumed equal dipole.",
+          "locator": "p.144002-2, Eq.1 discussion",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Printed Eq.7 multiplies voltage-noise variance by the voltage-divider magnitude squared, despite describing input-referred noise.",
+          "locator": "p.144002-3, Eq.7",
+          "confidence": "high"
+        },
+        {
+          "text": "Definitions Q=omega tau exp(-tau Gamma) and output variance tau/N precede printed Eq.10 containing2Gamma/(e omega²N).",
+          "locator": "p.144002-3, Eqs.9–10",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "full article pp.144002-1–6",
+        "Eqs.1–10",
+        "Fig.3",
+        "data/conflicts declarations"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S34",
+      "title": "Electrometry of extremely-low frequencies from kHz to sub-Hz with a Rydberg-atom sensor",
+      "authors": [
+        "Aveek Chandra",
+        "Narongrit Paensin",
+        "Rainer Dumke"
+      ],
+      "date": "2026-08-05",
+      "preprint_date": "2026-03-14",
+      "journal_date": "2026-08-05",
+      "version": "EPJ Quantum Technology 13:87 version of record",
+      "url": "https://link.springer.com/article/10.1140/epjqt/s40507-026-00550-7",
+      "doi": "10.1140/epjqt/s40507-026-00550-7",
+      "type": "laboratory electrometry experiment",
+      "tier": "T1 (peer-reviewed study; version examined specified)",
+      "region": "Singapore/Thailand",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S34.pdf",
+      "contribution": "Chandra, Paensin and Dumke extend low-frequency Rydberg electrometry with a paraffin-coated caesium cell, auxiliary field reversal and lock-in detection. The laboratory observes applied electric fields between 0.5 Hz and 10 kHz. The reported sensitivity is 819 μV/cm/√Hz at 1 Hz, 33 at 10 Hz, 10 at 100 Hz and 2 at 1 kHz. [S34 pp.1,8–9, Figs.4–5] This is an atomic electric-field receiver improvement, not entanglement-enhanced target detection. *Analysis*: it is relevant to difficult low-frequency sensing but cannot by itself establish underground or underwater detection range.",
+      "method": "Coated and uncoated-cell transient controls show slower screening in the coated cell. The proposed microscopic explanation is expressly qualitative and charge transport is not directly measured. [S34 pp.4–6, Fig.2] Residual screening remains and reduces low-frequency responsivity. [S34 p.8] Fields are generated by external copper plates; the term electrode-free means no electrodes inserted into the vapour, rather than no electrodes in the experiment. [S34 pp.3–4, Fig.1] *Analysis*: retaining this distinction prevents a misleading impression of a passive stand-alone receiver.",
+      "result": "See located claims below.",
+      "limitations": "Sensitivity is estimated from responsivity and combined photodetector/lock-in noise. The classical curve is theoretically estimated for a 3 cm dipole, referenced to an earlier assessment, rather than experimentally measured alongside the atoms. [S34 p.9, Fig.5] The sensor uses room-temperature vapour but a high-finesse cavity locks two lasers; a strong auxiliary field sets the operating point. [S34 pp.3,7,10–13] *Analysis*: the claimed size-based advantage should be tested against an active classical receiver and complete-system size/power, especially given the separate baseline analysis in S33.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "Data on reasonable request, p.16; no code archive located.",
+      "conflicts": "No competing interests; Singapore NRF/A*STAR support, p.16.",
+      "relevance": "Analysis: RF awareness and/or radar evidence discipline",
+      "assessment": "The authors identify laser intensity drift as a present limit and explicitly require further outdoor pickup, ground-loop and thermal/polarisation control before field deployment. [S34 pp.9–10] Data are available on reasonable request; no competing interests are declared. [S34 p.16] *Analysis*: confidence is high for controlled low-frequency response, moderate for its sensitivity estimate and low for operational advantage pending matched practical comparison. No independent replication was established in this bounded scan.",
+      "claims": [
+        {
+          "text": "Controlled sensing spans 0.5Hz–10kHz.",
+          "locator": "p.8, Fig.4; Appendix E",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Sensitivity 819 μV/cm/√Hz at 1Hz and 2 μV/cm/√Hz at 1kHz.",
+          "locator": "p.1; p.9 Fig.5",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Classical comparator theoretically estimated for 3cm dipole.",
+          "locator": "p.9, Fig.5b",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Microscopic charge-transport mechanism not directly measured.",
+          "locator": "p.6",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Outdoor pickup, ground loops and drift require further mitigation.",
+          "locator": "p.10 Outlook",
+          "confidence": "high for stated result/assumption"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Sections1–3 pp.1–10",
+        "Appendices A–F pp.10–16",
+        "declarations p.16"
+      ],
+      "metadata_sources": [
+        "Journal HTML JSON-LD datePublished 2026-08-05T00:00:00Z; citation_publication_date gives issue 2026/12"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S35",
+      "title": "A Note on the Efficient Operation of Quantum Radar and the Fair Classical Comparison",
+      "authors": [
+        "Florian Bischeltsrieder",
+        "Michael Würth",
+        "Markus Peichl",
+        "Wolfgang Utschick"
+      ],
+      "date": "2025-06-12",
+      "preprint_date": null,
+      "journal_date": "2025-06-12",
+      "version": "IEEE Transactions on Radar Systems version of record, pp.875–880",
+      "url": "https://elib.dlr.de/214537/1/A_Note_on_the_Efficient_Operation_of_Quantum_Radar_and_the_Fair_Classical_Comparison.pdf",
+      "doi": "10.1109/TRS.2025.3579042",
+      "type": "analytical receiver comparison",
+      "tier": "T1 (peer-reviewed study; version examined specified)",
+      "region": "Germany",
+      "access": "full-text PDF",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/detection-docs/S35.pdf",
+      "contribution": "Bischeltsrieder and colleagues analyse a specific two-mode-squeezed-vacuum correlation receiver and separate outperforming a classical comparator from efficiently reaching a chosen detection error. They formulate an optimisation over noise occupation for a desired quantum advantage and channel loss, minimising required independent signal samples. The resulting efficient operating regime does not coincide with the maximum attainable relative advantage. [S35 pp.876–878, Eqs.10–22, Fig.1] *Analysis*: this is an important antidote to optimising a headline gain while neglecting absolute acquisition time.",
+      "method": "The method assumes repeated identical trials, sufficiently many samples for a Gaussian approximation, and the specified joint quadrature-correlation observable. Channel loss remains a parameter; this follow-up does not derive a new target range or cross-section result. [S35 pp.875–877, Eqs.1–6, Section III restrictions] *Analysis*: its conclusions belong to that receiver/model family and should not be presented as a no-go theorem for every possible quantum ranging architecture or adaptive measurement.",
+      "result": "See located claims below.",
+      "limitations": "A second contribution compares coherent-state and classical unmodulated-continuous-wave descriptions of the benchmark. Their prediction mismatch depends on absolute thermal occupation as well as SNR; accordingly, matching SNR alone can be insufficient. The paper argues that a classical comparison experiment under Assouly-like conditions might also need the same cryostatic environment. [S35 pp.878–879, Eqs.23–28, Fig.2] *Analysis*: this is about a fair low-power scientific comparator, not evidence that an ordinary field radar must be cryogenic.",
+      "replication": "No independent experimental replication established in this bounded scan; no experiments rerun.",
+      "data_code": "Analytical equations published; no new experiment or data/code declaration located.",
+      "conflicts": "German BMBF QUARATE support, p.875 footnote.",
+      "relevance": "Analysis: RF awareness and/or radar evidence discipline",
+      "assessment": "The conclusion states its bounds assume ideal implementation and real systems can degrade further. [S35 p.879] This is analytical work with no new field experiment or independent replication in the paper. [S35 Sections II–V] A correction exists to the authors' 2024 predecessor (DOI 10.1109/TRS.2025.3532053); its full text was not accessed in this scan, so predecessor-specific numerical range limits are withheld. *Analysis*: confidence is moderate in this model's comparative insight; use it to demand explicit receiver, photon-resource and time assumptions, while treating operational limits as conditional and keeping that correction gap visible.",
+      "claims": [
+        {
+          "text": "Efficiency differs from maximum relative advantage for specified receiver.",
+          "locator": "pp.877–878, Eqs.10–22, Fig.1",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Model assumes large sample number/Gaussian approximation.",
+          "locator": "p.877 Section III restrictions",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Follow-up leaves channel loss parameterised rather than computing target range.",
+          "locator": "p.876 Eq.5 discussion",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Comparator prediction mismatch depends on noise occupancy.",
+          "locator": "pp.878–879 Eqs.23–28",
+          "confidence": "high for stated result/assumption"
+        },
+        {
+          "text": "Ideal implementation assumed; real implementation may degrade further.",
+          "locator": "p.879 Conclusion",
+          "confidence": "high for stated result/assumption"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Sections I–V pp.875–879",
+        "Eqs.1–28",
+        "Figs.1–2"
+      ],
+      "strand": "Detection and situational awareness"
+    },
+    {
+      "id": "S50",
+      "title": "High-performance combinatorial optimization based on classical mechanics",
+      "authors": [
+        "Hayato Goto",
+        "Kotaro Endo",
+        "Masaru Suzuki",
+        "Yoshisato Sakai",
+        "Taro Kanao",
+        "Yohei Hamakawa",
+        "Ryo Hidaka",
+        "Masaya Yamasaki",
+        "Kosuke Tatsumura"
+      ],
+      "date": "2021-02-03",
+      "preprint_date": null,
+      "journal_date": "2021-02-03",
+      "version": "Version of record, full article via EuropePMC XML; publisher online date 3 February; Crossref issue date 5 February 2021",
+      "url": "https://doi.org/10.1126/sciadv.abe7953",
+      "doi": "10.1126/sciadv.abe7953",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Japan",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/anchor.txt",
+      "contribution": "Ballistic and discrete simulated-bifurcation variants improve classical Ising heuristics.",
+      "method": "Hamiltonian-inspired dynamics, inelastic boundaries, sign discretisation; FPGA and GPU-cluster benchmarks.",
+      "result": "K2000 target TTT 0.26 ms and optimal/best-known TTS 1.3 s on authors’ machines (Results, Fig.3).",
+      "limitations": "Comparators often drawn from prior publications; some obsolete or simulated hardware; million-spin targets statistically estimated rather than certified optima. No scheduling constraints benchmark.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Algorithm equations in Methods; supplementary materials referenced; additional data on request. Supplement itself not successfully retrieved.",
+      "conflicts": "Toshiba authors; five authors named as inventors on Toshiba patent application P2019-164742 (Competing interests).",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong algorithm/hardware anchor; insufficient for universal solver advantage or operational scheduling.",
+      "claims": [
+        {
+          "text": "The bSB K2000 TTT is 0.26 ms; dSB TTS is 1.3 s.",
+          "locator": "Results: Benchmarking using time-to-solution and time-to-target; Fig.3B–C",
+          "confidence": "high"
+        },
+        {
+          "text": "Ultralarge benchmarks use 16 GPUs and statistically estimated optimal/target values.",
+          "locator": "Results: Fig.4 and accompanying text",
+          "confidence": "high"
+        },
+        {
+          "text": "Other-machine TTS/TTT is cited or estimated from literature because authors could not use those machines.",
+          "locator": "Results: Benchmarking using time-to-solution and time-to-target",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results: algorithms, FPGA benchmarks, TTS/TTT, ultralarge problems",
+        "Discussion",
+        "Methods",
+        "Acknowledgments/conflicts/data availability"
+      ],
+      "review": "Goto and colleagues introduce ballistic and discrete simulated bifurcation, numerical classical dynamics inspired by nonlinear quantum oscillators. Inelastic walls improve convergence; sign discretisation suppresses continuous-variable errors. The paper compares FPGA implementations and larger GPU calculations with other Ising machines. Its K2000 result is target time-to-target of 0.26 ms for bSB and optimal/best-known time-to-solution of 1.3 s for dSB, using a 99% success criterion. These metrics answer different questions. [S50 Results, Fig.3]\n\nThe large-scale demonstration is valuable, but the million-spin claim needs care: the GPU experiments use statistically estimated reference energies rather than certified instance optima. The 16-GPU implementation combines an algorithmic improvement with substantial parallel hardware. Other-machine results were cited or estimated from literature because the authors lacked access; some comparators were older hardware or simulator predictions. The time step was selected from five values and step counts optimised separately for the target metric. [S50 Results, Fig.4; Benchmarking; Methods]\n\n*Analysis:* this establishes a useful competitive classical baseline, not a general theorem that quantum-inspired dynamics win. The central method is explicit enough to reconstruct, but independent matched-budget replication, tuned contemporary classical heuristics, and native constrained scheduling comparisons would strengthen transfer. End-to-end formulation and constraint feasibility are absent from these Ising tests. Toshiba employment and a declared patent interest warrant recording without dismissing the equations or results. [S50 Competing interests; Discussion]\n\nThe full main article was reviewed; the separately hosted supplement was not retrieved. Consequently its detailed FPGA resource and comparator reconstruction tables remain an access gap. *Analysis:* retain this as a historical methods anchor, with deployment confidence low.",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S51",
+      "title": "Benchmark of quantum-inspired heuristic solvers for quadratic unconstrained binary optimization",
+      "authors": [
+        "Hiroki Oshiyama",
+        "Masayuki Ohzeki"
+      ],
+      "date": "2022-02-09",
+      "preprint_date": "2021-04-29",
+      "journal_date": "2022-02-09",
+      "version": "Publisher PDF version of record; arXiv latest v3 15 December 2021",
+      "url": "https://www.nature.com/articles/s41598-022-06070-5",
+      "doi": "10.1038/s41598-022-06070-5",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Japan",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/benchmark.txt",
+      "contribution": "Cross-family comparison shows solver rankings depend on benchmark structure.",
+      "method": "45 MQLib problems, ten NAE-3SAT instances, six SK instances; commercial HSS/SBM/DA and single-thread neal SA.",
+      "result": "Five-minute MQLib wins: HSS22, DA20, SBM16, SA7 including ties; DA best on NAE3SAT for 100–600s; SBM best SK.",
+      "limitations": "No state-of-the-art tuned classical portfolio; heterogeneous hardware/parallelism; execution-time conventions differ, network excluded; best observed is not certified optimum.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "MQLib instances public; generator listings for NAE3SAT/SK; other data on request; proprietary SBM evaluation build and HSS internals.",
+      "conflicts": "No competing interests declared; acknowledgments report D-Wave and Toshiba research support; Ohzeki Sigma-I affiliation.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Good counterweight to universal-winner claims; limited evidence of classical superiority because baseline is single-thread SA.",
+      "claims": [
+        {
+          "text": "45 MQLib problems were selected from the HSS white-paper benchmark set.",
+          "locator": "p.2, Problem instances for benchmarking",
+          "confidence": "high"
+        },
+        {
+          "text": "Network time is ignored; HSS and SBM use requested budgets whereas DA uses reported elapsed time.",
+          "locator": "p.3, Results",
+          "confidence": "high"
+        },
+        {
+          "text": "Reference score denominator is lowest value found by tested solvers, not certified optimum.",
+          "locator": "p.4 Eq.(4)",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "QUBO solvers",
+        "Problem instances",
+        "Results pp.3–7 tables1–10 figures1–3",
+        "Discussion pp.8–9",
+        "Data availability and conflicts p.10"
+      ],
+      "review": "This benchmark is most useful for its changing winners: HSS leads the mixed MQLib set, DA leads the tested NAE-3SAT regime, and SBM leads SK spin glasses. The five-minute MQLib experiment counts ties, producing 22 HSS, 20 DA, 16 SBM and seven SA wins; these are comparative wins rather than optimum certificates. Its score uses the best observed energy among the four solvers. [S51 pp.3–7, Eq.4, Figs.1–3]\n\nThe comparator is D-Wave neal SA on one i9-9900K CPU thread, against specialised or cloud systems. SBM automatically searches parameters; its evaluation build is proprietary. HSS internals are closed, so the benchmark cannot isolate any QPU contribution. Time is also heterogeneous: requested HSS/SBM budgets, reported DA elapsed time, and locally measured SA sampling time; network communication is excluded. [S51 pp.2–3]\n\n*Analysis:* the paper supports problem-dependent solver selection, but provides a weak basis for a blanket claim that these services beat competitive classical optimisation. Equal wall-clock allocations on unspecified unequal compute resources are not equal resource budgets. An operational follow-up should add tuned parallel tempering, modern QUBO/local-search portfolios and native mathematical models, reporting feasibility and true business objectives rather than only encoded energy.\n\nThe MQLib set comprises 45 instances inherited from HSS’s white-paper selection; synthetic tests average ten NAE-3SAT and six SK instances, with independent runs for plotted points. Public instance generators help reproducibility, but additional data are request-only and service internals remain opaque. D-Wave and Toshiba research support is acknowledged despite a no-conflicts declaration. [S51 pp.2,7,9–10] *Analysis:* confidence is moderate for the reported ranking on these configurations and low for broad logistical superiority.",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S52",
+      "title": "An Optimization Case Study for solving a Transport Robot Scheduling Problem on Quantum-Hybrid and Quantum-Inspired Hardware",
+      "authors": [
+        "Dominik Leib",
+        "Tobias Seidel",
+        "Sven Jäger",
+        "Raoul Heese",
+        "Caitlin Isobel Jones",
+        "Abhishek Awasthi",
+        "Astrid Niederle",
+        "Michael Bortz"
+      ],
+      "date": "2023-10-31",
+      "preprint_date": "2023-09-18",
+      "journal_date": "2023-10-31",
+      "version": "arXiv v4 24 October2023; linked Scientific Reports13,18743",
+      "url": "https://arxiv.org/abs/2309.09736",
+      "doi": "10.1038/s41598-023-45668-1",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "Germany / UK-linked collaboration",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/robot.txt",
+      "contribution": "Application-based scheduling comparison with native MIP formulations and equal-quality timing.",
+      "method": "260 generated BASF-inspired laboratory schedules; sequence/time-indexed Gurobi MIPs vs QUBO LBQM, DA and hybrid DA.",
+      "result": "Sequence Gurobi reaches DA quality 10–100 times faster for minor instances; hybrid DA wins equal-quality runtime on largest N20 instances.",
+      "limitations": "Out-of-box Gurobi, no tailored metaheuristics; large-instance Gurobi values capped at3600s; solver submission-to-return excludes model construction; preset budgets not scaling complexity proof.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Generated instance library and parameter tables referenced in supplementary material; proprietary solvers, no independent reproduction performed.",
+      "conflicts": "Industrially motivated BASF use case; BMBF RymaxOne funding (§6); supplier internals confidential. No unverified conflict allegation.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Most directly transferable scheduling study in this set, with bounded positive quantum-inspired result.",
+      "claims": [
+        {
+          "text": "260 instances split161 minor2071–8080 variables and99 major10822–22692.",
+          "locator": "§3.1; Table1",
+          "confidence": "medium"
+        },
+        {
+          "text": "Submission-to-return runtimes include network delays but exclude programmatic model construction.",
+          "locator": "§4.1 opening paragraph",
+          "confidence": "medium"
+        },
+        {
+          "text": "Sequence Gurobi reaches QFDA quality10–100 times faster on minor instances; hybrid DA advantage for N20 major instances.",
+          "locator": "§4.1 Fig.5; §4.2 Fig.7",
+          "confidence": "medium"
+        },
+        {
+          "text": "Native sequence Gurobi reaches Digital Annealer quality10–100times faster on minor instances; the hybrid Digital Annealer wins the equal-quality comparison for the largest N20 group.",
+          "locator": "§§4.1–4.2; Figs.5,7",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§2 mathematical models",
+        "§3 benchmark and penalty setup",
+        "§4 all results and relative-runtime definition",
+        "§5 conclusion",
+        "§6 funding"
+      ],
+      "review": "The case study models robot movements and laboratory processing motivated by BASF, comparing a QUBO with two native Gurobi MIPs. This is a stronger application comparison than forcing every solver through the same QUBO. Its 260 generated instances split into 161 minor cases with 2,071–8,080 QUBO variables and 99 major cases with 10,822–22,692. [S52 §§2–3, Table1]\n\nThe crucial contribution is equal-quality timing: Gurobi’s progress log identifies when it first matches each heuristic’s final objective, avoiding comparison of heuristic approximation time with exact optimality-proof time. Sequence Gurobi reaches DA quality 10–100 times faster on minor instances; the hybrid DA is faster at comparable quality for the largest 20-sample instances. Gurobi still generally finds better final objectives. Some D-Wave hybrid outputs are infeasible. [S52 §4.1, Figs.3–5; §4.2, Figs.6–7]\n\nReported end-to-end time includes network delays from submission to solution return but excludes constructing the optimisation model. Major-instance Gurobi equal-quality times are capped at 3,600 seconds when the target is not reached; this is censoring rather than a measured matching time. DA hybrid budgets were allocated from five hours, approximately proportional to variable count. The comparator is an out-of-box solver; tailored metaheuristics were explicitly excluded. [S52 §§3.2,4.1]\n\n*Analysis:* this supports a bounded positive case for specialised classical annealing in large constrained scheduling, while preserving a strong negative result for smaller problems. Near-constant heuristic runtimes are partly budget choices, so they do not establish superior asymptotic complexity. Transfer to defence logistics requires representative constraints, repeated-run uncertainty, tuned classical alternatives, and model-construction costs. The paper itself describes a technology snapshot rather than general advantage. [S52 §5]",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S53",
+      "title": "Toward quantum scaling advantage in approximate optimization",
+      "authors": [
+        "J. Pawłowski",
+        "P. Tarasiuk",
+        "J. Tuziemski",
+        "Ł. Pawela",
+        "B. Gardas"
+      ],
+      "date": "2026-07-08",
+      "preprint_date": "2025-05-28",
+      "journal_date": "2026-07-08",
+      "version": "arXiv v2 10 July2026; PhysRevApplied26,014024; earlier title Closing the Quantum-Classical Scaling Gap in Approximate Optimization",
+      "url": "https://arxiv.org/abs/2505.22514",
+      "doi": "10.1103/qcws-8kgm",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "Poland",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/scaling.txt",
+      "contribution": "Adds a GPU simulated-bifurcation baseline to challenge a claimed quantum scaling advantage.",
+      "method": "Same125 Sidon28 instances per size N142–1322,100 independent runs; tune steps/replicas,99% TT-epsilon target; extended classical instances up to38320.",
+      "result": "Comparable or superior scaling on reported QAC benchmarks under stated timing conventions; sparse3D annealing-time scaling remains potentially favourable but overhead erases operational advantage.",
+      "limitations": "Class/problem-specific; hardware resources unequal; large classical benchmark cannot directly compare unavailable future QPU; common initialization overhead omitted; no constrained logistics. Supplement S1 reports four-GPU total TT-epsilon values about100 times single-GPU at small sizes despite improved scaling exponent; exponent is not absolute speed.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Original benchmark Dataverse instances; new supporting data available upon reasonable request, not fully open replication package.",
+      "conflicts": "Quantumz.io affiliations and NCBR support; NCN funding; do not label independent of solver commercial interests.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong requirement to update classical baselines and distinguish anneal-time, QPU-access and external runtime; not a universal no-advantage theorem.",
+      "claims": [
+        {
+          "text": "Original comparison uses125 instances per size N142–1322 and100 solver runs; Gurobi certifies original ground reference.",
+          "locator": "main text Thermal vs Chaotic vs Quantum Annealing, Eq.1",
+          "confidence": "medium"
+        },
+        {
+          "text": "Total SBM runtime includes CPU-GPU transfer/memory/result handling; pure GPU time excludes those.",
+          "locator": "main text Eq.1 discussion; supplement S5",
+          "confidence": "medium"
+        },
+        {
+          "text": "Common initialization costs are neglected and GPU samples are parallel whereas QA samples sequential.",
+          "locator": "supplement S5 Runtime accounting",
+          "confidence": "medium"
+        },
+        {
+          "text": "Four-GPU total TT-epsilon is about100 times the single-GPU value for the small-instance comparison due to dispatch/collection overhead, despite improved fitted exponent.",
+          "locator": "Supplement S1 Multi-GPU Simulated Bifurcation Machine, Fig.S1",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Full main text and methods",
+        "Supplement S1 multiGPU",
+        "S2 large instances",
+        "S3 dequantization",
+        "S4 solution selection",
+        "S5 runtime",
+        "S6 sparse3D",
+        "S7 hardware"
+      ],
+      "review": "This is the revised, published successor to the 2025 preprint titled “Closing the Quantum-Classical Scaling Gap”; using its old title or calling it unreviewed would misstate the source. The reviewed v2 is dated 10 July 2026 and links to Physical Review Applied 26, 014024. [S53 arXiv identity/version; journal DOI]\n\nThe authors test the same Sidon-28 QAC-graph instances as the challenged study: 125 per size, 142–1,322 variables, and 100 independent solver runs. They optimise simulated-bifurcation steps and parallel replicas against a 99%-success time-to-epsilon metric, with original reference ground energies certified using Gurobi. GPU SBM closes the reported scaling gap on these problems. Larger classical instances extend to 38,320 variables, beyond the tested QPU range. [S53 main text, Eq.1, Figs.1–3]\n\nThe supplement distinguishes GPU compute time, total CPU/GPU execution, QPU access and externally measured runtime. Common initialization costs are nevertheless omitted; GPU replicas execute together whereas annealer samples are sequential. Sparse 3D spin glasses retain favourable quantum annealing-time scaling, but current operational overhead prevents demonstrated practical scaling advantage. [S53 S5–S7; Fig.4]\n\n*Analysis:* the strongest conclusion is that the earlier classical baseline was insufficient and runtime accounting can change the verdict. It is not evidence that SBM dominates every sparse instance, nor that fits at relaxed energy targets establish exact-optimisation complexity. Tuning steps and replicas is legitimate but its search budget should accompany operational procurement comparisons. Extended-size classical success does not directly measure a future QPU. Quantumz.io affiliations and request-only new data constrain independence and reproducibility. [S53 acknowledgments/data availability] *Analysis:* high confidence in the need for this baseline, moderate in generalisation beyond this benchmark.",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S54",
+      "title": "Limitations of tensor-network approaches for optimization and sampling: A comparison to quantum and classical Ising machines",
+      "authors": [
+        "Anna Maria Dziubyna",
+        "Tomasz Śmierzchalski",
+        "Bartłomiej Gardas",
+        "Marek M. Rams",
+        "Masoud Mohseni"
+      ],
+      "date": "2025-05-19",
+      "preprint_date": "2024-11-25",
+      "journal_date": "2025-05-19",
+      "version": "arXiv v3 16 June2025; PhysRevApplied23,054049",
+      "url": "https://arxiv.org/abs/2411.16431",
+      "doi": "10.1103/PhysRevApplied.23.054049",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "Poland / US",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/tensor.txt",
+      "contribution": "Diagnoses limits of approximate tensor-network optimisation and sampling on modern annealer graphs.",
+      "method": "Approximate-marginal branch-and-bound, PEPS/GPU acceleration and dimension reduction;20 instances per class/size; QA and SBM comparator.",
+      "result": "On largest random problems TN slower and less accurate; planted cases TN improves best-energy gap factor3–4, without finding planted ground state at721/3065 spins.",
+      "limitations": "Best-known energies not always certified optima; energy metric has factor2 denominator; memory truncation and geometry-specific contraction failures; QPU access overhead excluded from comparison.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "SpinGlassPEPS.jl public; instance/results repository DOI10.18150/OUGF1O; reported open, not run here.",
+      "conflicts": "Mohseni HPE Labs affiliation; NCN/QuantERA/EU and DARPA/AFRL support disclosed. No personal competing-interest inference.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong negative methodological evidence against treating all tensor-network approaches as scalable universal solvers.",
+      "claims": [
+        {
+          "text": "Largest5376-spin Pegasus TN runs require local dimension reduction to2^16 states due to memory.",
+          "locator": "§V.3 Fig.10",
+          "confidence": "medium"
+        },
+        {
+          "text": "Reference dE=(E-Ebest)/(2|Ebest|) uses combined solver best when true ground unknown.",
+          "locator": "§V.2 Eq.14",
+          "confidence": "medium"
+        },
+        {
+          "text": "Planted cases improve best-energy difference by factor3–4; ground states not found for721/3065-spin cases.",
+          "locator": "§V.3; AppendixA Fig.A1",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§II model",
+        "§III contraction/branch-and-bound",
+        "§IV dimensional reduction",
+        "§V all metrics/results",
+        "§VI contraction stability",
+        "§VII discussion",
+        "AppendicesA–E",
+        "Data availability"
+      ],
+      "review": "This study makes tensor-network failure an object of investigation rather than hiding it behind selected successes. The method combines approximate marginals with branch-and-bound, sparse PEPS representations and GPU computation. Twenty instances per selected size underpin the comparisons; random Pegasus and Zephyr graphs test more difficult connectivity than earlier Chimera examples. [S54 §§III–V, Fig.10]\n\nAt 5,376 Pegasus spins, memory forces local state reduction to 2^16 configurations per cluster. On the tested random problems, TN is slower and returns worse energies than SBM/QA; planted square-lattice cases embedded into Pegasus reverse the quality ranking, improving the best-energy gap by a factor of three to four. The larger planted cases still do not reach their known ground states. Thus the negative finding is geometry and instance dependent. [S54 §V.3; AppendixA, Fig.A1]\n\nThe error measure is dE=(E−Ebest)/(2|Ebest|), and Ebest pools solver outputs when ground truth is unknown. This must not be silently relabelled as a conventional certified optimality gap. A 216-spin diagnostic shows a trade-off between low-temperature search resolution and approximate contraction stability; dimensional preprocessing can itself remove the optimum. [S54 §V.2, Eq.14; §VI, Fig.12]\n\n*Analysis:* this is persuasive evidence of a concrete limitation in this implementation, not a no-go theorem for tensor networks. Sampling diversity is separately assessed and cannot be inferred from one best-energy result. Runtime comparisons also need cloud-access overhead and hardware budgets before operational interpretation. Open Julia code and an instance/results repository make this relatively reproducible, though neither was executed here. [S54 §VII; Data availability; AppendicesD–E] *Analysis:* useful for screening solver proposals, with no demonstrated constrained-logistics deployment.",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S55",
+      "title": "A Reality Check on Quantum Optimisation: Evidence from an Industrial Case Study",
+      "authors": [
+        "Hila Safi",
+        "Karen Wintersperger",
+        "Oliver von Sicard",
+        "Christoph Niedermeier",
+        "Wolfgang Mauerer"
+      ],
+      "date": "2026-07-14",
+      "preprint_date": "2026-07-14",
+      "journal_date": null,
+      "version": "arXiv v1 14 July2026; no journal reference displayed at review",
+      "url": "https://arxiv.org/abs/2607.13325",
+      "doi": null,
+      "type": "preprint",
+      "tier": "T2",
+      "region": "Germany",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/reality.txt",
+      "contribution": "Industrial assignment/scheduling comparison separates feasibility, formulation and encoded quality.",
+      "method": "Siemens-motivated machines/jobs/rigs, compact and constraint-rich QUBOs; IBM, DWave, DA, native exact/MILP and greedy/iterative methods.",
+      "result": "DA handles over10000 logical variables; IBM toy-sized; formulation/compilation strongly changes feasibility; DA better than tested approximation heuristics.",
+      "limitations": "Unreviewed; large reference best found in1h not certified optimum; §V labels time end-to-end but §VII-E excludes API/network/queues; realistic generated data not live production; closed sample distributions.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Paper cites reproduction package Zenodo DOI10.5281/zenodo.21363322; existence/content not independently verified here.",
+      "conflicts": "Siemens authors and former employee; German BMBF support. No direct Fujitsu authorship displayed.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Important recent counterweight; evidence for formulation-aware classical accelerator utility, not best-in-class or quantum advantage.",
+      "claims": [
+        {
+          "text": "Beyond6 machines5 rigs14 jobs, reference is best found within1h rather than certified optimal.",
+          "locator": "§V-A Benchmark",
+          "confidence": "medium"
+        },
+        {
+          "text": "Communication latencies, API overhead and queue delays excluded despite end-to-end label in metrics.",
+          "locator": "§V-C item3; §VII-E Ecological Validity",
+          "confidence": "medium"
+        },
+        {
+          "text": "Data realistic but not directly sourced from live production; dynamics such as new job arrivals omitted.",
+          "locator": "§VII-E",
+          "confidence": "medium"
+        },
+        {
+          "text": "Digital Annealer results are compared with greedy and iterated-greedy approximations; the paper does not establish superiority over all tuned native scheduling solvers.",
+          "locator": "§§III-C,V-B,VI-D,VII-C",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§III all models and heuristic algorithm",
+        "§IV hardware",
+        "§V setup/metrics",
+        "§VI all results",
+        "§VII all validity threats",
+        "§VIII–IX discussion/outlook",
+        "Funding/reproduction statement"
+      ],
+      "review": "Safi and colleagues compare industrially motivated scheduling across IBM, D-Wave, Fujitsu DA and classical approaches. Their QUBOs encode job-to-machine assignments; sequencing remains classical. Constraint-rich and compact formulations deliberately trade fidelity against solvability. DA reaches more than 10,000 logical variables, while current quantum devices are limited to small cases, and QUBO compilation choices materially affect DA validity. [S55 §§III,V–VI]\n\nThe reference-quality caveat is decisive: the exact branch-and-bound solver certifies small cases only, with the largest tractable example at six machines, five rigs and 14 jobs. Larger references are the best found within one hour, although some figures use optimal-reference language. DA exceeds the tested greedy/iterative approximations; this does not establish superiority over a broadly tuned classical portfolio. [S55 §V-A; §VI-D, Fig.8; §VII-C]\n\nRuntime also needs correction before reuse. Section V-C labels a metric end-to-end execution time, but Section VII-E explicitly excludes communication latency, API overhead and queues. The authors further acknowledge realistic data are not drawn directly from live production and omit dynamic arrivals. Outputs from DA and hybrid D-Wave expose limited top solutions rather than full sample distributions. [S55 §§V-C,VII-B,VII-E]\n\n*Analysis:* the useful result concerns formulation, feasibility and specialised classical hardware, not an operational quantum speedup. Claiming DA as a lower bound for future fault-tolerant annealing is an assumption, not an experimental result; the authors themselves note DA’s separate constraint handling is unavailable on current physical annealers. [S55 §VII-B] The v1 preprint and claimed reproduction package warrant independent review before high-confidence adoption. *Analysis:* moderate confidence in configuration-specific engineering lessons, low in universal solver ranking or live scheduling advantage.",
+      "strand": "Quantum-inspired optimisation"
+    },
+    {
+      "id": "S70",
+      "title": "Field Demonstration of Distributed Quantum Sensing without Post-Selection",
+      "authors": [
+        "Si-Ran Zhao",
+        "Yu-Zhe Zhang",
+        "Wen-Zhao Liu",
+        "Jian-Yu Guan",
+        "Weijun Zhang",
+        "Cheng-Long Li",
+        "Bing Bai",
+        "Ming-Han Li",
+        "Yang Liu",
+        "Lixing You",
+        "Jun Zhang",
+        "Jingyun Fan",
+        "Feihu Xu",
+        "Qiang Zhang",
+        "Jian-Wei Pan"
+      ],
+      "date": "2021-07-14",
+      "preprint_date": "2020-11-05",
+      "journal_date": "2021-07-14",
+      "version": "Phys. Rev. X 11,031009 version of record; original arXiv2011.02807v1 also inspected. Journal PDF checked by Astra and orchestrator.",
+      "url": "https://journals.aps.org/prx/pdf/10.1103/PhysRevX.11.031009",
+      "doi": "10.1103/PhysRevX.11.031009",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "China",
+      "access": "full journal PDF and initial preprint",
+      "local_path": "reviews/emerging-docs/field.txt",
+      "contribution": "Entangled photons and coherent repeated phase sampling estimate a weighted combination of two separated phases without hiding lost photons through postselection.",
+      "method": "Telecom polarization-entangled pairs are delivered to two sensors; Bob samples his phase twice. Single and multiple detector events, heralding efficiencies and higher-order pair emissions enter photon-pass resource accounting. The SNL reference is an ideal lossless local estimation strategy with optimally allocated independent photon passes.",
+      "result": "Journal best 0.916 dB at 240 m; separate non-multipass result 0.326 dB. The 10 km random-phase measurement does not beat shot noise. [S70 p.5; Fig.3; Appendix E]",
+      "limitations": "Analysis: controlled waveplate phases and fibre spools do not demonstrate physical target sensing. Photon passes, including losses and multipair events, are counted; full infrastructure, acquisition time and alternative classical architectures are not the comparison metric. Journal additions take precedence over initial preprint values. [S70 pp.2–5; Appendices A–E]",
+      "replication": "Experimental apparatus, estimators and efficiency/resource derivation are documented in main text and appendicesA–C; no independent replication established in this bounded search. Raw public dataset/code not identified in examined preprint.",
+      "data_code": "Experimental apparatus, estimators and efficiency/resource derivation are documented in main text and appendicesA–C; no independent replication established in this bounded search. Raw public dataset/code not identified in examined preprint.",
+      "conflicts": "Not located in examined preprint; journal declaration not independently retrieved.",
+      "relevance": "Analysis: credible loss-aware network metrology mechanism for research on distributed sensing; no demonstrated defence sensing application.",
+      "assessment": "High confidence in scoped240m result; limited network scalability and operational relevance.",
+      "claims": [
+        {
+          "text": "At 240 m, best phase precision is 0.916 dB below the loss-accounted photon-pass shot-noise limit.",
+          "locator": "journal pp.2,5; Fig.2",
+          "confidence": "high"
+        },
+        {
+          "text": "The non-multipass equal-weight phase experiment is 0.326 dB below its shot-noise limit.",
+          "locator": "journal p.5; Appendix E p.8",
+          "confidence": "high"
+        },
+        {
+          "text": "The 10 km random-phase experiment does not beat the shot-noise limit because of losses.",
+          "locator": "journal p.5; Fig.3 and Table I",
+          "confidence": "high"
+        },
+        {
+          "text": "Visibility-aware threshold efficiency in the journal version is 59.1%.",
+          "locator": "journal p.2; Appendix A p.6",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S71",
+      "title": "Distributed quantum sensing with mode-entangled spin-squeezed atomic states",
+      "authors": [
+        "Benjamin K. Malia",
+        "Yunfan Wu",
+        "Julián Martínez-Rincón",
+        "Mark A. Kasevich"
+      ],
+      "date": "2022-11-23",
+      "preprint_date": "2022-05-12",
+      "journal_date": "2022-11-23",
+      "version": "arxiv full manuscript; journal metadata cross-checked",
+      "url": "https://arxiv.org/html/2205.06382",
+      "doi": "10.1038/s41586-022-05363-z",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "USA",
+      "access": "full text with version caveat",
+      "local_path": "reviews/emerging-docs/network.html.txt",
+      "contribution": "A shared quantum nondemolition measurement creates nonlocal entanglement between atomic modes, enabling differential clock and interferometer protocols.",
+      "method": "Rubidium ensembles in a common cavity are divided into as many as four spatial modes; a shared QND observation prepares correlated populations. Microwave Ramsey operations and Raman-pulse differential interferometry test the prepared modes. Each clock mode contains45000atoms. Baselines include projection-noise-limited coherent states and a projected mode-separable spin-squeezed network.",
+      "result": "Four-mode clock-network noise is11.6(1.1)dB below coherent-state QPN and4.5(0.8)dB below the projected mode-separable reference. The differential interferometer improves1.6(0.9)dB relative to its non-entangled counterpart; do not assign the clock-network gain to the interferometer.",
+      "limitations": "All nodes share laboratory cavity infrastructure; the atom modes are not a geographically separated clock network. The4.5dB reference is projected, not a separately field-operated competitor. Gains exploit improved squeezing efficiency as the total atom count entangled increases. Differential rejection of Raman common-mode phase noise is also present and must be separated from entanglement benefit. No broad optimized-classical end-to-end network comparison is demonstrated.",
+      "replication": "Full arxivv1 main text and Methods inspected; peer-reviewed title/date/DOI cross-checked on Nature landing page. Journal main text is paywalled; preprint-versus-final changes remain a version caveat. Journal data and analysis code are available from corresponding author upon reasonable request, not an open repository.",
+      "data_code": "Full arxivv1 main text and Methods inspected; peer-reviewed title/date/DOI cross-checked on Nature landing page. Journal main text is paywalled; preprint-versus-final changes remain a version caveat. Journal data and analysis code are available from corresponding author upon reasonable request, not an open repository.",
+      "conflicts": "Journal declaration: no competing interests.",
+      "relevance": "Analysis: a promising seam for differential gravity sensing and clock comparisons, requiring remote-node links and realistic interrogation cycles before defence interpretation becomes an observed application.",
+      "assessment": "Medium confidence in laboratory metrology; medium confidence in extrapolation beyond common apparatus. Detailed source confidence retains the reviewed-manuscript version caveat.",
+      "claims": [
+        {
+          "text": "Four-mode clock result11.6(1.1)dB below coherent-state QPN.",
+          "locator": "arxivv1 main text, four-mode network paragraph and Fig.3",
+          "confidence": "medium"
+        },
+        {
+          "text": "4.5(0.8)dB improvement uses a projected mode-separable baseline.",
+          "locator": "arxivv1 Fig.3 and accompanying paragraph",
+          "confidence": "medium"
+        },
+        {
+          "text": "Differential atom-interferometer improvement1.6(0.9)dB.",
+          "locator": "arxivv1 Fig.4 and accompanying paragraph",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S72",
+      "title": "Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "authors": [
+        "Graham P. Greve",
+        "Chengyi Luo",
+        "Baochen Wu",
+        "James K. Thompson"
+      ],
+      "date": "2022-10-19",
+      "preprint_date": "2021-10-27",
+      "journal_date": "2022-10-19",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41586-022-05197-9",
+      "doi": "10.1038/s41586-022-05197-9",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "USA",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/greve.txt",
+      "contribution": "Cavity-mediated entanglement is injected into a complete light-pulse matter-wave interferometer rather than demonstrated only as state preparation.",
+      "method": "Free-falling rubidium wave packets receive Raman momentum kicks in a high-finesse cavity. QND measurement and one-axis twisting prepare squeezed momentum states. The full Mach–Zehnder sequence uses OAT; phase noise and contrast define the Wineland parameter, with atom number and spatially varying coupling calibrated separately.",
+      "result": "For660(15)atoms the full interferometer has1.7±0.5dB enhancement beyond the calibrated SQL at evolution time0.112ms. Phase variance improves3.4(+0.9/−1.2)dB against the actual unsqueezed interferometer, which itself has imperfect contrast. Below-SQL sensitivity lasts less than0.7ms. Standalone squeezed-state gains are distinct.",
+      "limitations": "Short interrogation time and residual spin-related decoherence sharply limit practical inertial advantage. An independent unreviewed critique by McGuinness(arxiv2301.04396v2) disputes phase/SQL interpretation and resource accounting; its blanket denial is not established by citing it. Authors explicitly distinguish contrast-adjusted entanglement witness from larger ordinary noise cancellation. Independent calibrated acceleration-versus-phase and full-cycle comparisons would be more useful than accepting either universal claim. [S76 pp.1–5 for independent critique]",
+      "replication": "Full corrected journal text and Methods read; public datasets at doi10.25810/t39m-c562 declared. Publisher correction(2022-12-06) restores omitted hbar labels and removes an incorrect peer-review-manuscript link, not a reported numerical-result retraction. Independent experimental replication not established.",
+      "data_code": "Full corrected journal text and Methods read; public datasets at doi10.25810/t39m-c562 declared. Publisher correction(2022-12-06) restores omitted hbar labels and removes an incorrect peer-review-manuscript link, not a reported numerical-result retraction. Independent experimental replication not established. [S77 correction notice]",
+      "conflicts": "Authors declare no competing interests; NSF,DOE,NIST,DARPA funding listed.",
+      "relevance": "Analysis: directly relevant enabling physics for future inertial/gravity sensing; not a demonstrated navigation instrument or GNSS-denial test.",
+      "assessment": "High confidence in reported local calibrated laboratory variance/contrast; practical inertial superiority remains untested and critique warrants explicit parameter definition.",
+      "claims": [
+        {
+          "text": "Full interferometer shows1.7±0.5dB below calibrated SQL at0.112ms.",
+          "locator": "journal Fig.4b and Entangled matter-wave interferometry",
+          "confidence": "high"
+        },
+        {
+          "text": "3.4dB compares actual squeezed and imperfect-contrast unsqueezed interferometers.",
+          "locator": "journal Entangled matter-wave interferometry; Methods Wineland parameter",
+          "confidence": "high"
+        },
+        {
+          "text": "Below-SQL phase sensitivity persists up to approximately0.7ms evolution time.",
+          "locator": "journal Fig.4d and accompanying text",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S73",
+      "title": "Quantum locking of intrinsic spin squeezed state in Earth-field-range magnetometry",
+      "authors": [
+        "Peiyu Yang",
+        "Guzhi Bao",
+        "Jun Chen",
+        "Wei Du",
+        "Jinxian Guo",
+        "Weiping Zhang"
+      ],
+      "date": "2025-03-03",
+      "preprint_date": null,
+      "journal_date": "2025-03-03",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41534-025-00971-9",
+      "doi": "10.1038/s41534-025-00971-9",
+      "type": "theory and numerical simulation",
+      "tier": "T1",
+      "region": "China",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/earth.html.txt",
+      "contribution": "Nonlinear Zeeman dynamics create intrinsic single-atom squeezing; optimized dynamical decoupling locks its changing axis to the observable instead of simply suppressing that dynamics.",
+      "method": "Breit–Rabi expansion yields a quadratic spin Hamiltonian. A differential-evolution algorithm chooses discretized RF rotation pulses. Numerical state fidelity and signal/noise propagation assess dark-interval and continuous-readout protocols; supplementary notes derive SQL and the nuclear-electron entanglement mechanism.",
+      "result": "Modelled87Rb maximum metrological gain approaches2.9dB. Under assumed1cm³ room-temperature cell,N=1.42e10 and10ms coherence, Discussion calculates4.29fT/sqrt(Hz) versus5.99fT/sqrt(Hz) CSS SQL and14.04fT/sqrt(Hz) NLZ-degraded reference. These are predictions, not recorded instrument sensitivity.",
+      "limitations": "Explicitly no atom–atom entanglement is needed; gain is single-atom nuclear-electron correlation and independent ofN. The largest apparent improvement also restores assumed coherence, not squeezing alone. Instantaneous-rotation and rotating-wave approximations constrain pulse duration. Readout backaction, gradients and measurement-duty trade-offs are discussed but no complete measured noise budget or moving-platform demonstration is supplied.",
+      "replication": "Main Results,Methods,Discussion and supplementary notes1–3,8 inspected. Equations and optimized pulse sequence are given; authors say evaluation data are within paper/supplement and additional data on request. No code repository identified; no experimental replication established because this is a proposed protocol.",
+      "data_code": "Main Results,Methods,Discussion and supplementary notes1–3,8 inspected. Equations and optimized pulse sequence are given; authors say evaluation data are within paper/supplement and additional data on request. No code repository identified; no experimental replication established because this is a proposed protocol.",
+      "conflicts": "Authors declare no competing interests.",
+      "relevance": "Analysis: a relevant control proposal for Earth-field sensing and potential magnetic navigation research; claimed operational sensitivity must await an experiment.",
+      "assessment": "High confidence in classification as numerical proposal; medium confidence in achievable hardware gain.",
+      "claims": [
+        {
+          "text": "Rb maximum modelled metrological gain approaches2.9dB.",
+          "locator": "Results Fig.1b, Eq.5",
+          "confidence": "high"
+        },
+        {
+          "text": "No atom–atom entanglement appears; gain independent ofN.",
+          "locator": "Results Spin squeezing, Eq.4–5",
+          "confidence": "high"
+        },
+        {
+          "text": "4.29fT/sqrt(Hz) comes from assumed cell,atom number and coherence.",
+          "locator": "Discussion numerical sensitivity paragraph",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S74",
+      "title": "Superabsorption in an organic microcavity: Toward a quantum battery",
+      "authors": [
+        "James Q. Quach",
+        "Kirsty E. McGhee",
+        "Lucia Ganzer",
+        "Dominic M. Rouse",
+        "Brendon W. Lovett",
+        "Erik M. Gauger",
+        "Jonathan Keeling",
+        "Giulio Cerullo",
+        "David G. Lidzey",
+        "Tersilla Virgili"
+      ],
+      "date": "2022-01-14",
+      "preprint_date": "2020-12-10",
+      "journal_date": "2022-01-14",
+      "version": "arxiv full manuscript; journal metadata cross-checked",
+      "url": "https://arxiv.org/pdf/2012.06026",
+      "doi": "10.1126/sciadv.abk3160",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "UK; Italy; Australia",
+      "access": "full text with version caveat",
+      "local_path": "reviews/emerging-docs/absorption.txt",
+      "contribution": "Organic-molecule collective light–matter coupling produces faster absorption as absorber count increases; dephasing moves energy into less radiative dark modes.",
+      "method": "Lumogen-F Orange dye in polystyrene is placed between dielectric mirrors. Concentrations0.5%,1%,5%,10% span weak to strong coupling. Femtosecond pump–probe differential reflectivity is fit to an open-system model; peak population-derived energy density, rise time and charging power are extracted from model fits, with supporting spectroscopy and fit sensitivity in supplement.",
+      "result": "Spectroscopy supports superextensive charging and storage-capacity behaviour over tested regimes; scaling varies with coupling/decay regime. Only6–8% of initial pump energy enters the cavity according to reflectivity estimates. The observed energy is molecular excitation, not delivered electrical energy.",
+      "limitations": "This precursor has no demonstrated electrical extraction, useful discharge cycle or net wall-plug efficiency. Increased concentration and coupling regimes change together; fitted collective dynamics should not be reported as proof that entanglement uniquely causes practical energy advantage. Finite experimental concentration range, molecular quenching at larger concentration and dephasing/decay assumptions limit extrapolation. A fixed-resource comparison requires incident/absorbed energy,mode volume,loss and preparation accounting.",
+      "replication": "Full accessible arxiv PDF main text plus supplement examined; DOI/journal identity verified through opened publisher DOI and author university research portal. Version is latest downloadable arxiv manuscript, not an independently diffed journal PDF. Detailed fabrication,spectroscopy and fitting documented; independent replication/open code repository not established in this bounded review.",
+      "data_code": "Full accessible arxiv PDF main text plus supplement examined; DOI/journal identity verified through opened publisher DOI and author university research portal. Version is latest downloadable arxiv manuscript, not an independently diffed journal PDF. Detailed fabrication,spectroscopy and fitting documented; independent replication/open code repository not established in this bounded review.",
+      "conflicts": "Declaration not verified from examined version; treat unknown, not no conflict.",
+      "relevance": "Analysis: UK/European foundational energy-capture physics useful to evaluate the2026 extraction study; defence battery procurement relevance remains remote.",
+      "assessment": "Medium confidence in spectroscopic collective enhancement; no demonstrated usable battery output. Detailed source confidence retains the reviewed-manuscript version caveat.",
+      "claims": [
+        {
+          "text": "Pump–probe spectroscopy extracts excitation energy and fitted charging dynamics.",
+          "locator": "arxiv main pp.6–11,Figs.2–3,Table1",
+          "confidence": "medium"
+        },
+        {
+          "text": "Only6–8% of incident pump energy enters cavity.",
+          "locator": "arxiv main p.7,Experimental setup",
+          "confidence": "medium"
+        },
+        {
+          "text": "Dissipation/dephasing suppresses collective re-emission and stabilizes energy.",
+          "locator": "arxiv main pp.3,11–14; supplementary model",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S75",
+      "title": "Superextensive electrical power from a quantum battery",
+      "authors": [
+        "Kieran Hymas",
+        "Jack B. Muir",
+        "Daniel Tibben",
+        "Joel van Embden",
+        "Tadahiko Hirai",
+        "Christopher J. Dunn",
+        "Daniel E. Gómez",
+        "James A. Hutchison",
+        "Trevor A. Smith",
+        "James Q. Quach"
+      ],
+      "date": "2026-03-13",
+      "preprint_date": "2025-01-27",
+      "journal_date": "2026-03-13",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41377-026-02240-6",
+      "doi": "10.1038/s41377-026-02240-6",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "Australia",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/battery.html.txt",
+      "contribution": "Charge-transport layers turn an organic polariton microcavity into a steady-state electrical-output device, addressing the missing extraction step in earlier spectroscopy-only battery demonstrations.",
+      "method": "Eight CuPc:C60 devices vary absorber count within a nominal126nm cavity. Cavity and no-cavity controls share substrates. Reflectance establishes strong coupling; ultrafast pump–probe data quantify excitation dynamics; current–voltage scans under625nm illumination measure electrical output. Intersystem crossing populates metastable triplet states; coupled-oscillator and open-system models connect these stages.",
+      "result": "Maximum electrical power density is roughly10–40microW/cm². The ratio of cavity/no-cavity peak power increases withN; authors interpret this as superextensive output, with modelPc~N². Optical excited-state signals persist tens of nanoseconds; the six-orders-of-magnitude ratio compares to charging times, not hours or years of storage.",
+      "limitations": "Always-illuminated steady-state photocurrent does not by itself demonstrate sustained useful dark discharge. Controls omit a metal mirror and therefore differ optically as well as in coupling; comparisons to an independently optimized photovoltaic architecture and equal absorbed/incident energy are needed for practical superiority. Concentration alters carrier dynamics,cavity detuning andQ; authors normalize with same-run controls and discussD8 deviation. No entanglement witness isolates uniquely quantum causal advantage. No complete round-trip/net external efficiency,macroscopic capacity or cycling durability demonstrated.",
+      "replication": "Full journal text,Methods and32-page supplement inspected, emphasizing geometry/controls,ultrafast normalization and electrical model. Data available on request; no public code repository identified. Independent replication not established.",
+      "data_code": "Full journal text,Methods and32-page supplement inspected, emphasizing geometry/controls,ultrafast normalization and electrical model. Data available on request; no public code repository identified. Independent replication not established.",
+      "conflicts": "Authors declare no competing interests.",
+      "relevance": "Analysis: worthwhile frontier test in low-light harvesting rather than evidence for near-term defence energy storage. Require dark-discharge energy,integrated photon-to-electric efficiency and optimized equal-resource classical controls.",
+      "assessment": "High confidence in measured electrical output; medium confidence in causal scaling interpretation; low deployment maturity.",
+      "claims": [
+        {
+          "text": "Electrical output densities approximately10–40microW/cm².",
+          "locator": "Results electrical discharge paragraph,Fig.4c; supplementIV.A",
+          "confidence": "high"
+        },
+        {
+          "text": "Cavity/control power ratio increases withN; modeledPc~N².",
+          "locator": "Results Fig.4d; supplementIV.B",
+          "confidence": "medium"
+        },
+        {
+          "text": "Metastable optical excitation persists tens of nanoseconds.",
+          "locator": "Fig.3a and accompanying text",
+          "confidence": "high"
+        },
+        {
+          "text": "126nm cavity length fixed while optical length varies.",
+          "locator": "supplement p.3,Fig.S1",
+          "confidence": "high"
+        },
+        {
+          "text": "Electrical output is measured under constant625nm illumination; excitation persistence is measured separately by transient optical spectroscopy.",
+          "locator": "Fig.3; Fig.4b–d; Methods Discharging power",
+          "confidence": "high"
+        },
+        {
+          "text": "Electrical input illumination is10mW/cm²; measured output densities are10–40microW/cm².",
+          "locator": "Methods Discharging power; SupplementIV-A",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ],
+      "strand": "Emerging phenomena"
+    },
+    {
+      "id": "S76",
+      "title": "Matters Arising: Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "authors": [
+        "Liam P. McGuinness"
+      ],
+      "date": "2023-05-03",
+      "url": "https://arxiv.org/abs/2301.04396v2",
+      "tier": "T2",
+      "access": "full preprint",
+      "local_path": "reviews/emerging-docs/greve-challenge.txt",
+      "assessment": "Unreviewed independent critique read as challenge; broad denial not accepted without parameter/SQL adjudication. Author reports Nature rejected submission.",
+      "strand": "Corrections and challenges",
+      "type": "preprint critique",
+      "region": "Global",
+      "version": "arXiv 2301.04396v2",
+      "claims": [
+        {
+          "text": "A non-peer-reviewed preprint disputes the interpretation of the Greve interferometer experiment. This scan has not independently adjudicated its proposed alternative SQL benchmark.",
+          "locator": "v2 pp.1–5",
+          "confidence": "low"
+        }
+      ],
+      "preprint_date": null,
+      "journal_date": null,
+      "reviewed_sections": [
+        "v2 pp.1–5; critique remains unadjudicated"
+      ]
+    },
+    {
+      "id": "S77",
+      "title": "Publisher Correction: Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "date": "2022-12-06",
+      "url": "https://www.nature.com/articles/s41586-022-05582-4",
+      "tier": "T1",
+      "access": "full notice",
+      "local_path": "reviews/emerging-docs/greve-correction.txt",
+      "assessment": "Omitted hbar labels restored; incorrect peer-review-manuscript link removed. Does not retract performance numbers.",
+      "strand": "Corrections and challenges",
+      "type": "publisher correction",
+      "region": "Global",
+      "version": "Publisher correction notice",
+      "authors": [
+        "Graham P. Greve",
+        "Chengyi Luo",
+        "Baochen Wu",
+        "James K. Thompson"
+      ],
+      "doi": "10.1038/s41586-022-05582-4",
+      "claims": [
+        {
+          "text": "Publisher correction restores omitted hbar labels and removes a mistaken peer-review-manuscript link.",
+          "locator": "correction notice, correction paragraph",
+          "confidence": "high"
+        }
+      ],
+      "preprint_date": null,
+      "journal_date": "2022-12-06"
+    }
+  ],
+  "core_count": 24,
+  "context_count": 2
+}

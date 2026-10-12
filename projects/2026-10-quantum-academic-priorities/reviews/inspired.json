@@ -1,0 +1,454 @@
+{
+  "strand": "quantum-inspired optimisation",
+  "searches": [
+    {
+      "query": "\"High-performance combinatorial optimization based on classical mechanics\" arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Benchmark of quantum-inspired heuristic solvers for QUBO\" arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Limitations of tensor-network approaches for optimization and sampling\" arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"abe7953\" correction retraction",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"s41598-022-06070-5\" correction",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"2309.09736\" correction retraction",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"054049\" \"Dziubyna\" correction",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"2607.13325\" correction",
+      "date": "2026-10-12"
+    }
+  ],
+  "screened": [
+    {
+      "title": "High-performance combinatorial optimization based on classical mechanics",
+      "year": 2021,
+      "url": "https://doi.org/10.1126/sciadv.abe7953",
+      "decision": "selected for full-text review",
+      "reason": "Strong algorithm/hardware anchor; insufficient for universal solver advantage or operational scheduling."
+    },
+    {
+      "title": "Benchmark of quantum-inspired heuristic solvers for quadratic unconstrained binary optimization",
+      "year": 2022,
+      "url": "https://www.nature.com/articles/s41598-022-06070-5",
+      "decision": "selected for full-text review",
+      "reason": "Good counterweight to universal-winner claims; limited evidence of classical superiority because baseline is single-thread SA."
+    },
+    {
+      "title": "An Optimization Case Study for solving a Transport Robot Scheduling Problem on Quantum-Hybrid and Quantum-Inspired Hardware",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2309.09736",
+      "decision": "selected for full-text review",
+      "reason": "Most directly transferable scheduling study in this set, with bounded positive quantum-inspired result."
+    },
+    {
+      "title": "Toward quantum scaling advantage in approximate optimization",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2505.22514",
+      "decision": "selected for full-text review",
+      "reason": "Strong requirement to update classical baselines and distinguish anneal-time, QPU-access and external runtime; not a universal no-advantage theorem."
+    },
+    {
+      "title": "Limitations of tensor-network approaches for optimization and sampling: A comparison to quantum and classical Ising machines",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2411.16431",
+      "decision": "selected for full-text review",
+      "reason": "Strong negative methodological evidence against treating all tensor-network approaches as scalable universal solvers."
+    },
+    {
+      "title": "A Reality Check on Quantum Optimisation: Evidence from an Industrial Case Study",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2607.13325",
+      "decision": "selected for full-text review",
+      "reason": "Important recent counterweight; evidence for formulation-aware classical accelerator utility, not best-in-class or quantum advantage."
+    }
+  ],
+  "papers": [
+    {
+      "id": "S50",
+      "title": "High-performance combinatorial optimization based on classical mechanics",
+      "authors": [
+        "Hayato Goto",
+        "Kotaro Endo",
+        "Masaru Suzuki",
+        "Yoshisato Sakai",
+        "Taro Kanao",
+        "Yohei Hamakawa",
+        "Ryo Hidaka",
+        "Masaya Yamasaki",
+        "Kosuke Tatsumura"
+      ],
+      "date": "2021-02-03",
+      "preprint_date": null,
+      "journal_date": "2021-02-03",
+      "version": "Version of record, full article via EuropePMC XML; publisher online date 3 February; Crossref issue date 5 February 2021",
+      "url": "https://doi.org/10.1126/sciadv.abe7953",
+      "doi": "10.1126/sciadv.abe7953",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Japan",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/anchor.txt",
+      "contribution": "Ballistic and discrete simulated-bifurcation variants improve classical Ising heuristics.",
+      "method": "Hamiltonian-inspired dynamics, inelastic boundaries, sign discretisation; FPGA and GPU-cluster benchmarks.",
+      "result": "K2000 target TTT 0.26 ms and optimal/best-known TTS 1.3 s on authors’ machines (Results, Fig.3).",
+      "limitations": "Comparators often drawn from prior publications; some obsolete or simulated hardware; million-spin targets statistically estimated rather than certified optima. No scheduling constraints benchmark.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Algorithm equations in Methods; supplementary materials referenced; additional data on request. Supplement itself not successfully retrieved.",
+      "conflicts": "Toshiba authors; five authors named as inventors on Toshiba patent application P2019-164742 (Competing interests).",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong algorithm/hardware anchor; insufficient for universal solver advantage or operational scheduling.",
+      "claims": [
+        {
+          "text": "The bSB K2000 TTT is 0.26 ms; dSB TTS is 1.3 s.",
+          "locator": "Results: Benchmarking using time-to-solution and time-to-target; Fig.3B–C",
+          "confidence": "high"
+        },
+        {
+          "text": "Ultralarge benchmarks use 16 GPUs and statistically estimated optimal/target values.",
+          "locator": "Results: Fig.4 and accompanying text",
+          "confidence": "high"
+        },
+        {
+          "text": "Other-machine TTS/TTT is cited or estimated from literature because authors could not use those machines.",
+          "locator": "Results: Benchmarking using time-to-solution and time-to-target",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results: algorithms, FPGA benchmarks, TTS/TTT, ultralarge problems",
+        "Discussion",
+        "Methods",
+        "Acknowledgments/conflicts/data availability"
+      ],
+      "review": "Goto and colleagues introduce ballistic and discrete simulated bifurcation, numerical classical dynamics inspired by nonlinear quantum oscillators. Inelastic walls improve convergence; sign discretisation suppresses continuous-variable errors. The paper compares FPGA implementations and larger GPU calculations with other Ising machines. Its K2000 result is target time-to-target of 0.26 ms for bSB and optimal/best-known time-to-solution of 1.3 s for dSB, using a 99% success criterion. These metrics answer different questions. [S50 Results, Fig.3]\n\nThe large-scale demonstration is valuable, but the million-spin claim needs care: the GPU experiments use statistically estimated reference energies rather than certified instance optima. The 16-GPU implementation combines an algorithmic improvement with substantial parallel hardware. Other-machine results were cited or estimated from literature because the authors lacked access; some comparators were older hardware or simulator predictions. The time step was selected from five values and step counts optimised separately for the target metric. [S50 Results, Fig.4; Benchmarking; Methods]\n\n*Analysis:* this establishes a useful competitive classical baseline, not a general theorem that quantum-inspired dynamics win. The central method is explicit enough to reconstruct, but independent matched-budget replication, tuned contemporary classical heuristics, and native constrained scheduling comparisons would strengthen transfer. End-to-end formulation and constraint feasibility are absent from these Ising tests. Toshiba employment and a declared patent interest warrant recording without dismissing the equations or results. [S50 Competing interests; Discussion]\n\nThe full main article was reviewed; the separately hosted supplement was not retrieved. Consequently its detailed FPGA resource and comparator reconstruction tables remain an access gap. *Analysis:* retain this as a historical methods anchor, with deployment confidence low."
+    },
+    {
+      "id": "S51",
+      "title": "Benchmark of quantum-inspired heuristic solvers for quadratic unconstrained binary optimization",
+      "authors": [
+        "Hiroki Oshiyama",
+        "Masayuki Ohzeki"
+      ],
+      "date": "2022-02-09",
+      "preprint_date": "2021-04-29",
+      "journal_date": "2022-02-09",
+      "version": "Publisher PDF version of record; arXiv latest v3 15 December 2021",
+      "url": "https://www.nature.com/articles/s41598-022-06070-5",
+      "doi": "10.1038/s41598-022-06070-5",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Japan",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/benchmark.txt",
+      "contribution": "Cross-family comparison shows solver rankings depend on benchmark structure.",
+      "method": "45 MQLib problems, ten NAE-3SAT instances, six SK instances; commercial HSS/SBM/DA and single-thread neal SA.",
+      "result": "Five-minute MQLib wins: HSS22, DA20, SBM16, SA7 including ties; DA best on NAE3SAT for 100–600s; SBM best SK.",
+      "limitations": "No state-of-the-art tuned classical portfolio; heterogeneous hardware/parallelism; execution-time conventions differ, network excluded; best observed is not certified optimum.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "MQLib instances public; generator listings for NAE3SAT/SK; other data on request; proprietary SBM evaluation build and HSS internals.",
+      "conflicts": "No competing interests declared; acknowledgments report D-Wave and Toshiba research support; Ohzeki Sigma-I affiliation.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Good counterweight to universal-winner claims; limited evidence of classical superiority because baseline is single-thread SA.",
+      "claims": [
+        {
+          "text": "45 MQLib problems were selected from the HSS white-paper benchmark set.",
+          "locator": "p.2, Problem instances for benchmarking",
+          "confidence": "high"
+        },
+        {
+          "text": "Network time is ignored; HSS and SBM use requested budgets whereas DA uses reported elapsed time.",
+          "locator": "p.3, Results",
+          "confidence": "high"
+        },
+        {
+          "text": "Reference score denominator is lowest value found by tested solvers, not certified optimum.",
+          "locator": "p.4 Eq.(4)",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "QUBO solvers",
+        "Problem instances",
+        "Results pp.3–7 tables1–10 figures1–3",
+        "Discussion pp.8–9",
+        "Data availability and conflicts p.10"
+      ],
+      "review": "This benchmark is most useful for its changing winners: HSS leads the mixed MQLib set, DA leads the tested NAE-3SAT regime, and SBM leads SK spin glasses. The five-minute MQLib experiment counts ties, producing 22 HSS, 20 DA, 16 SBM and seven SA wins; these are comparative wins rather than optimum certificates. Its score uses the best observed energy among the four solvers. [S51 pp.3–7, Eq.4, Figs.1–3]\n\nThe comparator is D-Wave neal SA on one i9-9900K CPU thread, against specialised or cloud systems. SBM automatically searches parameters; its evaluation build is proprietary. HSS internals are closed, so the benchmark cannot isolate any QPU contribution. Time is also heterogeneous: requested HSS/SBM budgets, reported DA elapsed time, and locally measured SA sampling time; network communication is excluded. [S51 pp.2–3]\n\n*Analysis:* the paper supports problem-dependent solver selection, but provides a weak basis for a blanket claim that these services beat competitive classical optimisation. Equal wall-clock allocations on unspecified unequal compute resources are not equal resource budgets. An operational follow-up should add tuned parallel tempering, modern QUBO/local-search portfolios and native mathematical models, reporting feasibility and true business objectives rather than only encoded energy.\n\nThe MQLib set comprises 45 instances inherited from HSS’s white-paper selection; synthetic tests average ten NAE-3SAT and six SK instances, with independent runs for plotted points. Public instance generators help reproducibility, but additional data are request-only and service internals remain opaque. D-Wave and Toshiba research support is acknowledged despite a no-conflicts declaration. [S51 pp.2,7,9–10] *Analysis:* confidence is moderate for the reported ranking on these configurations and low for broad logistical superiority."
+    },
+    {
+      "id": "S52",
+      "title": "An Optimization Case Study for solving a Transport Robot Scheduling Problem on Quantum-Hybrid and Quantum-Inspired Hardware",
+      "authors": [
+        "Dominik Leib",
+        "Tobias Seidel",
+        "Sven Jäger",
+        "Raoul Heese",
+        "Caitlin Isobel Jones",
+        "Abhishek Awasthi",
+        "Astrid Niederle",
+        "Michael Bortz"
+      ],
+      "date": "2023-10-31",
+      "preprint_date": "2023-09-18",
+      "journal_date": "2023-10-31",
+      "version": "arXiv v4 24 October2023; linked Scientific Reports13,18743",
+      "url": "https://arxiv.org/abs/2309.09736",
+      "doi": "10.1038/s41598-023-45668-1",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Germany / UK-linked collaboration",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/robot.txt",
+      "contribution": "Application-based scheduling comparison with native MIP formulations and equal-quality timing.",
+      "method": "260 generated BASF-inspired laboratory schedules; sequence/time-indexed Gurobi MIPs vs QUBO LBQM, DA and hybrid DA.",
+      "result": "Sequence Gurobi reaches DA quality 10–100 times faster for minor instances; hybrid DA wins equal-quality runtime on largest N20 instances.",
+      "limitations": "Out-of-box Gurobi, no tailored metaheuristics; large-instance Gurobi values capped at3600s; solver submission-to-return excludes model construction; preset budgets not scaling complexity proof.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Generated instance library and parameter tables referenced in supplementary material; proprietary solvers, no independent reproduction performed.",
+      "conflicts": "Industrially motivated BASF use case; BMBF RymaxOne funding (§6); supplier internals confidential. No unverified conflict allegation.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Most directly transferable scheduling study in this set, with bounded positive quantum-inspired result.",
+      "claims": [
+        {
+          "text": "260 instances split161 minor2071–8080 variables and99 major10822–22692.",
+          "locator": "§3.1; Table1",
+          "confidence": "high"
+        },
+        {
+          "text": "Submission-to-return runtimes include network delays but exclude programmatic model construction.",
+          "locator": "§4.1 opening paragraph",
+          "confidence": "high"
+        },
+        {
+          "text": "Sequence Gurobi reaches QFDA quality10–100 times faster on minor instances; hybrid DA advantage for N20 major instances.",
+          "locator": "§4.1 Fig.5; §4.2 Fig.7",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§2 mathematical models",
+        "§3 benchmark and penalty setup",
+        "§4 all results and relative-runtime definition",
+        "§5 conclusion",
+        "§6 funding"
+      ],
+      "review": "The case study models robot movements and laboratory processing motivated by BASF, comparing a QUBO with two native Gurobi MIPs. This is a stronger application comparison than forcing every solver through the same QUBO. Its 260 generated instances split into 161 minor cases with 2,071–8,080 QUBO variables and 99 major cases with 10,822–22,692. [S52 §§2–3, Table1]\n\nThe crucial contribution is equal-quality timing: Gurobi’s progress log identifies when it first matches each heuristic’s final objective, avoiding comparison of heuristic approximation time with exact optimality-proof time. Sequence Gurobi reaches DA quality 10–100 times faster on minor instances; the hybrid DA is faster at comparable quality for the largest 20-sample instances. Gurobi still generally finds better final objectives. Some D-Wave hybrid outputs are infeasible. [S52 §4.1, Figs.3–5; §4.2, Figs.6–7]\n\nReported end-to-end time includes network delays from submission to solution return but excludes constructing the optimisation model. Major-instance Gurobi equal-quality times are capped at 3,600 seconds when the target is not reached; this is censoring rather than a measured matching time. DA hybrid budgets were allocated from five hours, approximately proportional to variable count. The comparator is an out-of-box solver; tailored metaheuristics were explicitly excluded. [S52 §§3.2,4.1]\n\n*Analysis:* this supports a bounded positive case for specialised classical annealing in large constrained scheduling, while preserving a strong negative result for smaller problems. Near-constant heuristic runtimes are partly budget choices, so they do not establish superior asymptotic complexity. Transfer to defence logistics requires representative constraints, repeated-run uncertainty, tuned classical alternatives, and model-construction costs. The paper itself describes a technology snapshot rather than general advantage. [S52 §5]"
+    },
+    {
+      "id": "S53",
+      "title": "Toward quantum scaling advantage in approximate optimization",
+      "authors": [
+        "J. Pawłowski",
+        "P. Tarasiuk",
+        "J. Tuziemski",
+        "Ł. Pawela",
+        "B. Gardas"
+      ],
+      "date": "2026-07-08",
+      "preprint_date": "2025-05-28",
+      "journal_date": "2026-07-08",
+      "version": "arXiv v2 10 July2026; PhysRevApplied26,014024; earlier title Closing the Quantum-Classical Scaling Gap in Approximate Optimization",
+      "url": "https://arxiv.org/abs/2505.22514",
+      "doi": "10.1103/qcws-8kgm",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Poland",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/scaling.txt",
+      "contribution": "Adds a GPU simulated-bifurcation baseline to challenge a claimed quantum scaling advantage.",
+      "method": "Same125 Sidon28 instances per size N142–1322,100 independent runs; tune steps/replicas,99% TT-epsilon target; extended classical instances up to38320.",
+      "result": "Comparable or superior scaling on reported QAC benchmarks under stated timing conventions; sparse3D annealing-time scaling remains potentially favourable but overhead erases operational advantage.",
+      "limitations": "Class/problem-specific; hardware resources unequal; large classical benchmark cannot directly compare unavailable future QPU; common initialization overhead omitted; no constrained logistics. Supplement S1 reports four-GPU total TT-epsilon values about100 times single-GPU at small sizes despite improved scaling exponent; exponent is not absolute speed.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Original benchmark Dataverse instances; new supporting data available upon reasonable request, not fully open replication package.",
+      "conflicts": "Quantumz.io affiliations and NCBR support; NCN funding; do not label independent of solver commercial interests.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong requirement to update classical baselines and distinguish anneal-time, QPU-access and external runtime; not a universal no-advantage theorem.",
+      "claims": [
+        {
+          "text": "Original comparison uses125 instances per size N142–1322 and100 solver runs; Gurobi certifies original ground reference.",
+          "locator": "main text Thermal vs Chaotic vs Quantum Annealing, Eq.1",
+          "confidence": "high"
+        },
+        {
+          "text": "Total SBM runtime includes CPU-GPU transfer/memory/result handling; pure GPU time excludes those.",
+          "locator": "main text Eq.1 discussion; supplement S5",
+          "confidence": "high"
+        },
+        {
+          "text": "Common initialization costs are neglected and GPU samples are parallel whereas QA samples sequential.",
+          "locator": "supplement S5 Runtime accounting",
+          "confidence": "high"
+        },
+        {
+          "text": "Four-GPU total TT-epsilon is about100 times the single-GPU value for the small-instance comparison due to dispatch/collection overhead, despite improved fitted exponent.",
+          "locator": "Supplement S1 Multi-GPU Simulated Bifurcation Machine, Fig.S1",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Full main text and methods",
+        "Supplement S1 multiGPU",
+        "S2 large instances",
+        "S3 dequantization",
+        "S4 solution selection",
+        "S5 runtime",
+        "S6 sparse3D",
+        "S7 hardware"
+      ],
+      "review": "This is the revised, published successor to the 2025 preprint titled “Closing the Quantum-Classical Scaling Gap”; using its old title or calling it unreviewed would misstate the source. The reviewed v2 is dated 10 July 2026 and links to Physical Review Applied 26, 014024. [S53 arXiv identity/version; journal DOI]\n\nThe authors test the same Sidon-28 QAC-graph instances as the challenged study: 125 per size, 142–1,322 variables, and 100 independent solver runs. They optimise simulated-bifurcation steps and parallel replicas against a 99%-success time-to-epsilon metric, with original reference ground energies certified using Gurobi. GPU SBM closes the reported scaling gap on these problems. Larger classical instances extend to 38,320 variables, beyond the tested QPU range. [S53 main text, Eq.1, Figs.1–3]\n\nThe supplement distinguishes GPU compute time, total CPU/GPU execution, QPU access and externally measured runtime. Common initialization costs are nevertheless omitted; GPU replicas execute together whereas annealer samples are sequential. Sparse 3D spin glasses retain favourable quantum annealing-time scaling, but current operational overhead prevents demonstrated practical scaling advantage. [S53 S5–S7; Fig.4]\n\n*Analysis:* the strongest conclusion is that the earlier classical baseline was insufficient and runtime accounting can change the verdict. It is not evidence that SBM dominates every sparse instance, nor that fits at relaxed energy targets establish exact-optimisation complexity. Tuning steps and replicas is legitimate but its search budget should accompany operational procurement comparisons. Extended-size classical success does not directly measure a future QPU. Quantumz.io affiliations and request-only new data constrain independence and reproducibility. [S53 acknowledgments/data availability] *Analysis:* high confidence in the need for this baseline, moderate in generalisation beyond this benchmark."
+    },
+    {
+      "id": "S54",
+      "title": "Limitations of tensor-network approaches for optimization and sampling: A comparison to quantum and classical Ising machines",
+      "authors": [
+        "Anna Maria Dziubyna",
+        "Tomasz Śmierzchalski",
+        "Bartłomiej Gardas",
+        "Marek M. Rams",
+        "Masoud Mohseni"
+      ],
+      "date": "2025-05-19",
+      "preprint_date": "2024-11-25",
+      "journal_date": "2025-05-19",
+      "version": "arXiv v3 16 June2025; PhysRevApplied23,054049",
+      "url": "https://arxiv.org/abs/2411.16431",
+      "doi": "10.1103/PhysRevApplied.23.054049",
+      "type": "journal article",
+      "tier": "T1",
+      "region": "Poland / US",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/tensor.txt",
+      "contribution": "Diagnoses limits of approximate tensor-network optimisation and sampling on modern annealer graphs.",
+      "method": "Approximate-marginal branch-and-bound, PEPS/GPU acceleration and dimension reduction;20 instances per class/size; QA and SBM comparator.",
+      "result": "On largest random problems TN slower and less accurate; planted cases TN improves best-energy gap factor3–4, without finding planted ground state at721/3065 spins.",
+      "limitations": "Best-known energies not always certified optima; energy metric has factor2 denominator; memory truncation and geometry-specific contraction failures; QPU access overhead excluded from comparison.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "SpinGlassPEPS.jl public; instance/results repository DOI10.18150/OUGF1O; reported open, not run here.",
+      "conflicts": "Mohseni HPE Labs affiliation; NCN/QuantERA/EU and DARPA/AFRL support disclosed. No personal competing-interest inference.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Strong negative methodological evidence against treating all tensor-network approaches as scalable universal solvers.",
+      "claims": [
+        {
+          "text": "Largest5376-spin Pegasus TN runs require local dimension reduction to2^16 states due to memory.",
+          "locator": "§V.3 Fig.10",
+          "confidence": "high"
+        },
+        {
+          "text": "Reference dE=(E-Ebest)/(2|Ebest|) uses combined solver best when true ground unknown.",
+          "locator": "§V.2 Eq.14",
+          "confidence": "high"
+        },
+        {
+          "text": "Planted cases improve best-energy difference by factor3–4; ground states not found for721/3065-spin cases.",
+          "locator": "§V.3; AppendixA Fig.A1",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§II model",
+        "§III contraction/branch-and-bound",
+        "§IV dimensional reduction",
+        "§V all metrics/results",
+        "§VI contraction stability",
+        "§VII discussion",
+        "AppendicesA–E",
+        "Data availability"
+      ],
+      "review": "This study makes tensor-network failure an object of investigation rather than hiding it behind selected successes. The method combines approximate marginals with branch-and-bound, sparse PEPS representations and GPU computation. Twenty instances per selected size underpin the comparisons; random Pegasus and Zephyr graphs test more difficult connectivity than earlier Chimera examples. [S54 §§III–V, Fig.10]\n\nAt 5,376 Pegasus spins, memory forces local state reduction to 2^16 configurations per cluster. On the tested random problems, TN is slower and returns worse energies than SBM/QA; planted square-lattice cases embedded into Pegasus reverse the quality ranking, improving the best-energy gap by a factor of three to four. The larger planted cases still do not reach their known ground states. Thus the negative finding is geometry and instance dependent. [S54 §V.3; AppendixA, Fig.A1]\n\nThe error measure is dE=(E−Ebest)/(2|Ebest|), and Ebest pools solver outputs when ground truth is unknown. This must not be silently relabelled as a conventional certified optimality gap. A 216-spin diagnostic shows a trade-off between low-temperature search resolution and approximate contraction stability; dimensional preprocessing can itself remove the optimum. [S54 §V.2, Eq.14; §VI, Fig.12]\n\n*Analysis:* this is persuasive evidence of a concrete limitation in this implementation, not a no-go theorem for tensor networks. Sampling diversity is separately assessed and cannot be inferred from one best-energy result. Runtime comparisons also need cloud-access overhead and hardware budgets before operational interpretation. Open Julia code and an instance/results repository make this relatively reproducible, though neither was executed here. [S54 §VII; Data availability; AppendicesD–E] *Analysis:* useful for screening solver proposals, with no demonstrated constrained-logistics deployment."
+    },
+    {
+      "id": "S55",
+      "title": "A Reality Check on Quantum Optimisation: Evidence from an Industrial Case Study",
+      "authors": [
+        "Hila Safi",
+        "Karen Wintersperger",
+        "Oliver von Sicard",
+        "Christoph Niedermeier",
+        "Wolfgang Mauerer"
+      ],
+      "date": "2026-07-14",
+      "preprint_date": "2026-07-14",
+      "journal_date": null,
+      "version": "arXiv v1 14 July2026; no journal reference displayed at review",
+      "url": "https://arxiv.org/abs/2607.13325",
+      "doi": null,
+      "type": "preprint",
+      "tier": "T2",
+      "region": "Germany",
+      "access": "full-text",
+      "local_path": "projects/2026-10-quantum-academic-priorities/reviews/inspired-docs/reality.txt",
+      "contribution": "Industrial assignment/scheduling comparison separates feasibility, formulation and encoded quality.",
+      "method": "Siemens-motivated machines/jobs/rigs, compact and constraint-rich QUBOs; IBM, DWave, DA, native exact/MILP and greedy/iterative methods.",
+      "result": "DA handles over10000 logical variables; IBM toy-sized; formulation/compilation strongly changes feasibility; DA better than tested approximation heuristics.",
+      "limitations": "Unreviewed; large reference best found in1h not certified optimum; §V labels time end-to-end but §VII-E excludes API/network/queues; realistic generated data not live production; closed sample distributions.",
+      "replication": "No experimental or computational replication performed in this review; assess reproducibility from supplied material.",
+      "data_code": "Paper cites reproduction package Zenodo DOI10.5281/zenodo.21363322; existence/content not independently verified here.",
+      "conflicts": "Siemens authors and former employee; German BMBF support. No direct Fujitsu authorship displayed.",
+      "relevance": "Analysis: relevant to government/defence resource allocation and logistics through optimisation methods; no defence operational validation.",
+      "assessment": "Important recent counterweight; evidence for formulation-aware classical accelerator utility, not best-in-class or quantum advantage.",
+      "claims": [
+        {
+          "text": "Beyond6 machines5 rigs14 jobs, reference is best found within1h rather than certified optimal.",
+          "locator": "§V-A Benchmark",
+          "confidence": "high"
+        },
+        {
+          "text": "Communication latencies, API overhead and queue delays excluded despite end-to-end label in metrics.",
+          "locator": "§V-C item3; §VII-E Ecological Validity",
+          "confidence": "high"
+        },
+        {
+          "text": "Data realistic but not directly sourced from live production; dynamics such as new job arrivals omitted.",
+          "locator": "§VII-E",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "§III all models and heuristic algorithm",
+        "§IV hardware",
+        "§V setup/metrics",
+        "§VI all results",
+        "§VII all validity threats",
+        "§VIII–IX discussion/outlook",
+        "Funding/reproduction statement"
+      ],
+      "review": "Safi and colleagues compare industrially motivated scheduling across IBM, D-Wave, Fujitsu DA and classical approaches. Their QUBOs encode job-to-machine assignments; sequencing remains classical. Constraint-rich and compact formulations deliberately trade fidelity against solvability. DA reaches more than 10,000 logical variables, while current quantum devices are limited to small cases, and QUBO compilation choices materially affect DA validity. [S55 §§III,V–VI]\n\nThe reference-quality caveat is decisive: the exact branch-and-bound solver certifies small cases only, with the largest tractable example at six machines, five rigs and 14 jobs. Larger references are the best found within one hour, although some figures use optimal-reference language. DA exceeds the tested greedy/iterative approximations; this does not establish superiority over a broadly tuned classical portfolio. [S55 §V-A; §VI-D, Fig.8; §VII-C]\n\nRuntime also needs correction before reuse. Section V-C labels a metric end-to-end execution time, but Section VII-E explicitly excludes communication latency, API overhead and queues. The authors further acknowledge realistic data are not drawn directly from live production and omit dynamic arrivals. Outputs from DA and hybrid D-Wave expose limited top solutions rather than full sample distributions. [S55 §§V-C,VII-B,VII-E]\n\n*Analysis:* the useful result concerns formulation, feasibility and specialised classical hardware, not an operational quantum speedup. Claiming DA as a lower bound for future fault-tolerant annealing is an assumption, not an experimental result; the authors themselves note DA’s separate constraint handling is unavailable on current physical annealers. [S55 §VII-B] The v1 preprint and claimed reproduction package warrant independent review before high-confidence adoption. *Analysis:* moderate confidence in configuration-specific engineering lessons, low in universal solver ranking or live scheduling advantage."
+    }
+  ],
+  "screening_count_note": "These six are selections from Luna discovery, not six additional distinct candidates. No extra primary studies screened.",
+  "verification": {
+    "date": "2026-10-12",
+    "status": "Full text reviewed; JSON structure validated; no solver replication",
+    "version_check": "arXiv latest manifests checked for benchmark, robot, scaling, tensor, reality; Crossref metadata queried for all five journals. No update-to correction/retraction metadata returned. Targeted correction searches found no notice, which is not proof none exists.",
+    "access_gaps": [
+      "S50 separately hosted supplementary material not retrieved",
+      "S52 supplementary instance tables referenced but not independently fetched",
+      "S55 reproduction package contents not independently validated"
+    ],
+    "metadata_caveat": "S50 publisher/PMC online date3Feb differs from Crossref issue date5Feb2021; retain both without treating as a correction."
+  }
+}

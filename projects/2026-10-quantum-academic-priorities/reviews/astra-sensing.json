@@ -1,0 +1,255 @@
+{
+  "papers": [
+    {
+      "id": "S10",
+      "title": "Optical clocks at sea",
+      "url": "https://www.nature.com/articles/s41586-024-07225-2",
+      "access": "Full publisher HTML; supplementary DOCX opened",
+      "sections_reviewed": "Main; Methods entire; Extended Data 1\u20135 captions; supplementary Potential Correlations and Mobile Platforms",
+      "defensible_result": "Three engineered iodine clocks operated at sea; pairwise PICKLES\u2013EPIC instability was 8e-15 at 100000 s without drift removal, with independent NIST comparisons before deployment.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Each sea clock independently accrued <300 ps/day absolute timing error",
+          "evidence": "Long-time sea result is pairwise, normalized by sqrt(2) assuming equal contributions; no independent reference at sea. Supplement provides land sensitivity tests and argues correlations small, rather than measuring absolute shipboard timing.",
+          "locator": "Main following Fig.3; Supplement Potential Correlations in At-Sea Data",
+          "consequence": "Preserves pairwise stability; individual absolute holdover is inferred and assumption-dependent.",
+          "severity": "medium"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Continuous autonomous operation and 35 L describe the entire deployed installation",
+          "evidence": "VIPER restarted once after external power-supply software fault; displayed record begins after restart. Three-clock metrology installation occupied 23 U with supplies/laptops/UPS.",
+          "locator": "Main RIMPAC deployment; Methods RIMPAC test setup; Fig.3a",
+          "consequence": "Qualifies uptime and platform burden; does not undermine clock stability.",
+          "severity": "low"
+        }
+      ],
+      "what_survives": "Robust mobile optical-clock engineering and strong laboratory-reference performance survive.",
+      "what_would_resolve": "Independent diverse reference at sea, direct holdover residuals with specified initialization, full installation SWaP and uptime logs.",
+      "verdict": "Strong field result; do not equate Allan-deviation-derived holdover with independently observed absolute error."
+    },
+    {
+      "id": "S13",
+      "title": "Quantum-assured magnetic navigation",
+      "url": "https://arxiv.org/abs/2504.08167v1",
+      "access": "Full local arXiv HTML including tables",
+      "sections_reviewed": "Entire main text; Table1; Appendix Table2",
+      "defensible_result": "Reported map-aided navigation improves endpoint error over strategic-grade INS across aircraft and ground trials, including onboard sensors with scalar airspeed aiding.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "22 m and 46x are demonstrated complete-GNSS-denial performance",
+          "evidence": "Table1 assigns both headline endpoints to 3D-velocity-aided configurations; Fig.4b explicitly singles out scalar-airspeed configuration as complete GNSS denial. Source of 3D velocity is not specified in reviewed version.",
+          "locator": "Table1; Fig.1 caption; Demonstration of MagNav; Fig.4",
+          "consequence": "Cannot assign best numbers to GNSS-free velocity aiding. This is missing provenance, not proof that GNSS leaked. Scalar-airspeed endpoints 515/566 m remain.",
+          "severity": "high"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Quantum hardware rather than map-aiding/software causes superiority",
+          "evidence": "INS alone is comparator; no equivalent conventional-magnetometer MagNav ablation. Algorithm coefficients, likelihood and data are not supplied in sufficient detail for independent reconstruction.",
+          "locator": "Q-CTRL magnetic denoising and map-matching algorithms; Discussion optimal sensor architecture",
+          "consequence": "System-level advantage survives; quantum-specific advantage and independent reproducibility unestablished.",
+          "severity": "medium"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Cold start means unaided global localization and real-time closed-loop flight demonstrated",
+          "evidence": "Cold start refers to platform magnetic model; initial position supplied, tolerated errors reported up to4 km. Iterative filter is designed for real-time; discussion calls correction quasi-real-time; live flight-management integration not documented.",
+          "locator": "Algorithms; Fig.6; Discussion",
+          "consequence": "Preserves causal algorithm claim, restricts initialization and operational claims. No evidence of whole-flight smoothing was found.",
+          "severity": "medium"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Endpoint minima establish continuous navigation accuracy or indefinite boundedness",
+          "evidence": "22m is best final position, 46x is endpoint ratio; maps have coverage and relief limitations explicitly acknowledged.",
+          "locator": "Abstract; Table1; Discussion final paragraphs",
+          "consequence": "Cannot substitute endpoints for RMS/percentiles or infer global robustness.",
+          "severity": "medium"
+        }
+      ],
+      "what_survives": "Promising multisensor map-navigation trial evidence, especially scalar-airspeed onboard results.",
+      "what_would_resolve": "Velocity-input provenance, held-out routes, full error distributions, algorithm/data release, conventional MagNav comparator and logged live integration.",
+      "verdict": "Promising preprint, with headline aiding and comparator qualifications."
+    },
+    {
+      "id": "S14",
+      "title": "GNSS-free quantum gravity-aided navigation",
+      "url": "https://arxiv.org/abs/2608.25563v1",
+      "access": "Full local arXiv HTML including Fig.2 caption",
+      "sections_reviewed": "Entire main/results/discussion/methods; Figures2\u20138 captions",
+      "defensible_result": "A reported GNSS-withheld gravity-aided chain reduces terminal inertial error from26 km to4.0\u20134.1 km on83 km route; separate GNSS-aided survey supports repeatable gravity recovery.",
+      "objections": [
+        {
+          "classification": "central-result flaw",
+          "claim_under_test": "Nautical-mile DRMS and ~1nmi bounded positioning over entire evaluation",
+          "evidence": "Abstract says DRMS; Fig.2 caption explicitly says1nmi band is not a reported DRMS statistic. Results give2.2nmi terminal error and1nmi only first38 of45nmi; Discussion describes~1nmi bound over evaluation.",
+          "locator": "Abstract; Fig.2 caption; Results Quantum navigation; Discussion second paragraph",
+          "consequence": "Internal reporting inconsistency invalidates specific full-route1nmi/DRMS characterization, not demonstrated error reduction.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "70x drift and0.16mGal repeatability establish mobile navigation advantage over classical systems",
+          "evidence": "70x is an Allan-deviation ratio at80000s in56h stationary laboratory record;0.16mGal is mean inter-trace difference, whereas spatial residual RMS0.67mGal. Classical-only ablation omits atomic bias correction without optimized classical drift calibration.",
+          "locator": "Fig.7; Methods hybridization; Results Strapdown; Discussion classical benchmarks",
+          "consequence": "Preserves bias-stabilization evidence but not70x mobile navigation improvement or0.16mGal spatial accuracy; authors acknowledge superior classical survey benchmarks.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Gimbaled-versus-strapdown equivalence holds through roughest sea conditions",
+          "evidence": "Gimbaled coastal runs typically Sea States2\u20133; strapdown typically1; only northbound gimbaled run samples largest motion. Noisy northbound trace excluded from other traces\u2019 reference ensembles.",
+          "locator": "Methods Maritime details; Methods gravity signal; Fig.4 caption",
+          "consequence": "Comparison valid in overlapping motion range; unequal exposure/selection limits broader robustness inference.",
+          "severity": "medium"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Autonomous live closed navigation and fully specified initial conditions established",
+          "evidence": "Recorded raw IMU is independently mechanized and both estimates share initial state; quantitative initialization uncertainty/source and live closed-loop timing are not detailed. Paper explicitly calls long-duration fully closed campaign future work.",
+          "locator": "Results Quantum navigation; Methods Gravity-aided navigation; Discussion future work",
+          "consequence": "No basis to allege hidden GNSS; insufficient to establish cold-start or online autonomy. GNSS-aided survey branch explicitly separate.",
+          "severity": "medium"
+        }
+      ],
+      "what_survives": "GNSS-withheld map-aiding and hybrid mobile gravimetry survive, subject to reported rather than reproduced chain independence.",
+      "what_would_resolve": "Correct DRMS/endpoint language; publish trajectory/error statistics and initialization; live long-duration trial; matched-motion and optimized classical comparisons.",
+      "verdict": "Useful preprint with consequential metric inconsistency; application superiority remains unproved."
+    },
+    {
+      "id": "S30",
+      "title": "Quantum sensing for gravity cartography",
+      "url": "https://www.nature.com/articles/s41586-021-04315-3",
+      "access": "Full14-page publisher PDF; image review Extended Data Tables1\u20132",
+      "sections_reviewed": "All main results; full Methods; Extended Data captions and Tables1\u20132",
+      "defensible_result": "Outdoor quantum gradiometry detects a known tunnel anomaly consistent with site model; test-mass control agrees205\u00b113.1E with202E prediction.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Blind tunnel discovery and unique depth/geometry determination",
+          "evidence": "Known tunnel/site supported by CAD/GPR/topographic model. Inference assumes buried cuboid, informative density prior\u22121.80\u00b10.10g/cm3; depth1.89\u22120.59/+2.3m broad and parameter ambiguity explicit. Horizontal prior sigma4m is broad, so accurate location is not simply fixed by tight prior.",
+          "locator": "pp591\u2013592; Methods Inference; Extended Data Table2",
+          "consequence": "Survives detection/localization on characterized site; does not establish blind unknown-target discrimination.",
+          "severity": "medium"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "SNR8 is8-sigma hypothesis evidence and 15min mapping achieved",
+          "evidence": "SNR estimated150E approximate signal divided17.9E mean point uncertainty; survey uses600shots per measurement, repeats, interleaved base stations and line drift subtraction.15min/SNR3 explicitly conditional future calculation.",
+          "locator": "p593; Methods Survey practice pp7\u20138 PDF",
+          "consequence": "No false-alarm/null-model probability follows from SNR; projected survey speed not measured total time.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Statistical superiority means superior practical commercial survey performance",
+          "evidence": "Authors state survey repeatability similar to commercial gravimeters and systematic-limited; table gives<26E yaw-related point-to-point effects and<43E magnetic bound limited by calibration resolution.",
+          "locator": "p593; Extended Data Table1",
+          "consequence": "Preserves differential noise rejection but not blanket operational superiority or exhaustive systematic immunity.",
+          "severity": "medium"
+        }
+      ],
+      "what_survives": "Convincing known-target field demonstration with meaningful test-mass control and openly described processing.",
+      "what_would_resolve": "Blind sites with target-absent controls, matched-time classical survey, prior/model sensitivity tests and complete survey elapsed time.",
+      "verdict": "Strong scientific/engineering result; blind detection, geometry certainty and faster survey extrapolations restricted."
+    },
+    {
+      "id": "S31",
+      "title": "Demonstration of Quantum Advantage in Microwave Quantum Radar",
+      "url": "https://arxiv.org/abs/2211.05684v2",
+      "access": "Full14-page arXiv v2 PDF including Methods; journal version of record not examined; numerical criticism applies only to arXiv v2. Rounding/averaging provenance of the discrepant printed denominator is not documented in this version.",
+      "sections_reviewed": "Main pp1\u20135; calibration/model/uncertainty Methods A\u2013F",
+      "defensible_result": "Joint microwave signal-idler measurement reports Q1.2(1) relative to modeled optimal coherent-state bound in cold, known-target binary detection experiment.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "General practical radar advantage",
+          "evidence": "Position, speed and reflectivity assumed known; target coaxial delay/filter at15mK, delay86ns; added thermal noise switched on only after state preparation.",
+          "locator": "pp1\u20133; Fig.1; Methods B3",
+          "consequence": "Does not demonstrate unknown-target search/ranging or warm open-air operation. These restrictions are explicit, not concealed.",
+          "severity": "high"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Quoted uncertainty establishes robust advantage after all tuning/calibration choices",
+          "evidence": "Methods F says photon-number uncertainties mostly statistical, omit protocol imperfections, and classical bound propagation assumes independent calibrations. Gain and outcome weights selected to maximize E; no separate held-out tuning evaluation specified.",
+          "locator": "Eq.1; Figs3\u20134; Methods E\u2013F pp11\u201312",
+          "consequence": "Modest excess needs systematic and selection-robust validation. This is not evidence advantage vanishes. Optimal classical bound is a strong comparator, not straw man.",
+          "severity": "medium"
+        },
+        {
+          "classification": "central-result flaw",
+          "claim_under_test": "Printed numerical classical bound is self-consistent",
+          "evidence": "p4 prints Ecl2.1(1)e-5, but printed kappa0.0302,NS0.0353,NN10.8 and formula kappaNS/(4NN) give approximately2.47e-5. E2.9e-5 divided latter gives1.18, consistent Q1.2; divided2.1e-5 gives1.38. Later p4 Ecl=kappaNS/NN also omits factor4.",
+          "locator": "pp1,3\u20134; Methods F Eq.8",
+          "consequence": "Reporting/arithmetic error warrants correction; does not itself refute Q1.2, which agrees with parameter-derived denominator.",
+          "severity": "medium"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Full model quantitatively explains observed excess",
+          "evidence": "Authors explicitly note model systematically underestimates Q with origin unresolved, possible measurement model issue.",
+          "locator": "p4 Fig.4 discussion",
+          "consequence": "Limits mechanistic quantitative confidence, not independent demonstration by itself.",
+          "severity": "low"
+        }
+      ],
+      "what_survives": "Narrow quantum-illumination proof of principle with joint receiver and nontrivial optimal-classical comparator.",
+      "what_would_resolve": "Correct denominator text; systematic calibration covariance and independent tuning/test sets; direct error-vs-attempt curves for claimed exponent.",
+      "verdict": "Credible narrow result; quantitative uncertainty and reporting require care, deployment not shown."
+    },
+    {
+      "id": "S33",
+      "title": "Performance of antenna-based and Rydberg quantum RF sensors in the electrically small regime",
+      "url": "https://doi.org/10.1063/5.0222827",
+      "access": "Full published PDF from https://inspirehep.net/files/ac16594fd5658d98b52993e9f1437037 ; Eq7/10 visually checked. Supplement code not obtained: publisher inaccessible.",
+      "sections_reviewed": "All main derivation/results/conclusion; Fig3; equations1\u201310",
+      "defensible_result": "Model comparison properly includes active high-impedance classical receivers and predicts present warm-vapour REIT sensitivity worse than amplified small dipoles.",
+      "objections": [
+        {
+          "classification": "central-result flaw",
+          "claim_under_test": "Printed input-referred active-noise Eq7 and quantum-limit Eq10 follow definitions",
+          "evidence": "Eq7 multiplies amplifier noise by voltage-divider squared; input-referred amplifier noise should divide by squared transfer, while antenna Johnson input noise remains at input. Limit Ramp\u21920 gives zero printed NEV despite lost signal. Separately definitions Q=omega*tau*exp(\u2212tau*Gamma), Vout_noise\u00b2=tau/N imply NEVin\u00b2=exp(2tauGamma)/(N*omega\u00b2*tau); at tau=1/(2Gamma) this is2eGamma/(N*omega\u00b2), but Eq10 prints2Gamma/(e*N*omega\u00b2).",
+          "locator": "Published p144002-3, Eq7; paragraph defining Q; Eqs9\u201310 (PDFp4, visually checked)",
+          "consequence": "Concrete internal equation inconsistencies; numerical-curve impact unresolved without supplement. Does not establish reversal of Fig3 qualitative ordering.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Ideal RSQL forecast establishes realizable sensor sensitivity or full-system size superiority",
+          "evidence": "RSQL assumes tightly packed cold atoms, optimized~1e8 atoms in1cm3, interaction shift cap1MHz; authors call ideal sensor likely physically unrealizable and note collective effects.1cm comparison is sensing region, not lasers/control/vacuum.",
+          "locator": "pp144002-3\u20134; Fig3",
+          "consequence": "Ideal sensitivity is model-dependent benchmark, not achieved performance or full-platform SWaP.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Lower intrinsic noise automatically improves outdoor reception",
+          "evidence": "Assumes equal dipole directivity3/2 and same external noise; both ideal curves below atmospheric background.",
+          "locator": "p144002-2 Eq1; p144002-4 Fig3",
+          "consequence": "Improvement requires appropriate external-noise regime; not a generic communications advantage.",
+          "severity": "medium"
+        }
+      ],
+      "what_survives": "Valuable correction to weak passive classical baselines; near-term active classical comparator remains compelling under stated assumptions.",
+      "what_would_resolve": "Author correction and static inspection of supplementary plot code; matched-bandwidth full-system experiments; feasible atom-density/decoherence validation.",
+      "verdict": "Useful benchmark, but two printed algebraic inconsistencies demand qualification before numerical ideal limits are reused."
+    }
+  ],
+  "additional_sources": [
+    {
+      "parent_id": "S10",
+      "title": "Supplemental Material: Optical clocks at sea",
+      "authors": "Roslund et al.",
+      "date": "2024-04-24 (parent publication)",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41586-024-07225-2/MediaObjects/41586_2024_7225_MOESM1_ESM.docx",
+      "accessed": "2026-10-12",
+      "type": "Primary author supplement to peer-reviewed paper",
+      "claims": "Land environmental sensitivity tests constrain common-mode concerns but do not provide independent absolute sea reference.",
+      "locator": "Potential Correlations in At-Sea Data"
+    }
+  ]
+}

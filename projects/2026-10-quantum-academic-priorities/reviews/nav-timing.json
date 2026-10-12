@@ -1,0 +1,643 @@
+{
+  "strand": "navigation and timing",
+  "searches": [
+    {
+      "query": "transportable optical clock 2024 2025 field optical clock compact Nature paper",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "atom interferometer inertial sensor moving platform aircraft navigation 2024 2023 paper",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "quantum magnetic navigation gravity map navigation atomic sensor paper 2024 2025",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "atom interferometer moving platform inertial navigation aircraft 2024 2025 arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "Quantum assured magnetic navigation strategic grade INS arxiv 2025",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "atom interferometry inertial navigation 2016 July August hybrid accelerometer airplane",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "GNSS Free quantum gravity aided navigation marine survey strapdown quantum gravimeter paper",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "2016 July August atom interferometer inertial navigation hybrid accelerometer paper",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "magnetic anomaly navigation flight experiments 2021 2022 Canciani public dataset MagNav",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "transportable optical clock 2018 Grotti relativistic geodesy full paper",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "site.arxiv.org atom interferometer 2016 hybrid accelerometer July August navigation",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "site.arxiv.org continuous hybrid atom interferometer accelerometer 2016 2018",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "site.arxiv.org airborne gravimetry quantum 2020 2018 Bidel",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "site.arxiv.org magnetic navigation 2024 2025 neural network compensation criticism",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Atom interferometry at arbitrary orientations and rotation rates\" journal",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Optical clocks at sea\" arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Demonstration of a mobile optical clock ensemble at sea\" arxiv",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "\"Quantum-assured magnetic navigation\" critique comparison classical magnetometer",
+      "date": "2026-10-12"
+    }
+  ],
+  "screened": [
+    {
+      "title": "Optical clocks at sea",
+      "year": 2024,
+      "url": "https://www.nature.com/articles/s41586-024-07225-2",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "Demonstration of a mobile optical clock ensemble at sea",
+      "year": 2025,
+      "url": "https://www.nature.com/articles/s41467-025-61140-2",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "Atom interferometry at arbitrary orientations and rotation rates",
+      "year": 2024,
+      "url": "https://www.nature.com/articles/s41467-024-50804-0",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "Quantum-assured magnetic navigation achieves positioning accuracy better than a strategic-grade INS in airborne and ground-based field trials",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.08167v1",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "GNSS-free quantum gravity-aided navigation and fine-scale marine surveying with a strapdown quantum gravimeter",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.25563v1",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "Integration of a high-fidelity model of quantum sensors with a map-matching filter for quantum-enhanced navigation",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2504.11119v2",
+      "decision": "deep review",
+      "reason": "Full methods accessible; complementary clock, motion, map-navigation or adverse-model evidence."
+    },
+    {
+      "title": "Development of compact cold-atom sensors for inertial navigation",
+      "year": 2016,
+      "url": "https://arxiv.org/abs/1605.02454",
+      "decision": "context",
+      "reason": "Early-window aircraft foundation; landing/abstract screened, not independently full-reviewed; newer rotation/method papers selected."
+    },
+    {
+      "title": "Navigation-compatible hybrid quantum accelerometer using a Kalman filter",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1805.06198",
+      "decision": "context",
+      "reason": "Early hybridization foundation; abstract only in this scan; no field deployment inference."
+    },
+    {
+      "title": "Absolute airborne gravimetry with a cold atom sensor",
+      "year": 2020,
+      "url": "https://arxiv.org/abs/1910.06666",
+      "decision": "context",
+      "reason": "Actual 2017 flight campaign but later publication; abstract screened; surveying distinct from navigation."
+    },
+    {
+      "title": "Airborne absolute gravimetry with a quantum sensor, comparison with classical technologies",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2210.07865",
+      "decision": "context",
+      "reason": "Important competitive iMAR baseline and public data; abstract/availability screened; full review reserved for detection strand."
+    },
+    {
+      "title": "Airborne gravimetry with quantum technology: observations from Iceland and Greenland",
+      "year": 2025,
+      "url": "https://essd.copernicus.org/articles/17/1667/2025/index.html",
+      "decision": "context",
+      "reason": "Accessible open-data update; screened instrument/data sections, not counted as deep review."
+    },
+    {
+      "title": "Long-distance chronometric leveling with a portable optical clock",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2309.14953",
+      "decision": "context",
+      "reason": "Static geodesy/fibre-link measurement; field timing selected for application fit."
+    },
+    {
+      "title": "Geodesy and metrology with a transportable optical clock",
+      "year": 2018,
+      "url": "https://arxiv.org/abs/1705.04089",
+      "decision": "context",
+      "reason": "Early transportable foundation; abstract screening; fibre-connected geodesy distinct from autonomous timing."
+    },
+    {
+      "title": "Distributed Quantum Magnetic Sensing for Infrastructure-free Geo-localization",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2512.11300",
+      "decision": "exclude from deep review",
+      "reason": "Abstract suggests distributed/algorithmic localization; field map-navigation experiment has stronger scope fit."
+    },
+    {
+      "title": "First GNSS-deployed optical clock for local time scale upgrade",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2510.12454",
+      "decision": "context",
+      "reason": "Later deployment update; landing-page claims only; not full-reviewed or used for performance conclusions."
+    },
+    {
+      "title": "Towards a compact transportable optical clock based on the octupole transition in 171Yb+",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2510.10476",
+      "decision": "exclude from deep review",
+      "reason": "Development towards portability; moving-platform clock evidence prioritized."
+    },
+    {
+      "title": "Quantum sensing for gravity cartography",
+      "year": 2022,
+      "url": "https://www.nature.com/articles/s41586-021-04315-3",
+      "decision": "context",
+      "reason": "Stationary outdoor survey; detection strand better owner."
+    },
+    {
+      "title": "Physics-Informed Calibration of Aeromagnetic Compensation in Magnetic Navigation Systems using Liquid Time-Constant Networks",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2401.09631",
+      "decision": "context",
+      "reason": "Useful nonproprietary algorithm comparator; abstract screened; not field accuracy claim in this review."
+    },
+    {
+      "title": "Absolute marine gravimetry with matter-wave interferometry",
+      "year": 2018,
+      "url": "https://www.nature.com/articles/s41467-018-03040-2",
+      "decision": "context",
+      "reason": "Prior marine surveying baseline; full HTML opened, but not deeply extracted here."
+    },
+    {
+      "title": "Quantum sensors for enhanced positioning and navigation: a comprehensive review",
+      "year": 2026,
+      "url": "https://link.springer.com/article/10.1007/s10291-026-02030-y",
+      "decision": "context",
+      "reason": "Independent review lead about map/platform limits, not primary proof and not a rebuttal."
+    }
+  ],
+  "papers": [
+    {
+      "id": "S10",
+      "title": "Optical clocks at sea",
+      "authors": [
+        "Roslund, Jonathan D.",
+        "Cingöz, Arman",
+        "Lunden, William D.",
+        "Partridge, Guthrie B.",
+        "Kowligy, Abijith S.",
+        "Roller, Frank",
+        "Sheredy, Daniel B.",
+        "Skulason, Gunnar E.",
+        "Song, Joe P.",
+        "Abo-Shaeer, Jamil R.",
+        "Boyd, Martin M."
+      ],
+      "date": "2024-04-24",
+      "preprint_date": "2023-08-23",
+      "journal_date": "2024-04-24",
+      "version": "Journal HTML, version of record",
+      "url": "https://www.nature.com/articles/s41586-024-07225-2",
+      "doi": "10.1038/s41586-024-07225-2",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "US; New Zealand ship; TTCP UK relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/sea.html",
+      "contribution": "Integrated iodine-vapour optical clock and microwave frequency-comb output; field timing experiment [S10 Main; Methods].",
+      "method": "Three clock comparison at NIST against ST05/AT1, then co-located shipboard pairwise comparisons; three-cornered-hat extraction at short times, long-time equal-contribution upper bound [S10 Figs.1–3; Methods Clock comparison].",
+      "result": "35 L physics/comb/control package, 26 kg, ~85 W excluding external supply. PICKLES–EPIC pair at sea: 8×10^-15 instability at 100,000 s (~400 ps equivalent daily holdover), without drift correction [S10 Fig.3d; Main].",
+      "limitations": "Air-conditioned shipping container; no independent high-performance reference at sea; potential correlated environmental noise acknowledged. Individual long-time bound assumes equal contributions. VIPER external supply restarted; raw versus dedrifted laboratory results differ [S10 Main; Methods; Extended Data Fig.4].",
+      "replication": "Different clock ensemble at same RIMPAC campaign supplies architecture-level corroboration, not independent replication of this instrument [S11 Maritime demonstration; S10 Fig.3].",
+      "data_code": "Raw/processed data on request; analysis routines on reasonable request, not a public archive [S10 Data availability; Code availability].",
+      "conflicts": "Authors declare no competing interests, but author affiliations include Vector Atomic; commercial participation must remain visible [S10 Author information; Competing interests].",
+      "relevance": "Analysis: credible local timing holdover evidence; no GNSS-free position solution or deployable network is measured [S10 Figs.1–3].",
+      "assessment": "Analysis: credible local timing holdover evidence; no GNSS-free position solution or deployable network is measured [S10 Figs.1–3].",
+      "claims": [
+        {
+          "text": "35 L clock package excludes external power supply; ~85 W and 26 kg.",
+          "locator": "Main prototype integration paragraph; Fig.1a",
+          "confidence": "high"
+        },
+        {
+          "text": "At sea PICKLES–EPIC pair instability is 8×10^-15 at 100,000 s, reported equivalent holdover ~400 ps/24 h without drift correction.",
+          "locator": "Main ship performance paragraph; Fig.3d",
+          "confidence": "high"
+        },
+        {
+          "text": "Long-time single-clock upper bound divides pair performance by sqrt(2), assuming equal contributions.",
+          "locator": "Main summary performance paragraph; Fig.1c,d",
+          "confidence": "high"
+        },
+        {
+          "text": "No independent standard reference was available at sea; correlated environmental sensitivities are acknowledged.",
+          "locator": "Main co-located clocks paragraph",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    },
+    {
+      "id": "S11",
+      "title": "Demonstration of a mobile optical clock ensemble at sea",
+      "authors": [
+        "Hilton, A. P.",
+        "Offer, R. F.",
+        "Klantsataya, E.",
+        "Scholten, S. K.",
+        "Bourbeau Hébert, N.",
+        "Billington, C. J.",
+        "Locke, C.",
+        "Perrella, C.",
+        "Nelligan, M.",
+        "Allison, J. W.",
+        "White, B.",
+        "Ahern, E.",
+        "Martin, K. W.",
+        "Beard, R.",
+        "Elgin, J. D.",
+        "Sparkes, B. M.",
+        "Luiten, A. N."
+      ],
+      "date": "2025-07-02",
+      "preprint_date": "2024-06-06",
+      "journal_date": "2025-07-02",
+      "version": "Journal HTML, version of record",
+      "url": "https://www.nature.com/articles/s41467-025-61140-2",
+      "doi": "10.1038/s41467-025-61140-2",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "Australia/US/New Zealand; TTCP includes UK",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/ensemble.html",
+      "contribution": "Field comparison of three distinct vapour optical architectures (Yb, two-colour Rb, single-colour Rb) [S11 Results Portable optical clocks].",
+      "method": "Optical/RF/microwave beats; 5071A counter timebase; three-cornered-hat Modified Allan deviations. Comparison separates reference/counter artefacts from optical instability [S11 Figs.2,4–6; Methods Clock comparisons and analysis].",
+      "result": "Yb ModADEV remains in 10^-14 domain from 100 ms to 80 ks; short-time (<100 s) sea performance similar to shore, but longer-time stability deteriorates [S11 Individual clock stabilities; Fig.6].",
+      "limitations": "Total ORAFS deployed support apparatus: 46 rack units, 310 kg, 1300 W; internal 112 L/30 kg/300 W is not complete installed system. Power interruption required manual ORAFS restart; UofA clocks restarted autonomously. Rb relocks/configuration changes produce frequency steps [S11 Fig.3; Methods Optical rubidium atomic frequency standard].",
+      "replication": "Independent clock designs corroborate vapour-clock ruggedness; same 2022 exercise as S10, not independent environmental campaign [S11 Maritime demonstration].",
+      "data_code": "Data restricted by military exercise: requests require author and sponsor approval. Processing code on reasonable request [S11 Data availability; Code availability].",
+      "conflicts": "Andre Luiten co-founder, owner and managing director of QuantX; company has commercial IP rights to UofA clocks. Others declare none [S11 Competing interests].",
+      "relevance": "Analysis: valuable comparison with practical failure/restart behaviour; read superiority as stability and application-specific SWaP, not blanket accuracy [S11 Figs.3,6,7; Table1].",
+      "assessment": "Analysis: valuable comparison with practical failure/restart behaviour; read superiority as stability and application-specific SWaP, not blanket accuracy [S11 Figs.3,6,7; Table1].",
+      "claims": [
+        {
+          "text": "Yb stability is in the 10^-14 domain from 100 ms to 80 ks.",
+          "locator": "Results Individual clock stabilities; Fig.6",
+          "confidence": "high"
+        },
+        {
+          "text": "Underway short-time clock performance resembles shore performance, but times above 100 s show decreased stability.",
+          "locator": "Results Individual clock stabilities; Figs.5–6",
+          "confidence": "high"
+        },
+        {
+          "text": "ORAFS deployed ancillary system totals 310 kg and 1300 W.",
+          "locator": "Methods Optical rubidium atomic frequency standard—ORAFS; Table1",
+          "confidence": "high"
+        },
+        {
+          "text": "Power interruption required personnel to restart ORAFS; UofA systems recovered automatically.",
+          "locator": "Results Clock frequency measurements; Fig.3",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    },
+    {
+      "id": "S12",
+      "title": "Atom interferometry at arbitrary orientations and rotation rates",
+      "authors": [
+        "d’Armagnac de Castanet, Quentin",
+        "Des Cognets, Cyrille",
+        "Arguel, Romain",
+        "Templier, Simon",
+        "Jarlaud, Vincent",
+        "Ménoret, Vincent",
+        "Desruelle, Bruno",
+        "Bouyer, Philippe",
+        "Battelier, Baptiste"
+      ],
+      "date": "2024-07-30",
+      "preprint_date": "2024-02-29",
+      "journal_date": "2024-07-30",
+      "version": "Journal HTML, version of record; preprint v1 also inspected",
+      "url": "https://www.nature.com/articles/s41467-024-50804-0",
+      "doi": "10.1038/s41467-024-50804-0",
+      "type": "primary experimental paper",
+      "tier": "T1",
+      "region": "France/Netherlands; direct EU relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/rotation-journal.html",
+      "contribution": "Combines atomic/classical sensing and actively steered mirror to retain interferometer contrast during rotations [S12 Results; Fig.3].",
+      "method": "87Rb Raman Mach–Zehnder, classical mirror accelerometer and two FOGs, manually rotated platform. Acceleration phase is servo-cancelled; rotational phase reconstructed with inertial model [S12 Results; Methods Closed-loop mode].",
+      "result": "24 micro-g per-shot inferred sensitivity at 2T=20 ms; tilt 0–30 degrees, rotation up to 14 deg/s. Fringe SNR 5.3 versus 20–30 static [S12 Fig.3; Results Rotation compensation].",
+      "limitations": "One measurement axis and manual platform; 1.3% fitted mirror-rate correction; vibration compensation uses assumed flat accelerometer response and 610 microsecond delay. Uncharacterized classical sensor response and platform resonances degrade SNR. Full triad/long-term stability remains future work [S12 Methods; Discussion].",
+      "replication": "Single-instrument study with model/data agreement; no independently reproduced full navigation solution [S12 Figs.2–4; Discussion].",
+      "data_code": "Raw data deposited at Zenodo 11543715; analysis code release not stated in journal Data availability [S12 Data availability].",
+      "conflicts": "Four authors employed by Exail, which commercializes atom-interferometric gravimeters; other authors declare none [S12 Competing interests].",
+      "relevance": "Analysis: enabling motion-compensation result, not field navigation accuracy or classical-free autonomy [S12 Results; Discussion].",
+      "assessment": "Analysis: enabling motion-compensation result, not field navigation accuracy or classical-free autonomy [S12 Results; Discussion].",
+      "claims": [
+        {
+          "text": "Reconstructed fringe SNR 5.3 corresponds to 24 micro-g per shot at 20 ms interrogation.",
+          "locator": "Results Rotation compensation; Fig.3",
+          "confidence": "high"
+        },
+        {
+          "text": "Experiment reaches tilts 0–30 degrees and rotation rates up to 14 degrees/s on a manual rotation platform.",
+          "locator": "Results setup; Fig.3",
+          "confidence": "high"
+        },
+        {
+          "text": "Mirror-rate reconstruction uses fitted correction epsilon=-0.013.",
+          "locator": "Results Rotation compensation; Methods Correction of phase shift",
+          "confidence": "high"
+        },
+        {
+          "text": "Vibration compensation assumes constant accelerometer response and global 610-microsecond delay.",
+          "locator": "Methods Limits of fringe reconstruction due to strong vibrations",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    },
+    {
+      "id": "S13",
+      "title": "Quantum-assured magnetic navigation achieves positioning accuracy better than a strategic-grade INS in airborne and ground-based field trials",
+      "authors": [
+        "Murat Muradoglu",
+        "Mattias T. Johnsson",
+        "Nathanial M. Wilson",
+        "Yuval Cohen",
+        "Dongki Shin",
+        "Tomas Navickas",
+        "Tadas Pyragius",
+        "Divya Thomas",
+        "Daniel Thompson",
+        "Steven I. Moore",
+        "Md Tanvir Rahman",
+        "Adrian Walker",
+        "Indranil Dutta",
+        "Suraj Bijjahalli",
+        "Jacob Berlocher",
+        "Michael R. Hush",
+        "Russell P. Anderson",
+        "Stuart S. Szigeti",
+        "Michael J. Biercuk"
+      ],
+      "date": "2025-04-10",
+      "preprint_date": "2025-04-10",
+      "journal_date": null,
+      "version": "arXiv 2504.08167v1 HTML; no journal reference on inspected landing page",
+      "url": "https://arxiv.org/html/2504.08167v1",
+      "doi": "10.48550/arXiv.2504.08167",
+      "type": "primary experimental paper",
+      "tier": "T2",
+      "region": "Australia; global aviation relevance",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/mag.html",
+      "contribution": "Field magnetic-map navigation with internally mounted rubidium scalar magnetometer, vector fluxgate, INS and adaptive compensation [S13 System architecture; Field trials].",
+      "method": "Griffith Cessna flights February 2025 (>6700 km recorded) and van trials November 2024; causal iterative filter described, online warm/cold platform learning; public Australian TMI maps, INS aided by scalar airspeed or 3D velocity [S13 Q-CTRL magnetic denoising; Field trials; Table1].",
+      "result": "22 m endpoint is 365 km, onboard sensor plus 3D velocity aiding (15× INS). 46× example uses outboard sensor and 3D velocity (112 m endpoint). Strict-denial onboard/airspeed case 515 m on 365 km; high-altitude onboard case 2 km/300 km; ground 180 m/18 km [S13 Table1; Figs.4–7].",
+      "limitations": "No same-map algorithm comparison or classical scalar magnetometer ablation. 3D velocity provenance not specified sufficiently for strict GNSS-free best-case interpretation. Algorithms proprietary; altitude extension, military dynamics, ocean coverage remain unresolved [S13 Fig.1 caption; System architecture; Table1; Discussion].",
+      "replication": "No independent replication identified in bounded search; authors use outboard sensors for within-study checks [S13 Field trials; Fig.5].",
+      "data_code": "No explicit data/code availability statement found in inspected full v1; proprietary magnetometer and software descriptions prevent reconstruction from text alone [S13 Q-CTRL MagNav System; end matter inspected].",
+      "conflicts": "All authors affiliated Q-CTRL; proprietary/commercial full-stack system. No separate conflicts declaration found in inspected v1 [S13 author list; Q-CTRL MagNav System].",
+      "relevance": "Analysis: credible internally mounted field aid, but advantage is over specified INS, not GPS and not isolated quantum-sensor advantage [S13 Table1; Demonstration of MagNav].",
+      "assessment": "Analysis: credible internally mounted field aid, but advantage is over specified INS, not GPS and not isolated quantum-sensor advantage [S13 Table1; Demonstration of MagNav].",
+      "claims": [
+        {
+          "text": "22 m endpoint uses onboard sensor with 3D-velocity aid over 365 km.",
+          "locator": "Table1 row(a), 3D velocity",
+          "confidence": "medium"
+        },
+        {
+          "text": "46× endpoint improvement uses outboard sensor with 3D velocity; endpoint112 m.",
+          "locator": "Table1 row(a)dagger; Fig.4a",
+          "confidence": "medium"
+        },
+        {
+          "text": "Onboard scalar-airspeed example ends at515 m over365 km; high-altitude onboard example ends at2 km over300 km.",
+          "locator": "Table1 rows(a) airspeed and(b) onboard",
+          "confidence": "medium"
+        },
+        {
+          "text": "Algorithms and scalar sensor are proprietary; public text gives no same-input classical scalar-sensor ablation.",
+          "locator": "Q-CTRL MagNav System; Demonstration of MagNav; full v1 inspected",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    },
+    {
+      "id": "S14",
+      "title": "GNSS-free quantum gravity-aided navigation and fine-scale marine surveying with a strapdown quantum gravimeter",
+      "authors": [
+        "Patrick J. Everitt",
+        "Donald H. White",
+        "Todd Lyon",
+        "Murat Muradoglu",
+        "Alessandro D'Ortenzio",
+        "Aaron J. Canciani",
+        "Malo Cadoret",
+        "Daniel D. Brown",
+        "David Adams",
+        "Yosri Ben-Aicha",
+        "Suraj Bijjahalli",
+        "Mojtaba K. Farsani",
+        "Alexander Rischka",
+        "Karandeep S. Gill",
+        "Magdalena Meyer",
+        "Henry W. Orton",
+        "Nicholas P. Robins",
+        "Reuben Symon",
+        "Michael J. Biercuk",
+        "Michael R. Hush",
+        "Stuart S. Szigeti",
+        "Russell P. Anderson"
+      ],
+      "date": "2026-08-26",
+      "preprint_date": "2026-08-26",
+      "journal_date": null,
+      "version": "arXiv 2608.25563v1 HTML; no journal reference on inspected landing page",
+      "url": "https://arxiv.org/html/2608.25563v1",
+      "doi": "10.48550/arXiv.2608.25563",
+      "type": "primary experimental paper",
+      "tier": "T2",
+      "region": "Australia; trial funded by UK Royal Navy/DASA",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/grav.html",
+      "contribution": "Maritime quantum-gravity map aiding with explicit exclusion of GNSS from processing; separate gravity-survey branch [S14 Results Quantum navigation; Methods Gravity-aided navigation].",
+      "method": "87Rb Mach–Zehnder plus mirror accelerometer bias stabilization; recorded raw Boreas D90 IMU independently mechanized; error-state filter combines gravity map and position/velocity/attitude/bias estimates over 83 km southbound route [S14 Fig.6; Methods Quantum–classical hybridization; Gravity-aided navigation].",
+      "result": "Endpoint 2.2 nmi (~4.1 km), versus unaided 14 nmi (~26 km); ~1 nmi for first 70 km. GNSS-referenced strapdown survey separately reports 0.67 mGal in-run stability and 0.16 mGal repeatability. Stationary 56 h hybrid stability ~70× classical at 80,000 s [S14 Fig.2; Figs.4,7; Methods].",
+      "limitations": "Initial state only described as same for both branches; provenance/uncertainty not specified. Fully closed long-duration campaign future work; onboard real-time execution not established. Coastal strapdown typically Sea State1 versus gimbaled2–3, so not matched-motion equality. 30 L sensor head excludes electronics rack [S14 Results; Methods Maritime traversals; Quantum sensor head; Discussion]. Internal wording inconsistency: abstract invokes nautical-mile DRMS, Fig.2 says shaded one-mile band is not DRMS, Discussion suggests ~one-mile bound, while Results/Methods report 2.2-nmi endpoint. Do not infer a universal one-mile bound or computed DRMS [S14 Abstract; Fig.2 caption; Results Quantum navigation; Discussion].",
+      "replication": "Within-instrument comparisons, no independent replication identified. Survey data expressly supply no observations to GNSS-free route; GNSS remains ground truth and survey PVA/Eötvös source [S14 Methods Gravity signal for surveying; Gravity-aided navigation].",
+      "data_code": "No explicit data/code release statement found in v1 full text/end matter. Filter is described structurally, without sufficient full tuning/implementation for reproduction [S14 Methods; Acknowledgments/end matter inspected].",
+      "conflicts": "Q-CTRL-funded/developed commercial participation; Royal Navy/DASA support acknowledged. No separate conflict statement found in inspected v1 [S14 author affiliations; Acknowledgments].",
+      "relevance": "Analysis: recent provisional evidence of complete processing-chain GNSS exclusion, not centimetric navigation, multiday endurance or survey performance in denial [S14 Fig.2; Methods; Discussion].",
+      "assessment": "Analysis: recent provisional evidence of complete processing-chain GNSS exclusion, not centimetric navigation, multiday endurance or survey performance in denial [S14 Fig.2; Methods; Discussion].",
+      "claims": [
+        {
+          "text": "83 km evaluated route ends at2.2 nmi (~4.1km), compared with14 nmi (~26km) unaided.",
+          "locator": "Results Quantum navigation with gravity map matching; Fig.2",
+          "confidence": "medium"
+        },
+        {
+          "text": "Methods explicitly exclude embedded Boreas GNSS-derived position/velocity/attitude from navigation mechanization.",
+          "locator": "Methods Gravity-aided navigation",
+          "confidence": "medium"
+        },
+        {
+          "text": "Separate surveying branch uses GNSS-disciplined PVA for rotation, Eotvos correction and georeferencing.",
+          "locator": "Methods Gravity signal for surveying and anomaly detection; Fig.8",
+          "confidence": "medium"
+        },
+        {
+          "text": "Coastal strapdown traversals typically experienced Sea State1 versus gimbaled Sea States2–3.",
+          "locator": "Methods Maritime and land traversal details",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    },
+    {
+      "id": "S15",
+      "title": "Integration of a high-fidelity model of quantum sensors with a map-matching filter for quantum-enhanced navigation",
+      "authors": [
+        "Samuel Lellouch",
+        "Michael Holynski"
+      ],
+      "date": "2025-08-06",
+      "preprint_date": "2025-04-15",
+      "journal_date": "2025-08-06",
+      "version": "arXiv 2504.11119v2 (8 August 2025); published QST 10 045007; journal metadata via Crossref",
+      "url": "https://arxiv.org/html/2504.11119v2",
+      "doi": "10.1088/2058-9565/adf2d9",
+      "type": "primary simulation/method paper",
+      "tier": "T1",
+      "region": "University of Birmingham, UK",
+      "access": "full-text HTML",
+      "local_path": "reviews/nav-docs/model-v2.html",
+      "contribution": "Microscopic sensor simulation linked to navigation filter; important adverse result: non-Gaussian motion errors can make nominal sensitivity improvements unusable [S15 §§II–V].",
+      "method": "Monte-Carlo atomic cloud/internal–external trajectory/pulse model; maritime/aircraft trajectories, moderate/enhanced/mitigated sensor capabilities, particle map-matching filter and classical INS model [S15 §II.2; §III; §IV; App.C].",
+      "result": "Sea State2 moderate/enhanced cases could not be tuned to useful stable aiding; mitigation uses 5× reduced roll/pitch. Flight cases require assumed 100× motion reduction for bounded estimates. Static tilt <3.3 degrees derived for 10 E error budget [S15 §IV; Figs.7–8; App.B.1].",
+      "limitations": "Simulation, not field navigation. All runs have 30 s transfer alignment, 100 m north/east initial errors; particle weighting tuned to observed sensor noise and maritime sea-state segments. Mitigation assumed, not experimentally delivered [S15 §IV; App.C; §V].",
+      "replication": "Model checks and conditional simulations, not independent field replication. Tests against measured complete dynamic sensor/nav chain still needed (Analysis) [S15 §II.2; §IV; §V].",
+      "data_code": "All supporting data/code available on reasonable request to corresponding author; no archive link in statement [S15 Data availability statement].",
+      "conflicts": "Authors declare no competing interests [S15 Competing Interests].",
+      "relevance": "Analysis: strengthens assessment by specifying where optimistic navigation simulations fail; 3.3-degree bound is conditional, not a universal navigation tolerance [S15 App.B; §IV].",
+      "assessment": "Analysis: strengthens assessment by specifying where optimistic navigation simulations fail; 3.3-degree bound is conditional, not a universal navigation tolerance [S15 App.B; §IV]. Confidence high in reported conditional simulation result, medium in physical-model fidelity outside validated conditions; not an experiment.",
+      "claims": [
+        {
+          "text": "Moderate/enhanced Sea State2 simulated measurements could not be tuned to useful stable aiding.",
+          "locator": "§IV; Fig.7",
+          "confidence": "high"
+        },
+        {
+          "text": "Successful high-dynamic flight aiding assumes100-fold reduced roll/pitch.",
+          "locator": "§IV; Fig.8",
+          "confidence": "high"
+        },
+        {
+          "text": "3.3-degree static tilt requirement follows a specified10 E error budget, not universal accuracy tolerance.",
+          "locator": "AppendixB.1 Static tilts",
+          "confidence": "high"
+        },
+        {
+          "text": "Runs start with30 s transfer alignment and assumed100 m north/east initialization errors.",
+          "locator": "§IV Integration with a map-matching navigation filter",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "Introduction",
+        "Results",
+        "Methods or mathematical model",
+        "Discussion",
+        "Figures and captions",
+        "availability/conflict/end matter where present"
+      ]
+    }
+  ]
+}

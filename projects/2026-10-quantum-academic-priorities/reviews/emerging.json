@@ -1,0 +1,476 @@
+{
+  "strand": "Emerging quantum phenomena",
+  "searches": [
+    {
+      "query": "Hosten Measurement noise100times lower quantum projection limit entangled atoms2016full text",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "Superextensive electrical power quantum battery2026s4137702240",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "superabsorption organic microcavity quantum battery abk31602022",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "Field Demonstration arxiv Zhao sensing",
+      "date": "2026-10-12"
+    },
+    {
+      "query": "Entanglement-enhanced matter-wave interferometry high finesse cavity2022Nature full text",
+      "date": "2026-10-12"
+    }
+  ],
+  "screened": [
+    {
+      "title": "Field Demonstration of Distributed Quantum Sensing without Post-Selection",
+      "year": 2021,
+      "url": "https://arxiv.org/pdf/2011.02807",
+      "decision": "include",
+      "reason": "Entangled photons and coherent repeated phase sampling estimate a weighted combination of two separated phases without hiding lost photons through postselection."
+    },
+    {
+      "title": "Distributed quantum sensing with mode-entangled spin-squeezed atomic states",
+      "year": 2022,
+      "url": "https://arxiv.org/html/2205.06382",
+      "decision": "include",
+      "reason": "A shared quantum nondemolition measurement creates nonlocal entanglement between atomic modes, enabling differential clock and interferometer protocols."
+    },
+    {
+      "title": "Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "year": 2022,
+      "url": "https://www.nature.com/articles/s41586-022-05197-9",
+      "decision": "include",
+      "reason": "Cavity-mediated entanglement is injected into a complete light-pulse matter-wave interferometer rather than demonstrated only as state preparation."
+    },
+    {
+      "title": "Quantum locking of intrinsic spin squeezed state in Earth-field-range magnetometry",
+      "year": 2025,
+      "url": "https://www.nature.com/articles/s41534-025-00971-9",
+      "decision": "include",
+      "reason": "Nonlinear Zeeman dynamics create intrinsic single-atom squeezing; optimized dynamical decoupling locks its changing axis to the observable instead of simply suppressing that dynamics."
+    },
+    {
+      "title": "Superabsorption in an organic microcavity: Toward a quantum battery",
+      "year": 2022,
+      "url": "https://arxiv.org/pdf/2012.06026",
+      "decision": "include",
+      "reason": "Organic-molecule collective light–matter coupling produces faster absorption as absorber count increases; dephasing moves energy into less radiative dark modes."
+    },
+    {
+      "title": "Superextensive electrical power from a quantum battery",
+      "year": 2026,
+      "url": "https://www.nature.com/articles/s41377-026-02240-6",
+      "decision": "include",
+      "reason": "Charge-transport layers turn an organic polariton microcavity into a steady-state electrical-output device, addressing the missing extraction step in earlier spectroscopy-only battery demonstrations."
+    },
+    {
+      "title": "Measurement noise 100 times lower than the quantum-projection limit using entangled atoms",
+      "year": 2016,
+      "url": "https://www.nature.com/articles/nature16176",
+      "decision": "exclude from full-paper core",
+      "reason": "2016 eligible and useful anchor; abstract/metadata opened, full main text paywall; replaced by open2022 complete interferometer experiment."
+    },
+    {
+      "title": "Antenna-based and Rydberg RF sensor comparison",
+      "year": 2024,
+      "url": "https://doi.org/10.1063/5.0222827",
+      "decision": "exclude strand overlap",
+      "reason": "Detection reviewer owns RF comparison; discovery lead only."
+    },
+    {
+      "title": "Radar Ranging Using a Rydberg Atomic Homodyne Receiver",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2506.11833",
+      "decision": "exclude strand overlap",
+      "reason": "Detection reviewer owns radar; discovery lead only."
+    }
+  ],
+  "papers": [
+    {
+      "id": "S70",
+      "title": "Field Demonstration of Distributed Quantum Sensing without Post-Selection",
+      "authors": [
+        "Si-Ran Zhao",
+        "Yu-Zhe Zhang",
+        "Wen-Zhao Liu",
+        "Jian-Yu Guan",
+        "Weijun Zhang",
+        "Cheng-Long Li",
+        "Bing Bai",
+        "Ming-Han Li",
+        "Yang Liu",
+        "Lixing You",
+        "Jun Zhang",
+        "Jingyun Fan",
+        "Feihu Xu",
+        "Qiang Zhang",
+        "Jian-Wei Pan"
+      ],
+      "date": "2021-07-14",
+      "preprint_date": "2020-11-05",
+      "journal_date": "2021-07-14",
+      "version": "Phys. Rev. X 11,031009 version of record; original arXiv2011.02807v1 also inspected. Journal PDF checked by Astra and orchestrator.",
+      "url": "https://journals.aps.org/prx/pdf/10.1103/PhysRevX.11.031009",
+      "doi": "10.1103/PhysRevX.11.031009",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "China",
+      "access": "full journal PDF and initial preprint",
+      "local_path": "reviews/emerging-docs/field.txt",
+      "contribution": "Entangled photons and coherent repeated phase sampling estimate a weighted combination of two separated phases without hiding lost photons through postselection.",
+      "method": "Telecom polarization-entangled pairs are delivered to two sensors; Bob samples his phase twice. Single and multiple detector events, heralding efficiencies and higher-order pair emissions enter photon-pass resource accounting. The SNL reference is an ideal lossless local estimation strategy with optimally allocated independent photon passes.",
+      "result": "Journal best 0.916 dB at 240 m; separate non-multipass result 0.326 dB. The 10 km random-phase measurement does not beat shot noise. [S70 p.5; Fig.3; Appendix E]",
+      "limitations": "Analysis: controlled waveplate phases and fibre spools do not demonstrate physical target sensing. Photon passes, including losses and multipair events, are counted; full infrastructure, acquisition time and alternative classical architectures are not the comparison metric. Journal additions take precedence over initial preprint values. [S70 pp.2–5; Appendices A–E]",
+      "replication": "Experimental apparatus, estimators and efficiency/resource derivation are documented in main text and appendicesA–C; no independent replication established in this bounded search. Raw public dataset/code not identified in examined preprint.",
+      "data_code": "Experimental apparatus, estimators and efficiency/resource derivation are documented in main text and appendicesA–C; no independent replication established in this bounded search. Raw public dataset/code not identified in examined preprint.",
+      "conflicts": "Not located in examined preprint; journal declaration not independently retrieved.",
+      "relevance": "Analysis: credible loss-aware network metrology mechanism for research on distributed sensing; no demonstrated defence sensing application.",
+      "assessment": "High confidence in scoped240m result; limited network scalability and operational relevance.",
+      "claims": [
+        {
+          "text": "At 240 m, best phase precision is 0.916 dB below the loss-accounted photon-pass shot-noise limit.",
+          "locator": "journal pp.2,5; Fig.2",
+          "confidence": "high"
+        },
+        {
+          "text": "The non-multipass equal-weight phase experiment is 0.326 dB below its shot-noise limit.",
+          "locator": "journal p.5; Appendix E p.8",
+          "confidence": "high"
+        },
+        {
+          "text": "The 10 km random-phase experiment does not beat the shot-noise limit because of losses.",
+          "locator": "journal p.5; Fig.3 and Table I",
+          "confidence": "high"
+        },
+        {
+          "text": "Visibility-aware threshold efficiency in the journal version is 59.1%.",
+          "locator": "journal p.2; Appendix A p.6",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    },
+    {
+      "id": "S71",
+      "title": "Distributed quantum sensing with mode-entangled spin-squeezed atomic states",
+      "authors": [
+        "Benjamin K. Malia",
+        "Yunfan Wu",
+        "Julián Martínez-Rincón",
+        "Mark A. Kasevich"
+      ],
+      "date": "2022-11-23",
+      "preprint_date": "2022-05-12",
+      "journal_date": "2022-11-23",
+      "version": "arxiv full manuscript; journal metadata cross-checked",
+      "url": "https://arxiv.org/html/2205.06382",
+      "doi": "10.1038/s41586-022-05363-z",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "USA",
+      "access": "full text with version caveat",
+      "local_path": "reviews/emerging-docs/network.html.txt",
+      "contribution": "A shared quantum nondemolition measurement creates nonlocal entanglement between atomic modes, enabling differential clock and interferometer protocols.",
+      "method": "Rubidium ensembles in a common cavity are divided into as many as four spatial modes; a shared QND observation prepares correlated populations. Microwave Ramsey operations and Raman-pulse differential interferometry test the prepared modes. Each clock mode contains45000atoms. Baselines include projection-noise-limited coherent states and a projected mode-separable spin-squeezed network.",
+      "result": "Four-mode clock-network noise is11.6(1.1)dB below coherent-state QPN and4.5(0.8)dB below the projected mode-separable reference. The differential interferometer improves1.6(0.9)dB relative to its non-entangled counterpart; do not assign the clock-network gain to the interferometer.",
+      "limitations": "All nodes share laboratory cavity infrastructure; the atom modes are not a geographically separated clock network. The4.5dB reference is projected, not a separately field-operated competitor. Gains exploit improved squeezing efficiency as the total atom count entangled increases. Differential rejection of Raman common-mode phase noise is also present and must be separated from entanglement benefit. No broad optimized-classical end-to-end network comparison is demonstrated.",
+      "replication": "Full arxivv1 main text and Methods inspected; peer-reviewed title/date/DOI cross-checked on Nature landing page. Journal main text is paywalled; preprint-versus-final changes remain a version caveat. Journal data and analysis code are available from corresponding author upon reasonable request, not an open repository.",
+      "data_code": "Full arxivv1 main text and Methods inspected; peer-reviewed title/date/DOI cross-checked on Nature landing page. Journal main text is paywalled; preprint-versus-final changes remain a version caveat. Journal data and analysis code are available from corresponding author upon reasonable request, not an open repository.",
+      "conflicts": "Journal declaration: no competing interests.",
+      "relevance": "Analysis: a promising seam for differential gravity sensing and clock comparisons, requiring remote-node links and realistic interrogation cycles before defence interpretation becomes an observed application.",
+      "assessment": "High confidence in laboratory metrology; medium confidence in extrapolation beyond common apparatus.",
+      "claims": [
+        {
+          "text": "Four-mode clock result11.6(1.1)dB below coherent-state QPN.",
+          "locator": "arxivv1 main text, four-mode network paragraph and Fig.3",
+          "confidence": "medium"
+        },
+        {
+          "text": "4.5(0.8)dB improvement uses a projected mode-separable baseline.",
+          "locator": "arxivv1 Fig.3 and accompanying paragraph",
+          "confidence": "medium"
+        },
+        {
+          "text": "Differential atom-interferometer improvement1.6(0.9)dB.",
+          "locator": "arxivv1 Fig.4 and accompanying paragraph",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    },
+    {
+      "id": "S72",
+      "title": "Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "authors": [
+        "Graham P. Greve",
+        "Chengyi Luo",
+        "Baochen Wu",
+        "James K. Thompson"
+      ],
+      "date": "2022-10-19",
+      "preprint_date": "2021-10-27",
+      "journal_date": "2022-10-19",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41586-022-05197-9",
+      "doi": "10.1038/s41586-022-05197-9",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "USA",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/greve.txt",
+      "contribution": "Cavity-mediated entanglement is injected into a complete light-pulse matter-wave interferometer rather than demonstrated only as state preparation.",
+      "method": "Free-falling rubidium wave packets receive Raman momentum kicks in a high-finesse cavity. QND measurement and one-axis twisting prepare squeezed momentum states. The full Mach–Zehnder sequence uses OAT; phase noise and contrast define the Wineland parameter, with atom number and spatially varying coupling calibrated separately.",
+      "result": "For660(15)atoms the full interferometer has1.7±0.5dB enhancement beyond the calibrated SQL at evolution time0.112ms. Phase variance improves3.4(+0.9/−1.2)dB against the actual unsqueezed interferometer, which itself has imperfect contrast. Below-SQL sensitivity lasts less than0.7ms. Standalone squeezed-state gains are distinct.",
+      "limitations": "Short interrogation time and residual spin-related decoherence sharply limit practical inertial advantage. An independent unreviewed critique by McGuinness(arxiv2301.04396v2) disputes phase/SQL interpretation and resource accounting; its blanket denial is not established by citing it. Authors explicitly distinguish contrast-adjusted entanglement witness from larger ordinary noise cancellation. Independent calibrated acceleration-versus-phase and full-cycle comparisons would be more useful than accepting either universal claim.",
+      "replication": "Full corrected journal text and Methods read; public datasets at doi10.25810/t39m-c562 declared. Publisher correction(2022-12-06) restores omitted hbar labels and removes an incorrect peer-review-manuscript link, not a reported numerical-result retraction. Independent experimental replication not established.",
+      "data_code": "Full corrected journal text and Methods read; public datasets at doi10.25810/t39m-c562 declared. Publisher correction(2022-12-06) restores omitted hbar labels and removes an incorrect peer-review-manuscript link, not a reported numerical-result retraction. Independent experimental replication not established.",
+      "conflicts": "Authors declare no competing interests; NSF,DOE,NIST,DARPA funding listed.",
+      "relevance": "Analysis: directly relevant enabling physics for future inertial/gravity sensing; not a demonstrated navigation instrument or GNSS-denial test.",
+      "assessment": "High confidence in reported local calibrated laboratory variance/contrast; practical inertial superiority remains untested and critique warrants explicit parameter definition.",
+      "claims": [
+        {
+          "text": "Full interferometer shows1.7±0.5dB below calibrated SQL at0.112ms.",
+          "locator": "journal Fig.4b and Entangled matter-wave interferometry",
+          "confidence": "high"
+        },
+        {
+          "text": "3.4dB compares actual squeezed and imperfect-contrast unsqueezed interferometers.",
+          "locator": "journal Entangled matter-wave interferometry; Methods Wineland parameter",
+          "confidence": "high"
+        },
+        {
+          "text": "Below-SQL phase sensitivity limited to evolution times<0.7ms.",
+          "locator": "journal Fig.4d and accompanying text",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    },
+    {
+      "id": "S73",
+      "title": "Quantum locking of intrinsic spin squeezed state in Earth-field-range magnetometry",
+      "authors": [
+        "Peiyu Yang",
+        "Guzhi Bao",
+        "Jun Chen",
+        "Wei Du",
+        "Jinxian Guo",
+        "Weiping Zhang"
+      ],
+      "date": "2025-03-03",
+      "preprint_date": null,
+      "journal_date": "2025-03-03",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41534-025-00971-9",
+      "doi": "10.1038/s41534-025-00971-9",
+      "type": "theory and numerical simulation",
+      "tier": "T1",
+      "region": "China",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/earth.html.txt",
+      "contribution": "Nonlinear Zeeman dynamics create intrinsic single-atom squeezing; optimized dynamical decoupling locks its changing axis to the observable instead of simply suppressing that dynamics.",
+      "method": "Breit–Rabi expansion yields a quadratic spin Hamiltonian. A differential-evolution algorithm chooses discretized RF rotation pulses. Numerical state fidelity and signal/noise propagation assess dark-interval and continuous-readout protocols; supplementary notes derive SQL and the nuclear-electron entanglement mechanism.",
+      "result": "Modelled87Rb maximum metrological gain approaches2.9dB. Under assumed1cm³ room-temperature cell,N=1.42e10 and10ms coherence, Discussion calculates4.29fT/sqrt(Hz) versus5.99fT/sqrt(Hz) CSS SQL and14.04fT/sqrt(Hz) NLZ-degraded reference. These are predictions, not recorded instrument sensitivity.",
+      "limitations": "Explicitly no atom–atom entanglement is needed; gain is single-atom nuclear-electron correlation and independent ofN. The largest apparent improvement also restores assumed coherence, not squeezing alone. Instantaneous-rotation and rotating-wave approximations constrain pulse duration. Readout backaction, gradients and measurement-duty trade-offs are discussed but no complete measured noise budget or moving-platform demonstration is supplied.",
+      "replication": "Main Results,Methods,Discussion and supplementary notes1–3,8 inspected. Equations and optimized pulse sequence are given; authors say evaluation data are within paper/supplement and additional data on request. No code repository identified; no experimental replication established because this is a proposed protocol.",
+      "data_code": "Main Results,Methods,Discussion and supplementary notes1–3,8 inspected. Equations and optimized pulse sequence are given; authors say evaluation data are within paper/supplement and additional data on request. No code repository identified; no experimental replication established because this is a proposed protocol.",
+      "conflicts": "Authors declare no competing interests.",
+      "relevance": "Analysis: a relevant control proposal for Earth-field sensing and potential magnetic navigation research; claimed operational sensitivity must await an experiment.",
+      "assessment": "High confidence in classification as numerical proposal; medium confidence in achievable hardware gain.",
+      "claims": [
+        {
+          "text": "Rb maximum modelled metrological gain approaches2.9dB.",
+          "locator": "Results Fig.1b, Eq.5",
+          "confidence": "high"
+        },
+        {
+          "text": "No atom–atom entanglement appears; gain independent ofN.",
+          "locator": "Results Spin squeezing, Eq.4–5",
+          "confidence": "high"
+        },
+        {
+          "text": "4.29fT/sqrt(Hz) comes from assumed cell,atom number and coherence.",
+          "locator": "Discussion numerical sensitivity paragraph",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    },
+    {
+      "id": "S74",
+      "title": "Superabsorption in an organic microcavity: Toward a quantum battery",
+      "authors": [
+        "James Q. Quach",
+        "Kirsty E. McGhee",
+        "Lucia Ganzer",
+        "Dominic M. Rouse",
+        "Brendon W. Lovett",
+        "Erik M. Gauger",
+        "Jonathan Keeling",
+        "Giulio Cerullo",
+        "David G. Lidzey",
+        "Tersilla Virgili"
+      ],
+      "date": "2022-01-14",
+      "preprint_date": "2020-12-10",
+      "journal_date": "2022-01-14",
+      "version": "arxiv full manuscript; journal metadata cross-checked",
+      "url": "https://arxiv.org/pdf/2012.06026",
+      "doi": "10.1126/sciadv.abk3160",
+      "type": "published journal study; reviewed preprint manuscript",
+      "tier": "T2",
+      "region": "UK; Italy; Australia",
+      "access": "full text with version caveat",
+      "local_path": "reviews/emerging-docs/absorption.txt",
+      "contribution": "Organic-molecule collective light–matter coupling produces faster absorption as absorber count increases; dephasing moves energy into less radiative dark modes.",
+      "method": "Lumogen-F Orange dye in polystyrene is placed between dielectric mirrors. Concentrations0.5%,1%,5%,10% span weak to strong coupling. Femtosecond pump–probe differential reflectivity is fit to an open-system model; peak population-derived energy density, rise time and charging power are extracted from model fits, with supporting spectroscopy and fit sensitivity in supplement.",
+      "result": "Spectroscopy supports superextensive charging and storage-capacity behaviour over tested regimes; scaling varies with coupling/decay regime. Only6–8% of initial pump energy enters the cavity according to reflectivity estimates. The observed energy is molecular excitation, not delivered electrical energy.",
+      "limitations": "This precursor has no demonstrated electrical extraction, useful discharge cycle or net wall-plug efficiency. Increased concentration and coupling regimes change together; fitted collective dynamics should not be reported as proof that entanglement uniquely causes practical energy advantage. Finite experimental concentration range, molecular quenching at larger concentration and dephasing/decay assumptions limit extrapolation. A fixed-resource comparison requires incident/absorbed energy,mode volume,loss and preparation accounting.",
+      "replication": "Full accessible arxiv PDF main text plus supplement examined; DOI/journal identity verified through opened publisher DOI and author university research portal. Version is latest downloadable arxiv manuscript, not an independently diffed journal PDF. Detailed fabrication,spectroscopy and fitting documented; independent replication/open code repository not established in this bounded review.",
+      "data_code": "Full accessible arxiv PDF main text plus supplement examined; DOI/journal identity verified through opened publisher DOI and author university research portal. Version is latest downloadable arxiv manuscript, not an independently diffed journal PDF. Detailed fabrication,spectroscopy and fitting documented; independent replication/open code repository not established in this bounded review.",
+      "conflicts": "Declaration not verified from examined version; treat unknown, not no conflict.",
+      "relevance": "Analysis: UK/European foundational energy-capture physics useful to evaluate the2026 extraction study; defence battery procurement relevance remains remote.",
+      "assessment": "High confidence in spectroscopic collective enhancement; no demonstrated usable battery output.",
+      "claims": [
+        {
+          "text": "Pump–probe spectroscopy extracts excitation energy and fitted charging dynamics.",
+          "locator": "arxiv main pp.6–11,Figs.2–3,Table1",
+          "confidence": "medium"
+        },
+        {
+          "text": "Only6–8% of incident pump energy enters cavity.",
+          "locator": "arxiv main p.7,Experimental setup",
+          "confidence": "medium"
+        },
+        {
+          "text": "Dissipation/dephasing suppresses collective re-emission and stabilizes energy.",
+          "locator": "arxiv main pp.3,11–14; supplementary model",
+          "confidence": "medium"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    },
+    {
+      "id": "S75",
+      "title": "Superextensive electrical power from a quantum battery",
+      "authors": [
+        "Kieran Hymas",
+        "Jack B. Muir",
+        "Daniel Tibben",
+        "Joel van Embden",
+        "Tadahiko Hirai",
+        "Christopher J. Dunn",
+        "Daniel E. Gómez",
+        "James A. Hutchison",
+        "Trevor A. Smith",
+        "James Q. Quach"
+      ],
+      "date": "2026-03-13",
+      "preprint_date": "2025-01-27",
+      "journal_date": "2026-03-13",
+      "version": "Journal HTML",
+      "url": "https://www.nature.com/articles/s41377-026-02240-6",
+      "doi": "10.1038/s41377-026-02240-6",
+      "type": "experiment",
+      "tier": "T1",
+      "region": "Australia",
+      "access": "full text and methods; supplement where provided",
+      "local_path": "reviews/emerging-docs/battery.html.txt",
+      "contribution": "Charge-transport layers turn an organic polariton microcavity into a steady-state electrical-output device, addressing the missing extraction step in earlier spectroscopy-only battery demonstrations.",
+      "method": "Eight CuPc:C60 devices vary absorber count within a nominal126nm cavity. Cavity and no-cavity controls share substrates. Reflectance establishes strong coupling; ultrafast pump–probe data quantify excitation dynamics; current–voltage scans under625nm illumination measure electrical output. Intersystem crossing populates metastable triplet states; coupled-oscillator and open-system models connect these stages.",
+      "result": "Maximum electrical power density is roughly10–40microW/cm². The ratio of cavity/no-cavity peak power increases withN; authors interpret this as superextensive output, with modelPc~N². Optical excited-state signals persist tens of nanoseconds; the six-orders-of-magnitude ratio compares to charging times, not hours or years of storage.",
+      "limitations": "Always-illuminated steady-state photocurrent does not by itself demonstrate sustained useful dark discharge. Controls omit a metal mirror and therefore differ optically as well as in coupling; comparisons to an independently optimized photovoltaic architecture and equal absorbed/incident energy are needed for practical superiority. Concentration alters carrier dynamics,cavity detuning andQ; authors normalize with same-run controls and discussD8 deviation. No entanglement witness isolates uniquely quantum causal advantage. No complete round-trip/net external efficiency,macroscopic capacity or cycling durability demonstrated.",
+      "replication": "Full journal text,Methods and32-page supplement inspected, emphasizing geometry/controls,ultrafast normalization and electrical model. Data available on request; no public code repository identified. Independent replication not established.",
+      "data_code": "Full journal text,Methods and32-page supplement inspected, emphasizing geometry/controls,ultrafast normalization and electrical model. Data available on request; no public code repository identified. Independent replication not established.",
+      "conflicts": "Authors declare no competing interests.",
+      "relevance": "Analysis: worthwhile frontier test in low-light harvesting rather than evidence for near-term defence energy storage. Require dark-discharge energy,integrated photon-to-electric efficiency and optimized equal-resource classical controls.",
+      "assessment": "High confidence in measured electrical output; medium confidence in causal scaling interpretation; low deployment maturity.",
+      "claims": [
+        {
+          "text": "Electrical output densities approximately10–40microW/cm².",
+          "locator": "Results electrical discharge paragraph,Fig.4c; supplementIV.A",
+          "confidence": "high"
+        },
+        {
+          "text": "Cavity/control power ratio increases withN; modeledPc~N².",
+          "locator": "Results Fig.4d; supplementIV.B",
+          "confidence": "medium"
+        },
+        {
+          "text": "Metastable optical excitation persists tens of nanoseconds.",
+          "locator": "Fig.3a and accompanying text",
+          "confidence": "high"
+        },
+        {
+          "text": "126nm cavity length fixed while optical length varies.",
+          "locator": "supplement p.3,Fig.S1",
+          "confidence": "high"
+        }
+      ],
+      "quotes": [],
+      "reviewed_sections": [
+        "main results",
+        "methods or appendices",
+        "limitations/discussion",
+        "supplement where stated"
+      ]
+    }
+  ],
+  "context_sources": [
+    {
+      "id": "S76",
+      "title": "Matters Arising: Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "authors": [
+        "Liam P. McGuinness"
+      ],
+      "date": "2023-05-03",
+      "url": "https://arxiv.org/abs/2301.04396v2",
+      "tier": "T2",
+      "access": "full preprint",
+      "local_path": "reviews/emerging-docs/greve-challenge.txt",
+      "assessment": "Unreviewed independent critique read as challenge; broad denial not accepted without parameter/SQL adjudication. Author reports Nature rejected submission."
+    },
+    {
+      "id": "S77",
+      "title": "Publisher Correction: Entanglement-enhanced matter-wave interferometry in a high-finesse cavity",
+      "date": "2022-12-06",
+      "url": "https://www.nature.com/articles/s41586-022-05582-4",
+      "tier": "T1",
+      "access": "full notice",
+      "local_path": "reviews/emerging-docs/greve-correction.txt",
+      "assessment": "Omitted hbar labels restored; incorrect peer-review-manuscript link removed. Does not retract performance numbers."
+    }
+  ]
+}

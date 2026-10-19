@@ -1,0 +1,86 @@
+# Detection and situational awareness: academic reviews
+
+Window: 2016-01-01–2026-10-12; searches 2026-10-12. Six full-text studies selected; 19 records screened. All judgments labelled Analysis are reviewer interpretation. Page numbers refer to journal pagination where present, otherwise the archived PDF. No experiments were replicated.
+
+## S30 — Quantum sensing for gravity cartography
+
+Ben Stray et al.; journal 2022-02-23; first preprint 2021-09-14. T1 study; reviewed version: Nature version of record incl. Methods/Extended Data. [Primary source](https://www.nature.com/articles/s41586-021-04315-3).
+
+Stray and colleagues demonstrate an outdoor gravity-gradient survey rather than an entanglement-enhanced detector. Two vertically separated rubidium interferometers reject common vibration; a displaced test mass gives 205 ± 13.1 E against a 202 E prediction. Outdoor sensitivity is 466 ± 8 E/√Hz, reaching 20 E statistical uncertainty in ten minutes. [S30 p.591, Figs.1c–2] The survey crosses a known tunnel with a 2 m × 2 m internal section on an 8.5 m line sampled every 0.5 m. Plans, ground-penetrating radar and topography inform the site model. [S30 pp.591–592] Thus this is a substantial field result, but not a blind search for an unknown tunnel. *Analysis*: the distinction matters when translating an anomaly-detection experiment into an intelligence-surveillance claim.
+
+The reported SNR of approximately eight divides the estimated 150 E signal by the mean survey error of 17.9 E. Base-station measurements remove drift; ellipse fits failing a specified quality threshold are discarded, leaving 98.4% usable data. [S30 Methods, PDF p.7] Bayesian inversion estimates the horizontal centre at 0.19 ± 0.19 m and surface-to-centre depth at 1.89 m with asymmetric −0.59/+2.3 m uncertainty. [S30 Methods, PDF p.8] The density prior is explicitly informative, whereas the horizontal-centre prior spans the measurement line; the tunnel dimensions are not simply fixed in this inversion. [S30 Extended Data Table 2] *Analysis*: depth and shape remain much less identifiable than horizontal position.
+
+Survey repeatability is similar to commercial gravimeters and limited by systematics, including Coriolis effects; the proposed fifteen-minute scan is conditional on addressing these effects. [S30 p.593] The approximately 75 kg head plus 250 kg control cases draw approximately 800 W. [S30 Extended Data Fig.2] Data and code are deposited; patents and commercial/government interests are declared. [S30 Methods, PDF p.8] *Analysis*: prioritise independent blind, multi-site surveys with false alarms and complete logistical cost. Scientific confidence is high for this demonstrated anomaly; readiness for unconstrained underground discovery remains conditional.
+
+## S31 — Quantum advantage in microwave quantum radar
+
+Réouven Assouly et al.; journal 2023-06-29; first preprint 2022-11-10. T1 study; reviewed version: arXiv:2211.05684v2 (2023-03-02), supplement included; journal metadata checked. [Primary source](https://arxiv.org/abs/2211.05684).
+
+Assouly and colleagues implement the critical joint measurement missing from earlier microwave correlation demonstrations. An initially entangled probe and stored idler are recombined in a superconducting circuit, and qubit-assisted photon counting estimates whether the target is present. The measured advantage is Q = 1.2 ± 0.1 in an error-exponent metric relative to the calculated optimal coherent-state bound under the same calibrated photon resources. [S31 PDF pp.1–4, Fig.3] This is a stronger scientific benchmark than outperforming one deliberately noisy classical apparatus. *Analysis*: it does not establish superiority to a conventional radar allowed to choose its transmitted power or operating scenario.
+
+The hardware operates at 15 mK. Its target is a controllable notch filter and 12 m coaxial delay, rather than an outdoor object; position, speed and reflectivity are assumed known. [S31 PDF pp.1–2, Fig.1] Signal/noise photon populations and target reflectivity are measured with dedicated calibration protocols. The highlighted data use fifteen series of 500,000 attempts, with signal and noise recalibrated between series. [S31 PDF pp.3–4, Fig.3] Thermal noise is switched on after state preparation. [S31 PDF p.2] *Analysis*: these controls make the proof interpretable but deliberately avoid several environmental and target-search difficulties.
+
+The supplement explicitly says photon-population fitting uncertainties are mostly statistical and omit measurement-protocol imperfections; reflectivity uncertainty is checked across probe amplitudes. [S31 supplement F, PDF p.11] The model underestimates measured advantage, with the origin unresolved; initial thermal populations shrink the region supporting advantage. [S31 PDF pp.4–5, Fig.4] *Analysis*: these are calibration/model qualifications, not evidence that the result is false. A high-confidence application assessment would require independent calibration validation and real targets with unknown delays.
+
+The journal page provides figure source data; this review did not execute an independent analysis or find an independent experimental replication. [S31 journal page, Source data] *Analysis*: prioritise as a credible entanglement-assisted detection experiment and an engineering-warning case, not as demonstrated long-range or stealth-target radar.
+
+## S32 — Waveguide-coupled Rydberg spectrum analyzer from 0 to 20 GHz
+
+David H. Meyer et al.; journal 2021-01-27; first preprint 2020-09-30. T1 study; reviewed version: arXiv:2009.14383v4 (2021-05-20). [Primary source](https://arxiv.org/abs/2009.14383).
+
+Meyer, Kunz and Cox demonstrate a Rydberg receiver backend coupled to a microwave waveguide, with an external antenna used to collect ambient signals. This is atomic transduction and heterodyne reception, not an entanglement-generated radar advantage. The system covers carrier tuning from DC to 20 GHz, while the instantaneous 3 dB bandwidth is 4 MHz. Its abstract reports intrinsic sensitivity up to −120 ± 2 dBm/Hz and over 80 dB linear dynamic range. [S32 PDF pp.1,4, Fig.3] *Analysis*: the broad carrier range must not be described as simultaneous twenty-gigahertz reception bandwidth.
+
+Figure 1 distinguishes directly measured sensitivity, a photon-shot-noise-limited value obtained after independent subtraction of laser phase noise, and preamplified sensitivity. The preamplifier sensitivity curves are calculated by referring intrinsic noise to the input and combining amplifier noise, although ambient reception itself is demonstrated with amplification. [S32 PDF pp.2–3, Fig.1; p.5, Fig.4] The strongest headline figures therefore need the measurement category attached. *Analysis*: a backend improvement cannot be credited with the entire antenna/amplifier chain's performance.
+
+A conventional rabbit-ears antenna feeds the system; AM/FM and Wi-Fi/Bluetooth examples appear in the laboratory, including audio verification of one AM station. [S32 PDF pp.4–5] The atom chamber is approximately 50 °C, the coupling beam is approximately 500 mW, and optical path and power fluctuations are actively stabilised. [S32 Appendix A, PDF p.7] These details qualify the phrase near-room-temperature: cryogenics are avoided, but lasers and control are still necessary.
+
+The waveguide's measured transmission deteriorated over seven months, attributed provisionally to rubidium contamination; reported sensitivities retain waveguide losses rather than subtracting them. [S32 Appendix D, PDF p.8] This is a disclosed durability issue, not a confirmed failure mechanism. *Analysis*: useful next tests are stability, calibration and power accounting against an equally broadband classical backend under matched antenna conditions. No data/code availability statement was located in the examined manuscript; no independent replication was established in this bounded scan. *Analysis*: confidence is high in integrated reception, lower in claims of surpassing established receiver limits.
+
+## S33 — Performance of antenna-based and Rydberg quantum RF sensors in the electrically small regime
+
+K. M. Backes et al.; journal 2024-09-30; first preprint 2024-08-27. T1 study; reviewed version: Applied Physics Letters version of record. [Primary source](https://inspirehep.net/files/ac16594fd5658d98b52993e9f1437037).
+
+Backes and colleagues provide a consequential baseline correction: comparison with a passive unmatched antenna can overstate the attraction of an atomic receiver. Their equivalent-circuit analysis compares similarly sized dipole/loop antennas with matched passive, unmatched passive and active readout against warm-vapour EIT and ideal standard-quantum-limit Rydberg sensing. The example uses approximately 1 cm sensors over 30 kHz–30 MHz. [S33 article pp.144002-1–3, Figs.1–3] *Analysis*: this is a theoretical comparison with literature experimental points, not a new matched field trial demonstrating defeat of every Rydberg architecture.
+
+The active classical example uses a high-impedance amplifier with 1 nV/√Hz input voltage noise and 100 MΩ input impedance. All sensors are assigned dipolar directivity, so incoming atmospheric noise affects their external signal-to-noise ratio equivalently. [S33 pp.144002-2–3, Eqs.1,7] Under these assumptions, active unmatched dipoles exceed contemporary warm-vapour EIT sensitivity. [S33 p.144002-4, Fig.3] *Analysis*: electrically small size alone is insufficient justification for comparison only against inefficient passive antennas; classical active electronics must receive equal engineering attention.
+
+The most spectacular atomic bound instead assumes tightly packed cold atoms, optimised transitions, a restricted interaction-induced shift, and large atom numbers. The authors warn that collective effects could limit this idealisation and that it is likely physically unrealizable, paralleling the ideal matched dipole bound. [S33 p.144002-4] Typical atmospheric noise also sits above the ideal limits. [S33 Fig.3 and p.144002-4] *Analysis*: a quieter internal detector cannot remove the same external field noise it measures; sheltered metrology and arrays require different operational cases.
+
+The supplement is described as containing the figure-generating notebook, Python and data; declared conflicts are absent, while DHS/MITRE/Army affiliations and funding are disclosed. [S33 p.144002-5] The supplement itself was not retrieved here. *Analysis*: confidence is high in the paper's stated comparison within its model, moderate in transfer to complete deployed systems. Its value is methodological discipline: require frequency, size, bandwidth, amplification and ambient-noise assumptions before accepting receiver advantage.
+
+## S34 — Electrometry of extremely-low frequencies from kHz to sub-Hz with a Rydberg-atom sensor
+
+Aveek Chandra et al.; journal 2026-08-05; first preprint 2026-03-14. T1 study; reviewed version: EPJ Quantum Technology 13:87 version of record. [Primary source](https://link.springer.com/article/10.1140/epjqt/s40507-026-00550-7).
+
+Chandra, Paensin and Dumke extend low-frequency Rydberg electrometry with a paraffin-coated caesium cell, auxiliary field reversal and lock-in detection. The laboratory observes applied electric fields between 0.5 Hz and 10 kHz. The reported sensitivity is 819 μV/cm/√Hz at 1 Hz, 33 at 10 Hz, 10 at 100 Hz and 2 at 1 kHz. [S34 pp.1,8–9, Figs.4–5] This is an atomic electric-field receiver improvement, not entanglement-enhanced target detection. *Analysis*: it is relevant to difficult low-frequency sensing but cannot by itself establish underground or underwater detection range.
+
+Coated and uncoated-cell transient controls show slower screening in the coated cell. The proposed microscopic explanation is expressly qualitative and charge transport is not directly measured. [S34 pp.4–6, Fig.2] Residual screening remains and reduces low-frequency responsivity. [S34 p.8] Fields are generated by external copper plates; the term electrode-free means no electrodes inserted into the vapour, rather than no electrodes in the experiment. [S34 pp.3–4, Fig.1] *Analysis*: retaining this distinction prevents a misleading impression of a passive stand-alone receiver.
+
+Sensitivity is estimated from responsivity and combined photodetector/lock-in noise. The classical curve is theoretically estimated for a 3 cm dipole, referenced to an earlier assessment, rather than experimentally measured alongside the atoms. [S34 p.9, Fig.5] The sensor uses room-temperature vapour but a high-finesse cavity locks two lasers; a strong auxiliary field sets the operating point. [S34 pp.3,7,10–13] *Analysis*: the claimed size-based advantage should be tested against an active classical receiver and complete-system size/power, especially given the separate baseline analysis in S33.
+
+The authors identify laser intensity drift as a present limit and explicitly require further outdoor pickup, ground-loop and thermal/polarisation control before field deployment. [S34 pp.9–10] Data are available on reasonable request; no competing interests are declared. [S34 p.16] *Analysis*: confidence is high for controlled low-frequency response, moderate for its sensitivity estimate and low for operational advantage pending matched practical comparison. No independent replication was established in this bounded scan.
+
+## S35 — A Note on the Efficient Operation of Quantum Radar and the Fair Classical Comparison
+
+Florian Bischeltsrieder et al.; journal 2025-06-12; first preprint not located. T1 study; reviewed version: IEEE Transactions on Radar Systems version of record, pp.875–880. [Primary source](https://elib.dlr.de/214537/1/A_Note_on_the_Efficient_Operation_of_Quantum_Radar_and_the_Fair_Classical_Comparison.pdf).
+
+Bischeltsrieder and colleagues analyse a specific two-mode-squeezed-vacuum correlation receiver and separate outperforming a classical comparator from efficiently reaching a chosen detection error. They formulate an optimisation over noise occupation for a desired quantum advantage and channel loss, minimising required independent signal samples. The resulting efficient operating regime does not coincide with the maximum attainable relative advantage. [S35 pp.876–878, Eqs.10–22, Fig.1] *Analysis*: this is an important antidote to optimising a headline gain while neglecting absolute acquisition time.
+
+The method assumes repeated identical trials, sufficiently many samples for a Gaussian approximation, and the specified joint quadrature-correlation observable. Channel loss remains a parameter; this follow-up does not derive a new target range or cross-section result. [S35 pp.875–877, Eqs.1–6, Section III restrictions] *Analysis*: its conclusions belong to that receiver/model family and should not be presented as a no-go theorem for every possible quantum ranging architecture or adaptive measurement.
+
+A second contribution compares coherent-state and classical unmodulated-continuous-wave descriptions of the benchmark. Their prediction mismatch depends on absolute thermal occupation as well as SNR; accordingly, matching SNR alone can be insufficient. The paper argues that a classical comparison experiment under Assouly-like conditions might also need the same cryostatic environment. [S35 pp.878–879, Eqs.23–28, Fig.2] *Analysis*: this is about a fair low-power scientific comparator, not evidence that an ordinary field radar must be cryogenic.
+
+The conclusion states its bounds assume ideal implementation and real systems can degrade further. [S35 p.879] This is analytical work with no new field experiment or independent replication in the paper. [S35 Sections II–V] A correction exists to the authors' 2024 predecessor (DOI 10.1109/TRS.2025.3532053); its full text was not accessed in this scan, so predecessor-specific numerical range limits are withheld. *Analysis*: confidence is moderate in this model's comparative insight; use it to demand explicit receiver, photon-resource and time assumptions, while treating operational limits as conditional and keeping that correction gap visible.
+
+## Search and selection record
+
+See detection.json for individual queries, opened URLs, decisions and reasons. Search is bounded and prioritises original methods rather than breadth. Preprint/journal versions count as one study. Abstract-only candidates are excluded from deep review.
+
+## Access and verification limits
+
+- S30 main paper includes Methods/Extended Data; separate peer-review file and source spreadsheets were not analysed. Its first preprint date is verified from the manuscript cover (Research Square v1, p.2).
+- S31 full supplementary calibration/uncertainty sections read; source-data files not reanalysed.
+- S33 supplementary code was declared but not retrieved/executed.
+- S35 predecessor correction identified but not read; avoid uncorrected predecessor numerical limits.
+- Recent 2026 vehicle-based gravity study remains abstract-only and cannot be called replication.
+- Bibliography/source claims checked against PDFs; JSON syntax and review lengths checked locally. No independent experimental replication, systematic citation-network exhaustiveness or paid access undertaken.

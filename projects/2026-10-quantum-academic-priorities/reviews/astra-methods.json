@@ -1,0 +1,223 @@
+{
+  "papers": [
+    {
+      "id": "S53",
+      "title": "Toward quantum scaling advantage in approximate optimization",
+      "url": "https://arxiv.org/html/2505.22514v2",
+      "access": "Full v2 HTML and supplement; arXiv history confirms first 28 May 2025, v2 10 July 2026; Phys Rev Applied 26,014024 DOI10.1103/qcws-8kgm.",
+      "sections_reviewed": "Main methods/results/discussion, Figs1–5; supplement S1–S7, particularly S1,S2,S5,S6.",
+      "defensible_result": "GPU simulated bifurcation closes the reported scaling gap on the same Sidon-28 QAC instances under the studied timing definitions.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "General quantum or industrial optimisation advantage/disadvantage",
+          "evidence": "Main comparison uses125 random instances per size on QAC-native graphs,142–1322 logical variables; larger classical-only study uses10 per size2380–38320.",
+          "locator": "Thermal vs Chaotic vs Quantum Annealing; S2",
+          "consequence": "A strong counter-baseline for this ensemble; not a theorem about general optimisation.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Better multi-GPU scaling means faster practical service",
+          "evidence": "Four-GPU total times are approximately100 times one-GPU times at studied small sizes, despite improved fitted exponents. Common initialization omitted; GPU compute time averages parallel resources.",
+          "locator": "S1 FigS1; S5",
+          "consequence": "Separate exponent, actual latency and hardware/resource budget.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Large-size asymptotic or future quantum scaling is established",
+          "evidence": "Finite-range fits and optimum-parameter searches;3D points outside search range excluded. Larger quantum counterpart not measured.",
+          "locator": "Fig4; S2; S6 FigS5",
+          "consequence": "Future overhead-free advantage remains a candidate, not demonstrated.",
+          "severity": "high"
+        }
+      ],
+      "what_survives": "A credible instance-matched rebuttal to a particular claimed quantum scaling gap, with unusually explicit runtime accounting.",
+      "what_would_resolve": "Broader held-out ensembles, matched full workflow/resource costs, certified reference energies at large sizes and quantum measurements beyond current size range.",
+      "verdict": "Survives with narrow scope; no central numerical result disproved."
+    },
+    {
+      "id": "S55",
+      "title": "A Reality Check on Quantum Optimisation: Evidence from an Industrial Case Study",
+      "url": "https://arxiv.org/html/2607.13325v1",
+      "access": "Full v1 HTML; first submitted14 July2026; no journal reference on opened arXiv record.",
+      "sections_reviewed": "SectionsI–IX, formulationsIII, setupV, all resultsVI and validityVII.",
+      "defensible_result": "On the studied industrial assignment-based scheduling formulations, the Digital Annealer handles larger instances and beats the implemented greedy/iterative approximations in schedule quality; current quantum devices struggle with feasibility.",
+      "objections": [
+        {
+          "classification": "central-result flaw",
+          "claim_under_test": "Reported end-to-end execution time",
+          "evidence": "V-C calls the metric end-to-end; VII-E explicitly excludes communication, API overhead and queues.",
+          "locator": "V-C item3; VII-E",
+          "consequence": "The end-to-end label is false; operational timing advantage is not established.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "True optimal references across scales",
+          "evidence": "V-A certifies only up to6machines5rigs14jobs; larger references are best found within one hour, despite later true-optimal/lower-bound wording.",
+          "locator": "V-A; VII-A; Fig8 caption and VI-D",
+          "consequence": "Use best-known gaps at larger sizes; no certified approximation guarantee.",
+          "severity": "high"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Advantage over competitive classical scheduling",
+          "evidence": "Native greedy/SDST insertion/iterated-greedy is included, so not merely QUBO-vs-QUBO; however comparison uses100–1200iterations and equal quadratic scaling language rather than equal measured total budgets.",
+          "locator": "III-C; V-B4; VI-D; VII-C",
+          "consequence": "A useful case study does not establish superiority over tuned native state-of-art solvers.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Full job-shop optimisation and DA as lower bound for future quantum",
+          "evidence": "Models omit internal job order; sequencing delegated to classical stage and mean setup proxies used. DA constraint handling differs physically.",
+          "locator": "III-A/B; V-A; VII-B/C",
+          "consequence": "Retain assignment-workflow value; reject generic quantum performance projection.",
+          "severity": "moderate"
+        }
+      ],
+      "what_survives": "Evidence that formulation and constraint handling dominate this particular practical benchmark; actual quantum feasibility limits remain meaningful.",
+      "what_would_resolve": "Matched wall-clock native MILP/CP/heuristic benchmarking, certified bounds where feasible, full pipeline timing and transparent returned-sample accounting.",
+      "verdict": "Useful preprint case study; qualified classical comparator and corrected timing/optimality labels essential."
+    },
+    {
+      "id": "S70",
+      "title": "Field Demonstration of Distributed Quantum Sensing without Post-Selection",
+      "url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.11.031009",
+      "access": "Full journal PDF opened,14 July2021; local arXiv2011.02807v1 also inspected but journal takes precedence.",
+      "sections_reviewed": "JournalI–IV, Figs1–3; AppendicesA–D resource/loss accounting; journal result for AppendixE comparator.",
+      "defensible_result": "At240m fibre length, distributed optical phase estimation beats the loss-accounted photon-pass SNL by up to0.916dB; journal additionally reports0.326dB without multipass weighting.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Quantum advantage at10km",
+          "evidence": "Six random-phase estimates with10km spools explicitly fail to beat SNL because of efficiency.",
+          "locator": "III p5 Fig3/TableI",
+          "consequence": "Do not combine240m advantage with10km reach into one result.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Operational distributed target sensing",
+          "evidence": "Parameter is controlled waveplate optical phase; setup needs polarization calibration and synchronized photon detection;10km uses spools.",
+          "locator": "II Fig1 pp3–4; III p5",
+          "consequence": "Outdoor distribution is genuine; defence target sensing or deployed network is untested.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "unsupported concern",
+          "claim_under_test": "Coincidence analysis automatically invalidates no-postselection claim",
+          "evidence": "Lost photons and multipair events enter resource estimate Eq2; Bob multipasses counted twice; lossless optimal allocation defines SNL. JournalA includes visibility and59.1% threshold.",
+          "locator": "II Eq2 p4; AppendicesA/B p6",
+          "consequence": "Concern is rebutted by explicit resource accounting; no demonstrated loophole.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Gain over every optimized classical or unentangled strategy",
+          "evidence": "Comparator is photon-pass shot-noise bound with no multipassing; source, detector infrastructure and elapsed acquisition cost are not the resource metric. Journal separately demonstrates ordinary two-sensor weighting.",
+          "locator": "II p4; III p5",
+          "consequence": "Claim specific SNL improvement; not system-cost superiority over all sensor architectures.",
+          "severity": "moderate"
+        }
+      ],
+      "what_survives": "Strong field proof of resource-accounted photonic metrology within a defined estimation task.",
+      "what_would_resolve": "Unknown physical-signal tests, stable long-distance advantage, acquisition-bandwidth and complete infrastructure comparisons.",
+      "verdict": "Central result survives; restrict range/application and use journal rather than older preprint numbers."
+    },
+    {
+      "id": "S73",
+      "title": "Quantum locking of intrinsic spin squeezed state in Earth-field-range magnetometry",
+      "url": "https://www.nature.com/articles/s41534-025-00971-9",
+      "access": "Saved publisher full HTML; supplementary PDF downloaded/read Notes1–8; published3March2025.",
+      "sections_reviewed": "All main Results/Discussion/Methods; supplement SQL,spin dynamics,entanglement,pulse timing and robustness.",
+      "defensible_result": "A theoretical/numerical pulse-control proposal aligns and preserves intra-atomic spin squeezing, predicting metrological gain in an Earth-field model.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Measured4.29fT/√Hz Earth-field magnetometer",
+          "evidence": "Discussion says proposed and supposes1cm3 cell,N=1.42e10,T2=10ms; sensitivity follows model versus5.99fT/√Hz CSS SQL.",
+          "locator": "Discussion; Eqs4–5; Fig1; SupplementNote1",
+          "consequence": "Label predicted sensitivity, not experimental demonstration.",
+          "severity": "high"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Below total sensor noise in realistic field",
+          "evidence": "Gain measures spin variance divided by mean spin; Faraday readout/backaction considered theoretically but no measured total-noise spectrum or hardware comparison.",
+          "locator": "Eq5; Methods atom-light interaction; Discussion",
+          "consequence": "Spin-noise advantage is conditional on readout/technical noise control.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Robust autonomous tracking in variable fields",
+          "evidence": "B0 fixed with small perturbation; calculated1pT single-shot uncertainty versus±50pT gain window. Pulses require instantaneous-rotation/RWA timing constraints; supplementary timing-deviation robustness reoptimizes sequence for each deviation.",
+          "locator": "Methods Fig8; SupplementNotes4–5",
+          "consequence": "Does not establish robustness to unknown fast dynamics or implementation errors.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "unsupported concern",
+          "claim_under_test": "No interatomic entanglement means no quantum resource",
+          "evidence": "Main text explicitly uses nuclear-electronic entanglement within each atom; supplement derives entropy. Gain independent of atom number.",
+          "locator": "Eq4 discussion; SupplementNote3",
+          "consequence": "Reject this objection; clarify resource and absence of improved N scaling.",
+          "severity": "moderate"
+        }
+      ],
+      "what_survives": "Interesting control proposal converting nonlinear Zeeman dynamics into usable intra-atomic squeezing; not field-tested instrument.",
+      "what_would_resolve": "Experimental squeezing/readout calibration, total-noise benchmark versus optimized CSS protocol, finite pulse and changing-field tests.",
+      "verdict": "Retain as theory proposal with conditional metrological promise; downgrade any demonstrated-sensitivity claim."
+    },
+    {
+      "id": "S75",
+      "title": "Superextensive electrical power from a quantum battery",
+      "url": "https://www.nature.com/articles/s41377-026-02240-6",
+      "access": "Saved publisher full HTML;32page supplement downloaded and pertinent device,ultrafast and electrical sections read; published13March2026.",
+      "sections_reviewed": "MainResults/Methods/Discussion; SupplementII,III,IV,TablesS1–S3,FigsS9–S19.",
+      "defensible_result": "Eight CuPc microcavity devices show cavity-enhanced photon-to-charge conversion and increasing cavity/control electrical power ratio under steady illumination; ultrafast spectroscopy supports collective charging dynamics.",
+      "objections": [
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Conventional complete storage battery cycle and net efficiency",
+          "evidence": "Electrical output obtained from steady625nm illumination10mW/cm2 I–V scans; reported output10–40µW/cm2. Stored excitations observed optically on nanosecond scales.",
+          "locator": "Fig3–4; MethodsDischarging power; SupplementIV-A",
+          "consequence": "Not delayed electrical discharge after charging, cycle life or round-trip storage efficiency; inferred incident-light conversion is roughly0.1–0.4%, not round-trip efficiency.",
+          "severity": "high"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Measured universal N-squared output law and sqrtN voltage",
+          "evidence": "MainFig4d fits cavity/control ratio as N changes with composition; S17 actual voltage fitN^0.77 excludes anomalousD4; S19 qualitative model assumes selected transport energies/rates.",
+          "locator": "Device engineering; Fig4d; SupplementS17,IV-B/S19",
+          "consequence": "Finite device family and model do not certify asymptotic exponent or universal advantage.",
+          "severity": "high"
+        },
+        {
+          "classification": "scope restriction",
+          "claim_under_test": "Pure N variation isolates collective quantum advantage",
+          "evidence": "CuPc:C60 ratio/layer thicknesses and cavity detuning vary; paired controls and fixed-average-cavity modelling are meaningful rebuttals, but not an experimental fixed-composition scaling family.",
+          "locator": "MainFig2; SupplementTablesS1/S3",
+          "consequence": "Confounds are partially addressed, not proven responsible or fully eliminated.",
+          "severity": "moderate"
+        },
+        {
+          "classification": "missing evidence",
+          "claim_under_test": "Nonclassical resource proven necessary for electrical improvement",
+          "evidence": "Spectra fitted by coupled oscillators; quantum transport model reproduces trends qualitatively; no witness or resource-removal comparison establishes entanglement necessity.",
+          "locator": "Methods theoretical model; SupplementII-B,IV-B",
+          "consequence": "Do not equate strong coupling with certified nonclassical computational/metrological advantage.",
+          "severity": "moderate"
+        }
+      ],
+      "what_survives": "Substantive cavity optoelectronics result including real electrical output, beyond optical charging alone.",
+      "what_would_resolve": "Independent devices, fixed-composition/geometry resource-normalized controls, delayed electrical extraction and cycles, measured net efficiency, decisive nonclassical-resource test.",
+      "verdict": "Electrical enhancement credible; practical battery and uniquely quantum advantage claims exceed demonstrated evidence."
+    }
+  ],
+  "additional_sources": [],
+  "completion_note": "Five complete challenge records were saved before the agent turn ended with a usage-limit error. Orchestrator checked substantive findings against original texts; optional Greve critique was not completed."
+}
